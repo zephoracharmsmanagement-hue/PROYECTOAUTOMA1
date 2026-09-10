@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound, redirect } from 'next/navigation';
 import { VideoPlayer } from '@/components/members/video-player';
 import { MarkCompleteButton } from '@/components/members/mark-complete-button';
+import { QuestionThread, type Thread } from '@/components/members/question-thread';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState, canAccessPackage } from '@/lib/entitlements';
 
@@ -46,7 +47,7 @@ export default async function LessonPage({ params }: PageProps) {
   const previous = index > 0 ? lessons[index - 1] : undefined;
   const next = index < lessons.length - 1 ? lessons[index + 1] : undefined;
 
-  const [{ data: detail }, { data: progress }] = await Promise.all([
+  const [{ data: detail }, { data: progress }, { data: thread }] = await Promise.all([
     supabase.from('lessons').select('description, resources').eq('id', lesson.id).maybeSingle(),
     supabase
       .from('lesson_progress')
@@ -54,6 +55,9 @@ export default async function LessonPage({ params }: PageProps) {
       .eq('user_id', access.userId)
       .eq('lesson_id', lesson.id)
       .maybeSingle(),
+    // La función revalida el acceso y devuelve los nombres visibles, que RLS
+    // sobre `profiles` no dejaría leer de otro modo.
+    supabase.rpc('package_thread', { p_package_id: pkg.id, p_lesson_id: lesson.id }),
   ]);
 
   const resources = detail?.resources ?? [];
@@ -100,6 +104,13 @@ export default async function LessonPage({ params }: PageProps) {
           initiallyCompleted={Boolean(progress?.completed_at)}
         />
       </div>
+
+      <QuestionThread
+        packageId={pkg.id}
+        packageSlug={pkg.slug}
+        lessonId={lesson.id}
+        threads={(thread ?? []) as unknown as Thread[]}
+      />
 
       <nav className="mt-10 flex items-center justify-between gap-4 border-t border-ink-800 pt-6 text-sm">
         {previous ? (

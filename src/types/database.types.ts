@@ -16,6 +16,8 @@ export type ContentStatus = 'draft' | 'published' | 'archived';
 export type OrderStatus = 'pending' | 'paid' | 'refunded' | 'failed' | 'expired';
 export type OrderItemKind = 'main' | 'bump' | 'upsell';
 export type OfferPlacement = 'bump' | 'upsell';
+export type ReferralStatus = 'pending' | 'approved' | 'paid' | 'void';
+export type QuestionStatus = 'open' | 'answered' | 'hidden';
 export type EntitlementKind = 'package' | 'all_access';
 export type EntitlementSource = 'purchase' | 'subscription' | 'manual_grant';
 export type EntitlementStatus = 'active' | 'revoked' | 'expired';
@@ -29,6 +31,7 @@ export type ProfileRow = {
   avatar_url: string | null;
   role: UserRole;
   stripe_customer_id: string | null;
+  referred_by_affiliate_id: string | null;
   created_at: string;
   updated_at: string;
 };
@@ -130,6 +133,9 @@ export type SubscriptionRow = {
   status: string;
   current_period_end: string | null;
   cancel_at_period_end: boolean;
+  dunning_attempts: number;
+  dunning_last_at: string | null;
+  grace_until: string | null;
   created_at: string;
   updated_at: string;
 };
@@ -211,6 +217,67 @@ export type ExperimentRow = {
   hypothesis: string | null;
   variants: ExperimentVariant[];
   is_active: boolean;
+  created_at: string;
+  updated_at: string;
+};
+
+export type AffiliateRow = {
+  id: string;
+  user_id: string;
+  code: string;
+  commission_pct: number;
+  is_active: boolean;
+  payout_details: string | null;
+  notes: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type ReferralRow = {
+  id: string;
+  affiliate_id: string;
+  referred_user_id: string | null;
+  order_id: string | null;
+  subscription_id: string | null;
+  stripe_reference: string;
+  amount_cents: number;
+  commission_cents: number;
+  currency: string;
+  status: ReferralStatus;
+  created_at: string;
+  updated_at: string;
+};
+
+export type SubscriptionInvoiceRow = {
+  id: string;
+  user_id: string;
+  subscription_id: string | null;
+  stripe_invoice_id: string;
+  amount_cents: number;
+  currency: string;
+  billing_reason: string | null;
+  paid_at: string;
+  created_at: string;
+};
+
+export type QuestionRow = {
+  id: string;
+  package_id: string;
+  lesson_id: string | null;
+  user_id: string;
+  title: string;
+  body: string;
+  status: QuestionStatus;
+  created_at: string;
+  updated_at: string;
+};
+
+export type AnswerRow = {
+  id: string;
+  question_id: string;
+  user_id: string;
+  body: string;
+  is_staff: boolean;
   created_at: string;
   updated_at: string;
 };
@@ -315,6 +382,31 @@ export type Database = {
         ]
       >;
       campaigns: Table<CampaignRow>;
+      affiliates: Table<AffiliateRow, [Relationship<['user_id'], 'profiles'>]>;
+      referrals: Table<
+        ReferralRow,
+        [
+          Relationship<['affiliate_id'], 'affiliates'>,
+          Relationship<['referred_user_id'], 'profiles'>,
+          Relationship<['order_id'], 'orders'>,
+        ]
+      >;
+      subscription_invoices: Table<
+        SubscriptionInvoiceRow,
+        [Relationship<['user_id'], 'profiles'>, Relationship<['subscription_id'], 'subscriptions'>]
+      >;
+      questions: Table<
+        QuestionRow,
+        [
+          Relationship<['package_id'], 'packages'>,
+          Relationship<['lesson_id'], 'lessons'>,
+          Relationship<['user_id'], 'profiles'>,
+        ]
+      >;
+      answers: Table<
+        AnswerRow,
+        [Relationship<['question_id'], 'questions'>, Relationship<['user_id'], 'profiles'>]
+      >;
       experiments: Table<ExperimentRow>;
       certificates: Table<
         CertificateRow,
@@ -332,6 +424,12 @@ export type Database = {
       is_admin: { Args: { p_user_id: string }; Returns: boolean };
       admin_dashboard_metrics: { Args: Record<string, never>; Returns: Json };
       verify_certificate: { Args: { p_code: string }; Returns: Json };
+      admin_business_metrics: { Args: { p_months?: number }; Returns: Json };
+      package_thread: {
+        Args: { p_package_id: string; p_lesson_id?: string | null };
+        Returns: Json;
+      };
+      display_name: { Args: { p_full_name: string; p_email: string }; Returns: string };
       issue_certificate_if_complete: { Args: { p_package_id: string }; Returns: string | null };
     };
     Enums: {
@@ -345,6 +443,8 @@ export type Database = {
       video_provider: VideoProviderName;
       order_item_kind: OrderItemKind;
       offer_placement: OfferPlacement;
+      referral_status: ReferralStatus;
+      question_status: QuestionStatus;
     };
     CompositeTypes: Record<string, never>;
   };

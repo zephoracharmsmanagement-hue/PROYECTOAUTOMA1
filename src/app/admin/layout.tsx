@@ -13,6 +13,7 @@ export const dynamic = 'force-dynamic';
 
 const NAV = [
   { href: '/admin', label: 'Resumen' },
+  { href: '/admin/metricas', label: 'Métricas' },
   { href: '/admin/paquetes', label: 'Paquetes' },
   { href: '/admin/planes', label: 'Planes' },
   { href: '/admin/testimonios', label: 'Testimonios' },
@@ -21,6 +22,8 @@ const NAV = [
   { href: '/admin/experimentos', label: 'Experimentos' },
   { href: '/admin/ventas', label: 'Ventas' },
   { href: '/admin/alumnos', label: 'Alumnos' },
+  { href: '/admin/preguntas', label: 'Preguntas' },
+  { href: '/admin/afiliados', label: 'Afiliados' },
   { href: '/admin/leads', label: 'Leads' },
 ];
 

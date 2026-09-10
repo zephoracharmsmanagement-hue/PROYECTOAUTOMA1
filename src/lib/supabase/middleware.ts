@@ -2,10 +2,11 @@ import { NextResponse, type NextRequest } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
 import { publicEnv } from '@/lib/env';
 import { ANONYMOUS_ID_COOKIE } from '@/lib/experiments.shared';
+import { REFERRAL_COOKIE, REFERRAL_COOKIE_MAX_AGE, REFERRAL_PARAM } from '@/lib/affiliates.shared';
 import type { Database } from '@/types/database.types';
 
 /** Rutas que exigen sesion iniciada. */
-const PROTECTED_PREFIXES = ['/dashboard', '/biblioteca', '/cuenta', '/admin'];
+const PROTECTED_PREFIXES = ['/dashboard', '/biblioteca', '/cuenta', '/admin', '/afiliados'];
 
 /**
  * Refresca el token de Supabase en cada request y protege el area de miembros.
@@ -47,6 +48,21 @@ export async function updateSession(request: NextRequest) {
       secure: process.env.NODE_ENV === 'production',
       path: '/',
       maxAge: 60 * 60 * 24 * 365,
+    });
+  }
+
+  // Atribucion de afiliado: /?ref=CODIGO deja la marca durante 90 dias.
+  // Se guarda el ultimo codigo visto (last-click), el criterio habitual del
+  // sector y el mas facil de explicar a los propios afiliados.
+  const referralCode = request.nextUrl.searchParams.get(REFERRAL_PARAM);
+
+  if (referralCode && /^[A-Za-z0-9_-]{3,40}$/.test(referralCode)) {
+    response.cookies.set(REFERRAL_COOKIE, referralCode, {
+      httpOnly: true,
+      sameSite: 'lax',
+      secure: process.env.NODE_ENV === 'production',
+      path: '/',
+      maxAge: REFERRAL_COOKIE_MAX_AGE,
     });
   }
 

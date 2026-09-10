@@ -11,7 +11,15 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         // Rutas privadas o sin valor de indexacion. Nada aqui es un control de
         // acceso: el area de miembros la protegen el middleware y RLS.
-        disallow: ['/admin', '/dashboard', '/biblioteca', '/cuenta', '/checkout', '/api/'],
+        disallow: [
+          '/admin',
+          '/dashboard',
+          '/biblioteca',
+          '/cuenta',
+          '/checkout',
+          '/afiliados',
+          '/api/',
+        ],
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,

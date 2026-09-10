@@ -29,4 +29,6 @@ export const METADATA_KEYS = {
   packageId: 'automa_package_id',
   planId: 'automa_plan_id',
   kind: 'automa_kind',
+  /** Afiliado al que se atribuye la venta, si lo hay. */
+  affiliateId: 'automa_affiliate_id',
 } as const;

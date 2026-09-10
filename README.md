@@ -31,6 +31,7 @@ plantillas descargables. Monetización **híbrida**:
 │   ├── admin.md              Panel de administración y modelo de permisos
 │   ├── conversion.md         Bumps, upsells, campañas, A/B y certificados
 │   ├── growth.md             SEO, analítica, email transaccional y testimonios
+│   ├── operations.md         Métricas, dunning, afiliados y Q&A de miembros
 │   ├── payments.md           Configuración de Stripe y flujo de webhooks
 │   ├── video-delivery.md     Protección y entrega de video
 │   ├── deployment.md         Despliegue y variables por entorno
@@ -130,8 +131,8 @@ update public.profiles set role = 'admin' where email = 'tu@email.com';
 ```
 
 El panel queda disponible en `/admin`: catálogo y temario, planes, testimonios,
-ofertas, campañas, experimentos, ventas, alumnos y leads. Ver
-[`docs/admin.md`](./docs/admin.md).
+métricas, ofertas, campañas, experimentos, ventas, alumnos, preguntas,
+afiliados y leads. Ver [`docs/admin.md`](./docs/admin.md).
 
 ## Crecimiento
 
@@ -142,5 +143,8 @@ implementados y apagados por defecto hasta que los configures. Ver
 Order bumps, upsells post-compra, campañas con cupón, recuperación de carritos
 abandonados, experimentos A/B y certificados de finalización: ver
 [`docs/conversion.md`](./docs/conversion.md).
+
+Métricas de negocio (MRR, churn, LTV), dunning, programa de afiliados y Q&A de
+miembros: ver [`docs/operations.md`](./docs/operations.md).
 
 Documentación detallada en [`docs/`](./docs/architecture.md).

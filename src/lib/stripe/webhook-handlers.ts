@@ -8,8 +8,8 @@ import { sendEmail } from '@/lib/email/client';
 import {
   purchaseEmail,
   subscriptionEmail,
-  paymentFailedEmail,
   abandonedCheckoutEmail,
+  dunningEmail,
 } from '@/lib/email/templates';
 import { publicEnv } from '@/lib/env';
 import { absoluteUrl } from '@/lib/utils';
@@ -105,6 +105,176 @@ async function notify(to: string | null, message: { subject: string; html: strin
 // Compra de pago unico
 // -----------------------------------------------------------------------------
 
+/**
+ * Registra la comision de un afiliado.
+ *
+ * `stripe_reference` es unico en la tabla, asi que un reintento de webhook no
+ * puede duplicar la comision. Se guarda en estado `pending`: la aprobacion y el
+ * pago son decisiones humanas, no automaticas — entre otras cosas porque el
+ * cliente todavia puede pedir el reembolso.
+ */
+async function recordCommission(
+  admin: Admin,
+  params: {
+    metadata: Stripe.Metadata | null | undefined;
+    userId: string | null;
+    amountCents: number;
+    currency: string;
+    stripeReference: string;
+    orderId?: string | null;
+    subscriptionId?: string | null;
+  },
+) {
+  const affiliateId = params.metadata?.[METADATA_KEYS.affiliateId];
+  if (!affiliateId || params.amountCents <= 0) return;
+
+  const { data: affiliate } = await admin
+    .from('affiliates')
+    .select('id, commission_pct, is_active')
+    .eq('id', affiliateId)
+    .maybeSingle();
+
+  if (!affiliate?.is_active) return;
+
+  const commissionCents = Math.round((params.amountCents * affiliate.commission_pct) / 100);
+
+  const { error } = await admin.from('referrals').insert({
+    affiliate_id: affiliate.id,
+    referred_user_id: params.userId,
+    order_id: params.orderId ?? null,
+    subscription_id: params.subscriptionId ?? null,
+    stripe_reference: params.stripeReference,
+    amount_cents: params.amountCents,
+    commission_cents: commissionCents,
+    currency: params.currency,
+    status: 'pending',
+  });
+
+  // 23505 = ya registrada. Es el caso normal en un reintento, no un fallo.
+  if (error && (error as { code?: string }).code !== '23505') {
+    logger.error('No se pudo registrar la comision', {
+      affiliateId: affiliate.id,
+      reference: params.stripeReference,
+      message: error.message,
+    });
+    return;
+  }
+
+  logger.info('Comision registrada', {
+    affiliateId: affiliate.id,
+    commissionCents,
+    reference: params.stripeReference,
+  });
+}
+
+/**
+ * Factura de suscripcion cobrada.
+ *
+ * Es lo que hace medibles los ingresos recurrentes: sin registrar las facturas
+ * no hay MRR real, ni LTV, ni comision de afiliado sobre las renovaciones.
+ * Ademas cierra el ciclo de dunning: un cobro correcto borra los intentos
+ * fallidos acumulados.
+ */
+async function handleInvoicePaid(admin: Admin, invoice: Stripe.Invoice) {
+  if (!invoice.subscription) return;
+
+  const subscriptionId =
+    typeof invoice.subscription === 'string' ? invoice.subscription : invoice.subscription.id;
+
+  const userId = await resolveUserId(admin, invoice.metadata, customerIdOf(invoice.customer));
+  if (!userId) return;
+
+  const { data: subscription } = await admin
+    .from('subscriptions')
+    .select('id')
+    .eq('stripe_subscription_id', subscriptionId)
+    .maybeSingle();
+
+  const amountCents = invoice.amount_paid ?? 0;
+
+  const { error } = await admin.from('subscription_invoices').insert({
+    user_id: userId,
+    subscription_id: subscription?.id ?? null,
+    stripe_invoice_id: invoice.id,
+    amount_cents: amountCents,
+    currency: invoice.currency ?? 'usd',
+    billing_reason: invoice.billing_reason ?? null,
+  });
+
+  if (error && (error as { code?: string }).code !== '23505') {
+    logger.error('No se pudo registrar la factura de suscripcion', {
+      invoiceId: invoice.id,
+      message: error.message,
+    });
+  }
+
+  if (subscription) {
+    await admin
+      .from('subscriptions')
+      .update({ dunning_attempts: 0, dunning_last_at: null, grace_until: null })
+      .eq('id', subscription.id);
+  }
+
+  // La comision recurrente usa la metadata de la suscripcion, que es donde vive
+  // el afiliado del alta original.
+  const stripeSubscription = await getStripe().subscriptions.retrieve(subscriptionId);
+
+  await recordCommission(admin, {
+    metadata: stripeSubscription.metadata,
+    userId,
+    amountCents,
+    currency: invoice.currency ?? 'usd',
+    stripeReference: `invoice:${invoice.id}`,
+    subscriptionId: subscription?.id ?? null,
+  });
+}
+
+/**
+ * Dunning propio: avisos escalados mientras Stripe reintenta el cobro.
+ *
+ * El numero de intento lo trae la propia factura (`attempt_count`), de modo que
+ * la escalada no necesita ningun proceso programado: cada reintento de Stripe
+ * dispara el aviso que le corresponde.
+ */
+async function handlePaymentFailed(admin: Admin, invoice: Stripe.Invoice) {
+  const customerId = customerIdOf(invoice.customer);
+  const attempt = invoice.attempt_count ?? 1;
+
+  logger.warn('Pago de factura fallido', { invoiceId: invoice.id, customerId, attempt });
+
+  const userId = await resolveUserId(admin, invoice.metadata, customerId);
+  if (!userId) return;
+
+  const subscriptionId =
+    typeof invoice.subscription === 'string'
+      ? invoice.subscription
+      : (invoice.subscription?.id ?? null);
+
+  if (subscriptionId) {
+    // El periodo de gracia se ancla al fin del intervalo pagado si se conoce; si
+    // no, a una semana desde ahora. Cortar el acceso durante los reintentos
+    // genera bajas que se habrian recuperado solas.
+    const graceUntil = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString();
+
+    await admin
+      .from('subscriptions')
+      .update({
+        dunning_attempts: attempt,
+        dunning_last_at: new Date().toISOString(),
+        grace_until: graceUntil,
+      })
+      .eq('stripe_subscription_id', subscriptionId);
+  }
+
+  await notify(
+    await emailOf(admin, userId),
+    dunningEmail({
+      attempt,
+      portalUrl: absoluteUrl('/cuenta', publicEnv.NEXT_PUBLIC_SITE_URL),
+    }),
+  );
+}
+
 /** Lee los paquetes comprados de la metadata, con la clave heredada de reserva. */
 function packageIdsFrom(metadata: Stripe.Metadata | null | undefined): string[] {
   const many = metadata?.[METADATA_KEYS.packageIds];
@@ -191,6 +361,15 @@ async function handleOneTimePurchase(admin: Admin, session: Stripe.Checkout.Sess
   logger.info('Acceso a paquetes concedido', {
     userId,
     packageCount: packageIds.length,
+    orderId: order.id,
+  });
+
+  await recordCommission(admin, {
+    metadata: session.metadata,
+    userId,
+    amountCents: session.amount_total ?? 0,
+    currency: session.currency ?? 'usd',
+    stripeReference: `session:${session.id}`,
     orderId: order.id,
   });
 
@@ -473,25 +652,13 @@ export async function handleStripeEvent(event: Stripe.Event): Promise<void> {
       await revokeSubscription(admin, event.data.object);
       return;
 
-    case 'invoice.payment_failed': {
-      const invoice = event.data.object;
-      const customerId = customerIdOf(invoice.customer);
-
-      logger.warn('Pago de factura fallido', { invoiceId: invoice.id, customerId });
-
-      // Aviso temprano: Stripe reintentara varios dias, pero avisar ahora
-      // recupera pagos que de otro modo acaban en baja involuntaria.
-      const userId = await resolveUserId(admin, invoice.metadata, customerId);
-      if (userId) {
-        await notify(
-          await emailOf(admin, userId),
-          paymentFailedEmail({
-            portalUrl: absoluteUrl('/cuenta', publicEnv.NEXT_PUBLIC_SITE_URL),
-          }),
-        );
-      }
+    case 'invoice.paid':
+      await handleInvoicePaid(admin, event.data.object);
       return;
-    }
+
+    case 'invoice.payment_failed':
+      await handlePaymentFailed(admin, event.data.object);
+      return;
 
     case 'charge.refunded':
       await revokeForCharge(admin, event.data.object, 'refund');

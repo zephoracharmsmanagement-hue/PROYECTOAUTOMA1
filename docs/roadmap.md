@@ -37,12 +37,19 @@ recomienda el test **secuencial** (mismo precio para todos durante un periodo) e
 lugar del simultáneo entre usuarios, que obliga a informar del precio
 personalizado según la Directiva UE 2019/2161. Ver `docs/conversion.md`.
 
-## Fase 3 — Retención y operación
+## Fase 3 — Retención y operación ✅
 
-- [ ] Comunidad o Q&A para miembros All Access
-- [ ] Recuperación de pagos fallidos (dunning) con avisos propios
-- [ ] Métricas de negocio: MRR, churn, LTV, conversión por paquete
-- [ ] Programa de afiliados
+- [x] Q&A para miembros por paquete y lección, con respuestas destacadas del
+      equipo y moderación
+- [x] Dunning propio con avisos escalados por número de intento, periodo de
+      gracia y aviso dentro de la aplicación
+- [x] Métricas de negocio: MRR, ARR, churn, ARPU, LTV y embudo por paquete, con
+      aviso de muestra insuficiente
+- [x] Programa de afiliados con atribución a 90 días, comisión también sobre
+      renovaciones y liquidación manual
+
+Requiere suscribir dos eventos nuevos en Stripe: `invoice.paid` y
+`checkout.session.expired`. Ver `docs/payments.md`.
 
 ## Fase 4 — Producto
 

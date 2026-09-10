@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ButtonLink } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { DunningNotice } from '@/components/members/dunning-notice';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState, canAccessPackage } from '@/lib/entitlements';
 
@@ -14,17 +15,30 @@ export default async function DashboardPage() {
   if (!access.userId) redirect('/login?next=/dashboard');
 
   const supabase = await createSupabaseServerClient();
-  const { data: packages } = await supabase
-    .from('packages')
-    .select('id, slug, title, subtitle, category, level, included_in_subscription')
-    .eq('status', 'published')
-    .order('sort_order');
+
+  const [{ data: packages }, { data: subscriptions }] = await Promise.all([
+    supabase
+      .from('packages')
+      .select('id, slug, title, subtitle, category, level, included_in_subscription')
+      .eq('status', 'published')
+      .order('sort_order'),
+    supabase
+      .from('subscriptions')
+      .select('status, dunning_attempts, grace_until, current_period_end')
+      .eq('user_id', access.userId),
+  ]);
 
   const owned = (packages ?? []).filter((pkg) => canAccessPackage(access, pkg));
   const locked = (packages ?? []).filter((pkg) => !canAccessPackage(access, pkg));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16">
+      {subscriptions && subscriptions.length > 0 && (
+        <div className="mb-8">
+          <DunningNotice subscriptions={subscriptions} />
+        </div>
+      )}
+
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Mi biblioteca</h1>

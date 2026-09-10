@@ -5,6 +5,7 @@ import { getStripe, METADATA_KEYS } from '@/lib/stripe/client';
 import { getOrCreateStripeCustomer } from '@/lib/stripe/customers';
 import { createSupabaseAdminClient } from '@/lib/supabase/admin';
 import { isLive } from '@/lib/campaigns';
+import { resolveAffiliateId } from '@/lib/affiliates';
 import { publicEnv } from '@/lib/env';
 import { absoluteUrl } from '@/lib/utils';
 import { logger } from '@/lib/logger';
@@ -199,7 +200,16 @@ export async function createCheckoutSession(
     fullName: user.fullName,
   });
 
-  const discount = await resolveCampaignDiscount(admin);
+  const [discount, affiliateId] = await Promise.all([
+    resolveCampaignDiscount(admin),
+    resolveAffiliateId(user.id),
+  ]);
+
+  // La metadata de afiliado viaja en todos los checkouts; el webhook decide si
+  // genera comision.
+  const affiliateMetadata: Record<string, string> = affiliateId
+    ? { [METADATA_KEYS.affiliateId]: affiliateId }
+    : {};
 
   const common = {
     customer: customerId,
@@ -250,6 +260,7 @@ export async function createCheckoutSession(
       [METADATA_KEYS.userId]: user.id,
       [METADATA_KEYS.packageIds]: offer.offer_package_id,
       [METADATA_KEYS.kind]: 'package',
+      ...affiliateMetadata,
     };
 
     const session = await stripe.checkout.sessions.create({
@@ -304,6 +315,7 @@ export async function createCheckoutSession(
       [METADATA_KEYS.userId]: user.id,
       [METADATA_KEYS.packageIds]: lines.map((line) => line.packageId).join(','),
       [METADATA_KEYS.kind]: 'package',
+      ...affiliateMetadata,
     };
 
     const session = await stripe.checkout.sessions.create({
@@ -345,12 +357,14 @@ export async function createCheckoutSession(
         [METADATA_KEYS.userId]: user.id,
         [METADATA_KEYS.planId]: plan.id,
         [METADATA_KEYS.kind]: 'subscription',
+        ...affiliateMetadata,
       },
     },
     metadata: {
       [METADATA_KEYS.userId]: user.id,
       [METADATA_KEYS.planId]: plan.id,
       [METADATA_KEYS.kind]: 'subscription',
+      ...affiliateMetadata,
     },
     success_url: absoluteUrl(
       '/checkout/exito?session_id={CHECKOUT_SESSION_ID}',
