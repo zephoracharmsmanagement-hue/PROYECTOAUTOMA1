@@ -1,0 +1,242 @@
+/**
+ * Tipos de la base de datos.
+ *
+ * Este archivo esta escrito a mano para que el proyecto compile sin depender de
+ * una conexion a Supabase. En cuanto tengas el proyecto enlazado, regeneralo con:
+ *
+ *   npm run db:types
+ *
+ * (equivale a `supabase gen types typescript --local > src/types/database.types.ts`)
+ */
+
+export type Json = string | number | boolean | null | { [key: string]: Json } | Json[];
+
+export type UserRole = 'customer' | 'admin';
+export type ContentStatus = 'draft' | 'published' | 'archived';
+export type OrderStatus = 'pending' | 'paid' | 'refunded' | 'failed';
+export type EntitlementKind = 'package' | 'all_access';
+export type EntitlementSource = 'purchase' | 'subscription' | 'manual_grant';
+export type EntitlementStatus = 'active' | 'revoked' | 'expired';
+export type BillingInterval = 'month' | 'year';
+export type VideoProviderName = 'bunny' | 'mux' | 'youtube' | 'none';
+
+export type ProfileRow = {
+  id: string;
+  email: string;
+  full_name: string | null;
+  avatar_url: string | null;
+  role: UserRole;
+  stripe_customer_id: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type PackageRow = {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string | null;
+  description: string | null;
+  outcome: string | null;
+  category: string;
+  level: string;
+  cover_url: string | null;
+  features: Array<{ title: string; detail: string }>;
+  price_one_time_cents: number | null;
+  compare_at_price_cents: number | null;
+  currency: string;
+  stripe_price_id_one_time: string | null;
+  included_in_subscription: boolean;
+  status: ContentStatus;
+  sort_order: number;
+  created_at: string;
+  updated_at: string;
+};
+
+export type ModuleRow = {
+  id: string;
+  package_id: string;
+  title: string;
+  summary: string | null;
+  sort_order: number;
+  created_at: string;
+};
+
+export type LessonRow = {
+  id: string;
+  module_id: string;
+  slug: string;
+  title: string;
+  description: string | null;
+  provider: VideoProviderName;
+  video_asset_id: string | null;
+  duration_seconds: number;
+  is_preview: boolean;
+  resources: Array<{ label: string; url: string }>;
+  sort_order: number;
+  created_at: string;
+};
+
+/** Vista publica del temario: nunca expone `video_asset_id`. */
+export type LessonOutlineRow = {
+  id: string;
+  module_id: string;
+  package_id: string;
+  slug: string;
+  title: string;
+  description: string | null;
+  duration_seconds: number;
+  is_preview: boolean;
+  sort_order: number;
+};
+
+export type PlanRow = {
+  id: string;
+  slug: string;
+  name: string;
+  description: string | null;
+  interval: BillingInterval;
+  price_cents: number;
+  currency: string;
+  stripe_price_id: string;
+  features: string[];
+  trial_days: number;
+  is_active: boolean;
+  sort_order: number;
+  created_at: string;
+};
+
+export type OrderRow = {
+  id: string;
+  user_id: string;
+  package_id: string | null;
+  stripe_checkout_session_id: string;
+  stripe_payment_intent_id: string | null;
+  amount_cents: number;
+  currency: string;
+  status: OrderStatus;
+  created_at: string;
+  updated_at: string;
+};
+
+export type SubscriptionRow = {
+  id: string;
+  user_id: string;
+  plan_id: string | null;
+  stripe_subscription_id: string;
+  stripe_price_id: string | null;
+  status: string;
+  current_period_end: string | null;
+  cancel_at_period_end: boolean;
+  created_at: string;
+  updated_at: string;
+};
+
+export type EntitlementRow = {
+  id: string;
+  user_id: string;
+  kind: EntitlementKind;
+  package_id: string | null;
+  source: EntitlementSource;
+  status: EntitlementStatus;
+  order_id: string | null;
+  subscription_id: string | null;
+  granted_at: string;
+  expires_at: string | null;
+  created_at: string;
+};
+
+export type LessonProgressRow = {
+  user_id: string;
+  lesson_id: string;
+  seconds_watched: number;
+  completed_at: string | null;
+  updated_at: string;
+};
+
+export type WebhookEventRow = {
+  id: string;
+  stripe_event_id: string;
+  type: string;
+  payload: Json | null;
+  processed_at: string;
+};
+
+export type LeadRow = {
+  id: string;
+  email: string;
+  source: string;
+  metadata: Json;
+  created_at: string;
+};
+
+/** Forma de una relacion de clave foranea, tal como la genera Supabase. */
+type Relationship<Columns extends string[], Referenced extends string> = {
+  foreignKeyName: string;
+  columns: Columns;
+  isOneToOne: boolean;
+  referencedRelation: Referenced;
+  referencedColumns: string[];
+};
+
+type Table<
+  Row,
+  Relationships extends readonly unknown[] = [],
+  Insert = Partial<Row>,
+  Update = Partial<Row>,
+> = {
+  Row: Row;
+  Insert: Insert;
+  Update: Update;
+  Relationships: Relationships;
+};
+
+export type Database = {
+  public: {
+    Tables: {
+      profiles: Table<ProfileRow>;
+      packages: Table<PackageRow>;
+      modules: Table<ModuleRow, [Relationship<['package_id'], 'packages'>]>;
+      lessons: Table<LessonRow, [Relationship<['module_id'], 'modules'>]>;
+      plans: Table<PlanRow>;
+      orders: Table<
+        OrderRow,
+        [Relationship<['package_id'], 'packages'>, Relationship<['user_id'], 'profiles'>]
+      >;
+      subscriptions: Table<
+        SubscriptionRow,
+        [Relationship<['plan_id'], 'plans'>, Relationship<['user_id'], 'profiles'>]
+      >;
+      entitlements: Table<
+        EntitlementRow,
+        [
+          Relationship<['package_id'], 'packages'>,
+          Relationship<['order_id'], 'orders'>,
+          Relationship<['subscription_id'], 'subscriptions'>,
+        ]
+      >;
+      lesson_progress: Table<LessonProgressRow>;
+      webhook_events: Table<WebhookEventRow>;
+      leads: Table<LeadRow>;
+    };
+    Views: {
+      lesson_outline: { Row: LessonOutlineRow; Relationships: [] };
+    };
+    Functions: {
+      has_all_access: { Args: { p_user_id: string }; Returns: boolean };
+      has_package_access: { Args: { p_user_id: string; p_package_id: string }; Returns: boolean };
+      is_admin: { Args: { p_user_id: string }; Returns: boolean };
+    };
+    Enums: {
+      user_role: UserRole;
+      content_status: ContentStatus;
+      order_status: OrderStatus;
+      entitlement_kind: EntitlementKind;
+      entitlement_source: EntitlementSource;
+      entitlement_status: EntitlementStatus;
+      billing_interval: BillingInterval;
+      video_provider: VideoProviderName;
+    };
+    CompositeTypes: Record<string, never>;
+  };
+};
