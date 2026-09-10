@@ -29,6 +29,7 @@ plantillas descargables. Monetización **híbrida**:
 │   ├── architecture.md       Visión general y flujo de datos
 │   ├── data-model.md         Tablas, relaciones y decisiones de modelado
 │   ├── admin.md              Panel de administración y modelo de permisos
+│   ├── conversion.md         Bumps, upsells, campañas, A/B y certificados
 │   ├── growth.md             SEO, analítica, email transaccional y testimonios
 │   ├── payments.md           Configuración de Stripe y flujo de webhooks
 │   ├── video-delivery.md     Protección y entrega de video
@@ -129,12 +130,17 @@ update public.profiles set role = 'admin' where email = 'tu@email.com';
 ```
 
 El panel queda disponible en `/admin`: catálogo y temario, planes, testimonios,
-ventas, alumnos y leads. Ver [`docs/admin.md`](./docs/admin.md).
+ofertas, campañas, experimentos, ventas, alumnos y leads. Ver
+[`docs/admin.md`](./docs/admin.md).
 
 ## Crecimiento
 
 SEO técnico, analítica de conversión, email transaccional y prueba social están
 implementados y apagados por defecto hasta que los configures. Ver
 [`docs/growth.md`](./docs/growth.md).
+
+Order bumps, upsells post-compra, campañas con cupón, recuperación de carritos
+abandonados, experimentos A/B y certificados de finalización: ver
+[`docs/conversion.md`](./docs/conversion.md).
 
 Documentación detallada en [`docs/`](./docs/architecture.md).

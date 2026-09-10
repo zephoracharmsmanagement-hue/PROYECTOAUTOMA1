@@ -5,7 +5,12 @@ import { getStripe, METADATA_KEYS } from '@/lib/stripe/client';
 import { createSupabaseAdminClient } from '@/lib/supabase/admin';
 import { logger } from '@/lib/logger';
 import { sendEmail } from '@/lib/email/client';
-import { purchaseEmail, subscriptionEmail, paymentFailedEmail } from '@/lib/email/templates';
+import {
+  purchaseEmail,
+  subscriptionEmail,
+  paymentFailedEmail,
+  abandonedCheckoutEmail,
+} from '@/lib/email/templates';
 import { publicEnv } from '@/lib/env';
 import { absoluteUrl } from '@/lib/utils';
 import type { Json } from '@/types/database.types';
@@ -100,15 +105,28 @@ async function notify(to: string | null, message: { subject: string; html: strin
 // Compra de pago unico
 // -----------------------------------------------------------------------------
 
+/** Lee los paquetes comprados de la metadata, con la clave heredada de reserva. */
+function packageIdsFrom(metadata: Stripe.Metadata | null | undefined): string[] {
+  const many = metadata?.[METADATA_KEYS.packageIds];
+  if (many)
+    return many
+      .split(',')
+      .map((id) => id.trim())
+      .filter(Boolean);
+
+  const single = metadata?.[METADATA_KEYS.packageId];
+  return single ? [single] : [];
+}
+
 async function handleOneTimePurchase(admin: Admin, session: Stripe.Checkout.Session) {
   const userId = await resolveUserId(admin, session.metadata, customerIdOf(session.customer));
-  const packageId = session.metadata?.[METADATA_KEYS.packageId] ?? null;
+  const packageIds = packageIdsFrom(session.metadata);
 
-  if (!userId || !packageId) {
+  if (!userId || packageIds.length === 0) {
     logger.error('Checkout de pago unico sin metadata suficiente', {
       sessionId: session.id,
       userId,
-      packageId,
+      packageCount: packageIds.length,
     });
     return;
   }
@@ -118,13 +136,14 @@ async function handleOneTimePurchase(admin: Admin, session: Stripe.Checkout.Sess
       ? session.payment_intent
       : (session.payment_intent?.id ?? null);
 
-  // La orden se identifica por la sesion de checkout: reintentos no duplican.
+  // La orden se identifica por la sesion de checkout: reintentos no duplican, y
+  // si ya existia como `pending` (registrada al crear la sesion) se actualiza.
   const { data: order, error: orderError } = await admin
     .from('orders')
     .upsert(
       {
         user_id: userId,
-        package_id: packageId,
+        package_id: packageIds[0],
         stripe_checkout_session_id: session.id,
         stripe_payment_intent_id: paymentIntentId,
         amount_cents: session.amount_total ?? 0,
@@ -138,17 +157,18 @@ async function handleOneTimePurchase(admin: Admin, session: Stripe.Checkout.Sess
 
   if (orderError) throw new Error(`No se pudo registrar la orden: ${orderError.message}`);
 
+  // Un checkout con order bump concede acceso a varios paquetes de una vez.
   const { error: entitlementError } = await admin.from('entitlements').upsert(
-    {
+    packageIds.map((packageId) => ({
       user_id: userId,
-      kind: 'package',
+      kind: 'package' as const,
       package_id: packageId,
-      source: 'purchase',
-      status: 'active',
+      source: 'purchase' as const,
+      status: 'active' as const,
       order_id: order.id,
       // Compra vitalicia: sin caducidad.
       expires_at: null,
-    },
+    })),
     { onConflict: 'user_id,package_id' },
   );
 
@@ -156,19 +176,86 @@ async function handleOneTimePurchase(admin: Admin, session: Stripe.Checkout.Sess
     throw new Error(`No se pudo conceder el acceso al paquete: ${entitlementError.message}`);
   }
 
-  logger.info('Acceso a paquete concedido', { userId, packageId, orderId: order.id });
+  // Si la orden se creo en el webhook (sin fila `pending` previa), las lineas
+  // aun no existen. Este upsert las deja consistentes en ambos caminos.
+  await admin.from('order_items').upsert(
+    packageIds.map((packageId, index) => ({
+      order_id: order.id,
+      package_id: packageId,
+      kind: index === 0 ? ('main' as const) : ('bump' as const),
+      amount_cents: 0,
+    })),
+    { onConflict: 'order_id,package_id', ignoreDuplicates: true },
+  );
 
-  const { data: pkg } = await admin
-    .from('packages')
-    .select('title')
-    .eq('id', packageId)
-    .maybeSingle();
+  logger.info('Acceso a paquetes concedido', {
+    userId,
+    packageCount: packageIds.length,
+    orderId: order.id,
+  });
+
+  const { data: packages } = await admin.from('packages').select('title').in('id', packageIds);
+
+  const titles = (packages ?? []).map((pkg) => pkg.title);
 
   await notify(
     await emailOf(admin, userId),
     purchaseEmail({
-      packageTitle: pkg?.title ?? 'tu nuevo paquete',
+      packageTitle: titles.length > 0 ? titles.join(' + ') : 'tu nuevo paquete',
       libraryUrl: absoluteUrl('/dashboard', publicEnv.NEXT_PUBLIC_SITE_URL),
+    }),
+  );
+}
+
+/**
+ * Carrito abandonado: Stripe caduca las sesiones no pagadas y avisa con
+ * `checkout.session.expired`.
+ *
+ * La orden pendiente pasa a `expired` (queda medible en el panel) y se envia un
+ * unico email de recuperacion. La idempotencia del webhook garantiza que no se
+ * envie dos veces.
+ */
+async function handleAbandonedCheckout(admin: Admin, session: Stripe.Checkout.Session) {
+  const userId = await resolveUserId(admin, session.metadata, customerIdOf(session.customer));
+  const packageIds = packageIdsFrom(session.metadata);
+
+  await admin
+    .from('orders')
+    .update({ status: 'expired' })
+    .eq('stripe_checkout_session_id', session.id)
+    .eq('status', 'pending');
+
+  // El paquete principal es el que se ofrece para retomar la compra.
+  const mainPackageId = packageIds[0];
+  if (!userId || !mainPackageId) return;
+
+  const { data: pkg } = await admin
+    .from('packages')
+    .select('title, slug')
+    .eq('id', mainPackageId)
+    .maybeSingle();
+
+  if (!pkg) return;
+
+  // Ya lo compro por otra via entre medias: seria absurdo pedirle que vuelva.
+  const { data: owned } = await admin
+    .from('entitlements')
+    .select('id')
+    .eq('user_id', userId)
+    .eq('kind', 'package')
+    .eq('package_id', mainPackageId)
+    .eq('status', 'active')
+    .maybeSingle();
+
+  if (owned) return;
+
+  logger.info('Checkout abandonado', { sessionId: session.id, userId });
+
+  await notify(
+    await emailOf(admin, userId),
+    abandonedCheckoutEmail({
+      packageTitle: pkg.title,
+      packageUrl: absoluteUrl(`/paquetes/${pkg.slug}`, publicEnv.NEXT_PUBLIC_SITE_URL),
     }),
   );
 }
@@ -315,16 +402,34 @@ async function revokeForCharge(admin: Admin, charge: Stripe.Charge, reason: stri
 
   await admin.from('orders').update({ status: 'refunded' }).eq('id', order.id);
 
-  if (order.package_id) {
+  // Se revoca TODO lo que traia la orden, no solo el paquete principal: un
+  // reembolso de un checkout con order bump devuelve tambien los anadidos.
+  const { data: items } = await admin
+    .from('order_items')
+    .select('package_id')
+    .eq('order_id', order.id);
+
+  const packageIds = (items ?? [])
+    .map((item) => item.package_id)
+    .filter((id): id is string => Boolean(id));
+
+  // Ordenes anteriores a `order_items` solo tienen el paquete de la cabecera.
+  if (packageIds.length === 0 && order.package_id) packageIds.push(order.package_id);
+
+  if (packageIds.length > 0) {
     await admin
       .from('entitlements')
       .update({ status: 'revoked' })
       .eq('user_id', order.user_id)
       .eq('kind', 'package')
-      .eq('package_id', order.package_id);
+      .in('package_id', packageIds);
   }
 
-  logger.info('Acceso revocado por reembolso o disputa', { orderId: order.id, reason });
+  logger.info('Acceso revocado por reembolso o disputa', {
+    orderId: order.id,
+    packageCount: packageIds.length,
+    reason,
+  });
 }
 
 // -----------------------------------------------------------------------------
@@ -354,6 +459,10 @@ export async function handleStripeEvent(event: Stripe.Event): Promise<void> {
       }
       return;
     }
+
+    case 'checkout.session.expired':
+      await handleAbandonedCheckout(admin, event.data.object);
+      return;
 
     case 'customer.subscription.created':
     case 'customer.subscription.updated':

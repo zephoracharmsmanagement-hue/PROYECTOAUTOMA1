@@ -12,25 +12,38 @@ function formatDate(value: string): string {
 export default async function AdminSalesPage() {
   const { supabase } = await requireAdmin();
 
-  const [{ data: orders }, { data: subscriptions }, { data: events }] = await Promise.all([
-    supabase
-      .from('orders')
-      .select('id, amount_cents, currency, status, created_at, profiles(email), packages(title)')
-      .order('created_at', { ascending: false })
-      .limit(50),
-    supabase
-      .from('subscriptions')
-      .select(
-        'id, status, current_period_end, cancel_at_period_end, created_at, profiles(email), plans(name)',
-      )
-      .order('created_at', { ascending: false })
-      .limit(50),
-    supabase
-      .from('webhook_events')
-      .select('id, type, stripe_event_id, processed_at')
-      .order('processed_at', { ascending: false })
-      .limit(15),
-  ]);
+  const [{ data: orders }, { data: subscriptions }, { data: events }, { data: abandoned }] =
+    await Promise.all([
+      supabase
+        .from('orders')
+        .select('id, amount_cents, currency, status, created_at, profiles(email), packages(title)')
+        .order('created_at', { ascending: false })
+        .limit(50),
+      supabase
+        .from('subscriptions')
+        .select(
+          'id, status, current_period_end, cancel_at_period_end, created_at, profiles(email), plans(name)',
+        )
+        .order('created_at', { ascending: false })
+        .limit(50),
+      supabase
+        .from('webhook_events')
+        .select('id, type, stripe_event_id, processed_at')
+        .order('processed_at', { ascending: false })
+        .limit(15),
+      // Carritos abandonados: sesiones de checkout que caducaron sin pagar.
+      supabase
+        .from('orders')
+        .select('id, amount_cents, currency, status, created_at, profiles(email), packages(title)')
+        .in('status', ['pending', 'expired'])
+        .order('created_at', { ascending: false })
+        .limit(25),
+    ]);
+
+  const abandonedList = abandoned ?? [];
+  const lostRevenue = abandonedList
+    .filter((order) => order.status === 'expired')
+    .reduce((sum, order) => sum + order.amount_cents, 0);
 
   return (
     <div className="flex flex-col gap-10">
@@ -130,6 +143,60 @@ export default async function AdminSalesPage() {
 
         {(subscriptions ?? []).length === 0 && (
           <p className="mt-4 text-sm text-mist-400">Todavía no hay suscripciones.</p>
+        )}
+      </section>
+
+      <section>
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <h2 className="text-xl font-semibold">Carritos abandonados</h2>
+            <p className="mt-1 text-sm text-mist-400">
+              <code className="text-brand-400">pending</code> es un pago aún en curso;{' '}
+              <code className="text-brand-400">expired</code> es una sesión que caducó sin pagar. A
+              cada abandono se le envía un email de recuperación.
+            </p>
+          </div>
+          {lostRevenue > 0 && (
+            <p className="text-sm text-mist-400">
+              Sin cerrar:{' '}
+              <span className="font-semibold text-amber-400">{formatPrice(lostRevenue)}</span>
+            </p>
+          )}
+        </div>
+
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full min-w-[640px] text-sm">
+            <thead className="border-b border-ink-700 text-left text-mist-400">
+              <tr>
+                <th className="py-2 pr-4 font-medium">Fecha</th>
+                <th className="py-2 pr-4 font-medium">Cliente</th>
+                <th className="py-2 pr-4 font-medium">Paquete</th>
+                <th className="py-2 pr-4 font-medium">Importe</th>
+                <th className="py-2 font-medium">Estado</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-ink-800">
+              {abandonedList.map((order) => (
+                <tr key={order.id}>
+                  <td className="py-3 pr-4 text-mist-400">{formatDate(order.created_at)}</td>
+                  <td className="py-3 pr-4">
+                    {(order.profiles as { email: string } | null)?.email ?? '—'}
+                  </td>
+                  <td className="py-3 pr-4">
+                    {(order.packages as { title: string } | null)?.title ?? '—'}
+                  </td>
+                  <td className="py-3 pr-4">{formatPrice(order.amount_cents, order.currency)}</td>
+                  <td className="py-3">
+                    <Badge>{order.status}</Badge>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {abandonedList.length === 0 && (
+          <p className="mt-4 text-sm text-mist-400">Ningún carrito abandonado. Buena señal.</p>
         )}
       </section>
 

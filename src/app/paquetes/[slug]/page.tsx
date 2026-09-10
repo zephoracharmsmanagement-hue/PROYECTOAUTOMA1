@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Badge } from '@/components/ui/badge';
 import { ButtonLink } from '@/components/ui/button';
-import { CheckoutButton } from '@/components/members/checkout-button';
+import { PackagePurchase, type BumpOffer } from '@/components/members/package-purchase';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState, canAccessPackage } from '@/lib/entitlements';
 import { formatDuration, formatPrice } from '@/lib/utils';
@@ -31,22 +31,54 @@ async function loadPackage(slug: string) {
 
   if (!pkg) return null;
 
-  const [{ data: modules }, { data: outline }, { data: testimonials }] = await Promise.all([
-    supabase.from('modules').select('*').eq('package_id', pkg.id).order('sort_order'),
-    supabase.from('lesson_outline').select('*').eq('package_id', pkg.id).order('sort_order'),
-    supabase
-      .from('testimonials')
-      .select('*')
-      .eq('package_id', pkg.id)
-      .eq('status', 'published')
-      .order('sort_order'),
-  ]);
+  const [{ data: modules }, { data: outline }, { data: testimonials }, { data: offers }] =
+    await Promise.all([
+      supabase.from('modules').select('*').eq('package_id', pkg.id).order('sort_order'),
+      supabase.from('lesson_outline').select('*').eq('package_id', pkg.id).order('sort_order'),
+      supabase
+        .from('testimonials')
+        .select('*')
+        .eq('package_id', pkg.id)
+        .eq('status', 'published')
+        .order('sort_order'),
+      // Ofertas que se muestran como order bump dentro del checkout.
+      supabase
+        .from('offers')
+        .select(
+          'id, headline, description, price_cents, offer_package_id, packages!offers_offer_package_id_fkey(price_one_time_cents, compare_at_price_cents, currency)',
+        )
+        .eq('source_package_id', pkg.id)
+        .eq('placement', 'bump')
+        .eq('is_active', true)
+        .order('sort_order'),
+    ]);
+
+  const bumps: BumpOffer[] = (offers ?? []).map((offer) => {
+    const offered = offer.packages as unknown as {
+      price_one_time_cents: number | null;
+      compare_at_price_cents: number | null;
+      currency: string;
+    } | null;
+
+    return {
+      id: offer.id,
+      headline: offer.headline,
+      description: offer.description,
+      // Precio especial de la oferta; si no lo tiene, el precio normal.
+      priceCents: offer.price_cents ?? offered?.price_one_time_cents ?? null,
+      compareAtCents: offer.price_cents
+        ? (offered?.price_one_time_cents ?? null)
+        : (offered?.compare_at_price_cents ?? null),
+      currency: offered?.currency ?? pkg.currency,
+    };
+  });
 
   return {
     pkg,
     modules: modules ?? [],
     outline: outline ?? [],
     testimonials: testimonials ?? [],
+    bumps,
   };
 }
 
@@ -77,7 +109,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
   const data = await loadPackage(slug);
   if (!data) notFound();
 
-  const { pkg, modules, outline, testimonials } = data;
+  const { pkg, modules, outline, testimonials, bumps } = data;
   const siteUrl = publicEnv.NEXT_PUBLIC_SITE_URL;
   const access = await getAccessState();
   const owned = canAccessPackage(access, pkg);
@@ -191,13 +223,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
                 </p>
 
                 {pkg.price_one_time_cents && pkg.stripe_price_id_one_time && (
-                  <CheckoutButton
-                    intent={{ kind: 'package', slug: pkg.slug }}
-                    size="lg"
-                    className="mt-6"
-                  >
-                    Comprar este paquete
-                  </CheckoutButton>
+                  <PackagePurchase slug={pkg.slug} label="Comprar este paquete" bumps={bumps} />
                 )}
 
                 {pkg.included_in_subscription && (

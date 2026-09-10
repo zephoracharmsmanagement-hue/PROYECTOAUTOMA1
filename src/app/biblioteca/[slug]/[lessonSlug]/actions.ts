@@ -6,6 +6,7 @@ import { createSupabaseServerClient } from '@/lib/supabase/server';
 
 const inputSchema = z.object({
   lessonId: z.string().uuid(),
+  packageId: z.string().uuid(),
   packageSlug: z.string().min(1).max(120),
 });
 
@@ -38,6 +39,14 @@ export async function markLessonComplete(input: z.infer<typeof inputSchema>) {
 
   if (error) return { ok: false as const, error: 'No se pudo guardar tu progreso.' };
 
+  // Si esta era la última lección pendiente, se emite el certificado. La función
+  // SQL es idempotente y vuelve a comprobar el acceso, así que llamarla en cada
+  // lección no tiene efectos secundarios.
+  const { data: certificateCode } = await supabase.rpc('issue_certificate_if_complete', {
+    p_package_id: parsed.data.packageId,
+  });
+
   revalidatePath(`/biblioteca/${parsed.data.packageSlug}`);
-  return { ok: true as const };
+
+  return { ok: true as const, certificateCode: certificateCode ?? null };
 }

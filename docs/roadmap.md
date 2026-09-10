@@ -22,13 +22,20 @@
 - [ ] SEO: `sitemap.xml`, `robots.txt`, datos estructurados de producto
 - [ ] Testimonios y casos reales en la ficha de venta
 
-## Fase 2 — Conversión
+## Fase 2 — Conversión ✅
 
-- [ ] Order bumps y upsell post-compra
-- [ ] Cupones y campañas de lanzamiento (Stripe promotion codes)
-- [ ] Secuencia de email para carritos abandonados
-- [ ] Pruebas A/B de titular y precio en la landing
-- [ ] Certificados de finalización de paquete
+- [x] Order bumps (segunda línea en el mismo pago) y upsell post-compra
+- [x] Campañas con código promocional de Stripe aplicado automáticamente y
+      barra de anuncio con ventana de fechas
+- [x] Recuperación de carritos abandonados vía `checkout.session.expired`
+- [x] Motor de experimentos A/B con reparto determinista, aplicado al hero de la
+      portada y segmentando todo el embudo de analítica
+- [x] Certificados de finalización con verificación pública
+
+Decisión tomada sobre el A/B de precio: se implementa el motor, pero se
+recomienda el test **secuencial** (mismo precio para todos durante un periodo) en
+lugar del simultáneo entre usuarios, que obliga a informar del precio
+personalizado según la Directiva UE 2019/2161. Ver `docs/conversion.md`.
 
 ## Fase 3 — Retención y operación
 

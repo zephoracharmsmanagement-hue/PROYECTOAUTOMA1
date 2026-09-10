@@ -14,7 +14,14 @@ const slug = z
   .regex(/^[a-z0-9-]+$/, 'Slug inválido');
 
 const bodySchema = z.discriminatedUnion('kind', [
-  z.object({ kind: z.literal('package'), slug }),
+  z.object({
+    kind: z.literal('package'),
+    slug,
+    // Ids de ofertas marcadas como order bump. El servidor verifica que cada una
+    // pertenece a este paquete y sigue activa antes de cobrarla.
+    bumpOfferIds: z.array(z.string().uuid()).max(5).optional(),
+  }),
+  z.object({ kind: z.literal('upsell'), offerId: z.string().uuid() }),
   z.object({ kind: z.literal('subscription'), planSlug: slug }),
 ]);
 

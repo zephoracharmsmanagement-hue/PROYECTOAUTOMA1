@@ -23,6 +23,9 @@ export function getStripe(): Stripe {
  */
 export const METADATA_KEYS = {
   userId: 'automa_user_id',
+  /** Lista separada por comas: un checkout puede llevar varios paquetes (bumps). */
+  packageIds: 'automa_package_ids',
+  /** Clave heredada, de una sola compra. Se sigue leyendo por compatibilidad. */
   packageId: 'automa_package_id',
   planId: 'automa_plan_id',
   kind: 'automa_kind',

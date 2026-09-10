@@ -32,11 +32,21 @@ export default async function LibraryPackagePage({
   // Sin acceso se devuelve a la ficha de venta en lugar de mostrar un 403 seco.
   if (!canAccessPackage(access, pkg)) redirect(`/paquetes/${slug}`);
 
-  const [{ data: modules }, { data: outline }, { data: progress }] = await Promise.all([
-    supabase.from('modules').select('*').eq('package_id', pkg.id).order('sort_order'),
-    supabase.from('lesson_outline').select('*').eq('package_id', pkg.id).order('sort_order'),
-    supabase.from('lesson_progress').select('lesson_id, completed_at').eq('user_id', access.userId),
-  ]);
+  const [{ data: modules }, { data: outline }, { data: progress }, { data: certificate }] =
+    await Promise.all([
+      supabase.from('modules').select('*').eq('package_id', pkg.id).order('sort_order'),
+      supabase.from('lesson_outline').select('*').eq('package_id', pkg.id).order('sort_order'),
+      supabase
+        .from('lesson_progress')
+        .select('lesson_id, completed_at')
+        .eq('user_id', access.userId),
+      supabase
+        .from('certificates')
+        .select('code')
+        .eq('user_id', access.userId)
+        .eq('package_id', pkg.id)
+        .maybeSingle(),
+    ]);
 
   const completed = new Set(
     (progress ?? []).filter((row) => row.completed_at).map((row) => row.lesson_id),
@@ -50,6 +60,15 @@ export default async function LibraryPackagePage({
 
       <h1 className="mt-4 text-3xl font-bold tracking-tight">{pkg.title}</h1>
       {pkg.subtitle && <p className="mt-2 text-brand-400">{pkg.subtitle}</p>}
+
+      {certificate && (
+        <Link
+          href={`/certificado/${certificate.code}`}
+          className="mt-6 inline-flex items-center gap-2 rounded-xl border border-brand-600/60 bg-brand-500/5 px-4 py-3 text-sm font-semibold text-brand-400"
+        >
+          🏅 Paquete completado — ver tu certificado →
+        </Link>
+      )}
 
       <div className="mt-10 space-y-6">
         {(modules ?? []).map((module) => {

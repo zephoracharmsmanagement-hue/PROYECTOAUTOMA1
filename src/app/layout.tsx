@@ -7,6 +7,8 @@ import { isCurrentUserAdmin } from '@/lib/admin/guard';
 import { siteConfig } from '@/config/site';
 import { publicEnv } from '@/lib/env';
 import { AnalyticsScripts } from '@/components/analytics/analytics-scripts';
+import { CampaignBanner } from '@/components/marketing/campaign-banner';
+import { getActiveCampaign } from '@/lib/campaigns';
 
 export const metadata: Metadata = {
   metadataBase: new URL(publicEnv.NEXT_PUBLIC_SITE_URL),
@@ -31,10 +33,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const user = await getCurrentUser();
   // Solo se consulta el rol si hay sesion: una visita anonima no paga la query.
   const isAdmin = user ? await isCurrentUserAdmin() : false;
+  const campaign = await getActiveCampaign();
 
   return (
     <html lang="es">
       <body className="flex min-h-screen flex-col">
+        <CampaignBanner campaign={campaign} />
         <SiteHeader isAuthenticated={Boolean(user)} isAdmin={isAdmin} />
         <main className="flex-1">{children}</main>
         <SiteFooter />

@@ -7,11 +7,18 @@ import { Testimonials } from '@/components/marketing/testimonials';
 import { JsonLd } from '@/components/seo/json-ld';
 import { faqJsonLd, organizationJsonLd, websiteJsonLd } from '@/lib/seo/json-ld';
 import { publicEnv } from '@/lib/env';
+import { getAssignment } from '@/lib/experiments';
+import { ExperimentTracker } from '@/components/analytics/experiment-tracker';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState, canAccessPackage } from '@/lib/entitlements';
 import { GUARANTEE_DAYS, siteConfig } from '@/config/site';
 
-export const revalidate = 300;
+/**
+ * La portada se renderiza por petición: el titular depende de la variante A/B
+ * asignada a cada visitante, y una respuesta cacheada serviría la misma a todos.
+ * El resto del catálogo sigue cacheado en sus propias rutas.
+ */
+export const dynamic = 'force-dynamic';
 
 const STEPS = [
   {
@@ -52,7 +59,7 @@ const FAQ = [
 export default async function HomePage() {
   const supabase = await createSupabaseServerClient();
 
-  const [{ data: packages }, { data: testimonials }, access] = await Promise.all([
+  const [{ data: packages }, { data: testimonials }, access, hero] = await Promise.all([
     supabase
       .from('packages')
       .select(
@@ -70,9 +77,21 @@ export default async function HomePage() {
       .order('sort_order')
       .limit(6),
     getAccessState(),
+    getAssignment<{ headline: string; subheadline: string; cta: string }>('landing_hero'),
   ]);
 
   const siteUrl = publicEnv.NEXT_PUBLIC_SITE_URL;
+
+  // Contenido por defecto: es lo que se ve si el experimento está pausado, si no
+  // existe, o si el visitante llega sin cookie (primer render de un bot).
+  const heroCopy = {
+    headline:
+      hero?.payload.headline ?? 'Sistemas listos para copiar que hacen vender a tu ecommerce',
+    subheadline:
+      hero?.payload.subheadline ??
+      'Nada de cursos infinitos. Cada paquete es una implementación grabada paso a paso, con plantillas y automatizaciones que instalas hoy mismo.',
+    cta: hero?.payload.cta ?? 'Ver los paquetes',
+  };
 
   return (
     <>
@@ -80,23 +99,22 @@ export default async function HomePage() {
       <JsonLd data={websiteJsonLd(siteUrl)} />
       <JsonLd data={faqJsonLd(FAQ)} />
 
+      {hero && <ExperimentTracker experimentKey={hero.experimentKey} variantId={hero.variantId} />}
+
       {/* ---------------------------------------------------------------- HERO */}
       <section className="hero-glow border-b border-ink-800">
         <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:py-28">
           <Badge>Ecommerce · Dropshipping · Automatización con IA</Badge>
 
           <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
-            Sistemas listos para copiar que hacen vender a tu ecommerce
+            {heroCopy.headline}
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-mist-400">
-            Nada de cursos infinitos. Cada paquete es una implementación grabada paso a paso, con
-            plantillas y automatizaciones que instalas hoy mismo.
-          </p>
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-mist-400">{heroCopy.subheadline}</p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <ButtonLink href="/paquetes" size="lg">
-              Ver los paquetes
+              {heroCopy.cta}
             </ButtonLink>
             <ButtonLink href="/precios" variant="secondary" size="lg">
               Membresía All Access

@@ -131,6 +131,36 @@ Hemos activado tu acceso a ${params.itemName}. Entra en ${params.libraryUrl}
   };
 }
 
+/**
+ * Recuperacion de carrito abandonado.
+ *
+ * Un unico email, sin secuencia de insistencia: la sesion de checkout ya ha
+ * caducado cuando se envia, asi que el enlace lleva de vuelta a la ficha de
+ * venta y no a un pago muerto.
+ */
+export function abandonedCheckoutEmail(params: { packageTitle: string; packageUrl: string }) {
+  return {
+    subject: `¿Seguimos con ${params.packageTitle}?`,
+    html: layout({
+      heading: 'Dejaste algo a medias',
+      body: `Empezaste el pago de <strong style="color:${COLORS.text};">${params.packageTitle}</strong>
+        pero no llegaste a completarlo. Si fue un problema con la pasarela o simplemente
+        te surgió algo, puedes retomarlo cuando quieras.
+        <br><br>Recuerda que tienes ${GUARANTEE_DAYS} días de garantía: si no es para ti,
+        te devolvemos el importe completo.`,
+      ctaLabel: 'Retomar la compra',
+      ctaUrl: params.packageUrl,
+    }),
+    text: `Dejaste algo a medias
+
+Empezaste el pago de ${params.packageTitle} pero no llegaste a completarlo. Puedes retomarlo aquí: ${params.packageUrl}
+
+Tienes ${GUARANTEE_DAYS} días de garantía: si no es para ti, te devolvemos el importe completo.
+
+¿Necesitas ayuda? Escribe a ${siteConfig.support.email}.`,
+  };
+}
+
 /** Aviso de fallo de cobro, antes de que Stripe agote los reintentos. */
 export function paymentFailedEmail(params: { portalUrl: string }) {
   return {

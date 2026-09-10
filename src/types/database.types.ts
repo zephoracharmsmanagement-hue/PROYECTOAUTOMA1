@@ -13,7 +13,9 @@ export type Json = string | number | boolean | null | { [key: string]: Json } | 
 
 export type UserRole = 'customer' | 'admin';
 export type ContentStatus = 'draft' | 'published' | 'archived';
-export type OrderStatus = 'pending' | 'paid' | 'refunded' | 'failed';
+export type OrderStatus = 'pending' | 'paid' | 'refunded' | 'failed' | 'expired';
+export type OrderItemKind = 'main' | 'bump' | 'upsell';
+export type OfferPlacement = 'bump' | 'upsell';
 export type EntitlementKind = 'package' | 'all_access';
 export type EntitlementSource = 'purchase' | 'subscription' | 'manual_grant';
 export type EntitlementStatus = 'active' | 'revoked' | 'expired';
@@ -154,6 +156,73 @@ export type LessonProgressRow = {
   updated_at: string;
 };
 
+export type OrderItemRow = {
+  id: string;
+  order_id: string;
+  package_id: string | null;
+  kind: OrderItemKind;
+  amount_cents: number;
+  created_at: string;
+};
+
+export type OfferRow = {
+  id: string;
+  source_package_id: string;
+  offer_package_id: string;
+  placement: OfferPlacement;
+  headline: string;
+  description: string | null;
+  stripe_price_id: string | null;
+  price_cents: number | null;
+  is_active: boolean;
+  sort_order: number;
+  created_at: string;
+  updated_at: string;
+};
+
+export type CampaignRow = {
+  id: string;
+  name: string;
+  headline: string;
+  subheadline: string | null;
+  code_label: string | null;
+  stripe_promotion_code_id: string | null;
+  cta_label: string | null;
+  cta_href: string | null;
+  starts_at: string | null;
+  ends_at: string | null;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+};
+
+/** Una variante de experimento. `payload` es libre segun el experimento. */
+export type ExperimentVariant = {
+  id: string;
+  label: string;
+  weight: number;
+  payload: Record<string, string>;
+};
+
+export type ExperimentRow = {
+  id: string;
+  key: string;
+  name: string;
+  hypothesis: string | null;
+  variants: ExperimentVariant[];
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+};
+
+export type CertificateRow = {
+  id: string;
+  user_id: string;
+  package_id: string;
+  code: string;
+  issued_at: string;
+};
+
 export type TestimonialRow = {
   id: string;
   package_id: string | null;
@@ -234,6 +303,23 @@ export type Database = {
       >;
       lesson_progress: Table<LessonProgressRow>;
       testimonials: Table<TestimonialRow, [Relationship<['package_id'], 'packages'>]>;
+      order_items: Table<
+        OrderItemRow,
+        [Relationship<['order_id'], 'orders'>, Relationship<['package_id'], 'packages'>]
+      >;
+      offers: Table<
+        OfferRow,
+        [
+          Relationship<['source_package_id'], 'packages'>,
+          Relationship<['offer_package_id'], 'packages'>,
+        ]
+      >;
+      campaigns: Table<CampaignRow>;
+      experiments: Table<ExperimentRow>;
+      certificates: Table<
+        CertificateRow,
+        [Relationship<['user_id'], 'profiles'>, Relationship<['package_id'], 'packages'>]
+      >;
       webhook_events: Table<WebhookEventRow>;
       leads: Table<LeadRow>;
     };
@@ -245,6 +331,8 @@ export type Database = {
       has_package_access: { Args: { p_user_id: string; p_package_id: string }; Returns: boolean };
       is_admin: { Args: { p_user_id: string }; Returns: boolean };
       admin_dashboard_metrics: { Args: Record<string, never>; Returns: Json };
+      verify_certificate: { Args: { p_code: string }; Returns: Json };
+      issue_certificate_if_complete: { Args: { p_package_id: string }; Returns: string | null };
     };
     Enums: {
       user_role: UserRole;
@@ -255,6 +343,8 @@ export type Database = {
       entitlement_status: EntitlementStatus;
       billing_interval: BillingInterval;
       video_provider: VideoProviderName;
+      order_item_kind: OrderItemKind;
+      offer_placement: OfferPlacement;
     };
     CompositeTypes: Record<string, never>;
   };

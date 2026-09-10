@@ -95,6 +95,7 @@ export default async function LessonPage({ params }: PageProps) {
       <div className="mt-8">
         <MarkCompleteButton
           lessonId={lesson.id}
+          packageId={pkg.id}
           packageSlug={pkg.slug}
           initiallyCompleted={Boolean(progress?.completed_at)}
         />

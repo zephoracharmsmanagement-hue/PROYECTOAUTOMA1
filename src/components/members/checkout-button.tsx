@@ -6,7 +6,9 @@ import { Button } from '@/components/ui/button';
 import { track } from '@/lib/analytics/track';
 
 export type CheckoutIntentInput =
-  { kind: 'package'; slug: string } | { kind: 'subscription'; planSlug: string };
+  | { kind: 'package'; slug: string; bumpOfferIds?: string[] }
+  | { kind: 'upsell'; offerId: string }
+  | { kind: 'subscription'; planSlug: string };
 
 interface Props {
   intent: CheckoutIntentInput;
@@ -29,8 +31,15 @@ export function CheckoutButton({ intent, children, variant, size, className }: P
     setLoading(true);
     setError(null);
 
-    const item = intent.kind === 'package' ? intent.slug : intent.planSlug;
-    track({ name: 'begin_checkout', props: { kind: intent.kind, item } });
+    const item =
+      intent.kind === 'package'
+        ? intent.slug
+        : intent.kind === 'upsell'
+          ? intent.offerId
+          : intent.planSlug;
+
+    const kind = intent.kind === 'subscription' ? 'subscription' : 'package';
+    track({ name: 'begin_checkout', props: { kind, item } });
 
     try {
       const response = await fetch('/api/checkout', {
@@ -40,7 +49,12 @@ export function CheckoutButton({ intent, children, variant, size, className }: P
       });
 
       if (response.status === 401) {
-        const next = intent.kind === 'package' ? `/paquetes/${intent.slug}` : '/precios';
+        const next =
+          intent.kind === 'package'
+            ? `/paquetes/${intent.slug}`
+            : intent.kind === 'upsell'
+              ? '/dashboard'
+              : '/precios';
         router.push(`/login?next=${encodeURIComponent(next)}`);
         return;
       }
@@ -49,7 +63,7 @@ export function CheckoutButton({ intent, children, variant, size, className }: P
 
       if (!response.ok || !payload.url) {
         const reason = payload.error ?? 'unknown';
-        track({ name: 'checkout_failed', props: { kind: intent.kind, reason } });
+        track({ name: 'checkout_failed', props: { kind, reason } });
         setError(payload.error ?? 'No se pudo iniciar el pago. Inténtalo de nuevo.');
         return;
       }
