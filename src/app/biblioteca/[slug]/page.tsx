@@ -79,6 +79,13 @@ export default async function LibraryPackagePage({
         </Link>
       )}
 
+      <Link
+        href={`/biblioteca/${pkg.slug}/asistente`}
+        className="mt-6 inline-flex items-center gap-2 rounded-xl border border-ink-600 bg-ink-800 px-4 py-3 text-sm font-semibold hover:border-brand-600 hover:text-brand-400"
+      >
+        Preguntar al asistente sobre este paquete →
+      </Link>
+
       <AutomationList automations={(automations ?? []) as AutomationItem[]} />
 
       <div className="mt-10 space-y-6">

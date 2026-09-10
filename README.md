@@ -32,6 +32,7 @@ plantillas descargables. Monetización **híbrida**:
 │   ├── conversion.md         Bumps, upsells, campañas, A/B y certificados
 │   ├── growth.md             SEO, analítica, email transaccional y testimonios
 │   ├── operations.md         Métricas, dunning, afiliados y Q&A de miembros
+│   ├── assistant.md          Asistente con IA sobre el contenido (RAG)
 │   ├── product.md            Rutas de aprendizaje y automatizaciones instalables
 │   ├── payments.md           Configuración de Stripe y flujo de webhooks
 │   ├── video-delivery.md     Protección y entrega de video
@@ -61,6 +62,7 @@ plantillas descargables. Monetización **híbrida**:
 │   │   └── admin/            Formularios y editor de temario del panel
 │   ├── lib/
 │   │   ├── admin/            Guardia de acceso y Server Actions del panel
+│   │   ├── assistant/        Cliente de Claude, prompt y recuperación de contexto
 │   │   ├── analytics/        Catálogo de eventos y envío agnóstico de proveedor
 │   │   ├── email/            Cliente de Resend y plantillas transaccionales
 │   │   ├── seo/              Generadores de datos estructurados (JSON-LD)
@@ -151,5 +153,8 @@ miembros: ver [`docs/operations.md`](./docs/operations.md).
 
 Rutas de aprendizaje vendidas como lote y automatizaciones instalables de n8n o
 Make: ver [`docs/product.md`](./docs/product.md).
+
+Asistente con IA que responde solo con el material comprado por el alumno: ver
+[`docs/assistant.md`](./docs/assistant.md).
 
 Documentación detallada en [`docs/`](./docs/architecture.md).

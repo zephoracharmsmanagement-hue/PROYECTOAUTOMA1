@@ -27,6 +27,12 @@ const serverSchema = z.object({
   BUNNY_STREAM_LIBRARY_ID: z.string().min(1).optional(),
   BUNNY_STREAM_API_KEY: z.string().min(1).optional(),
   BUNNY_TOKEN_TTL_MINUTES: z.coerce.number().int().positive().default(180),
+  // Asistente con IA. Sin clave, el asistente queda desactivado y la interfaz lo
+  // dice, en lugar de fallar al primer mensaje.
+  ANTHROPIC_API_KEY: z.string().optional(),
+  ASSISTANT_MODEL: z.string().default('claude-opus-5'),
+  ASSISTANT_EFFORT: z.enum(['low', 'medium', 'high', 'xhigh', 'max']).default('low'),
+  ASSISTANT_DAILY_MESSAGE_LIMIT: z.coerce.number().int().positive().default(30),
   RESEND_API_KEY: z.string().optional(),
   EMAIL_FROM: z.string().optional(),
   EMAIL_REPLY_TO: z.string().optional(),

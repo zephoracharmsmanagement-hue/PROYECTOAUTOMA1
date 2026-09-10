@@ -56,7 +56,8 @@ Requiere suscribir dos eventos nuevos en Stripe: `invoice.paid` y
 - [x] Rutas de aprendizaje que encadenan varios paquetes y se venden como lote
 - [x] Automatizaciones instalables (n8n / Make / Zapier) servidas solo a quien
       tiene acceso, con detección de credenciales al subirlas
-- [ ] Asistente con IA sobre el contenido de los paquetes (RAG)
+- [x] Asistente con IA sobre el contenido de los paquetes, con recuperación
+      léxica sobre Postgres y sin proveedor de embeddings (ver `docs/assistant.md`)
 - [ ] Versión en inglés
 
 Ver `docs/product.md`.

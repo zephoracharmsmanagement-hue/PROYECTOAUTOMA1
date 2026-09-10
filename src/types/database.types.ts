@@ -16,6 +16,9 @@ export type ContentStatus = 'draft' | 'published' | 'archived';
 export type OrderStatus = 'pending' | 'paid' | 'refunded' | 'failed' | 'expired';
 export type OrderItemKind = 'main' | 'bump' | 'upsell' | 'path';
 export type AutomationPlatform = 'n8n' | 'make' | 'zapier' | 'other';
+export type ChunkSource =
+  'package_description' | 'lesson_description' | 'lesson_transcript' | 'lesson_resource';
+export type AssistantRole = 'user' | 'assistant';
 export type OfferPlacement = 'bump' | 'upsell';
 export type ReferralStatus = 'pending' | 'approved' | 'paid' | 'void';
 export type QuestionStatus = 'open' | 'answered' | 'hidden';
@@ -78,6 +81,7 @@ export type LessonRow = {
   video_asset_id: string | null;
   duration_seconds: number;
   is_preview: boolean;
+  transcript: string | null;
   resources: Array<{ label: string; url: string }>;
   sort_order: number;
   created_at: string;
@@ -221,6 +225,37 @@ export type ExperimentRow = {
   is_active: boolean;
   created_at: string;
   updated_at: string;
+};
+
+export type ContentChunkRow = {
+  id: string;
+  package_id: string;
+  lesson_id: string | null;
+  source: ChunkSource;
+  heading: string;
+  content: string;
+  position: number;
+  created_at: string;
+};
+
+export type AssistantConversationRow = {
+  id: string;
+  user_id: string;
+  package_id: string | null;
+  title: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type AssistantMessageRow = {
+  id: string;
+  conversation_id: string;
+  role: AssistantRole;
+  content: string;
+  citations: Array<{ heading: string; lessonSlug?: string | null }>;
+  input_tokens: number;
+  output_tokens: number;
+  created_at: string;
 };
 
 export type PathRow = {
@@ -427,6 +462,18 @@ export type Database = {
       >;
       campaigns: Table<CampaignRow>;
       paths: Table<PathRow>;
+      content_chunks: Table<
+        ContentChunkRow,
+        [Relationship<['package_id'], 'packages'>, Relationship<['lesson_id'], 'lessons'>]
+      >;
+      assistant_conversations: Table<
+        AssistantConversationRow,
+        [Relationship<['user_id'], 'profiles'>, Relationship<['package_id'], 'packages'>]
+      >;
+      assistant_messages: Table<
+        AssistantMessageRow,
+        [Relationship<['conversation_id'], 'assistant_conversations'>]
+      >;
       path_packages: Table<
         PathPackageRow,
         [Relationship<['path_id'], 'paths'>, Relationship<['package_id'], 'packages'>]
@@ -484,6 +531,19 @@ export type Database = {
       };
       display_name: { Args: { p_full_name: string; p_email: string }; Returns: string };
       automation_catalog: { Args: { p_package_id: string }; Returns: Json };
+      search_content_chunks: {
+        Args: { p_query: string; p_package_id?: string | null; p_limit?: number };
+        Returns: Array<{
+          id: string;
+          package_id: string;
+          lesson_id: string | null;
+          heading: string;
+          content: string;
+          score: number;
+        }>;
+      };
+      assistant_messages_today: { Args: Record<string, never>; Returns: number };
+      reindex_package_content: { Args: { p_package_id: string }; Returns: number };
       issue_certificate_if_complete: { Args: { p_package_id: string }; Returns: string | null };
     };
     Enums: {
@@ -500,6 +560,8 @@ export type Database = {
       referral_status: ReferralStatus;
       question_status: QuestionStatus;
       automation_platform: AutomationPlatform;
+      chunk_source: ChunkSource;
+      assistant_role: AssistantRole;
     };
     CompositeTypes: Record<string, never>;
   };

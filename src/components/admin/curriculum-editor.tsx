@@ -115,6 +115,20 @@ function LessonFields({ lesson }: { lesson?: LessonRow }) {
       </Field>
 
       <Field
+        label="Transcripción"
+        htmlFor={`transcript-${lesson?.id ?? 'new'}`}
+        className="mt-4"
+        hint="Es lo que lee el asistente para responder. Separa las ideas por párrafos: el índice trocea por párrafo, no por número de caracteres."
+      >
+        <Textarea
+          id={`transcript-${lesson?.id ?? 'new'}`}
+          name="transcript"
+          rows={6}
+          defaultValue={lesson?.transcript ?? ''}
+        />
+      </Field>
+
+      <Field
         label="Recursos descargables"
         htmlFor={`res-${lesson?.id ?? 'new'}`}
         className="mt-4"

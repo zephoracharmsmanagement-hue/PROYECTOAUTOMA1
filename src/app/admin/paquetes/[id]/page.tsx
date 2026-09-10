@@ -6,6 +6,7 @@ import { CurriculumEditor } from '@/components/admin/curriculum-editor';
 import { PackageForm } from '@/components/admin/package-form';
 import { Badge } from '@/components/ui/badge';
 import { deletePackage, setPackageStatus } from '@/lib/admin/actions/packages';
+import { reindexPackage } from '@/lib/admin/actions/content-index';
 import { requireAdmin } from '@/lib/admin/guard';
 
 export const metadata: Metadata = { title: 'Editar paquete' };
@@ -84,6 +85,20 @@ export default async function EditPackagePage({ params }: { params: Promise<{ id
 
         <div className="mt-6">
           <CurriculumEditor packageId={pkg.id} modules={modules ?? []} lessons={lessons ?? []} />
+        </div>
+      </section>
+
+      <section className="card-surface mt-12 rounded-2xl p-6">
+        <h2 className="text-lg font-semibold">Índice del asistente</h2>
+        <p className="mt-1 text-sm text-mist-400">
+          El asistente responde con las descripciones y transcripciones de las lecciones.
+          Reconstruye el índice después de editar contenido: no se actualiza solo, porque reindexar
+          reescribe todos los fragmentos del paquete.
+        </p>
+        <div className="mt-4">
+          <ActionButton action={reindexPackage} fields={{ id: pkg.id }} pendingLabel="Indexando…">
+            Reconstruir índice
+          </ActionButton>
         </div>
       </section>
 

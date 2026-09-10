@@ -24,6 +24,9 @@ const lessonSchema = z.object({
   video_asset_id: z.string().max(200).nullable(),
   duration_seconds: z.number().int().min(0).max(86400),
   is_preview: z.boolean(),
+  // La transcripción alimenta el índice del asistente. Sin tope se podría pegar
+  // un libro entero en un campo de formulario.
+  transcript: z.string().max(120000).nullable(),
 });
 
 /**
@@ -70,6 +73,7 @@ function readForm(formData: FormData) {
     video_asset_id: optionalText(formData.get('video_asset_id')),
     duration_seconds: parseDuration(formData.get('duration')),
     is_preview: formData.get('is_preview') === 'on',
+    transcript: optionalText(formData.get('transcript')),
   });
 }
 
