@@ -4,7 +4,7 @@ import { publicEnv } from '@/lib/env';
 import type { Database } from '@/types/database.types';
 
 /** Rutas que exigen sesion iniciada. */
-const PROTECTED_PREFIXES = ['/dashboard', '/biblioteca', '/cuenta'];
+const PROTECTED_PREFIXES = ['/dashboard', '/biblioteca', '/cuenta', '/admin'];
 
 /**
  * Refresca el token de Supabase en cada request y protege el area de miembros.

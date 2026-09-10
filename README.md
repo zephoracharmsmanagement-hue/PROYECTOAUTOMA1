@@ -28,6 +28,7 @@ plantillas descargables. Monetización **híbrida**:
 ├── docs/                     Documentación de arquitectura y operación
 │   ├── architecture.md       Visión general y flujo de datos
 │   ├── data-model.md         Tablas, relaciones y decisiones de modelado
+│   ├── admin.md              Panel de administración y modelo de permisos
 │   ├── payments.md           Configuración de Stripe y flujo de webhooks
 │   ├── video-delivery.md     Protección y entrega de video
 │   ├── deployment.md         Despliegue y variables por entorno
@@ -39,6 +40,7 @@ plantillas descargables. Monetización **híbrida**:
 │   └── config.toml           Configuración de Supabase local
 ├── src/
 │   ├── app/                  Rutas (App Router)
+│   │   ├── admin/            Panel de administración (catálogo, ventas, alumnos)
 │   │   ├── api/              Route handlers: checkout, portal, leads, webhook, playback
 │   │   ├── paquetes/         Catálogo y ficha de venta
 │   │   ├── precios/          Planes de suscripción
@@ -50,8 +52,10 @@ plantillas descargables. Monetización **híbrida**:
 │   │   ├── ui/               Primitivas (Button, Badge)
 │   │   ├── layout/           Header y footer
 │   │   ├── marketing/        Cards de paquete y precio, captura de leads
-│   │   └── members/          Checkout, reproductor, progreso, portal
+│   │   ├── members/          Checkout, reproductor, progreso, portal
+│   │   └── admin/            Formularios y editor de temario del panel
 │   ├── lib/
+│   │   ├── admin/            Guardia de acceso y Server Actions del panel
 │   │   ├── supabase/         Clientes browser / server / admin / middleware
 │   │   ├── stripe/           Cliente, checkout, customers, webhook handlers
 │   │   ├── video/            Interfaz VideoProvider + adaptador Bunny
@@ -108,5 +112,19 @@ npm run typecheck && npm run lint && npm run build
    entitlement.
 6. **RLS activado en todas las tablas**, replicando en SQL las mismas reglas de
    acceso que aplica la aplicación.
+7. **El panel de administración escribe con el cliente del propio usuario**, no
+   con `service_role`, para que RLS siga siendo quien autoriza cada operación. El
+   rol de admin solo se concede desde SQL.
+
+## Administración
+
+Regístrate en la web y luego promociónate desde SQL:
+
+```sql
+update public.profiles set role = 'admin' where email = 'tu@email.com';
+```
+
+El panel queda disponible en `/admin`: catálogo y temario, planes, ventas,
+alumnos y leads. Ver [`docs/admin.md`](./docs/admin.md).
 
 Documentación detallada en [`docs/`](./docs/architecture.md).

@@ -3,6 +3,7 @@ import './globals.css';
 import { SiteHeader } from '@/components/layout/site-header';
 import { SiteFooter } from '@/components/layout/site-footer';
 import { getCurrentUser } from '@/lib/supabase/server';
+import { isCurrentUserAdmin } from '@/lib/admin/guard';
 import { siteConfig } from '@/config/site';
 import { publicEnv } from '@/lib/env';
 
@@ -26,11 +27,13 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
+  // Solo se consulta el rol si hay sesion: una visita anonima no paga la query.
+  const isAdmin = user ? await isCurrentUserAdmin() : false;
 
   return (
     <html lang="es">
       <body className="flex min-h-screen flex-col">
-        <SiteHeader isAuthenticated={Boolean(user)} />
+        <SiteHeader isAuthenticated={Boolean(user)} isAdmin={isAdmin} />
         <main className="flex-1">{children}</main>
         <SiteFooter />
       </body>

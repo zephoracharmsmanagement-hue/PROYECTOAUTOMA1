@@ -210,6 +210,7 @@ export type Database = {
       entitlements: Table<
         EntitlementRow,
         [
+          Relationship<['user_id'], 'profiles'>,
           Relationship<['package_id'], 'packages'>,
           Relationship<['order_id'], 'orders'>,
           Relationship<['subscription_id'], 'subscriptions'>,
@@ -226,6 +227,7 @@ export type Database = {
       has_all_access: { Args: { p_user_id: string }; Returns: boolean };
       has_package_access: { Args: { p_user_id: string; p_package_id: string }; Returns: boolean };
       is_admin: { Args: { p_user_id: string }; Returns: boolean };
+      admin_dashboard_metrics: { Args: Record<string, never>; Returns: Json };
     };
     Enums: {
       user_role: UserRole;

@@ -10,6 +10,7 @@
 - [x] Webhook idempotente que concede y revoca acceso
 - [x] Área de miembros con reproductor de video firmado
 - [x] Progreso por lección y portal de facturación
+- [x] Panel de administración: catálogo, temario, planes, ventas, alumnos y leads
 
 ## Fase 1 — Lanzamiento
 
@@ -31,7 +32,6 @@
 
 ## Fase 3 — Retención y operación
 
-- [ ] Panel de administración para publicar paquetes sin tocar SQL
 - [ ] Comunidad o Q&A para miembros All Access
 - [ ] Recuperación de pagos fallidos (dunning) con avisos propios
 - [ ] Métricas de negocio: MRR, churn, LTV, conversión por paquete

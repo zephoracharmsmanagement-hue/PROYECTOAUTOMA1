@@ -2,7 +2,13 @@ import Link from 'next/link';
 import { ButtonLink } from '@/components/ui/button';
 import { siteConfig } from '@/config/site';
 
-export function SiteHeader({ isAuthenticated }: { isAuthenticated: boolean }) {
+export function SiteHeader({
+  isAuthenticated,
+  isAdmin = false,
+}: {
+  isAuthenticated: boolean;
+  isAdmin?: boolean;
+}) {
   return (
     <header className="sticky top-0 z-40 border-b border-ink-800 bg-ink-950/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
@@ -27,9 +33,21 @@ export function SiteHeader({ isAuthenticated }: { isAuthenticated: boolean }) {
 
         <div className="flex items-center gap-2">
           {isAuthenticated ? (
-            <ButtonLink href="/dashboard" size="sm">
-              Mi cuenta
-            </ButtonLink>
+            <>
+              {isAdmin && (
+                <ButtonLink
+                  href="/admin"
+                  variant="ghost"
+                  size="sm"
+                  className="hidden sm:inline-flex"
+                >
+                  Panel
+                </ButtonLink>
+              )}
+              <ButtonLink href="/dashboard" size="sm">
+                Mi cuenta
+              </ButtonLink>
+            </>
           ) : (
             <>
               <ButtonLink href="/login" variant="ghost" size="sm" className="hidden sm:inline-flex">
