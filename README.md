@@ -28,6 +28,7 @@ plantillas descargables. Monetización **híbrida**:
 ├── docs/                     Documentación de arquitectura y operación
 │   ├── architecture.md       Visión general y flujo de datos
 │   ├── data-model.md         Tablas, relaciones y decisiones de modelado
+│   ├── puesta-en-marcha.md   EMPIEZA AQUÍ: paso a paso hasta la primera venta
 │   ├── admin.md              Panel de administración y modelo de permisos
 │   ├── conversion.md         Bumps, upsells, campañas, A/B y certificados
 │   ├── growth.md             SEO, analítica, email transaccional y testimonios
@@ -80,6 +81,11 @@ plantillas descargables. Monetización **híbrida**:
 ---
 
 ## Puesta en marcha
+
+Guía completa y ordenada, del repositorio a la primera venta real:
+[`docs/puesta-en-marcha.md`](./docs/puesta-en-marcha.md).
+
+Resumen para arrancar en local:
 
 ```bash
 # 1. Dependencias
