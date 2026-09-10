@@ -32,6 +32,7 @@ plantillas descargables. Monetización **híbrida**:
 │   ├── conversion.md         Bumps, upsells, campañas, A/B y certificados
 │   ├── growth.md             SEO, analítica, email transaccional y testimonios
 │   ├── operations.md         Métricas, dunning, afiliados y Q&A de miembros
+│   ├── product.md            Rutas de aprendizaje y automatizaciones instalables
 │   ├── payments.md           Configuración de Stripe y flujo de webhooks
 │   ├── video-delivery.md     Protección y entrega de video
 │   ├── deployment.md         Despliegue y variables por entorno
@@ -46,6 +47,7 @@ plantillas descargables. Monetización **híbrida**:
 │   │   ├── admin/            Panel de administración (catálogo, ventas, alumnos)
 │   │   ├── api/              Route handlers: checkout, portal, leads, webhook, playback
 │   │   ├── paquetes/         Catálogo y ficha de venta
+│   │   ├── rutas/            Rutas de aprendizaje (lotes de paquetes)
 │   │   ├── precios/          Planes de suscripción
 │   │   ├── biblioteca/       Área de miembros: módulos y reproductor
 │   │   ├── dashboard/        Panel del alumno
@@ -146,5 +148,8 @@ abandonados, experimentos A/B y certificados de finalización: ver
 
 Métricas de negocio (MRR, churn, LTV), dunning, programa de afiliados y Q&A de
 miembros: ver [`docs/operations.md`](./docs/operations.md).
+
+Rutas de aprendizaje vendidas como lote y automatizaciones instalables de n8n o
+Make: ver [`docs/product.md`](./docs/product.md).
 
 Documentación detallada en [`docs/`](./docs/architecture.md).

@@ -31,27 +31,34 @@ async function loadPackage(slug: string) {
 
   if (!pkg) return null;
 
-  const [{ data: modules }, { data: outline }, { data: testimonials }, { data: offers }] =
-    await Promise.all([
-      supabase.from('modules').select('*').eq('package_id', pkg.id).order('sort_order'),
-      supabase.from('lesson_outline').select('*').eq('package_id', pkg.id).order('sort_order'),
-      supabase
-        .from('testimonials')
-        .select('*')
-        .eq('package_id', pkg.id)
-        .eq('status', 'published')
-        .order('sort_order'),
-      // Ofertas que se muestran como order bump dentro del checkout.
-      supabase
-        .from('offers')
-        .select(
-          'id, headline, description, price_cents, offer_package_id, packages!offers_offer_package_id_fkey(price_one_time_cents, compare_at_price_cents, currency)',
-        )
-        .eq('source_package_id', pkg.id)
-        .eq('placement', 'bump')
-        .eq('is_active', true)
-        .order('sort_order'),
-    ]);
+  const [
+    { data: modules },
+    { data: outline },
+    { data: testimonials },
+    { data: automationCatalog },
+    { data: offers },
+  ] = await Promise.all([
+    supabase.from('modules').select('*').eq('package_id', pkg.id).order('sort_order'),
+    supabase.from('lesson_outline').select('*').eq('package_id', pkg.id).order('sort_order'),
+    supabase
+      .from('testimonials')
+      .select('*')
+      .eq('package_id', pkg.id)
+      .eq('status', 'published')
+      .order('sort_order'),
+    // Catalogo de automatizaciones: nombres y credenciales, nunca el flujo.
+    supabase.rpc('automation_catalog', { p_package_id: pkg.id }),
+    // Ofertas que se muestran como order bump dentro del checkout.
+    supabase
+      .from('offers')
+      .select(
+        'id, headline, description, price_cents, offer_package_id, packages!offers_offer_package_id_fkey(price_one_time_cents, compare_at_price_cents, currency)',
+      )
+      .eq('source_package_id', pkg.id)
+      .eq('placement', 'bump')
+      .eq('is_active', true)
+      .order('sort_order'),
+  ]);
 
   const bumps: BumpOffer[] = (offers ?? []).map((offer) => {
     const offered = offer.packages as unknown as {
@@ -78,6 +85,13 @@ async function loadPackage(slug: string) {
     modules: modules ?? [],
     outline: outline ?? [],
     testimonials: testimonials ?? [],
+    automations: (automationCatalog ?? []) as unknown as Array<{
+      id: string;
+      name: string;
+      description: string | null;
+      platform: string;
+      requires: string[];
+    }>,
     bumps,
   };
 }
@@ -109,7 +123,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
   const data = await loadPackage(slug);
   if (!data) notFound();
 
-  const { pkg, modules, outline, testimonials, bumps } = data;
+  const { pkg, modules, outline, testimonials, automations, bumps } = data;
   const siteUrl = publicEnv.NEXT_PUBLIC_SITE_URL;
   const access = await getAccessState();
   const owned = canAccessPackage(access, pkg);
@@ -151,6 +165,29 @@ export default async function PackageDetailPage({ params }: PageProps) {
                 </div>
               ))}
             </div>
+          )}
+
+          {automations.length > 0 && (
+            <section className="mt-12 rounded-2xl border border-brand-600/40 bg-brand-500/5 p-6">
+              <h2 className="text-xl font-bold tracking-tight">
+                Incluye {automations.length} automatización(es) lista(s) para importar
+              </h2>
+              <p className="mt-1 text-sm text-mist-400">
+                Se descargan al comprar y se importan en tu propia cuenta.
+              </p>
+
+              <ul className="mt-4 space-y-3 text-sm">
+                {automations.map((automation) => (
+                  <li key={automation.id}>
+                    <span className="font-semibold">{automation.name}</span>
+                    <span className="ml-2 text-xs text-brand-400">{automation.platform}</span>
+                    {automation.description && (
+                      <span className="mt-1 block text-mist-400">{automation.description}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </section>
           )}
 
           <h2 className="mt-14 text-2xl font-bold tracking-tight">Temario</h2>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound, redirect } from 'next/navigation';
 import { Badge } from '@/components/ui/badge';
+import { AutomationList, type AutomationItem } from '@/components/members/automation-list';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState, canAccessPackage } from '@/lib/entitlements';
 import { formatDuration } from '@/lib/utils';
@@ -48,6 +49,14 @@ export default async function LibraryPackagePage({
         .maybeSingle(),
     ]);
 
+  // RLS ya limita `automations` a quien tiene acceso: aqui solo se pide.
+  const { data: automations } = await supabase
+    .from('automations')
+    .select('id, name, description, platform, version, setup_notes, requires')
+    .eq('package_id', pkg.id)
+    .eq('status', 'published')
+    .order('sort_order');
+
   const completed = new Set(
     (progress ?? []).filter((row) => row.completed_at).map((row) => row.lesson_id),
   );
@@ -69,6 +78,8 @@ export default async function LibraryPackagePage({
           🏅 Paquete completado — ver tu certificado →
         </Link>
       )}
+
+      <AutomationList automations={(automations ?? []) as AutomationItem[]} />
 
       <div className="mt-10 space-y-6">
         {(modules ?? []).map((module) => {

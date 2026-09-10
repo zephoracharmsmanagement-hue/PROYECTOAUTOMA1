@@ -13,6 +13,7 @@ import type { OrderItemKind } from '@/types/database.types';
 
 export type CheckoutIntent =
   | { kind: 'package'; slug: string; bumpOfferIds?: string[] }
+  | { kind: 'path'; slug: string }
   | { kind: 'upsell'; offerId: string }
   | { kind: 'subscription'; planSlug: string };
 
@@ -135,6 +136,7 @@ async function recordPendingOrder(
   session: Stripe.Checkout.Session,
   userId: string,
   lines: ResolvedLine[],
+  pathId: string | null = null,
 ) {
   const main = lines.find((line) => line.kind === 'main') ?? lines[0];
   if (!main) return;
@@ -145,6 +147,7 @@ async function recordPendingOrder(
       {
         user_id: userId,
         package_id: main.packageId,
+        path_id: pathId,
         stripe_checkout_session_id: session.id,
         amount_cents: session.amount_total ?? lines.reduce((sum, l) => sum + l.amountCents, 0),
         currency: session.currency ?? 'usd',
@@ -277,6 +280,73 @@ export async function createCheckoutSession(
     });
 
     await recordPendingOrder(admin, session, user.id, lines);
+    return session;
+  }
+
+  // ------------------------------------------------------------------ RUTA
+  if (intent.kind === 'path') {
+    const { data: path } = await admin
+      .from('paths')
+      .select('id, slug, title, price_one_time_cents, stripe_price_id_one_time, status')
+      .eq('slug', intent.slug)
+      .maybeSingle();
+
+    if (!path) throw new Error(`Ruta no encontrada: ${intent.slug}`);
+    if (path.status !== 'published') throw new Error('Esta ruta no esta a la venta.');
+    if (!path.stripe_price_id_one_time) {
+      throw new Error('La ruta no tiene precio configurado en Stripe.');
+    }
+
+    const { data: members } = await admin
+      .from('path_packages')
+      .select('package_id, sort_order')
+      .eq('path_id', path.id)
+      .order('sort_order');
+
+    if (!members || members.length === 0) throw new Error('Esta ruta no tiene paquetes.');
+
+    // Se conceden todos los paquetes de la ruta, incluidos los que el cliente ya
+    // tuviera: el precio del lote es unico y no se prorratea. Si ya los tiene
+    // todos, no hay nada que vender.
+    const owned = await Promise.all(
+      members.map((member) => alreadyOwns(admin, user.id, member.package_id)),
+    );
+
+    if (owned.every(Boolean)) {
+      throw new Error('Ya tienes acceso a todos los paquetes de esta ruta.');
+    }
+
+    const lines: ResolvedLine[] = members.map((member) => ({
+      packageId: member.package_id,
+      priceId: path.stripe_price_id_one_time as string,
+      // El importe va entero en la primera linea: es un lote con un solo precio,
+      // no una suma de precios individuales.
+      amountCents: 0,
+      kind: 'path' as const,
+    }));
+
+    const metadata = {
+      [METADATA_KEYS.userId]: user.id,
+      [METADATA_KEYS.packageIds]: members.map((member) => member.package_id).join(','),
+      [METADATA_KEYS.kind]: 'package',
+      ...affiliateMetadata,
+    };
+
+    const session = await stripe.checkout.sessions.create({
+      ...common,
+      mode: 'payment',
+      // Una sola linea de cobro: la del precio del lote.
+      line_items: [{ price: path.stripe_price_id_one_time, quantity: 1 }],
+      payment_intent_data: { metadata },
+      metadata,
+      success_url: absoluteUrl(
+        '/checkout/exito?session_id={CHECKOUT_SESSION_ID}',
+        publicEnv.NEXT_PUBLIC_SITE_URL,
+      ),
+      cancel_url: absoluteUrl(`/rutas/${path.slug}`, publicEnv.NEXT_PUBLIC_SITE_URL),
+    });
+
+    await recordPendingOrder(admin, session, user.id, lines, path.id);
     return session;
   }
 

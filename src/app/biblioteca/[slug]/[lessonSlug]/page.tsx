@@ -4,6 +4,7 @@ import { notFound, redirect } from 'next/navigation';
 import { VideoPlayer } from '@/components/members/video-player';
 import { MarkCompleteButton } from '@/components/members/mark-complete-button';
 import { QuestionThread, type Thread } from '@/components/members/question-thread';
+import { AutomationList, type AutomationItem } from '@/components/members/automation-list';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState, canAccessPackage } from '@/lib/entitlements';
 
@@ -60,6 +61,13 @@ export default async function LessonPage({ params }: PageProps) {
     supabase.rpc('package_thread', { p_package_id: pkg.id, p_lesson_id: lesson.id }),
   ]);
 
+  const { data: automations } = await supabase
+    .from('automations')
+    .select('id, name, description, platform, version, setup_notes, requires')
+    .eq('lesson_id', lesson.id)
+    .eq('status', 'published')
+    .order('sort_order');
+
   const resources = detail?.resources ?? [];
 
   return (
@@ -104,6 +112,11 @@ export default async function LessonPage({ params }: PageProps) {
           initiallyCompleted={Boolean(progress?.completed_at)}
         />
       </div>
+
+      <AutomationList
+        automations={(automations ?? []) as AutomationItem[]}
+        title="Automatizaciones de esta lección"
+      />
 
       <QuestionThread
         packageId={pkg.id}

@@ -5,6 +5,7 @@ export const siteConfig = {
     'Sistemas listos para implementar de ecommerce, dropshipping y automatización con IA. Video paso a paso, plantillas y automatizaciones que puedes copiar hoy.',
   nav: [
     { label: 'Paquetes', href: '/paquetes' },
+    { label: 'Rutas', href: '/rutas' },
     { label: 'Precios', href: '/precios' },
     { label: 'Cómo funciona', href: '/#como-funciona' },
     { label: 'Preguntas', href: '/#faq' },

@@ -12,6 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: siteUrl, changeFrequency: 'weekly', priority: 1 },
     { url: `${siteUrl}/paquetes`, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${siteUrl}/rutas`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${siteUrl}/precios`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${siteUrl}/legal/terminos`, changeFrequency: 'yearly', priority: 0.2 },
     { url: `${siteUrl}/legal/privacidad`, changeFrequency: 'yearly', priority: 0.2 },
@@ -20,11 +21,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   try {
     const supabase = await createSupabaseServerClient();
-    const { data: packages } = await supabase
-      .from('packages')
-      .select('slug, updated_at')
-      .eq('status', 'published')
-      .order('sort_order');
+
+    const [{ data: packages }, { data: paths }] = await Promise.all([
+      supabase.from('packages').select('slug, updated_at').eq('status', 'published'),
+      supabase.from('paths').select('slug, updated_at').eq('status', 'published'),
+    ]);
 
     const packageRoutes: MetadataRoute.Sitemap = (packages ?? []).map((pkg) => ({
       url: `${siteUrl}/paquetes/${pkg.slug}`,
@@ -33,7 +34,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     }));
 
-    return [...staticRoutes, ...packageRoutes];
+    const pathRoutes: MetadataRoute.Sitemap = (paths ?? []).map((path) => ({
+      url: `${siteUrl}/rutas/${path.slug}`,
+      lastModified: new Date(path.updated_at),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    }));
+
+    return [...staticRoutes, ...packageRoutes, ...pathRoutes];
   } catch {
     // Un fallo de base de datos no debe dejar el sitio sin sitemap.
     return staticRoutes;

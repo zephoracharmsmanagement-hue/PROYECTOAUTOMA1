@@ -21,6 +21,7 @@ const bodySchema = z.discriminatedUnion('kind', [
     // pertenece a este paquete y sigue activa antes de cobrarla.
     bumpOfferIds: z.array(z.string().uuid()).max(5).optional(),
   }),
+  z.object({ kind: z.literal('path'), slug }),
   z.object({ kind: z.literal('upsell'), offerId: z.string().uuid() }),
   z.object({ kind: z.literal('subscription'), planSlug: slug }),
 ]);

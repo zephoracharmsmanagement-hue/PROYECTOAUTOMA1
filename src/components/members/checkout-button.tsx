@@ -7,6 +7,7 @@ import { track } from '@/lib/analytics/track';
 
 export type CheckoutIntentInput =
   | { kind: 'package'; slug: string; bumpOfferIds?: string[] }
+  | { kind: 'path'; slug: string }
   | { kind: 'upsell'; offerId: string }
   | { kind: 'subscription'; planSlug: string };
 
@@ -32,7 +33,7 @@ export function CheckoutButton({ intent, children, variant, size, className }: P
     setError(null);
 
     const item =
-      intent.kind === 'package'
+      intent.kind === 'package' || intent.kind === 'path'
         ? intent.slug
         : intent.kind === 'upsell'
           ? intent.offerId
@@ -52,9 +53,11 @@ export function CheckoutButton({ intent, children, variant, size, className }: P
         const next =
           intent.kind === 'package'
             ? `/paquetes/${intent.slug}`
-            : intent.kind === 'upsell'
-              ? '/dashboard'
-              : '/precios';
+            : intent.kind === 'path'
+              ? `/rutas/${intent.slug}`
+              : intent.kind === 'upsell'
+                ? '/dashboard'
+                : '/precios';
         router.push(`/login?next=${encodeURIComponent(next)}`);
         return;
       }

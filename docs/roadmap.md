@@ -51,9 +51,22 @@ personalizado según la Directiva UE 2019/2161. Ver `docs/conversion.md`.
 Requiere suscribir dos eventos nuevos en Stripe: `invoice.paid` y
 `checkout.session.expired`. Ver `docs/payments.md`.
 
-## Fase 4 — Producto
+## Fase 4 — Producto (en curso)
 
-- [ ] Rutas de aprendizaje que encadenen varios paquetes
-- [ ] Automatizaciones instalables en un clic (n8n / Make)
+- [x] Rutas de aprendizaje que encadenan varios paquetes y se venden como lote
+- [x] Automatizaciones instalables (n8n / Make / Zapier) servidas solo a quien
+      tiene acceso, con detección de credenciales al subirlas
 - [ ] Asistente con IA sobre el contenido de los paquetes (RAG)
 - [ ] Versión en inglés
+
+Ver `docs/product.md`.
+
+## Fase 5 — Fiabilidad
+
+Pendiente y recomendada antes de abrir ventas: nada de lo construido se ha
+ejecutado todavía contra una base de datos real.
+
+- [ ] Tests de integración contra Supabase local: RLS, entitlements, webhook
+- [ ] Pruebas del flujo de pago con Stripe en modo test, incluidos bumps,
+      reembolsos y carritos abandonados
+- [ ] Semilla de datos de demostración coherente para desarrollo

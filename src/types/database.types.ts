@@ -14,7 +14,8 @@ export type Json = string | number | boolean | null | { [key: string]: Json } | 
 export type UserRole = 'customer' | 'admin';
 export type ContentStatus = 'draft' | 'published' | 'archived';
 export type OrderStatus = 'pending' | 'paid' | 'refunded' | 'failed' | 'expired';
-export type OrderItemKind = 'main' | 'bump' | 'upsell';
+export type OrderItemKind = 'main' | 'bump' | 'upsell' | 'path';
+export type AutomationPlatform = 'n8n' | 'make' | 'zapier' | 'other';
 export type OfferPlacement = 'bump' | 'upsell';
 export type ReferralStatus = 'pending' | 'approved' | 'paid' | 'void';
 export type QuestionStatus = 'open' | 'answered' | 'hidden';
@@ -117,6 +118,7 @@ export type OrderRow = {
   package_id: string | null;
   stripe_checkout_session_id: string;
   stripe_payment_intent_id: string | null;
+  path_id: string | null;
   amount_cents: number;
   currency: string;
   status: OrderStatus;
@@ -217,6 +219,48 @@ export type ExperimentRow = {
   hypothesis: string | null;
   variants: ExperimentVariant[];
   is_active: boolean;
+  created_at: string;
+  updated_at: string;
+};
+
+export type PathRow = {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string | null;
+  description: string | null;
+  outcome: string | null;
+  cover_url: string | null;
+  price_one_time_cents: number | null;
+  currency: string;
+  stripe_price_id_one_time: string | null;
+  included_in_subscription: boolean;
+  status: ContentStatus;
+  sort_order: number;
+  created_at: string;
+  updated_at: string;
+};
+
+export type PathPackageRow = {
+  path_id: string;
+  package_id: string;
+  note: string | null;
+  sort_order: number;
+};
+
+export type AutomationRow = {
+  id: string;
+  package_id: string;
+  lesson_id: string | null;
+  name: string;
+  description: string | null;
+  platform: AutomationPlatform;
+  version: string;
+  workflow: Json;
+  setup_notes: string | null;
+  requires: string[];
+  status: ContentStatus;
+  sort_order: number;
   created_at: string;
   updated_at: string;
 };
@@ -382,6 +426,15 @@ export type Database = {
         ]
       >;
       campaigns: Table<CampaignRow>;
+      paths: Table<PathRow>;
+      path_packages: Table<
+        PathPackageRow,
+        [Relationship<['path_id'], 'paths'>, Relationship<['package_id'], 'packages'>]
+      >;
+      automations: Table<
+        AutomationRow,
+        [Relationship<['package_id'], 'packages'>, Relationship<['lesson_id'], 'lessons'>]
+      >;
       affiliates: Table<AffiliateRow, [Relationship<['user_id'], 'profiles'>]>;
       referrals: Table<
         ReferralRow,
@@ -430,6 +483,7 @@ export type Database = {
         Returns: Json;
       };
       display_name: { Args: { p_full_name: string; p_email: string }; Returns: string };
+      automation_catalog: { Args: { p_package_id: string }; Returns: Json };
       issue_certificate_if_complete: { Args: { p_package_id: string }; Returns: string | null };
     };
     Enums: {
@@ -445,6 +499,7 @@ export type Database = {
       offer_placement: OfferPlacement;
       referral_status: ReferralStatus;
       question_status: QuestionStatus;
+      automation_platform: AutomationPlatform;
     };
     CompositeTypes: Record<string, never>;
   };
