@@ -40,15 +40,22 @@ stripe listen --forward-to localhost:3000/api/webhooks/stripe
 **Producción** — Developers → Webhooks → Add endpoint
 → `https://tudominio.com/api/webhooks/stripe`, con estos eventos:
 
-| Evento                          | Efecto                                     |
-| ------------------------------- | ------------------------------------------ |
-| `checkout.session.completed`    | Registra la orden y concede el entitlement |
-| `customer.subscription.created` | Alta de membresía                          |
-| `customer.subscription.updated` | Cambio de estado, plan o renovación        |
-| `customer.subscription.deleted` | Revoca la membresía                        |
-| `invoice.payment_failed`        | Solo log (Stripe gestiona los reintentos)  |
-| `charge.refunded`               | Revoca el paquete reembolsado              |
-| `charge.dispute.created`        | Revoca el paquete disputado                |
+| Evento                          | Efecto                                                                            |
+| ------------------------------- | --------------------------------------------------------------------------------- |
+| `checkout.session.completed`    | Registra la orden, concede los entitlements y anota la comisión de afiliado       |
+| `checkout.session.expired`      | Marca el carrito como abandonado y envía el email de recuperación                 |
+| `customer.subscription.created` | Alta de membresía                                                                 |
+| `customer.subscription.updated` | Cambio de estado, plan o renovación                                               |
+| `customer.subscription.deleted` | Revoca la membresía                                                               |
+| `invoice.paid`                  | Registra el ingreso recurrente, cierra el dunning y genera comisión de renovación |
+| `invoice.payment_failed`        | Dunning: escala el aviso según el número de intento                               |
+| `charge.refunded`               | Revoca **todo** lo que traía la orden reembolsada                                 |
+| `charge.dispute.created`        | Revoca lo disputado                                                               |
+
+Sin `invoice.paid` no hay MRR ni LTV reales: los pagos recurrentes no quedarían
+registrados en ninguna parte, y las comisiones de afiliado sobre renovaciones no
+se generarían. Sin `checkout.session.expired` no hay recuperación de carritos
+abandonados. Los nueve son necesarios.
 
 Copia el signing secret a `STRIPE_WEBHOOK_SECRET`.
 
