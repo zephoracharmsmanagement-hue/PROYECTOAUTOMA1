@@ -3,6 +3,10 @@ import { ButtonLink } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { PackageCard } from '@/components/marketing/package-card';
 import { LeadForm } from '@/components/marketing/lead-form';
+import { Testimonials } from '@/components/marketing/testimonials';
+import { JsonLd } from '@/components/seo/json-ld';
+import { faqJsonLd, organizationJsonLd, websiteJsonLd } from '@/lib/seo/json-ld';
+import { publicEnv } from '@/lib/env';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState, canAccessPackage } from '@/lib/entitlements';
 import { GUARANTEE_DAYS, siteConfig } from '@/config/site';
@@ -48,7 +52,7 @@ const FAQ = [
 export default async function HomePage() {
   const supabase = await createSupabaseServerClient();
 
-  const [{ data: packages }, access] = await Promise.all([
+  const [{ data: packages }, { data: testimonials }, access] = await Promise.all([
     supabase
       .from('packages')
       .select(
@@ -57,11 +61,25 @@ export default async function HomePage() {
       .eq('status', 'published')
       .order('sort_order')
       .limit(3),
+    // Testimonios generales de marca: los que no están atados a un paquete.
+    supabase
+      .from('testimonials')
+      .select('*')
+      .is('package_id', null)
+      .eq('status', 'published')
+      .order('sort_order')
+      .limit(6),
     getAccessState(),
   ]);
 
+  const siteUrl = publicEnv.NEXT_PUBLIC_SITE_URL;
+
   return (
     <>
+      <JsonLd data={organizationJsonLd(siteUrl)} />
+      <JsonLd data={websiteJsonLd(siteUrl)} />
+      <JsonLd data={faqJsonLd(FAQ)} />
+
       {/* ---------------------------------------------------------------- HERO */}
       <section className="hero-glow border-b border-ink-800">
         <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:py-28">
@@ -127,6 +145,8 @@ export default async function HomePage() {
           )}
         </div>
       </section>
+
+      <Testimonials testimonials={testimonials ?? []} />
 
       {/* ------------------------------------------------------ COMO FUNCIONA */}
       <section id="como-funciona" className="border-b border-ink-800 py-20">

@@ -3,10 +3,14 @@ import { PricingCard } from '@/components/marketing/pricing-card';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState } from '@/lib/entitlements';
 import { GUARANTEE_DAYS } from '@/config/site';
+import { JsonLd } from '@/components/seo/json-ld';
+import { subscriptionJsonLd } from '@/lib/seo/json-ld';
+import { publicEnv } from '@/lib/env';
 
 export const metadata: Metadata = {
   title: 'Precios',
   description: 'Compra paquetes sueltos o desbloquea todo el catálogo con la membresía All Access.',
+  alternates: { canonical: '/precios' },
 };
 
 export const revalidate = 300;
@@ -23,6 +27,9 @@ export default async function PricingPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-16">
+      {list.length > 0 && (
+        <JsonLd data={subscriptionJsonLd(list, publicEnv.NEXT_PUBLIC_SITE_URL)} />
+      )}
       <div className="text-center">
         <h1 className="text-4xl font-bold tracking-tight">Elige cómo quieres avanzar</h1>
         <p className="mx-auto mt-4 max-w-2xl text-mist-400">

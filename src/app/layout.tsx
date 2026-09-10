@@ -6,6 +6,7 @@ import { getCurrentUser } from '@/lib/supabase/server';
 import { isCurrentUserAdmin } from '@/lib/admin/guard';
 import { siteConfig } from '@/config/site';
 import { publicEnv } from '@/lib/env';
+import { AnalyticsScripts } from '@/components/analytics/analytics-scripts';
 
 export const metadata: Metadata = {
   metadataBase: new URL(publicEnv.NEXT_PUBLIC_SITE_URL),
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     locale: 'es_ES',
@@ -36,6 +38,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <SiteHeader isAuthenticated={Boolean(user)} isAdmin={isAdmin} />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        <AnalyticsScripts />
       </body>
     </html>
   );

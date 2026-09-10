@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
+import { track } from '@/lib/analytics/track';
 
 export type CheckoutIntentInput =
   { kind: 'package'; slug: string } | { kind: 'subscription'; planSlug: string };
@@ -28,6 +29,9 @@ export function CheckoutButton({ intent, children, variant, size, className }: P
     setLoading(true);
     setError(null);
 
+    const item = intent.kind === 'package' ? intent.slug : intent.planSlug;
+    track({ name: 'begin_checkout', props: { kind: intent.kind, item } });
+
     try {
       const response = await fetch('/api/checkout', {
         method: 'POST',
@@ -44,6 +48,8 @@ export function CheckoutButton({ intent, children, variant, size, className }: P
       const payload = (await response.json()) as { url?: string; error?: string };
 
       if (!response.ok || !payload.url) {
+        const reason = payload.error ?? 'unknown';
+        track({ name: 'checkout_failed', props: { kind: intent.kind, reason } });
         setError(payload.error ?? 'No se pudo iniciar el pago. Inténtalo de nuevo.');
         return;
       }

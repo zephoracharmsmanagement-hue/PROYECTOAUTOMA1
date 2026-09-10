@@ -154,6 +154,22 @@ export type LessonProgressRow = {
   updated_at: string;
 };
 
+export type TestimonialRow = {
+  id: string;
+  package_id: string | null;
+  author_name: string;
+  author_role: string | null;
+  author_avatar_url: string | null;
+  quote: string;
+  result: string | null;
+  rating: number | null;
+  source_url: string | null;
+  status: ContentStatus;
+  sort_order: number;
+  created_at: string;
+  updated_at: string;
+};
+
 export type WebhookEventRow = {
   id: string;
   stripe_event_id: string;
@@ -217,6 +233,7 @@ export type Database = {
         ]
       >;
       lesson_progress: Table<LessonProgressRow>;
+      testimonials: Table<TestimonialRow, [Relationship<['package_id'], 'packages'>]>;
       webhook_events: Table<WebhookEventRow>;
       leads: Table<LeadRow>;
     };

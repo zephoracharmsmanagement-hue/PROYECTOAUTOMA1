@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ButtonLink } from '@/components/ui/button';
 import { getAccessState } from '@/lib/entitlements';
+import { PurchaseTracker } from '@/components/analytics/purchase-tracker';
 
 export const metadata: Metadata = { title: 'Pago confirmado', robots: { index: false } };
 export const dynamic = 'force-dynamic';
@@ -16,8 +17,11 @@ export default async function CheckoutSuccessPage() {
   const access = await getAccessState();
   const ready = access.hasAllAccess || access.packageIds.size > 0;
 
+  const kind = access.hasAllAccess ? 'subscription' : ready ? 'package' : 'unknown';
+
   return (
     <div className="mx-auto max-w-xl px-4 py-24 text-center">
+      <PurchaseTracker kind={kind} />
       <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-brand-500 text-2xl text-ink-950">
         ✓
       </div>

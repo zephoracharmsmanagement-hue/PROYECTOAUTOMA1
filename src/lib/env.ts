@@ -13,6 +13,11 @@ const publicSchema = z.object({
   NEXT_PUBLIC_SUPABASE_URL: z.string().url(),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1),
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().min(1).optional(),
+  // Analitica: 'none' desactiva el envio de eventos por completo.
+  NEXT_PUBLIC_ANALYTICS_PROVIDER: z.enum(['none', 'plausible', 'ga4']).default('none'),
+  NEXT_PUBLIC_PLAUSIBLE_DOMAIN: z.string().min(1).optional(),
+  NEXT_PUBLIC_PLAUSIBLE_HOST: z.string().url().optional(),
+  NEXT_PUBLIC_GA_MEASUREMENT_ID: z.string().min(1).optional(),
 });
 
 const serverSchema = z.object({
@@ -24,6 +29,7 @@ const serverSchema = z.object({
   BUNNY_TOKEN_TTL_MINUTES: z.coerce.number().int().positive().default(180),
   RESEND_API_KEY: z.string().optional(),
   EMAIL_FROM: z.string().optional(),
+  EMAIL_REPLY_TO: z.string().optional(),
 });
 
 function format(error: z.ZodError): string {
@@ -36,6 +42,10 @@ const parsedPublic = publicSchema.safeParse({
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
   NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
+  NEXT_PUBLIC_ANALYTICS_PROVIDER: process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER,
+  NEXT_PUBLIC_PLAUSIBLE_DOMAIN: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN,
+  NEXT_PUBLIC_PLAUSIBLE_HOST: process.env.NEXT_PUBLIC_PLAUSIBLE_HOST,
+  NEXT_PUBLIC_GA_MEASUREMENT_ID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
 });
 
 /**
@@ -60,6 +70,10 @@ export const publicEnv = parsedPublic.success
       NEXT_PUBLIC_SUPABASE_URL: 'http://localhost:54321',
       NEXT_PUBLIC_SUPABASE_ANON_KEY: 'build-placeholder',
       NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: undefined,
+      NEXT_PUBLIC_ANALYTICS_PROVIDER: 'none',
+      NEXT_PUBLIC_PLAUSIBLE_DOMAIN: undefined,
+      NEXT_PUBLIC_PLAUSIBLE_HOST: undefined,
+      NEXT_PUBLIC_GA_MEASUREMENT_ID: undefined,
     } satisfies z.infer<typeof publicSchema>);
 
 let cachedServerEnv: z.infer<typeof serverSchema> | null = null;

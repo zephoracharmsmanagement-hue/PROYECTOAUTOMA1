@@ -29,6 +29,7 @@ plantillas descargables. Monetización **híbrida**:
 │   ├── architecture.md       Visión general y flujo de datos
 │   ├── data-model.md         Tablas, relaciones y decisiones de modelado
 │   ├── admin.md              Panel de administración y modelo de permisos
+│   ├── growth.md             SEO, analítica, email transaccional y testimonios
 │   ├── payments.md           Configuración de Stripe y flujo de webhooks
 │   ├── video-delivery.md     Protección y entrega de video
 │   ├── deployment.md         Despliegue y variables por entorno
@@ -56,6 +57,9 @@ plantillas descargables. Monetización **híbrida**:
 │   │   └── admin/            Formularios y editor de temario del panel
 │   ├── lib/
 │   │   ├── admin/            Guardia de acceso y Server Actions del panel
+│   │   ├── analytics/        Catálogo de eventos y envío agnóstico de proveedor
+│   │   ├── email/            Cliente de Resend y plantillas transaccionales
+│   │   ├── seo/              Generadores de datos estructurados (JSON-LD)
 │   │   ├── supabase/         Clientes browser / server / admin / middleware
 │   │   ├── stripe/           Cliente, checkout, customers, webhook handlers
 │   │   ├── video/            Interfaz VideoProvider + adaptador Bunny
@@ -124,7 +128,13 @@ Regístrate en la web y luego promociónate desde SQL:
 update public.profiles set role = 'admin' where email = 'tu@email.com';
 ```
 
-El panel queda disponible en `/admin`: catálogo y temario, planes, ventas,
-alumnos y leads. Ver [`docs/admin.md`](./docs/admin.md).
+El panel queda disponible en `/admin`: catálogo y temario, planes, testimonios,
+ventas, alumnos y leads. Ver [`docs/admin.md`](./docs/admin.md).
+
+## Crecimiento
+
+SEO técnico, analítica de conversión, email transaccional y prueba social están
+implementados y apagados por defecto hasta que los configures. Ver
+[`docs/growth.md`](./docs/growth.md).
 
 Documentación detallada en [`docs/`](./docs/architecture.md).

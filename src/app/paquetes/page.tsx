@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: 'Catálogo de paquetes',
   description:
     'Todos los sistemas de ecommerce, dropshipping y automatización disponibles para implementar hoy.',
+  alternates: { canonical: '/paquetes' },
 };
 
 export const revalidate = 300;

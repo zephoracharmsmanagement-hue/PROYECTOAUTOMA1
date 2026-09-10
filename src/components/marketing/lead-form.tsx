@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { track } from '@/lib/analytics/track';
 
 /** Captura de email para la secuencia de nurturing. */
 export function LeadForm({ source = 'landing' }: { source?: string }) {
@@ -28,6 +29,7 @@ export function LeadForm({ source = 'landing' }: { source?: string }) {
         return;
       }
 
+      track({ name: 'lead_submitted', props: { source } });
       setState('done');
       setMessage('Listo. Revisa tu bandeja de entrada.');
       setEmail('');

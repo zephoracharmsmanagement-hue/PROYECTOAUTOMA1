@@ -5,6 +5,10 @@ import { z } from 'zod';
 import { requireAdmin } from '@/lib/admin/guard';
 import { formError, formSuccess, type FormState } from '@/lib/admin/form';
 import { logger } from '@/lib/logger';
+import { sendEmail } from '@/lib/email/client';
+import { manualGrantEmail } from '@/lib/email/templates';
+import { publicEnv } from '@/lib/env';
+import { absoluteUrl } from '@/lib/utils';
 
 /**
  * Concesión manual de acceso: soporte, regalos, afiliados o recuperación de una
@@ -22,6 +26,8 @@ export async function grantAccess(_prev: FormState, formData: FormData): Promise
       target: z.string().min(1),
     })
     .safeParse({ email: formData.get('email'), target: formData.get('target') });
+
+  const shouldNotify = formData.get('notify') === 'on';
 
   if (!parsed.success) return formError('Revisa el email y el paquete seleccionado.');
 
@@ -63,6 +69,33 @@ export async function grantAccess(_prev: FormState, formData: FormData): Promise
     userId: profile.id,
     target: parsed.data.target,
   });
+
+  if (shouldNotify) {
+    const itemName = isAllAccess
+      ? 'la membresía All Access'
+      : ((
+          await supabase.from('packages').select('title').eq('id', parsed.data.target).maybeSingle()
+        ).data?.title ?? 'un paquete nuevo');
+
+    // El email es accesorio: el acceso ya está concedido pase lo que pase.
+    const result = await sendEmail({
+      to: profile.email,
+      ...manualGrantEmail({
+        itemName,
+        libraryUrl: absoluteUrl('/dashboard', publicEnv.NEXT_PUBLIC_SITE_URL),
+      }),
+    });
+
+    revalidatePath('/admin/alumnos');
+
+    if (!result.ok) {
+      return formSuccess(
+        `Acceso concedido a ${profile.email}, pero no se pudo enviar el email de aviso.`,
+      );
+    }
+
+    return formSuccess(`Acceso concedido a ${profile.email} y avisado por email.`);
+  }
 
   revalidatePath('/admin/alumnos');
   return formSuccess(`Acceso concedido a ${profile.email}.`);

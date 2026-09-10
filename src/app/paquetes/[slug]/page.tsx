@@ -8,6 +8,10 @@ import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { getAccessState, canAccessPackage } from '@/lib/entitlements';
 import { formatDuration, formatPrice } from '@/lib/utils';
 import { GUARANTEE_DAYS } from '@/config/site';
+import { Testimonials } from '@/components/marketing/testimonials';
+import { JsonLd } from '@/components/seo/json-ld';
+import { breadcrumbJsonLd, packageJsonLd } from '@/lib/seo/json-ld';
+import { publicEnv } from '@/lib/env';
 
 export const revalidate = 300;
 
@@ -27,12 +31,23 @@ async function loadPackage(slug: string) {
 
   if (!pkg) return null;
 
-  const [{ data: modules }, { data: outline }] = await Promise.all([
+  const [{ data: modules }, { data: outline }, { data: testimonials }] = await Promise.all([
     supabase.from('modules').select('*').eq('package_id', pkg.id).order('sort_order'),
     supabase.from('lesson_outline').select('*').eq('package_id', pkg.id).order('sort_order'),
+    supabase
+      .from('testimonials')
+      .select('*')
+      .eq('package_id', pkg.id)
+      .eq('status', 'published')
+      .order('sort_order'),
   ]);
 
-  return { pkg, modules: modules ?? [], outline: outline ?? [] };
+  return {
+    pkg,
+    modules: modules ?? [],
+    outline: outline ?? [],
+    testimonials: testimonials ?? [],
+  };
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -40,9 +55,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const data = await loadPackage(slug);
   if (!data) return { title: 'Paquete no encontrado' };
 
+  const url = `/paquetes/${data.pkg.slug}`;
+  const description = data.pkg.outcome ?? data.pkg.description ?? data.pkg.subtitle ?? undefined;
+
   return {
     title: data.pkg.title,
-    description: data.pkg.outcome ?? data.pkg.description ?? undefined,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: 'article',
+      url,
+      title: data.pkg.title,
+      description,
+      ...(data.pkg.cover_url ? { images: [data.pkg.cover_url] } : {}),
+    },
   };
 }
 
@@ -51,7 +77,8 @@ export default async function PackageDetailPage({ params }: PageProps) {
   const data = await loadPackage(slug);
   if (!data) notFound();
 
-  const { pkg, modules, outline } = data;
+  const { pkg, modules, outline, testimonials } = data;
+  const siteUrl = publicEnv.NEXT_PUBLIC_SITE_URL;
   const access = await getAccessState();
   const owned = canAccessPackage(access, pkg);
 
@@ -59,6 +86,15 @@ export default async function PackageDetailPage({ params }: PageProps) {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16">
+      <JsonLd data={packageJsonLd(pkg, siteUrl, testimonials)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Inicio', url: siteUrl },
+          { name: 'Paquetes', url: `${siteUrl}/paquetes` },
+          { name: pkg.title, url: `${siteUrl}/paquetes/${pkg.slug}` },
+        ])}
+      />
+
       <div className="grid gap-12 lg:grid-cols-[1fr_360px]">
         {/* --------------------------------------------------------- CONTENIDO */}
         <div>
@@ -191,6 +227,15 @@ export default async function PackageDetailPage({ params }: PageProps) {
           </p>
         </aside>
       </div>
+
+      {testimonials.length > 0 && (
+        <div className="-mx-4 mt-16">
+          <Testimonials
+            testimonials={testimonials}
+            title="Resultados de quienes ya lo implementaron"
+          />
+        </div>
+      )}
     </div>
   );
 }

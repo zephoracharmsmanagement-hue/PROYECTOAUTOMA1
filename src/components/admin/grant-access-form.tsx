@@ -1,7 +1,14 @@
 'use client';
 
 import { useActionState } from 'react';
-import { Field, FormFeedback, Input, Select, SubmitButton } from '@/components/admin/controls';
+import {
+  Checkbox,
+  Field,
+  FormFeedback,
+  Input,
+  Select,
+  SubmitButton,
+} from '@/components/admin/controls';
 import { grantAccess } from '@/lib/admin/actions/entitlements';
 import { IDLE_FORM_STATE } from '@/lib/admin/form';
 
@@ -43,6 +50,15 @@ export function GrantAccessForm({ packages }: { packages: Array<{ id: string; ti
         </Field>
 
         <SubmitButton pendingLabel="Concediendo…">Conceder</SubmitButton>
+      </div>
+
+      <div className="mt-4">
+        <Checkbox
+          name="notify"
+          label="Avisar por email al usuario"
+          hint="Si el envío falla, el acceso se concede igualmente."
+          defaultChecked
+        />
       </div>
 
       <div className="mt-4">

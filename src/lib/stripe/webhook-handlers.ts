@@ -4,6 +4,10 @@ import type Stripe from 'stripe';
 import { getStripe, METADATA_KEYS } from '@/lib/stripe/client';
 import { createSupabaseAdminClient } from '@/lib/supabase/admin';
 import { logger } from '@/lib/logger';
+import { sendEmail } from '@/lib/email/client';
+import { purchaseEmail, subscriptionEmail, paymentFailedEmail } from '@/lib/email/templates';
+import { publicEnv } from '@/lib/env';
+import { absoluteUrl } from '@/lib/utils';
 import type { Json } from '@/types/database.types';
 
 /**
@@ -69,6 +73,29 @@ function customerIdOf(
   return typeof value === 'string' ? value : value.id;
 }
 
+async function emailOf(admin: Admin, userId: string): Promise<string | null> {
+  const { data } = await admin.from('profiles').select('email').eq('id', userId).maybeSingle();
+  return data?.email ?? null;
+}
+
+/**
+ * Envuelve el envio de email para que NUNCA propague un fallo.
+ *
+ * Si un error de email escapara hasta el manejador, el webhook devolveria 500,
+ * Stripe reintentaria el evento y el usuario recibiria el mismo correo varias
+ * veces. En ese punto el acceso ya esta concedido: el email es accesorio.
+ */
+async function notify(to: string | null, message: { subject: string; html: string; text: string }) {
+  if (!to) return;
+  try {
+    await sendEmail({ to, ...message });
+  } catch (error) {
+    logger.error('Fallo inesperado enviando notificacion', {
+      message: error instanceof Error ? error.message : 'desconocido',
+    });
+  }
+}
+
 // -----------------------------------------------------------------------------
 // Compra de pago unico
 // -----------------------------------------------------------------------------
@@ -130,6 +157,20 @@ async function handleOneTimePurchase(admin: Admin, session: Stripe.Checkout.Sess
   }
 
   logger.info('Acceso a paquete concedido', { userId, packageId, orderId: order.id });
+
+  const { data: pkg } = await admin
+    .from('packages')
+    .select('title')
+    .eq('id', packageId)
+    .maybeSingle();
+
+  await notify(
+    await emailOf(admin, userId),
+    purchaseEmail({
+      packageTitle: pkg?.title ?? 'tu nuevo paquete',
+      libraryUrl: absoluteUrl('/dashboard', publicEnv.NEXT_PUBLIC_SITE_URL),
+    }),
+  );
 }
 
 // -----------------------------------------------------------------------------
@@ -149,6 +190,17 @@ export async function syncSubscription(admin: Admin, subscription: Stripe.Subscr
   }
 
   const priceId = subscription.items.data[0]?.price.id ?? null;
+
+  // ¿Es la primera vez que vemos esta suscripcion? Determina si toca dar la
+  // bienvenida. `checkout.session.completed` y `customer.subscription.created`
+  // describen el mismo alta, y sin esta comprobacion llegarian dos emails.
+  const { data: known } = await admin
+    .from('subscriptions')
+    .select('id')
+    .eq('stripe_subscription_id', subscription.id)
+    .maybeSingle();
+
+  const isNew = !known;
 
   // Enlaza con el plan local por price id; si no existe, se guarda igualmente.
   const { data: plan } = priceId
@@ -201,6 +253,20 @@ export async function syncSubscription(admin: Admin, subscription: Stripe.Subscr
     status: subscription.status,
     grants,
   });
+
+  if (isNew && grants) {
+    const { data: planRow } = plan?.id
+      ? await admin.from('plans').select('name').eq('id', plan.id).maybeSingle()
+      : { data: null };
+
+    await notify(
+      await emailOf(admin, userId),
+      subscriptionEmail({
+        planName: planRow?.name ?? 'All Access',
+        libraryUrl: absoluteUrl('/dashboard', publicEnv.NEXT_PUBLIC_SITE_URL),
+      }),
+    );
+  }
 }
 
 async function revokeSubscription(admin: Admin, subscription: Stripe.Subscription) {
@@ -298,12 +364,25 @@ export async function handleStripeEvent(event: Stripe.Event): Promise<void> {
       await revokeSubscription(admin, event.data.object);
       return;
 
-    case 'invoice.payment_failed':
-      logger.warn('Pago de factura fallido', {
-        invoiceId: event.data.object.id,
-        customerId: customerIdOf(event.data.object.customer),
-      });
+    case 'invoice.payment_failed': {
+      const invoice = event.data.object;
+      const customerId = customerIdOf(invoice.customer);
+
+      logger.warn('Pago de factura fallido', { invoiceId: invoice.id, customerId });
+
+      // Aviso temprano: Stripe reintentara varios dias, pero avisar ahora
+      // recupera pagos que de otro modo acaban en baja involuntaria.
+      const userId = await resolveUserId(admin, invoice.metadata, customerId);
+      if (userId) {
+        await notify(
+          await emailOf(admin, userId),
+          paymentFailedEmail({
+            portalUrl: absoluteUrl('/cuenta', publicEnv.NEXT_PUBLIC_SITE_URL),
+          }),
+        );
+      }
       return;
+    }
 
     case 'charge.refunded':
       await revokeForCharge(admin, event.data.object, 'refund');
