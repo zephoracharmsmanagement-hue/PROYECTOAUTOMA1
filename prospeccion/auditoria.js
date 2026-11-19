@@ -283,7 +283,8 @@ async function aceptarBannerCookies(page) {
 
 async function instrumentar(page) {
   const estado = {
-    eventosPixel: [],      // observados en facebook.com/tr → prueba de que el pixel funciona
+    eventosPixel: [],      // observados en facebook.com/tr → prueba de que el pixel DISPARA
+    idsInicializados: new Set(), // de connect.facebook.net/signals/config/<id> → prueba de que el pixel ARRANCA
     hostsVistos: new Set(),
     fallidos: [],          // host + motivo, alimenta `bloqueados`
     fbeventsCargado: false,
@@ -344,6 +345,12 @@ async function instrumentar(page) {
       estado.eventosPixel.push({ id, evento: ev, metodo: req.method(), parametros_cd: cds });
     }
     if (/connect\.facebook\.net\/.*fbevents\.js/i.test(url)) estado.urls.push(url);
+    // El navegador pide signals/config/<id> por cada pixel que fbq('init') arranca.
+    // Distinguir "arranca" de "dispara" es clave: un pixel inicializado que no
+    // manda ni un PageView es un problema REAL y concreto, muy distinto de una
+    // tienda que simplemente no tiene pixel de navegador.
+    const mcfg = /connect\.facebook\.net\/signals\/config\/(\d{8,20})/i.exec(url);
+    if (mcfg) estado.idsInicializados.add(mcfg[1]);
   });
 
   page.on('response', (res) => {
@@ -403,6 +410,9 @@ async function medirPagina(context, url, nombreCaptura) {
   // reloj de pared porque excluye el arranque del contexto de Playwright.
   let tiempos = null;
   try {
+    estado.fbqPresente = await page.evaluate(
+      () => (typeof window.fbq === 'function' ? (window.fbq.version || 'sí') : 'no')
+    ).catch(() => null);
     tiempos = await page.evaluate(() => {
       const n = performance.getEntriesByType('navigation')[0];
       if (!n) return null;
@@ -658,11 +668,15 @@ function veredictoPixel(resultados) {
   let peticionesTrSinEvento = 0;
   let fbeventsCargado = false;
   let gtmCargado = false;
+  const idsInicializados = new Set();
+  let fbqPresente = 'no';
 
   for (const r of resultados) {
     const e = r._interno.estado;
     if (e.fbeventsCargado) fbeventsCargado = true;
     if (e.gtmCargado) gtmCargado = true;
+    if (e.fbqPresente && e.fbqPresente !== 'no') fbqPresente = e.fbqPresente;
+    for (const id of (e.idsInicializados || [])) idsInicializados.add(id);
     for (const ev of e.eventosPixel) {
       // Solo cuenta como evento si lleva el parametro ev=. Una peticion a /tr
       // sin ev (p. ej. el iframe de respaldo) no es un evento y contarla
@@ -711,13 +725,18 @@ function veredictoPixel(resultados) {
     motivo = 'El HTML declara un ID de pixel pero fbevents.js no llegó a cargar y no se registró ninguna petición fallida a un host crítico: la medición es ambigua.';
   }
 
+  const inic = Array.from(idsInicializados);
   let lectura;
   if (eventos.length) {
     lectura = `Se observaron ${eventos.length} evento(s) de pixel en el navegador: ${tiposEvento.join(', ')}.`;
   } else if (!fiable) {
     lectura = 'No se puede concluir nada sobre el pixel en esta tienda (ver motivo_no_fiable).';
+  } else if (inic.length) {
+    // El caso más valioso y el más fácil de contar mal: el pixel SÍ arranca
+    // pero no manda nada. Se afirma solo lo observado.
+    lectura = `El navegador cargó fbevents.js e inicializó ${inic.length} pixel(es) (${inic.join(', ')}), pero no se observó NINGÚN evento saliendo hacia facebook.com/tr, ni siquiera PageView. No se afirma que la tienda no tenga pixel: puede complementarse con la API de Conversiones server-side, que no se ve desde el navegador. Lo comprobado es que el pixel de navegador arranca y no envía eventos.`;
   } else {
-    lectura = 'No se detectó ningún evento de pixel en el navegador. Esto NO prueba que la tienda no tenga pixel: puede estar usando la API de Conversiones server-side, que es legítima y no se ve desde el navegador.';
+    lectura = 'No se detectó ningún evento de pixel en el navegador ni ningún pixel inicializado. Esto NO prueba que la tienda no tenga pixel: puede estar usando la API de Conversiones server-side, que es legítima y no se ve desde el navegador.';
   }
 
   return {
@@ -725,6 +744,8 @@ function veredictoPixel(resultados) {
     motivo_no_fiable: motivo,
     peticiones_tr_sin_parametro_ev: peticionesTrSinEvento,
     bloqueos_criticos_por_politica_del_sitio: bloqueosCriticosPorPolitica.map((f) => ({ host: f.host, motivo: f.motivo })),
+    fbq_presente_en_la_pagina: fbqPresente,
+    ids_inicializados_en_navegador: inic,
     fbevents_js_cargado: fbeventsCargado,
     google_tag_manager_cargado: gtmCargado,
     eventos_observados: eventos,
