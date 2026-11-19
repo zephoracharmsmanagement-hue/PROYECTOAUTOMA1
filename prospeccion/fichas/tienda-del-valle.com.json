@@ -1,0 +1,138 @@
+{
+  "dominio": "tienda-del-valle.com",
+  "estado": "error",
+  "medido_el": "2026-11-19T18:17:03.267Z",
+  "entorno": {
+    "dispositivo": "Pixel 7 (emulado en Chromium)",
+    "locale": "es-CO",
+    "zona_horaria": "America/Bogota",
+    "reposo_tras_carga_ms": 6000,
+    "device_scale_factor_capturas": 2,
+    "nota": "Sin estrangulamiento de red ni CPU: los tiempos son de un móvil emulado sobre la red del contenedor, así que comparan bien entre tiendas pero son optimistas frente a un 4G real."
+  },
+  "anuncios_meta": {
+    "dias_del_anuncio_activo_mas_antiguo": 796,
+    "versiones_de_anuncio": 18,
+    "medido_el": "2026-11-19",
+    "advertencia": "Son días desde la publicación del anuncio activo más antiguo, NO días de campaña continua. Indica gasto sostenido, no continuidad."
+  },
+  "error": "No se pudo cargar la portada: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tienda-del-valle.com/",
+  "plataforma": {
+    "detectada": "no identificada",
+    "senales": [],
+    "otras_senales_presentes": []
+  },
+  "rendimiento": {
+    "portada": {
+      "ms_dom": 119,
+      "ms_load": 119,
+      "ms_respuesta_servidor": 0,
+      "ms_reloj_hasta_dom": 101,
+      "kb_transferidos": 0,
+      "kb_por_tipo": {
+        "Other": 0
+      },
+      "peticiones": 1,
+      "imagenes_en_dom": 0
+    },
+    "producto": {
+      "ms_dom": 119,
+      "ms_load": 119,
+      "ms_respuesta_servidor": 0,
+      "ms_reloj_hasta_dom": 101,
+      "kb_transferidos": 0,
+      "kb_por_tipo": {
+        "Other": 0
+      },
+      "peticiones": 1,
+      "imagenes_en_dom": 0
+    },
+    "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
+  },
+  "producto": {
+    "url": "chrome-error://chromewebdata/",
+    "como_se_encontro": "no se encontró ficha de producto separada; se analiza la portada como página de venta",
+    "es_la_misma_portada": true,
+    "titulo": null,
+    "nav_error": "page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tienda-del-valle.com/",
+    "resenas": {
+      "visibles": false,
+      "evidencia_texto_visible": null,
+      "widgets_detectados_en_html": [],
+      "nota": "No se detectó ninguna señal de reseñas, ni en el texto visible ni en el HTML."
+    },
+    "contraentrega": {
+      "mencionada": false,
+      "evidencia": null
+    },
+    "cuotas": {
+      "mencionadas": false,
+      "evidencia": null,
+      "marcas": []
+    }
+  },
+  "salud_de_la_pagina": {
+    "titulo": null,
+    "parece_dominio_parqueado": false,
+    "parece_pagina_vacia": true,
+    "es_tienda_analizable": false,
+    "nota": "La portada respondió con muy poco contenido (1 petición/es, 0 KB) y sin título: no se obtuvo una tienda que auditar."
+  },
+  "pixel": {
+    "fiable": false,
+    "motivo_no_fiable": "La página no llegó a cargar (page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tienda-del-valle.com/), así que no hubo ninguna oportunidad de observar eventos de pixel. No se mide nada sobre el pixel de esta tienda.",
+    "peticiones_tr_sin_parametro_ev": 0,
+    "bloqueos_criticos_por_politica_del_sitio": [],
+    "fbevents_js_cargado": false,
+    "google_tag_manager_cargado": false,
+    "eventos_observados": [],
+    "tipos_de_evento": [],
+    "ids_que_dispararon": [],
+    "ids_declarados_en_html": [],
+    "lectura": "Sin medición: la página no cargó."
+  },
+  "whatsapp": {
+    "tiene_enlace": false,
+    "enlaces": [],
+    "lectura": "No se encontró ningún enlace wa.me, wa.link, api.whatsapp.com ni whatsapp.com/send en el HTML de la portada ni de la ficha de producto."
+  },
+  "bloqueados": [
+    {
+      "host": "tienda-del-valle.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "origen": "red del entorno",
+      "critico_para_el_pixel": false,
+      "pagina": "producto",
+      "url": "https://tienda-del-valle.com/"
+    }
+  ],
+  "red_limpia_para_el_pixel": true,
+  "banner_cookies": {
+    "portada": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    },
+    "producto": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    }
+  },
+  "capturas": {
+    "portada": {
+      "archivo": "capturas/tienda-del-valle.com-portada.png",
+      "truncada": false,
+      "alto_css": 1996,
+      "error": null
+    },
+    "producto": {
+      "archivo": "capturas/tienda-del-valle.com-portada.png",
+      "truncada": false,
+      "alto_css": 1996,
+      "error": null
+    },
+    "nota": "Capturas a deviceScaleFactor 2 (824 px de ancho). Las páginas de más de 3000 px CSS de alto se recortan a esa altura; el campo truncada lo indica."
+  },
+  "hosts_de_terceros": []
+}
