@@ -1,0 +1,7976 @@
+{
+ "generado": "2026-11-19",
+ "fuente": "biblioteca de anuncios de Meta, Colombia, anuncios ACTIVOS; 75 busquedas de producto escaneadas el 2026-11-18",
+ "criterio": "anunciante con dominio propio (no marketplace ni gigante) y 30+ dias desde el inicio de su anuncio activo mas antiguo",
+ "advertencia": "dias_pauta NO es una campana continua: es la antiguedad del anuncio activo mas viejo. Que siga activo es senal de gasto sostenido, pero no digas \"lleva X dias de campana seguida\".",
+ "total": 546,
+ "prospectos": [
+  {
+   "anunciante": "Sacrius shop",
+   "page_id": "118671254517238",
+   "dominio": "sacriusshop.store",
+   "dias_pauta": 365,
+   "versiones": 90,
+   "anuncios": 18,
+   "con_video": 18,
+   "productos": 1,
+   "categorias": [
+    "parlante"
+   ],
+   "senal": 32850
+  },
+  {
+   "anunciante": "Rebel Colombia",
+   "page_id": "101722579649215",
+   "dominio": "shop-rebel.co",
+   "dias_pauta": 1163,
+   "versiones": 25,
+   "anuncios": 25,
+   "con_video": 20,
+   "productos": 7,
+   "categorias": [
+    "depiladora",
+    "secador"
+   ],
+   "senal": 29075
+  },
+  {
+   "anunciante": "Chicsmovile",
+   "page_id": "100601931673853",
+   "dominio": "chicsmovile.com",
+   "dias_pauta": 440,
+   "versiones": 41,
+   "anuncios": 23,
+   "con_video": 8,
+   "productos": 4,
+   "categorias": [
+    "báscula",
+    "juego de ollas",
+    "moldes freidora",
+    "olla a presión",
+    "organizador",
+    "sanduchera",
+    "set de ollas"
+   ],
+   "senal": 18040
+  },
+  {
+   "anunciante": "Cosas Que Necesitas",
+   "page_id": "317016658153194",
+   "dominio": "tiendamultimarca.com.co",
+   "dias_pauta": 872,
+   "versiones": 18,
+   "anuncios": 10,
+   "con_video": 10,
+   "productos": 5,
+   "categorias": [
+    "bebé",
+    "juguete",
+    "mascota",
+    "paga al recibir",
+    "pagas al recibir"
+   ],
+   "senal": 15696
+  },
+  {
+   "anunciante": "Carolina Los Mejores Accesorios",
+   "page_id": "256176597581936",
+   "dominio": "lotengotienda.com",
+   "dias_pauta": 356,
+   "versiones": 41,
+   "anuncios": 29,
+   "con_video": 29,
+   "productos": 2,
+   "categorias": [
+    "bloques magnéticos",
+    "inflador"
+   ],
+   "senal": 14596
+  },
+  {
+   "anunciante": "Na Dlanu Sve",
+   "page_id": "167663493106371",
+   "dominio": "tienda-del-valle.com",
+   "dias_pauta": 796,
+   "versiones": 18,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 14328
+  },
+  {
+   "anunciante": "Bla.sus",
+   "page_id": "2122834084475475",
+   "dominio": "blasus.co",
+   "dias_pauta": 495,
+   "versiones": 27,
+   "anuncios": 15,
+   "con_video": 5,
+   "productos": 1,
+   "categorias": [
+    "humidificador"
+   ],
+   "senal": 13365
+  },
+  {
+   "anunciante": "Sava Tienda",
+   "page_id": "107464768728025",
+   "dominio": "savatienda.com",
+   "dias_pauta": 393,
+   "versiones": 31,
+   "anuncios": 10,
+   "con_video": 10,
+   "productos": 2,
+   "categorias": [
+    "bloques magnéticos",
+    "juguete",
+    "organizador"
+   ],
+   "senal": 12183
+  },
+  {
+   "anunciante": "Lummia",
+   "page_id": "109415954738999",
+   "dominio": "lummia.com.co",
+   "dias_pauta": 351,
+   "versiones": 27,
+   "anuncios": 25,
+   "con_video": 24,
+   "productos": 1,
+   "categorias": [
+    "bebé",
+    "plancha",
+    "secador"
+   ],
+   "senal": 9477
+  },
+  {
+   "anunciante": "Fantasías New York",
+   "page_id": "163420477073905",
+   "dominio": "fantasiasnewyork.com",
+   "dias_pauta": 201,
+   "versiones": 45,
+   "anuncios": 25,
+   "con_video": 25,
+   "productos": 3,
+   "categorias": [
+    "aspiradora",
+    "bebé",
+    "carro control remoto",
+    "cobija",
+    "cocina de juguete",
+    "cortina led",
+    "humidificador",
+    "juguete",
+    "luces navidad",
+    "organizador",
+    "regalo de navidad pago contra entrega",
+    "triciclo"
+   ],
+   "senal": 9045
+  },
+  {
+   "anunciante": "Sowi Store 3.0",
+   "page_id": "691854684003648",
+   "dominio": "sowicolombia.myshopify.com",
+   "dias_pauta": 285,
+   "versiones": 30,
+   "anuncios": 28,
+   "con_video": 0,
+   "productos": 5,
+   "categorias": [
+    "aspiradora",
+    "aspiradora inalámbrica",
+    "hidrolavadora",
+    "hidrolavadora inalámbrica",
+    "organizador",
+    "secador"
+   ],
+   "senal": 8550
+  },
+  {
+   "anunciante": "Vive shop",
+   "page_id": "801439959719386",
+   "dominio": "viveshop.website",
+   "dias_pauta": 160,
+   "versiones": 49,
+   "anuncios": 18,
+   "con_video": 18,
+   "productos": 1,
+   "categorias": [
+    "estufa sokany"
+   ],
+   "senal": 7840
+  },
+  {
+   "anunciante": "Pinta Tienda",
+   "page_id": "247913945065413",
+   "dominio": "pintatienda.com",
+   "dias_pauta": 387,
+   "versiones": 20,
+   "anuncios": 8,
+   "con_video": 8,
+   "productos": 1,
+   "categorias": [
+    "freidora de aire",
+    "moldes freidora"
+   ],
+   "senal": 7740
+  },
+  {
+   "anunciante": "Sowi",
+   "page_id": "155153821008875",
+   "dominio": "c6ac4e.myshopify.com",
+   "dias_pauta": 562,
+   "versiones": 12,
+   "anuncios": 12,
+   "con_video": 0,
+   "productos": 3,
+   "categorias": [
+    "envío gratis y pago contra entrega",
+    "paga al recibir",
+    "pagas al recibir",
+    "parlante",
+    "proyector",
+    "reloj inteligente"
+   ],
+   "senal": 6744
+  },
+  {
+   "anunciante": "Safe For Your Dreams",
+   "page_id": "109274110518828",
+   "dominio": "safeforyourdreamss.com",
+   "dias_pauta": 498,
+   "versiones": 13,
+   "anuncios": 7,
+   "con_video": 7,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 6474
+  },
+  {
+   "anunciante": "Bestcool Tools",
+   "page_id": "103000939155736",
+   "dominio": "bestcool.online",
+   "dias_pauta": 207,
+   "versiones": 26,
+   "anuncios": 13,
+   "con_video": 10,
+   "productos": 0,
+   "categorias": [
+    "cortadora de césped",
+    "kit herramientas"
+   ],
+   "senal": 5382
+  },
+  {
+   "anunciante": "Colchones Spring Oficial",
+   "page_id": "107505565425011",
+   "dominio": "colchonesspring.com.co",
+   "dias_pauta": 463,
+   "versiones": 11,
+   "anuncios": 5,
+   "con_video": 4,
+   "productos": 0,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 5093
+  },
+  {
+   "anunciante": "Nesimú Shop",
+   "page_id": "592351620617285",
+   "dominio": "nesimu.com",
+   "dias_pauta": 363,
+   "versiones": 14,
+   "anuncios": 5,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "luces navidad",
+    "parlante",
+    "proyector",
+    "proyector navideño"
+   ],
+   "senal": 5082
+  },
+  {
+   "anunciante": "Precios de locura",
+   "page_id": "108583141986029",
+   "dominio": "muchi.funnelish.com",
+   "dias_pauta": 707,
+   "versiones": 7,
+   "anuncios": 6,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "juguete",
+    "silla"
+   ],
+   "senal": 4949
+  },
+  {
+   "anunciante": "Karamelo Tienda Virtual",
+   "page_id": "104378475080068",
+   "dominio": "karamelovirtual.com",
+   "dias_pauta": 407,
+   "versiones": 12,
+   "anuncios": 9,
+   "con_video": 6,
+   "productos": 7,
+   "categorias": [
+    "cafetera",
+    "estufa",
+    "estufa sokany",
+    "lavadora portátil",
+    "licuadora",
+    "organizador",
+    "ventilador"
+   ],
+   "senal": 4884
+  },
+  {
+   "anunciante": "NexalShop",
+   "page_id": "947714935097106",
+   "dominio": "nexalshop.com",
+   "dias_pauta": 162,
+   "versiones": 29,
+   "anuncios": 27,
+   "con_video": 14,
+   "productos": 5,
+   "categorias": [
+    "inflador",
+    "sofá inflable",
+    "taladro",
+    "ventilador"
+   ],
+   "senal": 4698
+  },
+  {
+   "anunciante": "Green Hass Importaciones",
+   "page_id": "842905402232468",
+   "dominio": "e3gxx1-zn.myshopify.com",
+   "dias_pauta": 267,
+   "versiones": 17,
+   "anuncios": 17,
+   "con_video": 12,
+   "productos": 1,
+   "categorias": [
+    "bebé",
+    "bicicleta",
+    "pagas al recibir",
+    "triciclo"
+   ],
+   "senal": 4539
+  },
+  {
+   "anunciante": "Outfit Baby",
+   "page_id": "159326717255034",
+   "dominio": "outfitbabystore.com",
+   "dias_pauta": 489,
+   "versiones": 9,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "bebé",
+    "pagas al recibir"
+   ],
+   "senal": 4401
+  },
+  {
+   "anunciante": "Xoxo Store La Tienda Mayorista 2.0",
+   "page_id": "104637699322551",
+   "dominio": "xoxostore.co",
+   "dias_pauta": 364,
+   "versiones": 11,
+   "anuncios": 11,
+   "con_video": 7,
+   "productos": 7,
+   "categorias": [
+    "bebé",
+    "freidora de aire",
+    "licuadora",
+    "olla",
+    "organizador",
+    "paga al recibir",
+    "secador"
+   ],
+   "senal": 4004
+  },
+  {
+   "anunciante": "Parque del Café Oficial",
+   "page_id": "1428677004071648",
+   "dominio": "parquedelcafe.co",
+   "dias_pauta": 388,
+   "versiones": 10,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 3880
+  },
+  {
+   "anunciante": "Lukis shop",
+   "page_id": "100580676174047",
+   "dominio": "lukisshop.lol",
+   "dias_pauta": 240,
+   "versiones": 16,
+   "anuncios": 8,
+   "con_video": 1,
+   "productos": 2,
+   "categorias": [
+    "bicicleta",
+    "parlante",
+    "reloj inteligente"
+   ],
+   "senal": 3840
+  },
+  {
+   "anunciante": "Baratico",
+   "page_id": "103024952278917",
+   "dominio": "baratico.store",
+   "dias_pauta": 274,
+   "versiones": 14,
+   "anuncios": 13,
+   "con_video": 11,
+   "productos": 8,
+   "categorias": [
+    "aspiradora",
+    "bebé",
+    "luces navidad",
+    "lámpara",
+    "olla a presión",
+    "organizador",
+    "parlante",
+    "regalo de navidad pago contra entrega",
+    "reloj inteligente",
+    "termo"
+   ],
+   "senal": 3836
+  },
+  {
+   "anunciante": "Todo Al 50% De Descuento",
+   "page_id": "122098917830002220",
+   "dominio": "quegangacolombia.com",
+   "dias_pauta": 169,
+   "versiones": 22,
+   "anuncios": 22,
+   "con_video": 22,
+   "productos": 5,
+   "categorias": [
+    "arrancador de batería",
+    "inflador",
+    "rodilleras",
+    "ventilador"
+   ],
+   "senal": 3718
+  },
+  {
+   "anunciante": "Vincere variedades",
+   "page_id": "108040868249141",
+   "dominio": "vincerecolombia.com",
+   "dias_pauta": 299,
+   "versiones": 12,
+   "anuncios": 7,
+   "con_video": 4,
+   "productos": 0,
+   "categorias": [
+    "colchón",
+    "combo cocina",
+    "regalo de navidad pago contra entrega",
+    "silla"
+   ],
+   "senal": 3588
+  },
+  {
+   "anunciante": "Importadora Neiva",
+   "page_id": "119900537883854",
+   "dominio": "importadoraneiva.com",
+   "dias_pauta": 307,
+   "versiones": 11,
+   "anuncios": 8,
+   "con_video": 8,
+   "productos": 3,
+   "categorias": [
+    "cámara bombillo",
+    "cámara de seguridad",
+    "parlante"
+   ],
+   "senal": 3377
+  },
+  {
+   "anunciante": "Pago cuando recibo ",
+   "page_id": "138003209376810",
+   "dominio": "pagocuandorecibo.com",
+   "dias_pauta": 177,
+   "versiones": 18,
+   "anuncios": 18,
+   "con_video": 18,
+   "productos": 12,
+   "categorias": [
+    "contra entrega",
+    "envío gratis y pago contra entrega",
+    "kit herramientas",
+    "organizador",
+    "taladro"
+   ],
+   "senal": 3186
+  },
+  {
+   "anunciante": "cocco y lolo",
+   "page_id": "103495771243382",
+   "dominio": "coccoylolo.com",
+   "dias_pauta": 525,
+   "versiones": 6,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 0,
+   "categorias": [
+    "bebé",
+    "silla"
+   ],
+   "senal": 3150
+  },
+  {
+   "anunciante": "Estilo Vital",
+   "page_id": "115307045000765",
+   "dominio": "tiendamultimarca.com.co",
+   "dias_pauta": 1046,
+   "versiones": 3,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "pagas al recibir"
+   ],
+   "senal": 3138
+  },
+  {
+   "anunciante": "Corono tienda",
+   "page_id": "556229851546285",
+   "dominio": "coronotienda.com",
+   "dias_pauta": 100,
+   "versiones": 31,
+   "anuncios": 31,
+   "con_video": 15,
+   "productos": 9,
+   "categorias": [
+    "aspiradora",
+    "aspiradora inalámbrica",
+    "combo cocina",
+    "cámara bombillo",
+    "inflador",
+    "paga al recibir",
+    "plancha",
+    "rodilleras",
+    "secador"
+   ],
+   "senal": 3100
+  },
+  {
+   "anunciante": "Alisador Natural",
+   "page_id": "755101841026554",
+   "dominio": "latamgloblarimportscolombia.com",
+   "dias_pauta": 129,
+   "versiones": 24,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 1,
+   "categorias": [
+    "plancha",
+    "secador"
+   ],
+   "senal": 3096
+  },
+  {
+   "anunciante": "Anturio Care",
+   "page_id": "399087013278524",
+   "dominio": "anturio-care-1.emycommerce.shop",
+   "dias_pauta": 236,
+   "versiones": 12,
+   "anuncios": 8,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "aspiradora",
+    "báscula",
+    "caja fuerte",
+    "cámara de seguridad",
+    "licuadora"
+   ],
+   "senal": 2832
+  },
+  {
+   "anunciante": "Allium",
+   "page_id": "104973474240779",
+   "dominio": "alliumcapilar.com",
+   "dias_pauta": 128,
+   "versiones": 20,
+   "anuncios": 12,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "caminadora",
+    "masajeador"
+   ],
+   "senal": 2560
+  },
+  {
+   "anunciante": "Melolo Freedrama-Latam",
+   "page_id": "866307876563052",
+   "dominio": "play.google.com",
+   "dias_pauta": 157,
+   "versiones": 16,
+   "anuncios": 14,
+   "con_video": 14,
+   "productos": 0,
+   "categorias": [
+    "bebé",
+    "bicicleta",
+    "cobija",
+    "cocina de juguete",
+    "cámara de seguridad",
+    "escritorio infantil",
+    "juguete",
+    "lámpara",
+    "silla"
+   ],
+   "senal": 2512
+  },
+  {
+   "anunciante": "El Rincón de las Ofertas",
+   "page_id": "170391006162688",
+   "dominio": "elrincondelasofertas.com",
+   "dias_pauta": 409,
+   "versiones": 6,
+   "anuncios": 6,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "envío gratis y pago contra entrega",
+    "luces navidad",
+    "paga al recibir",
+    "pagas al recibir",
+    "proyector navideño"
+   ],
+   "senal": 2454
+  },
+  {
+   "anunciante": "Esencia Sutil",
+   "page_id": "423314104194685",
+   "dominio": "dac7e0-a3.myshopify.com",
+   "dias_pauta": 268,
+   "versiones": 9,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "envío gratis y pago contra entrega",
+    "paga al recibir",
+    "pagas al recibir"
+   ],
+   "senal": 2412
+  },
+  {
+   "anunciante": "Tortdeck",
+   "page_id": "110374961969988",
+   "dominio": "tienda-del-valle.com",
+   "dias_pauta": 796,
+   "versiones": 3,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 2,
+   "categorias": [
+    "cámara de seguridad",
+    "humidificador"
+   ],
+   "senal": 2388
+  },
+  {
+   "anunciante": "Kata Boutique",
+   "page_id": "108721951393669",
+   "dominio": "labaratanga.myshopify.com",
+   "dias_pauta": 593,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 2372
+  },
+  {
+   "anunciante": "Mevo Colombia 2.0",
+   "page_id": "258662677339516",
+   "dominio": "mevo-col.myshopify.com",
+   "dias_pauta": 122,
+   "versiones": 19,
+   "anuncios": 19,
+   "con_video": 0,
+   "productos": 4,
+   "categorias": [
+    "aspiradora inalámbrica",
+    "cafetera",
+    "combo cocina",
+    "freidora 12 litros",
+    "freidora de aire",
+    "horno 3 en 1"
+   ],
+   "senal": 2318
+  },
+  {
+   "anunciante": "New Body Bogotá",
+   "page_id": "193270957192758",
+   "dominio": "fb.me",
+   "dias_pauta": 31,
+   "versiones": 72,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 0,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 2232
+  },
+  {
+   "anunciante": "Miaustore",
+   "page_id": "114977650408796",
+   "dominio": "miaustorecol.com",
+   "dias_pauta": 89,
+   "versiones": 25,
+   "anuncios": 11,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "hidrolavadora",
+    "hidrolavadora inalámbrica",
+    "lavadora portátil",
+    "regalo de navidad pago contra entrega"
+   ],
+   "senal": 2225
+  },
+  {
+   "anunciante": "Ofertix Colombia",
+   "page_id": "108010872328871",
+   "dominio": "ofertix.co",
+   "dias_pauta": 148,
+   "versiones": 15,
+   "anuncios": 12,
+   "con_video": 11,
+   "productos": 0,
+   "categorias": [
+    "escurridor de platos",
+    "estufa sokany",
+    "freidora de aire",
+    "hidrolavadora",
+    "hidrolavadora inalámbrica",
+    "masajeador",
+    "moldes freidora",
+    "proyector navideño"
+   ],
+   "senal": 2220
+  },
+  {
+   "anunciante": "Comprandoya",
+   "page_id": "112645594672850",
+   "dominio": "comprandoya.com",
+   "dias_pauta": 109,
+   "versiones": 19,
+   "anuncios": 6,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "organizador",
+    "procesador de alimentos",
+    "regalo de navidad pago contra entrega"
+   ],
+   "senal": 2071
+  },
+  {
+   "anunciante": "Prosegur Cash Colombia",
+   "page_id": "276117215579277",
+   "dominio": "fb.me",
+   "dias_pauta": 167,
+   "versiones": 12,
+   "anuncios": 4,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "caja fuerte"
+   ],
+   "senal": 2004
+  },
+  {
+   "anunciante": "Mevo Colombia",
+   "page_id": "739624249231036",
+   "dominio": "mevo-col.myshopify.com",
+   "dias_pauta": 178,
+   "versiones": 11,
+   "anuncios": 11,
+   "con_video": 0,
+   "productos": 2,
+   "categorias": [
+    "inflador",
+    "sofá inflable",
+    "termo"
+   ],
+   "senal": 1958
+  },
+  {
+   "anunciante": "Boxi Sleep",
+   "page_id": "623535494478815",
+   "dominio": "boxisleep.com",
+   "dias_pauta": 1919,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 1919
+  },
+  {
+   "anunciante": "360 Grados Online",
+   "page_id": "104599489061929",
+   "dominio": "360gradosonline.com",
+   "dias_pauta": 210,
+   "versiones": 9,
+   "anuncios": 5,
+   "con_video": 4,
+   "productos": 1,
+   "categorias": [
+    "caja fuerte",
+    "paga al recibir"
+   ],
+   "senal": 1890
+  },
+  {
+   "anunciante": "VENUScare",
+   "page_id": "108748355603096",
+   "dominio": "megaproveedorcol.com",
+   "dias_pauta": 106,
+   "versiones": 17,
+   "anuncios": 10,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "depiladora"
+   ],
+   "senal": 1802
+  },
+  {
+   "anunciante": "Dr.Camilo Larrota",
+   "page_id": "146101588589990",
+   "dominio": "tendenciascol.com",
+   "dias_pauta": 587,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "envío gratis y pago contra entrega",
+    "pagas al recibir"
+   ],
+   "senal": 1761
+  },
+  {
+   "anunciante": "Kolmoda",
+   "page_id": "105827661374227",
+   "dominio": "kolmoda.co",
+   "dias_pauta": 348,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "contra entrega",
+    "envío gratis y pago contra entrega",
+    "paga al recibir",
+    "pagas al recibir"
+   ],
+   "senal": 1740
+  },
+  {
+   "anunciante": "Aprende A Pintar Con Oleo",
+   "page_id": "668228196524459",
+   "dominio": "p.aprendeapintarconoleo.com",
+   "dias_pauta": 867,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 1734
+  },
+  {
+   "anunciante": "Xoxo Store Home",
+   "page_id": "116883211400754",
+   "dominio": "xoxostorehome.com",
+   "dias_pauta": 286,
+   "versiones": 6,
+   "anuncios": 6,
+   "con_video": 2,
+   "productos": 5,
+   "categorias": [
+    "juguete",
+    "olla a presión",
+    "organizador",
+    "paga al recibir"
+   ],
+   "senal": 1716
+  },
+  {
+   "anunciante": "Importadora Elite",
+   "page_id": "384080691462406",
+   "dominio": "perfumesalquimista.lat",
+   "dias_pauta": 337,
+   "versiones": 5,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "contra entrega",
+    "regalo de navidad pago contra entrega"
+   ],
+   "senal": 1685
+  },
+  {
+   "anunciante": "Wargo",
+   "page_id": "103748834346295",
+   "dominio": "wargosports.com",
+   "dias_pauta": 239,
+   "versiones": 7,
+   "anuncios": 7,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "rodilleras"
+   ],
+   "senal": 1673
+  },
+  {
+   "anunciante": "Bravela",
+   "page_id": "635995552940599",
+   "dominio": "lamejorrcompra.store",
+   "dias_pauta": 197,
+   "versiones": 8,
+   "anuncios": 7,
+   "con_video": 7,
+   "productos": 6,
+   "categorias": [
+    "aspiradora inalámbrica",
+    "cortadora de césped",
+    "escurridor de platos",
+    "lavadora portátil",
+    "organizador",
+    "ventilador"
+   ],
+   "senal": 1576
+  },
+  {
+   "anunciante": "Dolce Catálogo",
+   "page_id": "319638761396090",
+   "dominio": "fb.me",
+   "dias_pauta": 773,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "parlante"
+   ],
+   "senal": 1546
+  },
+  {
+   "anunciante": "JpGlobal-ContraEntrega",
+   "page_id": "289335400937641",
+   "dominio": "jpglobal-contraentrega.myshopify.com",
+   "dias_pauta": 511,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 1533
+  },
+  {
+   "anunciante": "Anturio",
+   "page_id": "2336647339721481",
+   "dominio": "anturio-care-1.emycommerce.shop",
+   "dias_pauta": 60,
+   "versiones": 25,
+   "anuncios": 21,
+   "con_video": 16,
+   "productos": 2,
+   "categorias": [
+    "bicicleta",
+    "depiladora",
+    "escurridor de platos",
+    "masajeador",
+    "masajeador de cuello",
+    "pistola de masaje"
+   ],
+   "senal": 1500
+  },
+  {
+   "anunciante": "Smartjoys",
+   "page_id": "104166801283142",
+   "dominio": "smartjoys.co",
+   "dias_pauta": 206,
+   "versiones": 7,
+   "anuncios": 5,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "aspiradora inalámbrica",
+    "bloques magnéticos",
+    "masajeador"
+   ],
+   "senal": 1442
+  },
+  {
+   "anunciante": "Nitrogeno",
+   "page_id": "252397961299094",
+   "dominio": "nitrogeno.shop",
+   "dias_pauta": 231,
+   "versiones": 6,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 1386
+  },
+  {
+   "anunciante": "Import Store",
+   "page_id": "1034034119795289",
+   "dominio": "importstore-oficial.myshopify.com",
+   "dias_pauta": 106,
+   "versiones": 13,
+   "anuncios": 13,
+   "con_video": 13,
+   "productos": 2,
+   "categorias": [
+    "aspiradora inalámbrica",
+    "cortina led",
+    "hidrolavadora inalámbrica",
+    "lavadora portátil"
+   ],
+   "senal": 1378
+  },
+  {
+   "anunciante": "Lovientv",
+   "page_id": "105158985566438",
+   "dominio": "lovientv.com",
+   "dias_pauta": 227,
+   "versiones": 6,
+   "anuncios": 6,
+   "con_video": 6,
+   "productos": 2,
+   "categorias": [
+    "licuadora",
+    "masajeador"
+   ],
+   "senal": 1362
+  },
+  {
+   "anunciante": "Tienda Nobu",
+   "page_id": "956044387598929",
+   "dominio": "tiendanobu.com",
+   "dias_pauta": 261,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 3,
+   "productos": 5,
+   "categorias": [
+    "envío gratis y pago contra entrega",
+    "escurridor de platos",
+    "mascota",
+    "organizador",
+    "silla"
+   ],
+   "senal": 1305
+  },
+  {
+   "anunciante": "Tu Tienda de Toys",
+   "page_id": "136933269501792",
+   "dominio": "tutiendalocalco.shop",
+   "dias_pauta": 65,
+   "versiones": 20,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 1,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 1300
+  },
+  {
+   "anunciante": "El MANA Tienda Online",
+   "page_id": "377388598794178",
+   "dominio": "elmanatiendaonline.com",
+   "dias_pauta": 76,
+   "versiones": 17,
+   "anuncios": 7,
+   "con_video": 7,
+   "productos": 2,
+   "categorias": [
+    "parlante",
+    "reloj inteligente"
+   ],
+   "senal": 1292
+  },
+  {
+   "anunciante": "Home Sport",
+   "page_id": "767770603088151",
+   "dominio": "sport-lifestyle-3582.myshopify.com",
+   "dias_pauta": 258,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "cafetera",
+    "horno 3 en 1",
+    "lavadora portátil"
+   ],
+   "senal": 1290
+  },
+  {
+   "anunciante": "Bulevar Tienda",
+   "page_id": "106549488118798",
+   "dominio": "bulevartienda.com",
+   "dias_pauta": 320,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 1,
+   "categorias": [
+    "organizador",
+    "taladro"
+   ],
+   "senal": 1280
+  },
+  {
+   "anunciante": "La Selleria Online",
+   "page_id": "480487515297154",
+   "dominio": "laselleriaonline.it",
+   "dias_pauta": 1233,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 1233
+  },
+  {
+   "anunciante": "Pengy",
+   "page_id": "114326928250704",
+   "dominio": "pengy.com.co",
+   "dias_pauta": 307,
+   "versiones": 4,
+   "anuncios": 3,
+   "con_video": 1,
+   "productos": 3,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 1228
+  },
+  {
+   "anunciante": "Mundo Store",
+   "page_id": "147766171759437",
+   "dominio": "munbiz.store",
+   "dias_pauta": 606,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "colchón",
+    "paga al recibir"
+   ],
+   "senal": 1212
+  },
+  {
+   "anunciante": "MyHomestore",
+   "page_id": "1532414983499905",
+   "dominio": "fb.com",
+   "dias_pauta": 400,
+   "versiones": 3,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 1200
+  },
+  {
+   "anunciante": "Señora Oferta",
+   "page_id": "438630300023729",
+   "dominio": "senoraoferta.com",
+   "dias_pauta": 91,
+   "versiones": 13,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 1183
+  },
+  {
+   "anunciante": "Moderncol",
+   "page_id": "1210335328819334",
+   "dominio": "moderncol.com",
+   "dias_pauta": 139,
+   "versiones": 8,
+   "anuncios": 8,
+   "con_video": 4,
+   "productos": 4,
+   "categorias": [
+    "estufa",
+    "estufa sokany",
+    "olla a presión",
+    "procesador de alimentos",
+    "set de ollas"
+   ],
+   "senal": 1112
+  },
+  {
+   "anunciante": "IMUSA",
+   "page_id": "108619802497475",
+   "dominio": "imusa.com.co",
+   "dias_pauta": 69,
+   "versiones": 16,
+   "anuncios": 4,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "licuadora"
+   ],
+   "senal": 1104
+  },
+  {
+   "anunciante": "Mega Ofertas",
+   "page_id": "224681500736999",
+   "dominio": "lasmegaofertas.com",
+   "dias_pauta": 155,
+   "versiones": 7,
+   "anuncios": 6,
+   "con_video": 6,
+   "productos": 4,
+   "categorias": [
+    "escurridor de platos",
+    "olla",
+    "olla a presión",
+    "sofá inflable"
+   ],
+   "senal": 1085
+  },
+  {
+   "anunciante": "Dr. Miguel Puentes",
+   "page_id": "614504058420904",
+   "dominio": "tiendafuturo.lat",
+   "dias_pauta": 154,
+   "versiones": 7,
+   "anuncios": 7,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bicicleta",
+    "olla",
+    "olla a presión"
+   ],
+   "senal": 1078
+  },
+  {
+   "anunciante": "Hogar Inteligente",
+   "page_id": "111873915272441",
+   "dominio": "hogar-inteligente.co",
+   "dias_pauta": 211,
+   "versiones": 5,
+   "anuncios": 4,
+   "con_video": 1,
+   "productos": 2,
+   "categorias": [
+    "kit herramientas",
+    "lavadora portátil"
+   ],
+   "senal": 1055
+  },
+  {
+   "anunciante": "Importak Colombia ",
+   "page_id": "302243336309167",
+   "dominio": "importakcolombia.com",
+   "dias_pauta": 261,
+   "versiones": 4,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 1044
+  },
+  {
+   "anunciante": "fabricantes de equipos en ACERO inoxidable ",
+   "page_id": "357196960813163",
+   "dominio": "fb.com",
+   "dias_pauta": 496,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "estufa",
+    "plancha"
+   ],
+   "senal": 992
+  },
+  {
+   "anunciante": "Lo Kiero",
+   "page_id": "718652494668066",
+   "dominio": "rqmnzswqrb.myfunnelish.com",
+   "dias_pauta": 109,
+   "versiones": 9,
+   "anuncios": 9,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "horno 3 en 1",
+    "masajeador de cuello",
+    "sofá inflable"
+   ],
+   "senal": 981
+  },
+  {
+   "anunciante": "Productos premium",
+   "page_id": "220665511138253",
+   "dominio": "fundaspremium.com.co",
+   "dias_pauta": 482,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 964
+  },
+  {
+   "anunciante": "SereniVida Co",
+   "page_id": "111783201560318",
+   "dominio": "serenivida.co",
+   "dias_pauta": 236,
+   "versiones": 4,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 2,
+   "categorias": [
+    "contra entrega",
+    "silla"
+   ],
+   "senal": 944
+  },
+  {
+   "anunciante": "La tienda de Salo",
+   "page_id": "105848327476887",
+   "dominio": "tiendasalo.com",
+   "dias_pauta": 460,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 920
+  },
+  {
+   "anunciante": "Alexa Recomienda",
+   "page_id": "759171663956589",
+   "dominio": "nesimu.com",
+   "dias_pauta": 131,
+   "versiones": 7,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 3,
+   "categorias": [
+    "cámara de seguridad",
+    "luces navidad",
+    "proyector navideño"
+   ],
+   "senal": 917
+  },
+  {
+   "anunciante": "Berlin Shopp",
+   "page_id": "109226695174704",
+   "dominio": "berlinshopp.myshopify.com",
+   "dias_pauta": 442,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 884
+  },
+  {
+   "anunciante": "Euro Supermercados",
+   "page_id": "237985946281308",
+   "dominio": "eurosupermercados.com.co",
+   "dias_pauta": 433,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "nevera"
+   ],
+   "senal": 866
+  },
+  {
+   "anunciante": "La Casa Premium",
+   "page_id": "742448888947018",
+   "dominio": "lacasapremium.site",
+   "dias_pauta": 285,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 3,
+   "categorias": [
+    "cortina led",
+    "juguete",
+    "lámpara"
+   ],
+   "senal": 855
+  },
+  {
+   "anunciante": "Runify",
+   "page_id": "460337533838958",
+   "dominio": "runifycolombia.com",
+   "dias_pauta": 170,
+   "versiones": 5,
+   "anuncios": 4,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir",
+    "pagas al recibir"
+   ],
+   "senal": 850
+  },
+  {
+   "anunciante": "Bebe Bruno Mundo Infantil",
+   "page_id": "405704495966248",
+   "dominio": "brunomundoinfantil.myshopify.com",
+   "dias_pauta": 77,
+   "versiones": 11,
+   "anuncios": 5,
+   "con_video": 3,
+   "productos": 2,
+   "categorias": [
+    "carro control remoto",
+    "triciclo"
+   ],
+   "senal": 847
+  },
+  {
+   "anunciante": "Mayaverra linfatic",
+   "page_id": "1309616795572360",
+   "dominio": "expedii.com",
+   "dias_pauta": 60,
+   "versiones": 14,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "báscula",
+    "juguete"
+   ],
+   "senal": 840
+  },
+  {
+   "anunciante": "El Poblado S.A.",
+   "page_id": "1960101380890576",
+   "dominio": "fb.me",
+   "dias_pauta": 209,
+   "versiones": 4,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 836
+  },
+  {
+   "anunciante": "Dr. Carlos Jaramillo",
+   "page_id": "720914531273558",
+   "dominio": "app.drcarlosjaramillo.com",
+   "dias_pauta": 74,
+   "versiones": 11,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "caminadora",
+    "estufa",
+    "olla"
+   ],
+   "senal": 814
+  },
+  {
+   "anunciante": "LUXXO JOYAS",
+   "page_id": "456335670897519",
+   "dominio": "luxxojoyeria.com",
+   "dias_pauta": 394,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 788
+  },
+  {
+   "anunciante": "Shark Home Colombia",
+   "page_id": "671314536057829",
+   "dominio": "sharkninjacolombia.com",
+   "dias_pauta": 255,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 2,
+   "productos": 3,
+   "categorias": [
+    "aspiradora",
+    "aspiradora inalámbrica"
+   ],
+   "senal": 765
+  },
+  {
+   "anunciante": "Sowi Colombia",
+   "page_id": "119734991222683",
+   "dominio": "sowicolombia.myshopify.com",
+   "dias_pauta": 76,
+   "versiones": 10,
+   "anuncios": 10,
+   "con_video": 0,
+   "productos": 4,
+   "categorias": [
+    "cocina de juguete",
+    "escurridor de platos",
+    "masajeador",
+    "procesador de alimentos"
+   ],
+   "senal": 760
+  },
+  {
+   "anunciante": "Aura Ventas ",
+   "page_id": "107034169158433",
+   "dominio": "auraventas.online",
+   "dias_pauta": 380,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "luces navidad"
+   ],
+   "senal": 760
+  },
+  {
+   "anunciante": "Mamámía",
+   "page_id": "114155723576164",
+   "dominio": "dulcemy.onlinesl.com",
+   "dias_pauta": 189,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "bicicleta",
+    "juguete",
+    "triciclo"
+   ],
+   "senal": 756
+  },
+  {
+   "anunciante": "Vehigrupo",
+   "page_id": "1633215520273369",
+   "dominio": "info.vehigrupo.com",
+   "dias_pauta": 150,
+   "versiones": 5,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cámara de seguridad"
+   ],
+   "senal": 750
+  },
+  {
+   "anunciante": "Makka",
+   "page_id": "107843204834425",
+   "dominio": "goveryferreteria.com",
+   "dias_pauta": 369,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 738
+  },
+  {
+   "anunciante": "Holy Cosmetics",
+   "page_id": "265385167284985",
+   "dominio": "holycosmetics.com.co",
+   "dias_pauta": 91,
+   "versiones": 8,
+   "anuncios": 8,
+   "con_video": 6,
+   "productos": 3,
+   "categorias": [
+    "depiladora",
+    "masajeador",
+    "secador"
+   ],
+   "senal": 728
+  },
+  {
+   "anunciante": "Baby Koala Shop",
+   "page_id": "1259738047216875",
+   "dominio": "babykoala.co",
+   "dias_pauta": 90,
+   "versiones": 8,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 1,
+   "categorias": [
+    "procesador de alimentos"
+   ],
+   "senal": 720
+  },
+  {
+   "anunciante": "Construpi",
+   "page_id": "210847713017313",
+   "dominio": "n7.laugjcncsyhf.com",
+   "dias_pauta": 717,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "nevera"
+   ],
+   "senal": 717
+  },
+  {
+   "anunciante": "Los Victorinos Tienda de Hobbies",
+   "page_id": "283710658652737",
+   "dominio": "losvictorinos.co",
+   "dias_pauta": 357,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "báscula",
+    "termo"
+   ],
+   "senal": 714
+  },
+  {
+   "anunciante": "Hill's Pet Colombia",
+   "page_id": "1478409528886980",
+   "dominio": "hillspet.co",
+   "dias_pauta": 100,
+   "versiones": 7,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 700
+  },
+  {
+   "anunciante": "Rainmaker - Mahdollisuus menestyä",
+   "page_id": "128548223841145",
+   "dominio": "rainmaker.fi",
+   "dias_pauta": 700,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "olla"
+   ],
+   "senal": 700
+  },
+  {
+   "anunciante": "Var Family and kids",
+   "page_id": "268904799630248",
+   "dominio": "variecol.com",
+   "dias_pauta": 138,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 690
+  },
+  {
+   "anunciante": "Pamez Cycling",
+   "page_id": "115297167044921",
+   "dominio": "cursospamezcycling.com",
+   "dias_pauta": 338,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 676
+  },
+  {
+   "anunciante": "Dry Colombia ",
+   "page_id": "774448202411831",
+   "dominio": "drytienda.com",
+   "dias_pauta": 45,
+   "versiones": 15,
+   "anuncios": 8,
+   "con_video": 8,
+   "productos": 2,
+   "categorias": [
+    "cámara bombillo",
+    "cámara de seguridad",
+    "humidificador"
+   ],
+   "senal": 675
+  },
+  {
+   "anunciante": "Ecom-Market",
+   "page_id": "100787816201017",
+   "dominio": "ecommarket.co",
+   "dias_pauta": 219,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 2,
+   "categorias": [
+    "aspiradora",
+    "silla"
+   ],
+   "senal": 657
+  },
+  {
+   "anunciante": "Bunker Online Store",
+   "page_id": "140886672439880",
+   "dominio": "bunk3ronlinestore.com",
+   "dias_pauta": 628,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 628
+  },
+  {
+   "anunciante": "Innova colombia",
+   "page_id": "200530959802480",
+   "dominio": "noveltyoficial.com",
+   "dias_pauta": 622,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 622
+  },
+  {
+   "anunciante": "Black+Decker Hogar Colombia",
+   "page_id": "643304705770075",
+   "dominio": "blackanddeckercolombia.com",
+   "dias_pauta": 77,
+   "versiones": 8,
+   "anuncios": 8,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "aspiradora inalámbrica",
+    "freidora de aire",
+    "licuadora"
+   ],
+   "senal": 616
+  },
+  {
+   "anunciante": "Innova Life Store",
+   "page_id": "157749510763965",
+   "dominio": "innovalifestore.com",
+   "dias_pauta": 610,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 610
+  },
+  {
+   "anunciante": "Hogarizado",
+   "page_id": "515630544975210",
+   "dominio": "hogarizado.com.co",
+   "dias_pauta": 86,
+   "versiones": 7,
+   "anuncios": 7,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "juego de ollas",
+    "olla",
+    "organizador"
+   ],
+   "senal": 602
+  },
+  {
+   "anunciante": "Aroma cafetero",
+   "page_id": "175292626649233",
+   "dominio": "aromacafetero.com",
+   "dias_pauta": 150,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 2,
+   "productos": 3,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 600
+  },
+  {
+   "anunciante": "Croper.com",
+   "page_id": "145042705558831",
+   "dominio": "fb.me",
+   "dias_pauta": 297,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 594
+  },
+  {
+   "anunciante": "Velocitienda",
+   "page_id": "116176041585991",
+   "dominio": "velocitienda.com",
+   "dias_pauta": 147,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "nevera"
+   ],
+   "senal": 588
+  },
+  {
+   "anunciante": "Lo Tienes Kids",
+   "page_id": "109316582114616",
+   "dominio": "lotieneskids.com",
+   "dias_pauta": 194,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 3,
+   "categorias": [
+    "bebé",
+    "bicicleta",
+    "rodilleras"
+   ],
+   "senal": 582
+  },
+  {
+   "anunciante": "Hogar simple",
+   "page_id": "386039414584004",
+   "dominio": "tiendaluxenex.com",
+   "dias_pauta": 97,
+   "versiones": 6,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 2,
+   "categorias": [
+    "hidrolavadora",
+    "silla"
+   ],
+   "senal": 582
+  },
+  {
+   "anunciante": "Ezzencia",
+   "page_id": "101108059446269",
+   "dominio": "ezzencia.co",
+   "dias_pauta": 144,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "contra entrega",
+    "pagas al recibir"
+   ],
+   "senal": 576
+  },
+  {
+   "anunciante": "Betstore",
+   "page_id": "507413762462978",
+   "dominio": "betstore.com.co",
+   "dias_pauta": 191,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "cobija",
+    "cobija piel de conejo"
+   ],
+   "senal": 573
+  },
+  {
+   "anunciante": "Dr. Manuel Caicedo",
+   "page_id": "1093796460491407",
+   "dominio": "tiendafuturo.lat",
+   "dias_pauta": 188,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "combo cocina",
+    "plancha"
+   ],
+   "senal": 564
+  },
+  {
+   "anunciante": "Ahma Live Colombia",
+   "page_id": "188799047649744",
+   "dominio": "ahmalive.store",
+   "dias_pauta": 281,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "depiladora",
+    "plancha"
+   ],
+   "senal": 562
+  },
+  {
+   "anunciante": "Oigamos",
+   "page_id": "804704192985000",
+   "dominio": "oigamos.com",
+   "dias_pauta": 556,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 556
+  },
+  {
+   "anunciante": "Melolodramasgratis-es",
+   "page_id": "866307876563052",
+   "dominio": "play.google.com",
+   "dias_pauta": 185,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "bebé",
+    "caja fuerte",
+    "colchón"
+   ],
+   "senal": 555
+  },
+  {
+   "anunciante": "versus_colombia",
+   "page_id": "104657125206471",
+   "dominio": "versuscolombia.co",
+   "dias_pauta": 184,
+   "versiones": 3,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "silla",
+    "silla gamer"
+   ],
+   "senal": 552
+  },
+  {
+   "anunciante": "Kiper.ai",
+   "page_id": "291304934046701",
+   "dominio": "kipertienda.com",
+   "dias_pauta": 133,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 532
+  },
+  {
+   "anunciante": "Colchones Pullman",
+   "page_id": "1300865003362916",
+   "dominio": "pullman.com.co",
+   "dias_pauta": 176,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 528
+  },
+  {
+   "anunciante": "Milagros En Tus Manos",
+   "page_id": "339329349260235",
+   "dominio": "platabienbotada.com",
+   "dias_pauta": 66,
+   "versiones": 8,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 1,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 528
+  },
+  {
+   "anunciante": "Maka",
+   "page_id": "106377301680572",
+   "dominio": "importadoramaka.com",
+   "dias_pauta": 175,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 1,
+   "productos": 3,
+   "categorias": [
+    "bebé",
+    "escritorio infantil",
+    "ventilador"
+   ],
+   "senal": 525
+  },
+  {
+   "anunciante": "Compra Fácil Col",
+   "page_id": "1009161268936350",
+   "dominio": "noircaps.store",
+   "dias_pauta": 130,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "paga al recibir",
+    "pagas al recibir"
+   ],
+   "senal": 520
+  },
+  {
+   "anunciante": "Alohashoesoficiall",
+   "page_id": "100228122783276",
+   "dominio": "alohashoes.co",
+   "dias_pauta": 517,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 517
+  },
+  {
+   "anunciante": "Tiendora",
+   "page_id": "773529875845868",
+   "dominio": "tiendora.uno",
+   "dias_pauta": 258,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 516
+  },
+  {
+   "anunciante": "Textilis",
+   "page_id": "117573281424353",
+   "dominio": "textiliss.com",
+   "dias_pauta": 513,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 513
+  },
+  {
+   "anunciante": "Revista Vida y Salud",
+   "page_id": "122334757530454",
+   "dominio": "latiendavidasana.click",
+   "dias_pauta": 254,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 508
+  },
+  {
+   "anunciante": "Dosmicos",
+   "page_id": "111063610608127",
+   "dominio": "dosmicos.co",
+   "dias_pauta": 167,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 501
+  },
+  {
+   "anunciante": "Quality in car",
+   "page_id": "100760782690388",
+   "dominio": "qualityincar.myshopify.com",
+   "dias_pauta": 248,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 496
+  },
+  {
+   "anunciante": "Importadora Johnson",
+   "page_id": "316176415773397",
+   "dominio": "importadorajohnson.co",
+   "dias_pauta": 62,
+   "versiones": 8,
+   "anuncios": 8,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "escurridor de platos",
+    "hidrolavadora",
+    "hidrolavadora inalámbrica"
+   ],
+   "senal": 496
+  },
+  {
+   "anunciante": "coronita",
+   "page_id": "112065311685363",
+   "dominio": "coronitatienda.com",
+   "dias_pauta": 99,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 3,
+   "productos": 3,
+   "categorias": [
+    "bicicleta",
+    "inflador",
+    "kit herramientas",
+    "paga al recibir",
+    "pagas al recibir"
+   ],
+   "senal": 495
+  },
+  {
+   "anunciante": "Deko Nova",
+   "page_id": "953727567828348",
+   "dominio": "dekonova.co",
+   "dias_pauta": 99,
+   "versiones": 5,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "masajeador",
+    "pistola de masaje"
+   ],
+   "senal": 495
+  },
+  {
+   "anunciante": "Trupea ",
+   "page_id": "530874300101533",
+   "dominio": "trupea.com",
+   "dias_pauta": 164,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 3,
+   "categorias": [
+    "contra entrega",
+    "juguete",
+    "pagas al recibir"
+   ],
+   "senal": 492
+  },
+  {
+   "anunciante": "Prosegur Colombia - Aliado Digital",
+   "page_id": "1087758017760061",
+   "dominio": "fb.me",
+   "dias_pauta": 160,
+   "versiones": 3,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cámara de seguridad"
+   ],
+   "senal": 480
+  },
+  {
+   "anunciante": "DISUFIX",
+   "page_id": "106754381944562",
+   "dominio": "tiendadisuagro.com",
+   "dias_pauta": 237,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega",
+    "kit herramientas"
+   ],
+   "senal": 474
+  },
+  {
+   "anunciante": "Tailishop",
+   "page_id": "637575589665710",
+   "dominio": "tailishop.com.co",
+   "dias_pauta": 237,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 2,
+   "categorias": [
+    "escurridor de platos",
+    "organizador"
+   ],
+   "senal": 474
+  },
+  {
+   "anunciante": "distrihome_",
+   "page_id": "100827714984570",
+   "dominio": "distrihome.co",
+   "dias_pauta": 93,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 5,
+   "categorias": [
+    "escurridor de platos",
+    "nevera",
+    "organizador"
+   ],
+   "senal": 465
+  },
+  {
+   "anunciante": "Ventas Home Central",
+   "page_id": "105182539145765",
+   "dominio": "tendenciasco.com",
+   "dias_pauta": 463,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 463
+  },
+  {
+   "anunciante": "Watch Drama Free",
+   "page_id": "117634814762051",
+   "dominio": "play.google.com",
+   "dias_pauta": 92,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 0,
+   "categorias": [
+    "caja fuerte",
+    "colchón",
+    "mascota",
+    "silla"
+   ],
+   "senal": 460
+  },
+  {
+   "anunciante": "Titanio Herramientas",
+   "page_id": "277978412073461",
+   "dominio": "titanioherramientas.com",
+   "dias_pauta": 456,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 456
+  },
+  {
+   "anunciante": "FalaVentas",
+   "page_id": "229540660233749",
+   "dominio": "falaventas.com",
+   "dias_pauta": 75,
+   "versiones": 6,
+   "anuncios": 4,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 450
+  },
+  {
+   "anunciante": "Zona Salavaje",
+   "page_id": "936821469507066",
+   "dominio": "zonasalvaje.online",
+   "dias_pauta": 223,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 446
+  },
+  {
+   "anunciante": "MuscleFit",
+   "page_id": "324635294057580",
+   "dominio": "app.adjust.com",
+   "dias_pauta": 442,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 442
+  },
+  {
+   "anunciante": "ColOptimum",
+   "page_id": "820588254475456",
+   "dominio": "218riz-qi.myshopify.com",
+   "dias_pauta": 145,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 2,
+   "categorias": [
+    "cobija",
+    "cobija piel de conejo"
+   ],
+   "senal": 435
+  },
+  {
+   "anunciante": "Fajas Nanix",
+   "page_id": "102350551450862",
+   "dominio": "clepa.shop",
+   "dias_pauta": 431,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 431
+  },
+  {
+   "anunciante": "Funcional Domestica",
+   "page_id": "141576982377929",
+   "dominio": "hbjdjg-fp.myshopify.com",
+   "dias_pauta": 207,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "hidrolavadora"
+   ],
+   "senal": 414
+  },
+  {
+   "anunciante": "Paatal",
+   "page_id": "103546425795761",
+   "dominio": "muchi.funnelish.com",
+   "dias_pauta": 412,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 412
+  },
+  {
+   "anunciante": "Rothar Moto",
+   "page_id": "340066959531256",
+   "dominio": "rothar.co",
+   "dias_pauta": 400,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "ventilador"
+   ],
+   "senal": 400
+  },
+  {
+   "anunciante": "Pradera Ecoliving",
+   "page_id": "111487680278143",
+   "dominio": "praderaecoliving.com",
+   "dias_pauta": 198,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 396
+  },
+  {
+   "anunciante": "All Premium Store",
+   "page_id": "104135582732446",
+   "dominio": "allpremiumstores.com",
+   "dias_pauta": 393,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 393
+  },
+  {
+   "anunciante": "Puntonet Insuperable sas Colombia",
+   "page_id": "889979084372072",
+   "dominio": "puntonetinsuperablesas.com",
+   "dias_pauta": 56,
+   "versiones": 7,
+   "anuncios": 4,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "freidora de aire",
+    "licuadora",
+    "plancha",
+    "ventilador"
+   ],
+   "senal": 392
+  },
+  {
+   "anunciante": "La Salud",
+   "page_id": "722373804292866",
+   "dominio": "lacentraltienda.shop",
+   "dias_pauta": 98,
+   "versiones": 4,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 392
+  },
+  {
+   "anunciante": "GTech Systems - Venta y Soporte Técnico Computadores",
+   "page_id": "105669256148925",
+   "dominio": "gtech.systems",
+   "dias_pauta": 193,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "silla gamer"
+   ],
+   "senal": 386
+  },
+  {
+   "anunciante": "dekohome2207",
+   "page_id": "106282477427239",
+   "dominio": "dekohome.co",
+   "dias_pauta": 385,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "humidificador"
+   ],
+   "senal": 385
+  },
+  {
+   "anunciante": "jesicasosa.skin",
+   "page_id": "104103214801529",
+   "dominio": "byskinlab.com",
+   "dias_pauta": 192,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 384
+  },
+  {
+   "anunciante": "Teatro Nacional",
+   "page_id": "47008247262",
+   "dominio": "teatronacional.co",
+   "dias_pauta": 128,
+   "versiones": 3,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "plancha"
+   ],
+   "senal": 384
+  },
+  {
+   "anunciante": "Distrionline Luisfe Nieto SAS",
+   "page_id": "228977743638493",
+   "dominio": "fb.com",
+   "dias_pauta": 191,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "rodilleras"
+   ],
+   "senal": 382
+  },
+  {
+   "anunciante": "Shoping Infinity",
+   "page_id": "107727108601135",
+   "dominio": "infinityshoping.com",
+   "dias_pauta": 381,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "pagas al recibir"
+   ],
+   "senal": 381
+  },
+  {
+   "anunciante": "Sabu Home",
+   "page_id": "597237416816832",
+   "dominio": "sabu-home.myshopify.com",
+   "dias_pauta": 126,
+   "versiones": 3,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 378
+  },
+  {
+   "anunciante": "Letsbox.it",
+   "page_id": "347091432745549",
+   "dominio": "leads.letsbox.it",
+   "dias_pauta": 372,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "ventilador"
+   ],
+   "senal": 372
+  },
+  {
+   "anunciante": "Marcret Online",
+   "page_id": "111475688716746",
+   "dominio": "marcretonline.com",
+   "dias_pauta": 62,
+   "versiones": 6,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 372
+  },
+  {
+   "anunciante": "Ümli",
+   "page_id": "106406795507183",
+   "dominio": "umli.co",
+   "dias_pauta": 371,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 371
+  },
+  {
+   "anunciante": "CYH - Articulos de cocina y hogar",
+   "page_id": "2211114589146360",
+   "dominio": "cocinayhogar.com.co",
+   "dias_pauta": 370,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 370
+  },
+  {
+   "anunciante": "Alejandra Marin",
+   "page_id": "106952245590518",
+   "dominio": "abgroup-col.myshopify.com",
+   "dias_pauta": 123,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 2,
+   "categorias": [
+    "inflador",
+    "kit herramientas",
+    "taladro"
+   ],
+   "senal": 369
+  },
+  {
+   "anunciante": "Global Store",
+   "page_id": "363891750137594",
+   "dominio": "globalshop1706.com",
+   "dias_pauta": 184,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "nevera"
+   ],
+   "senal": 368
+  },
+  {
+   "anunciante": "Bacilio Mutombo",
+   "page_id": "106403432027194",
+   "dominio": "labaratanga.myshopify.com",
+   "dias_pauta": 61,
+   "versiones": 6,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "proyector navideño"
+   ],
+   "senal": 366
+  },
+  {
+   "anunciante": "Yiggo Jeans ",
+   "page_id": "775659915633838",
+   "dominio": "yiggojeans.online",
+   "dias_pauta": 120,
+   "versiones": 3,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 360
+  },
+  {
+   "anunciante": "Hogar Plastico",
+   "page_id": "115861524944259",
+   "dominio": "tuhogarcolombia.store",
+   "dias_pauta": 30,
+   "versiones": 12,
+   "anuncios": 12,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "juego de ollas",
+    "olla a presión",
+    "set de ollas"
+   ],
+   "senal": 360
+  },
+  {
+   "anunciante": "Kaybu",
+   "page_id": "1210288999148898",
+   "dominio": "kaybu.co",
+   "dias_pauta": 179,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 358
+  },
+  {
+   "anunciante": "Cremi",
+   "page_id": "678853528641592",
+   "dominio": "cremi.store",
+   "dias_pauta": 356,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 356
+  },
+  {
+   "anunciante": "Home Market",
+   "page_id": "913870825152271",
+   "dominio": "mp10ef-tj.myshopify.com",
+   "dias_pauta": 176,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 352
+  },
+  {
+   "anunciante": "Lorena Accesorios Impresionantes",
+   "page_id": "125700503950711",
+   "dominio": "lotengotienda.com",
+   "dias_pauta": 351,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 351
+  },
+  {
+   "anunciante": "Hat-Trick Burgers & Grill",
+   "page_id": "2004241709818131",
+   "dominio": "lnk.bio",
+   "dias_pauta": 87,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "combo cocina"
+   ],
+   "senal": 348
+  },
+  {
+   "anunciante": "Kolmoda sas",
+   "page_id": "630581230149518",
+   "dominio": "kolmoda.co",
+   "dias_pauta": 348,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 348
+  },
+  {
+   "anunciante": "M I T I G A D O R E S",
+   "page_id": "505126529921189",
+   "dominio": "mitigadores.com",
+   "dias_pauta": 174,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "plancha"
+   ],
+   "senal": 348
+  },
+  {
+   "anunciante": "Oliver Frost. Book Enthusiast",
+   "page_id": "1224201930787107",
+   "dominio": "secretnovel.me",
+   "dias_pauta": 43,
+   "versiones": 8,
+   "anuncios": 8,
+   "con_video": 8,
+   "productos": 0,
+   "categorias": [
+    "escritorio infantil"
+   ],
+   "senal": 344
+  },
+  {
+   "anunciante": "Pepe Ganga",
+   "page_id": "152084498165591",
+   "dominio": "pepeganga.com",
+   "dias_pauta": 114,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "bebé",
+    "freidora de aire"
+   ],
+   "senal": 342
+  },
+  {
+   "anunciante": "El Deportista",
+   "page_id": "644270855693967",
+   "dominio": "eldeportista.co",
+   "dias_pauta": 170,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "rodilleras"
+   ],
+   "senal": 340
+  },
+  {
+   "anunciante": "Estilo Tropical",
+   "page_id": "528616467011465",
+   "dominio": "estilotropical.com.co",
+   "dias_pauta": 113,
+   "versiones": 3,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 2,
+   "categorias": [
+    "botas",
+    "paga al recibir"
+   ],
+   "senal": 339
+  },
+  {
+   "anunciante": "Mix Shop",
+   "page_id": "108633645677272",
+   "dominio": "latiendaregional.com",
+   "dias_pauta": 337,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "rodilleras"
+   ],
+   "senal": 337
+  },
+  {
+   "anunciante": "Organicos Pet Nutrition Co",
+   "page_id": "366794426512646",
+   "dominio": "organicospetnutrition.com",
+   "dias_pauta": 336,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 336
+  },
+  {
+   "anunciante": "Speed Stick Latinoamérica",
+   "page_id": "504460349564838",
+   "dominio": "speedstick.com",
+   "dias_pauta": 79,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 316
+  },
+  {
+   "anunciante": "El Legado Perfumes",
+   "page_id": "426158427258130",
+   "dominio": "ellegadoperfumes.com",
+   "dias_pauta": 158,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir",
+    "pagas al recibir"
+   ],
+   "senal": 316
+  },
+  {
+   "anunciante": "preggersbylucil",
+   "page_id": "104878111885842",
+   "dominio": "preggersbylucil.com",
+   "dias_pauta": 311,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 311
+  },
+  {
+   "anunciante": "De La Rocha Design",
+   "page_id": "1655863261156776",
+   "dominio": "delarochadesign.com",
+   "dias_pauta": 155,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "lámpara",
+    "silla"
+   ],
+   "senal": 310
+  },
+  {
+   "anunciante": "Virtual Shop JM",
+   "page_id": "124392190555265",
+   "dominio": "virtualshopjm.com",
+   "dias_pauta": 34,
+   "versiones": 9,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 306
+  },
+  {
+   "anunciante": "Tammy Lee",
+   "page_id": "100795299535848",
+   "dominio": "descuentazo-5731.myshopify.com",
+   "dias_pauta": 153,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "licuadora"
+   ],
+   "senal": 306
+  },
+  {
+   "anunciante": "Demoda.com.co",
+   "page_id": "112253857614601",
+   "dominio": "demoda.com.co",
+   "dias_pauta": 306,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 306
+  },
+  {
+   "anunciante": "Tu Tienda en Casa",
+   "page_id": "370295259499058",
+   "dominio": "toditoencasa.com",
+   "dias_pauta": 301,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "carro control remoto"
+   ],
+   "senal": 301
+  },
+  {
+   "anunciante": "Runifycolom.",
+   "page_id": "141702329020050",
+   "dominio": "runifycolombia.com",
+   "dias_pauta": 295,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "pagas al recibir"
+   ],
+   "senal": 295
+  },
+  {
+   "anunciante": "Great Music - Best Of Spotify",
+   "page_id": "351307508761515",
+   "dominio": "open.spotify.com",
+   "dias_pauta": 293,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 293
+  },
+  {
+   "anunciante": "1996 Col",
+   "page_id": "469920732861906",
+   "dominio": "1996col.com",
+   "dias_pauta": 94,
+   "versiones": 3,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 282
+  },
+  {
+   "anunciante": "Botteros_relojerias",
+   "page_id": "119354507836152",
+   "dominio": "botterosrelojeria.com",
+   "dias_pauta": 282,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "caja fuerte"
+   ],
+   "senal": 282
+  },
+  {
+   "anunciante": "NekoMax",
+   "page_id": "473272055871152",
+   "dominio": "nekomax.com",
+   "dias_pauta": 40,
+   "versiones": 7,
+   "anuncios": 7,
+   "con_video": 5,
+   "productos": 2,
+   "categorias": [
+    "aspiradora",
+    "aspiradora inalámbrica",
+    "set de ollas"
+   ],
+   "senal": 280
+  },
+  {
+   "anunciante": "Maison Capel",
+   "page_id": "765078443346489",
+   "dominio": "lanocte-es.com",
+   "dias_pauta": 40,
+   "versiones": 7,
+   "anuncios": 7,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "cortina led"
+   ],
+   "senal": 280
+  },
+  {
+   "anunciante": "Casa Mora",
+   "page_id": "376385325555815",
+   "dominio": "tucasamora.com",
+   "dias_pauta": 278,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 278
+  },
+  {
+   "anunciante": "Hausen",
+   "page_id": "250012434863282",
+   "dominio": "hausenshop.com",
+   "dias_pauta": 92,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "set de cuchillos"
+   ],
+   "senal": 276
+  },
+  {
+   "anunciante": "Cabuco Store",
+   "page_id": "366022463262938",
+   "dominio": "cabucostore.com",
+   "dias_pauta": 137,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 274
+  },
+  {
+   "anunciante": "Lumoda",
+   "page_id": "940719005782493",
+   "dominio": "lumoda.com.co",
+   "dias_pauta": 272,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 272
+  },
+  {
+   "anunciante": "Wau",
+   "page_id": "483543008684625",
+   "dominio": "fb.com",
+   "dias_pauta": 136,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 272
+  },
+  {
+   "anunciante": "WoodSense",
+   "page_id": "829807413553763",
+   "dominio": "play.google.com",
+   "dias_pauta": 90,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 270
+  },
+  {
+   "anunciante": "28 Day Challenge Better you",
+   "page_id": "873741095812805",
+   "dominio": "betterme-fitness-coaching.com",
+   "dias_pauta": 269,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "plancha"
+   ],
+   "senal": 269
+  },
+  {
+   "anunciante": "Napper",
+   "page_id": "100208041597677",
+   "dominio": "play.google.com",
+   "dias_pauta": 132,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 264
+  },
+  {
+   "anunciante": "Ruedix",
+   "page_id": "1018078084715181",
+   "dominio": "ruedix.com",
+   "dias_pauta": 33,
+   "versiones": 8,
+   "anuncios": 8,
+   "con_video": 0,
+   "productos": 2,
+   "categorias": [
+    "combo cocina",
+    "escurridor de platos",
+    "hidrolavadora",
+    "hidrolavadora inalámbrica",
+    "set de ollas"
+   ],
+   "senal": 264
+  },
+  {
+   "anunciante": "Berlinas Del Fonce",
+   "page_id": "227185367295257",
+   "dominio": "berlinasdelfonce.com",
+   "dias_pauta": 132,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 264
+  },
+  {
+   "anunciante": "ACN - Ayuda a la Iglesia que Sufre",
+   "page_id": "1539094502973100",
+   "dominio": "acncolombia.org",
+   "dias_pauta": 44,
+   "versiones": 6,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "estufa"
+   ],
+   "senal": 264
+  },
+  {
+   "anunciante": "Piccoli mundo",
+   "page_id": "337593642769742",
+   "dominio": "maps.app.goo.gl",
+   "dias_pauta": 262,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 262
+  },
+  {
+   "anunciante": "Meta for Business",
+   "page_id": "74100576336",
+   "dominio": "fb.com",
+   "dias_pauta": 65,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "olla"
+   ],
+   "senal": 260
+  },
+  {
+   "anunciante": "Kilat",
+   "page_id": "101853838019458",
+   "dominio": "kilatstorehouse.com",
+   "dias_pauta": 259,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 259
+  },
+  {
+   "anunciante": "Americana de Colchones",
+   "page_id": "113516082129545",
+   "dominio": "americanadecolchones.com",
+   "dias_pauta": 259,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 259
+  },
+  {
+   "anunciante": "Fisiocol",
+   "page_id": "105712471394438",
+   "dominio": "fisiocol.com",
+   "dias_pauta": 256,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 256
+  },
+  {
+   "anunciante": "NexoVital",
+   "page_id": "962785970249386",
+   "dominio": "nexovital.co",
+   "dias_pauta": 85,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "rodilleras"
+   ],
+   "senal": 255
+  },
+  {
+   "anunciante": "Educly App AI",
+   "page_id": "637931626305942",
+   "dominio": "start.educly.app",
+   "dias_pauta": 51,
+   "versiones": 5,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 0,
+   "categorias": [
+    "cobija",
+    "silla",
+    "triciclo"
+   ],
+   "senal": 255
+  },
+  {
+   "anunciante": "Swiss Home Colombia",
+   "page_id": "2125332284361197",
+   "dominio": "swisshome.com.co",
+   "dias_pauta": 85,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "juego de ollas",
+    "set de ollas"
+   ],
+   "senal": 255
+  },
+  {
+   "anunciante": "TechFit Shop",
+   "page_id": "224658824065593",
+   "dominio": "techfitshopings.com",
+   "dias_pauta": 254,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 254
+  },
+  {
+   "anunciante": "DIAR NAV",
+   "page_id": "301279859742135",
+   "dominio": "diarnav.myshopify.com",
+   "dias_pauta": 126,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega",
+    "pagas al recibir"
+   ],
+   "senal": 252
+  },
+  {
+   "anunciante": "Koala Shop",
+   "page_id": "354888251047883",
+   "dominio": "babykoala.co",
+   "dias_pauta": 251,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 251
+  },
+  {
+   "anunciante": "Cuero Andino",
+   "page_id": "102109198154862",
+   "dominio": "bestcool.online",
+   "dias_pauta": 250,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 250
+  },
+  {
+   "anunciante": "MauroStendel",
+   "page_id": "100250122744391",
+   "dominio": "claseabierta.academianum.com",
+   "dias_pauta": 62,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "licuadora",
+    "organizador"
+   ],
+   "senal": 248
+  },
+  {
+   "anunciante": "Marcos lopez",
+   "page_id": "479178331942969",
+   "dominio": "modainternacionalcali.com",
+   "dias_pauta": 31,
+   "versiones": 8,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 1,
+   "categorias": [
+    "luces navidad",
+    "proyector",
+    "proyector navideño"
+   ],
+   "senal": 248
+  },
+  {
+   "anunciante": "Americano Denim",
+   "page_id": "634066333129744",
+   "dominio": "pack-americano.com",
+   "dias_pauta": 62,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 248
+  },
+  {
+   "anunciante": "Shipping Brothers",
+   "page_id": "204868069384776",
+   "dominio": "shippingbrothers.co",
+   "dias_pauta": 248,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 248
+  },
+  {
+   "anunciante": "SE LO TENGO",
+   "page_id": "352570281267043",
+   "dominio": "selotengo.co",
+   "dias_pauta": 123,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 2,
+   "categorias": [
+    "olla",
+    "paga al recibir"
+   ],
+   "senal": 246
+  },
+  {
+   "anunciante": "Emily Carter. Treadmill Coach",
+   "page_id": "1023387407518315",
+   "dominio": "slimkit.health",
+   "dias_pauta": 122,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 244
+  },
+  {
+   "anunciante": "Domi Stile",
+   "page_id": "616675534859905",
+   "dominio": "domistile.co",
+   "dias_pauta": 80,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "aspiradora",
+    "mascota"
+   ],
+   "senal": 240
+  },
+  {
+   "anunciante": "Herbora Life",
+   "page_id": "191239747907335",
+   "dominio": "herbora.co",
+   "dias_pauta": 120,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "depiladora"
+   ],
+   "senal": 240
+  },
+  {
+   "anunciante": "Luciana te viste",
+   "page_id": "812184788643936",
+   "dominio": "lunaria.com.im",
+   "dias_pauta": 240,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 240
+  },
+  {
+   "anunciante": "Cuisinart Latinoamérica",
+   "page_id": "675627725954298",
+   "dominio": "cuisinart.com.co",
+   "dias_pauta": 78,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "set de ollas"
+   ],
+   "senal": 234
+  },
+  {
+   "anunciante": "Amaría Hair Spa",
+   "page_id": "260628031206734",
+   "dominio": "amaria.com.co",
+   "dias_pauta": 232,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 232
+  },
+  {
+   "anunciante": "Mensajeros Urbanos Conductor CO",
+   "page_id": "110462841690696",
+   "dominio": "play.google.com",
+   "dias_pauta": 114,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 228
+  },
+  {
+   "anunciante": "Markys Teran",
+   "page_id": "361329000558412",
+   "dominio": "lorealparis.com.co",
+   "dias_pauta": 114,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "secador"
+   ],
+   "senal": 228
+  },
+  {
+   "anunciante": "Euromattress",
+   "page_id": "771180012735296",
+   "dominio": "euromattress.co",
+   "dias_pauta": 112,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 224
+  },
+  {
+   "anunciante": "Max Sport",
+   "page_id": "101948732346870",
+   "dominio": "maxsport.com.co",
+   "dias_pauta": 111,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 222
+  },
+  {
+   "anunciante": "KickOffarmenia",
+   "page_id": "349939405091222",
+   "dominio": "kickoffcol.com",
+   "dias_pauta": 108,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "rodilleras"
+   ],
+   "senal": 216
+  },
+  {
+   "anunciante": "Financiera Cofincafe - Cooperativa de Ahorro y Crédito Cafetera",
+   "page_id": "196031747090359",
+   "dominio": "cofincafe.com",
+   "dias_pauta": 108,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 216
+  },
+  {
+   "anunciante": "ValeStore",
+   "page_id": "941291685725245",
+   "dominio": "fb.com",
+   "dias_pauta": 72,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "juego de ollas",
+    "masajeador",
+    "set de ollas"
+   ],
+   "senal": 216
+  },
+  {
+   "anunciante": "ZenPlug",
+   "page_id": "187516077779971",
+   "dominio": "zenplug.co",
+   "dias_pauta": 108,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 216
+  },
+  {
+   "anunciante": "LuxubuyStore",
+   "page_id": "1138322632702067",
+   "dominio": "luxubuystore.myshopify.com",
+   "dias_pauta": 71,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 2,
+   "categorias": [
+    "aspiradora",
+    "taladro"
+   ],
+   "senal": 213
+  },
+  {
+   "anunciante": "CompraYa",
+   "page_id": "1232785129909890",
+   "dominio": "comprayaconfiable.com",
+   "dias_pauta": 106,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 212
+  },
+  {
+   "anunciante": "Kova Colombia",
+   "page_id": "965188043344260",
+   "dominio": "distrinovedades.com",
+   "dias_pauta": 211,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "nevera"
+   ],
+   "senal": 211
+  },
+  {
+   "anunciante": "Luu Store",
+   "page_id": "109246818157055",
+   "dominio": "luustore.com.co",
+   "dias_pauta": 211,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 211
+  },
+  {
+   "anunciante": "Petizoosco",
+   "page_id": "638333172696347",
+   "dominio": "itunes.apple.com",
+   "dias_pauta": 42,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 210
+  },
+  {
+   "anunciante": "AuraReel - Drama Stories",
+   "page_id": "1260871727105130",
+   "dominio": "play.google.com",
+   "dias_pauta": 35,
+   "versiones": 6,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 0,
+   "categorias": [
+    "cobija",
+    "cámara de seguridad",
+    "escritorio infantil",
+    "juguete",
+    "reloj inteligente"
+   ],
+   "senal": 210
+  },
+  {
+   "anunciante": "Be well",
+   "page_id": "100266609760416",
+   "dominio": "c.colbewell.com",
+   "dias_pauta": 210,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 210
+  },
+  {
+   "anunciante": "Reto de 7 minutos diarios de ejercicio",
+   "page_id": "1101063256424473",
+   "dominio": "tour.musclecharge.app",
+   "dias_pauta": 70,
+   "versiones": 3,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 210
+  },
+  {
+   "anunciante": "Encanto Caribe shop",
+   "page_id": "298608013328204",
+   "dominio": "shopsline.com.co",
+   "dias_pauta": 42,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 2,
+   "categorias": [
+    "luces navidad",
+    "proyector",
+    "proyector navideño"
+   ],
+   "senal": 210
+  },
+  {
+   "anunciante": "Impacto Zone",
+   "page_id": "1272571152607659",
+   "dominio": "impactozone.myshopify.com",
+   "dias_pauta": 42,
+   "versiones": 5,
+   "anuncios": 5,
+   "con_video": 5,
+   "productos": 1,
+   "categorias": [
+    "luces navidad",
+    "proyector",
+    "proyector navideño"
+   ],
+   "senal": 210
+  },
+  {
+   "anunciante": "Nexia Go",
+   "page_id": "966215709904531",
+   "dominio": "nexiago.com",
+   "dias_pauta": 105,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "humidificador"
+   ],
+   "senal": 210
+  },
+  {
+   "anunciante": "Baby Koala",
+   "page_id": "155573174294532",
+   "dominio": "babykoala.co",
+   "dias_pauta": 69,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 3,
+   "categorias": [
+    "bloques magnéticos",
+    "humidificador",
+    "organizador"
+   ],
+   "senal": 207
+  },
+  {
+   "anunciante": "Linda Mia ",
+   "page_id": "101686479587444",
+   "dominio": "lindamia.co",
+   "dias_pauta": 207,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 207
+  },
+  {
+   "anunciante": "Kavala Store ",
+   "page_id": "1261341560388289",
+   "dominio": "tiendawow.site",
+   "dias_pauta": 34,
+   "versiones": 6,
+   "anuncios": 6,
+   "con_video": 5,
+   "productos": 3,
+   "categorias": [
+    "carro control remoto",
+    "cortina led",
+    "papá noel escalador"
+   ],
+   "senal": 204
+  },
+  {
+   "anunciante": "Selah Store",
+   "page_id": "961971240340530",
+   "dominio": "djge0z-j5.myshopify.com",
+   "dias_pauta": 51,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "cortina led",
+    "rodilleras"
+   ],
+   "senal": 204
+  },
+  {
+   "anunciante": "Finca Tematica Cafetera Las Mercedes",
+   "page_id": "396114940599090",
+   "dominio": "lasmercedes.com.co",
+   "dias_pauta": 204,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 204
+  },
+  {
+   "anunciante": "Ellence Professionale",
+   "page_id": "357347548104237",
+   "dominio": "palatsi.com.co",
+   "dias_pauta": 101,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "secador"
+   ],
+   "senal": 202
+  },
+  {
+   "anunciante": "Strong King",
+   "page_id": "598044663383698",
+   "dominio": "strongking.co",
+   "dias_pauta": 67,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 2,
+   "categorias": [
+    "aspiradora",
+    "taladro"
+   ],
+   "senal": 201
+  },
+  {
+   "anunciante": "Mundo Ofertas Express",
+   "page_id": "923827747484134",
+   "dominio": "jpglobal-contraentrega.myshopify.com",
+   "dias_pauta": 50,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "olla",
+    "olla a presión",
+    "set de cuchillos"
+   ],
+   "senal": 200
+  },
+  {
+   "anunciante": "ColombianOnline",
+   "page_id": "1762727630530172",
+   "dominio": "tn1i05-n1.myshopify.com",
+   "dias_pauta": 200,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 200
+  },
+  {
+   "anunciante": "Saldos A Huevo",
+   "page_id": "145990172115750",
+   "dominio": "saldosahuevo.com",
+   "dias_pauta": 100,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "aspiradora",
+    "hidrolavadora"
+   ],
+   "senal": 200
+  },
+  {
+   "anunciante": "Luxe Tienda ",
+   "page_id": "815379154994389",
+   "dominio": "luxesstore-co.myshopify.com",
+   "dias_pauta": 200,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 200
+  },
+  {
+   "anunciante": "Shop Colombia Más ",
+   "page_id": "453634474498571",
+   "dominio": "shopmascolombia.online",
+   "dias_pauta": 198,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 198
+  },
+  {
+   "anunciante": "angeldemiguardabebes_",
+   "page_id": "106494568546137",
+   "dominio": "angeldemiguarda.com.co",
+   "dias_pauta": 99,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 198
+  },
+  {
+   "anunciante": "OptimaGear",
+   "page_id": "1189194594272675",
+   "dominio": "optimagear-2.myshopify.com",
+   "dias_pauta": 49,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 1,
+   "categorias": [
+    "juego de ollas",
+    "licuadora"
+   ],
+   "senal": 196
+  },
+  {
+   "anunciante": "Glamora",
+   "page_id": "130117393525807",
+   "dominio": "glamorastores.com",
+   "dias_pauta": 196,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 196
+  },
+  {
+   "anunciante": "Challenger SAS",
+   "page_id": "114338687538",
+   "dominio": "challenger.com.co",
+   "dias_pauta": 97,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "combo cocina",
+    "estufa"
+   ],
+   "senal": 194
+  },
+  {
+   "anunciante": "Promotores del Oriente",
+   "page_id": "104046642230606",
+   "dominio": "fb.me",
+   "dias_pauta": 192,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cámara de seguridad"
+   ],
+   "senal": 192
+  },
+  {
+   "anunciante": "Global Import PR",
+   "page_id": "1041974742326190",
+   "dominio": "prglobalimport.com",
+   "dias_pauta": 192,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 192
+  },
+  {
+   "anunciante": "OSAR",
+   "page_id": "105371079044667",
+   "dominio": "osarmoda.com",
+   "dias_pauta": 192,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 192
+  },
+  {
+   "anunciante": "Ciclospecial",
+   "page_id": "104084327664000",
+   "dominio": "ciclospecial.com",
+   "dias_pauta": 191,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 191
+  },
+  {
+   "anunciante": "Manteles y Cacerolas",
+   "page_id": "128023494007568",
+   "dominio": "mycartesanias.com",
+   "dias_pauta": 190,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "juego de ollas"
+   ],
+   "senal": 190
+  },
+  {
+   "anunciante": "Brooklyn Shop Col",
+   "page_id": "394851230370941",
+   "dominio": "brooklyn-shop.com",
+   "dias_pauta": 187,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 187
+  },
+  {
+   "anunciante": "GoldeN Latam",
+   "page_id": "558269234025743",
+   "dominio": "premierpet.com.br",
+   "dias_pauta": 93,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 186
+  },
+  {
+   "anunciante": "JUSTO PAGO",
+   "page_id": "985834508176886",
+   "dominio": "fb.me",
+   "dias_pauta": 186,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "estufa"
+   ],
+   "senal": 186
+  },
+  {
+   "anunciante": "El armario de Lucia",
+   "page_id": "868657446320573",
+   "dominio": "lunaria.com.im",
+   "dias_pauta": 185,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 185
+  },
+  {
+   "anunciante": "Rocke Feller",
+   "page_id": "338346279361742",
+   "dominio": "rockefeller.com.co",
+   "dias_pauta": 185,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "estufa"
+   ],
+   "senal": 185
+  },
+  {
+   "anunciante": "Naturals Pet's",
+   "page_id": "104596531663355",
+   "dominio": "naturalsspets.com",
+   "dias_pauta": 183,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 183
+  },
+  {
+   "anunciante": "Atenas Store",
+   "page_id": "105914392285944",
+   "dominio": "atenastore.co",
+   "dias_pauta": 182,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 182
+  },
+  {
+   "anunciante": "Ceba Productos y Servicios Veterinarios",
+   "page_id": "231946810194974",
+   "dominio": "ceba.com.co",
+   "dias_pauta": 181,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 181
+  },
+  {
+   "anunciante": "Flora Kids & Home",
+   "page_id": "122106435542002747",
+   "dominio": "flora-tienda.com",
+   "dias_pauta": 36,
+   "versiones": 5,
+   "anuncios": 4,
+   "con_video": 3,
+   "productos": 3,
+   "categorias": [
+    "escritorio infantil",
+    "procesador de alimentos",
+    "set de ollas"
+   ],
+   "senal": 180
+  },
+  {
+   "anunciante": "Alejandro Cardona",
+   "page_id": "114345300248856",
+   "dominio": "app.seminariocreandoriqueza.com",
+   "dias_pauta": 30,
+   "versiones": 6,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "caja fuerte",
+    "silla"
+   ],
+   "senal": 180
+  },
+  {
+   "anunciante": "Ainhoastore",
+   "page_id": "110327985302289",
+   "dominio": "ainhoastore.myshopify.com",
+   "dias_pauta": 179,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 179
+  },
+  {
+   "anunciante": "Auralis",
+   "page_id": "1167101379810052",
+   "dominio": "lojadomatias4.lojavirtualnuvem.com.br",
+   "dias_pauta": 179,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "humidificador"
+   ],
+   "senal": 179
+  },
+  {
+   "anunciante": "Must Watch Free Drama",
+   "page_id": "109046755106510",
+   "dominio": "play.google.com",
+   "dias_pauta": 59,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "caja fuerte",
+    "sofá inflable"
+   ],
+   "senal": 177
+  },
+  {
+   "anunciante": "Magia Cursos y Plantillas",
+   "page_id": "681374695056562",
+   "dominio": "magiatienda.com",
+   "dias_pauta": 177,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 177
+  },
+  {
+   "anunciante": "Whaticket Latam",
+   "page_id": "139640789228916",
+   "dominio": "whaticket.com",
+   "dias_pauta": 176,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 176
+  },
+  {
+   "anunciante": "Cocinayhogar.co",
+   "page_id": "325990530603073",
+   "dominio": "cocinayhogar.com.co",
+   "dias_pauta": 174,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "cortadora de césped"
+   ],
+   "senal": 174
+  },
+  {
+   "anunciante": "Virtual Scorpio 2F",
+   "page_id": "110191083788236",
+   "dominio": "virtualscorpio.com",
+   "dias_pauta": 174,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 174
+  },
+  {
+   "anunciante": "Claudia Recomienda",
+   "page_id": "480562555149012",
+   "dominio": "flexacil.live",
+   "dias_pauta": 173,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 173
+  },
+  {
+   "anunciante": "KitchenAid Latinoamérica",
+   "page_id": "1536222926596482",
+   "dominio": "kitchenaid.com.co",
+   "dias_pauta": 43,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "licuadora"
+   ],
+   "senal": 172
+  },
+  {
+   "anunciante": "Sebastián Peláez",
+   "page_id": "115498933586414",
+   "dominio": "somosselecto.com",
+   "dias_pauta": 171,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 171
+  },
+  {
+   "anunciante": "Dra. Maria Ruíz",
+   "page_id": "925937830595712",
+   "dominio": "clicycompracolombia.com",
+   "dias_pauta": 171,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "plancha"
+   ],
+   "senal": 171
+  },
+  {
+   "anunciante": "Castillitos Oficial",
+   "page_id": "100486852361119",
+   "dominio": "castillitos.com",
+   "dias_pauta": 85,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "moto eléctrica niños",
+    "procesador de alimentos"
+   ],
+   "senal": 170
+  },
+  {
+   "anunciante": "Pelos y Huellas",
+   "page_id": "350254411515591",
+   "dominio": "livvo.com.co",
+   "dias_pauta": 84,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 168
+  },
+  {
+   "anunciante": "Mora Personalizados",
+   "page_id": "246161399917308",
+   "dominio": "morapersonalizados.com",
+   "dias_pauta": 168,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 168
+  },
+  {
+   "anunciante": "Camilo Triana",
+   "page_id": "328831710571892",
+   "dominio": "cosmeticosvogue.com.co",
+   "dias_pauta": 42,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 168
+  },
+  {
+   "anunciante": "Cousin Hype MarketPlace",
+   "page_id": "606469352559927",
+   "dominio": "cousinhypemarketstore.com",
+   "dias_pauta": 167,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 167
+  },
+  {
+   "anunciante": "Djaus",
+   "page_id": "109420791427600",
+   "dominio": "djaus.com",
+   "dias_pauta": 167,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 167
+  },
+  {
+   "anunciante": "Coordinadora S.A.",
+   "page_id": "1466948170234621",
+   "dominio": "coordinadora.com",
+   "dias_pauta": 166,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 166
+  },
+  {
+   "anunciante": "Distribuidora Veluros",
+   "page_id": "114216741775794",
+   "dominio": "distribuidoraveluros.com",
+   "dias_pauta": 55,
+   "versiones": 3,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "cobija",
+    "combo cocina"
+   ],
+   "senal": 165
+  },
+  {
+   "anunciante": "Trompila",
+   "page_id": "322869217570711",
+   "dominio": "trompila.com",
+   "dias_pauta": 162,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 162
+  },
+  {
+   "anunciante": "Nexplot Importador Directo",
+   "page_id": "120481697712756",
+   "dominio": "nexplotsuper2.click",
+   "dias_pauta": 81,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 162
+  },
+  {
+   "anunciante": "Zaffary Colombia",
+   "page_id": "100722841655104",
+   "dominio": "zaffary.com",
+   "dias_pauta": 53,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 3,
+   "categorias": [
+    "aspiradora",
+    "cortina led",
+    "organizador"
+   ],
+   "senal": 159
+  },
+  {
+   "anunciante": "PurrBite",
+   "page_id": "918092788059892",
+   "dominio": "purrbite.com",
+   "dias_pauta": 158,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 158
+  },
+  {
+   "anunciante": "Protectores de muebles",
+   "page_id": "111909891760750",
+   "dominio": "creacionestv.com",
+   "dias_pauta": 157,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 157
+  },
+  {
+   "anunciante": "Maxcotas Center",
+   "page_id": "1715393965153348",
+   "dominio": "maxcotas.com.co",
+   "dias_pauta": 156,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 156
+  },
+  {
+   "anunciante": "Compras Express",
+   "page_id": "253187107868800",
+   "dominio": "comprasexpress.com.co",
+   "dias_pauta": 156,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 156
+  },
+  {
+   "anunciante": "3DCase",
+   "page_id": "110406060864902",
+   "dominio": "3dcase.com.co",
+   "dias_pauta": 152,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 152
+  },
+  {
+   "anunciante": "Thomas Rose Moore",
+   "page_id": "1224506357403156",
+   "dominio": "play.google.com",
+   "dias_pauta": 38,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 152
+  },
+  {
+   "anunciante": "val_skincare",
+   "page_id": "267720756616442",
+   "dominio": "medipiel.com.co",
+   "dias_pauta": 76,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "plancha",
+    "secador"
+   ],
+   "senal": 152
+  },
+  {
+   "anunciante": "Arcadiablend",
+   "page_id": "1145191022018816",
+   "dominio": "arcadiablend.com",
+   "dias_pauta": 76,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 152
+  },
+  {
+   "anunciante": "OutFit Colombia",
+   "page_id": "703690109682854",
+   "dominio": "outfit.com.co",
+   "dias_pauta": 148,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "pagas al recibir"
+   ],
+   "senal": 148
+  },
+  {
+   "anunciante": "KAJU",
+   "page_id": "125580947300762",
+   "dominio": "kajuchic.com",
+   "dias_pauta": 147,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 147
+  },
+  {
+   "anunciante": "Baby Photo AI",
+   "page_id": "850188484851762",
+   "dominio": "play.google.com",
+   "dias_pauta": 73,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 146
+  },
+  {
+   "anunciante": "HeyGen",
+   "page_id": "103228746153839",
+   "dominio": "heygen.com",
+   "dias_pauta": 146,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "parlante"
+   ],
+   "senal": 146
+  },
+  {
+   "anunciante": "Calzado Imperio Colombia",
+   "page_id": "171644369366752",
+   "dominio": "imperiodelcalzado.com",
+   "dias_pauta": 145,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 145
+  },
+  {
+   "anunciante": "MyG Home",
+   "page_id": "101057841817599",
+   "dominio": "mygway.store",
+   "dias_pauta": 36,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "combo cocina",
+    "olla",
+    "olla a presión"
+   ],
+   "senal": 144
+  },
+  {
+   "anunciante": "Pocket FM Stories",
+   "page_id": "191352894054471",
+   "dominio": "play.google.com",
+   "dias_pauta": 72,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "caja fuerte"
+   ],
+   "senal": 144
+  },
+  {
+   "anunciante": "My Gadget City",
+   "page_id": "1031785780020190",
+   "dominio": "mygadgetcity.co",
+   "dias_pauta": 48,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "aspiradora inalámbrica"
+   ],
+   "senal": 144
+  },
+  {
+   "anunciante": "Made-in-China.com",
+   "page_id": "151609045347",
+   "dominio": "es.made-in-china.com",
+   "dias_pauta": 142,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 142
+  },
+  {
+   "anunciante": "Glow Up Home Colombia",
+   "page_id": "818645107993613",
+   "dominio": "glow-up-home-3.myshopify.com",
+   "dias_pauta": 71,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "horno 3 en 1",
+    "parlante"
+   ],
+   "senal": 142
+  },
+  {
+   "anunciante": "Humo Barriles Y Ahumadores",
+   "page_id": "103466119230823",
+   "dominio": "humobarriles.com",
+   "dias_pauta": 142,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 142
+  },
+  {
+   "anunciante": "CH Joyería",
+   "page_id": "665678179953849",
+   "dominio": "centrohogar.com.co",
+   "dias_pauta": 141,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "pagas al recibir"
+   ],
+   "senal": 141
+  },
+  {
+   "anunciante": "Vitacarga",
+   "page_id": "967502686441228",
+   "dominio": "vitacarga.com",
+   "dias_pauta": 35,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 2,
+   "categorias": [
+    "báscula",
+    "caminadora",
+    "rodilleras"
+   ],
+   "senal": 140
+  },
+  {
+   "anunciante": "Muscle Charge",
+   "page_id": "647633648440030",
+   "dominio": "tour.musclecharge.app",
+   "dias_pauta": 70,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 140
+  },
+  {
+   "anunciante": "Store Hogar Inteligente",
+   "page_id": "189476844243820",
+   "dominio": "hogar-inteligente.co",
+   "dias_pauta": 69,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "freidora de aire",
+    "organizador"
+   ],
+   "senal": 138
+  },
+  {
+   "anunciante": "marystore96.com",
+   "page_id": "105869185798190",
+   "dominio": "marystore96.com",
+   "dias_pauta": 137,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 137
+  },
+  {
+   "anunciante": "OnebikeOne",
+   "page_id": "1214873348659513",
+   "dominio": "onebikeone.com",
+   "dias_pauta": 136,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 136
+  },
+  {
+   "anunciante": "Dulce Bebé",
+   "page_id": "108752961497174",
+   "dominio": "dulcebebestore.com",
+   "dias_pauta": 136,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 136
+  },
+  {
+   "anunciante": "Bitalgrow",
+   "page_id": "427659317095878",
+   "dominio": "bitalgrow.com",
+   "dias_pauta": 135,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "depiladora"
+   ],
+   "senal": 135
+  },
+  {
+   "anunciante": "ElMercader",
+   "page_id": "108863522126376",
+   "dominio": "elmercader.co",
+   "dias_pauta": 67,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "cortina led",
+    "luces navidad"
+   ],
+   "senal": 134
+  },
+  {
+   "anunciante": "Aluna Store",
+   "page_id": "1247730112011966",
+   "dominio": "alunastore.com.co",
+   "dias_pauta": 131,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 131
+  },
+  {
+   "anunciante": "Danna Acuña",
+   "page_id": "103239712634219",
+   "dominio": "abgroup-col.myshopify.com",
+   "dias_pauta": 131,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 131
+  },
+  {
+   "anunciante": "Otaku_Tiendacol",
+   "page_id": "106410175170573",
+   "dominio": "otakutienda.com",
+   "dias_pauta": 131,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 131
+  },
+  {
+   "anunciante": "OneScreen LATAM",
+   "page_id": "309927103020682",
+   "dominio": "onescreenlatam.com",
+   "dias_pauta": 65,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 130
+  },
+  {
+   "anunciante": "CapCut",
+   "page_id": "100742038248287",
+   "dominio": "play.google.com",
+   "dias_pauta": 64,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "juguete",
+    "nevera"
+   ],
+   "senal": 128
+  },
+  {
+   "anunciante": "Sahara Fresh Col",
+   "page_id": "105911601951481",
+   "dominio": "saharaoficial.com",
+   "dias_pauta": 128,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 128
+  },
+  {
+   "anunciante": "TitanForge Studio",
+   "page_id": "1212491878621520",
+   "dominio": "play.google.com",
+   "dias_pauta": 64,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "cobija",
+    "juguete"
+   ],
+   "senal": 128
+  },
+  {
+   "anunciante": "Ventas online",
+   "page_id": "1116630528206782",
+   "dominio": "buyio.store",
+   "dias_pauta": 32,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 3,
+   "categorias": [
+    "cortina led",
+    "proyector navideño"
+   ],
+   "senal": 128
+  },
+  {
+   "anunciante": "Everelle",
+   "page_id": "1275558325646979",
+   "dominio": "m.mydramawave.com",
+   "dias_pauta": 32,
+   "versiones": 4,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "cocina de juguete"
+   ],
+   "senal": 128
+  },
+  {
+   "anunciante": "Grupo Coomeva",
+   "page_id": "162143543832323",
+   "dominio": "tiendacoomeva.com",
+   "dias_pauta": 64,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "estufa",
+    "luces navidad"
+   ],
+   "senal": 128
+  },
+  {
+   "anunciante": "GoldShop Colombia",
+   "page_id": "1097491510106342",
+   "dominio": "goldshopcol.store",
+   "dias_pauta": 32,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "moto eléctrica niños"
+   ],
+   "senal": 128
+  },
+  {
+   "anunciante": "cabellomagico.col",
+   "page_id": "106390644616870",
+   "dominio": "cositasdeliciosas.co",
+   "dias_pauta": 127,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 127
+  },
+  {
+   "anunciante": "Alas Coral",
+   "page_id": "112187961723007",
+   "dominio": "alascoral.com",
+   "dias_pauta": 42,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "moto eléctrica niños",
+    "regalo de navidad pago contra entrega"
+   ],
+   "senal": 126
+  },
+  {
+   "anunciante": "Easy Compras Col",
+   "page_id": "766615283201191",
+   "dominio": "easycomprascolco.com",
+   "dias_pauta": 125,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "set de cuchillos"
+   ],
+   "senal": 125
+  },
+  {
+   "anunciante": "Tienda Naturista Co",
+   "page_id": "669563336237529",
+   "dominio": "clickstop.org",
+   "dias_pauta": 62,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "olla"
+   ],
+   "senal": 124
+  },
+  {
+   "anunciante": "David Alejandro",
+   "page_id": "1240543665811323",
+   "dominio": "fallasrefrigeracion.nexoguias.online",
+   "dias_pauta": 62,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "ventilador"
+   ],
+   "senal": 124
+  },
+  {
+   "anunciante": "Kia Barranquilla",
+   "page_id": "592040377495705",
+   "dominio": "fb.me",
+   "dias_pauta": 124,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cámara de seguridad"
+   ],
+   "senal": 124
+  },
+  {
+   "anunciante": "Puntocascos, Accesorios para motociclistas A crédito",
+   "page_id": "468409383180225",
+   "dominio": "puntocascos.com",
+   "dias_pauta": 124,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "rodilleras"
+   ],
+   "senal": 124
+  },
+  {
+   "anunciante": "Brilla Colombia",
+   "page_id": "487190361456836",
+   "dominio": "fb.me",
+   "dias_pauta": 121,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "estufa"
+   ],
+   "senal": 121
+  },
+  {
+   "anunciante": "Faithful Together",
+   "page_id": "438394259368107",
+   "dominio": "itunes.apple.com",
+   "dias_pauta": 30,
+   "versiones": 4,
+   "anuncios": 4,
+   "con_video": 4,
+   "productos": 0,
+   "categorias": [
+    "botas",
+    "báscula",
+    "colchón",
+    "silla"
+   ],
+   "senal": 120
+  },
+  {
+   "anunciante": "American Tactical Colombia",
+   "page_id": "1176819115664097",
+   "dominio": "americantactical.com.co",
+   "dias_pauta": 119,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 119
+  },
+  {
+   "anunciante": "TECNONNEK",
+   "page_id": "102218731536899",
+   "dominio": "tecnonnek.com",
+   "dias_pauta": 119,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "depiladora"
+   ],
+   "senal": 119
+  },
+  {
+   "anunciante": "SleepNova",
+   "page_id": "1091251627405768",
+   "dominio": "218riz-qi.myshopify.com",
+   "dias_pauta": 119,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 119
+  },
+  {
+   "anunciante": "Colombia Tienda Tendencias",
+   "page_id": "108843578806338",
+   "dominio": "descuentazo-5731.myshopify.com",
+   "dias_pauta": 39,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 1,
+   "categorias": [
+    "proyector navideño"
+   ],
+   "senal": 117
+  },
+  {
+   "anunciante": "Natalia Ramos",
+   "page_id": "108519328765533",
+   "dominio": "abgroup-col.myshopify.com",
+   "dias_pauta": 117,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 117
+  },
+  {
+   "anunciante": "HomeFamilia",
+   "page_id": "480038841860182",
+   "dominio": "homefamilia.com",
+   "dias_pauta": 115,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 115
+  },
+  {
+   "anunciante": "Bruselas Cocina",
+   "page_id": "750763124777135",
+   "dominio": "bruselascocina.com",
+   "dias_pauta": 57,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "olla"
+   ],
+   "senal": 114
+  },
+  {
+   "anunciante": "MW Bienestar",
+   "page_id": "1177069372163955",
+   "dominio": "mwinternational.co",
+   "dias_pauta": 57,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 114
+  },
+  {
+   "anunciante": "Bible Path - Chat with Bible",
+   "page_id": "994785547057635",
+   "dominio": "itunes.apple.com",
+   "dias_pauta": 38,
+   "versiones": 3,
+   "anuncios": 3,
+   "con_video": 3,
+   "productos": 0,
+   "categorias": [
+    "bebé",
+    "cafetera",
+    "silla"
+   ],
+   "senal": 114
+  },
+  {
+   "anunciante": "Carestino Colombia",
+   "page_id": "269469780403190",
+   "dominio": "carestino.com.co",
+   "dias_pauta": 114,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 114
+  },
+  {
+   "anunciante": "LLeve todo al 50% de descuento",
+   "page_id": "180747465112405",
+   "dominio": "quegangacolombia.com",
+   "dias_pauta": 114,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "luces navidad"
+   ],
+   "senal": 114
+  },
+  {
+   "anunciante": "Casa Market",
+   "page_id": "1269039506284230",
+   "dominio": "tiendamax.com.co",
+   "dias_pauta": 113,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 113
+  },
+  {
+   "anunciante": "Nubi-Col",
+   "page_id": "106216708953782",
+   "dominio": "nubicol.com",
+   "dias_pauta": 113,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 113
+  },
+  {
+   "anunciante": "Academia Tecno Geeks",
+   "page_id": "100216158691787",
+   "dominio": "landing.comunidadreparando.com",
+   "dias_pauta": 56,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 112
+  },
+  {
+   "anunciante": "Seguros Fly",
+   "page_id": "688581967676216",
+   "dominio": "segurosfly.com",
+   "dias_pauta": 110,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 110
+  },
+  {
+   "anunciante": "Bluck",
+   "page_id": "635946472925833",
+   "dominio": "bluckoficial.com",
+   "dias_pauta": 110,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "estufa"
+   ],
+   "senal": 110
+  },
+  {
+   "anunciante": "Cositas Cool",
+   "page_id": "108996875393809",
+   "dominio": "coolimportadora.com",
+   "dias_pauta": 107,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "secador"
+   ],
+   "senal": 107
+  },
+  {
+   "anunciante": "Ferrelux",
+   "page_id": "105381522038050",
+   "dominio": "ferrelux.com.co",
+   "dias_pauta": 107,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 107
+  },
+  {
+   "anunciante": "Rubí Store",
+   "page_id": "404772539393987",
+   "dominio": "tiendarubi.store",
+   "dias_pauta": 105,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 105
+  },
+  {
+   "anunciante": "Daniela Morales",
+   "page_id": "521778124648972",
+   "dominio": "manychat.com",
+   "dias_pauta": 52,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 104
+  },
+  {
+   "anunciante": "Naturalis Salud",
+   "page_id": "994874717035188",
+   "dominio": "instantpotfacil.vidacare.site",
+   "dias_pauta": 102,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "olla a presión"
+   ],
+   "senal": 102
+  },
+  {
+   "anunciante": "Zurich",
+   "page_id": "208025122607277",
+   "dominio": "zurichseguros.com.co",
+   "dias_pauta": 101,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 101
+  },
+  {
+   "anunciante": "Specialized Bicycles",
+   "page_id": "154236427966601",
+   "dominio": "specialized.com",
+   "dias_pauta": 101,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 101
+  },
+  {
+   "anunciante": "Hogarivo",
+   "page_id": "801591773043838",
+   "dominio": "viveonlinenow.com",
+   "dias_pauta": 50,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "freidora de aire"
+   ],
+   "senal": 100
+  },
+  {
+   "anunciante": "Botas Croydon",
+   "page_id": "103678144823460",
+   "dominio": "botascroydon.com",
+   "dias_pauta": 98,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 98
+  },
+  {
+   "anunciante": "Steren Colombia",
+   "page_id": "377671728993312",
+   "dominio": "steren.com.co",
+   "dias_pauta": 98,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "ventilador"
+   ],
+   "senal": 98
+  },
+  {
+   "anunciante": "H Bordados",
+   "page_id": "709235619464567",
+   "dominio": "hbordados.com",
+   "dias_pauta": 98,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 98
+  },
+  {
+   "anunciante": "ClickNova",
+   "page_id": "1174282882439718",
+   "dominio": "wx7z00-pd.myshopify.com",
+   "dias_pauta": 98,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "licuadora"
+   ],
+   "senal": 98
+  },
+  {
+   "anunciante": "Imagine Access",
+   "page_id": "1295243680328516",
+   "dominio": "underaccess.com",
+   "dias_pauta": 96,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 96
+  },
+  {
+   "anunciante": "Laboratorio Innova Beauty",
+   "page_id": "996389230224636",
+   "dominio": "clicycompracolombia.com",
+   "dias_pauta": 96,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "secador"
+   ],
+   "senal": 96
+  },
+  {
+   "anunciante": "Medycare Clínica de Obesidad y Prevención Cardiovascular",
+   "page_id": "108148794352401",
+   "dominio": "fb.me",
+   "dias_pauta": 96,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 96
+  },
+  {
+   "anunciante": "Zyvital Storee",
+   "page_id": "776033758927619",
+   "dominio": "zyvital.com",
+   "dias_pauta": 32,
+   "versiones": 3,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 96
+  },
+  {
+   "anunciante": "Baby & Pregnancy Tracker App",
+   "page_id": "1121813504353255",
+   "dominio": "play.google.com",
+   "dias_pauta": 95,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 95
+  },
+  {
+   "anunciante": "28 Day Challenge",
+   "page_id": "489302127600334",
+   "dominio": "betterme-pilates.com",
+   "dias_pauta": 47,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "bicicleta",
+    "plancha"
+   ],
+   "senal": 94
+  },
+  {
+   "anunciante": "MultiStock CO",
+   "page_id": "1171170869401850",
+   "dominio": "multistock1.co",
+   "dias_pauta": 47,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "parlante"
+   ],
+   "senal": 94
+  },
+  {
+   "anunciante": "KWdecolombia",
+   "page_id": "107683387768504",
+   "dominio": "kwmarket.co",
+   "dias_pauta": 93,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "combo cocina"
+   ],
+   "senal": 93
+  },
+  {
+   "anunciante": "CES Inversiones",
+   "page_id": "134988879708402",
+   "dominio": "tienda-ces-online.com",
+   "dias_pauta": 46,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 92
+  },
+  {
+   "anunciante": "Ritual Capilar Latam",
+   "page_id": "694737340394736",
+   "dominio": "latamgloblarimportscolombia.com",
+   "dias_pauta": 46,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "plancha"
+   ],
+   "senal": 92
+  },
+  {
+   "anunciante": "Tee Travel - Culture & Nature",
+   "page_id": "153293031392104",
+   "dominio": "caminoenbici.com",
+   "dias_pauta": 91,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 91
+  },
+  {
+   "anunciante": "Tas-Tas Store",
+   "page_id": "484401838079063",
+   "dominio": "tastasstore.com",
+   "dias_pauta": 90,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "set de cuchillos"
+   ],
+   "senal": 90
+  },
+  {
+   "anunciante": "Tochimarket",
+   "page_id": "377732228761916",
+   "dominio": "tochimarket.co",
+   "dias_pauta": 30,
+   "versiones": 3,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 90
+  },
+  {
+   "anunciante": "Kit de Herramientas Terapéuticas",
+   "page_id": "1303750612814915",
+   "dominio": "kitclinicoterapeutico.lovable.app",
+   "dias_pauta": 90,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 90
+  },
+  {
+   "anunciante": "Herreros",
+   "page_id": "1802066936733928",
+   "dominio": "fb.com",
+   "dias_pauta": 88,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 88
+  },
+  {
+   "anunciante": "Beka Importaciones",
+   "page_id": "855390857648986",
+   "dominio": "bekacol.com",
+   "dias_pauta": 44,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "juguete",
+    "luces navidad"
+   ],
+   "senal": 88
+  },
+  {
+   "anunciante": "Martu Penarol",
+   "page_id": "107014397780205",
+   "dominio": "kitterapeutico.myshopify.com",
+   "dias_pauta": 88,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 88
+  },
+  {
+   "anunciante": "Andres Bilbao",
+   "page_id": "847058238486274",
+   "dominio": "form.oracle30x.co",
+   "dias_pauta": 87,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 87
+  },
+  {
+   "anunciante": "Heloria Parfums",
+   "page_id": "794316703769300",
+   "dominio": "vttjtk-aj.myshopify.com",
+   "dias_pauta": 87,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "envío gratis y pago contra entrega"
+   ],
+   "senal": 87
+  },
+  {
+   "anunciante": "Deport variedades",
+   "page_id": "831639030022894",
+   "dominio": "wildropshop.com",
+   "dias_pauta": 87,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 87
+  },
+  {
+   "anunciante": "Mikita Store",
+   "page_id": "104983811280797",
+   "dominio": "mikitastore.com",
+   "dias_pauta": 87,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 87
+  },
+  {
+   "anunciante": "Mirador del Puerto",
+   "page_id": "322939697564316",
+   "dominio": "fb.me",
+   "dias_pauta": 87,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "estufa"
+   ],
+   "senal": 87
+  },
+  {
+   "anunciante": "The Imperial Colombia ",
+   "page_id": "1082304718295405",
+   "dominio": "theimperial.store",
+   "dias_pauta": 87,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "pagas al recibir"
+   ],
+   "senal": 87
+  },
+  {
+   "anunciante": "Viajando con Laura",
+   "page_id": "736723142863807",
+   "dominio": "the2packbag.com",
+   "dias_pauta": 87,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "aspiradora"
+   ],
+   "senal": 87
+  },
+  {
+   "anunciante": "Phd Marcela Conde",
+   "page_id": "1298476286679702",
+   "dominio": "naturistasimportados.com",
+   "dias_pauta": 43,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 86
+  },
+  {
+   "anunciante": "Homely Colombia",
+   "page_id": "653528227851629",
+   "dominio": "homelytienda.com",
+   "dias_pauta": 86,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 86
+  },
+  {
+   "anunciante": "J9 Distribuciones",
+   "page_id": "649047401625937",
+   "dominio": "j9distribuciones.com",
+   "dias_pauta": 43,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "combo cocina"
+   ],
+   "senal": 86
+  },
+  {
+   "anunciante": "GMD instrumentos de Diagnóstico",
+   "page_id": "248947599362417",
+   "dominio": "cloud.impormedical.co",
+   "dias_pauta": 86,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 86
+  },
+  {
+   "anunciante": "Solucionesindustrialesindpower",
+   "page_id": "451516822307410",
+   "dominio": "example.com",
+   "dias_pauta": 86,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "aspiradora"
+   ],
+   "senal": 86
+  },
+  {
+   "anunciante": "Dra. Francisca Godoy Baeza",
+   "page_id": "1282795478241982",
+   "dominio": "goldencolommask.store",
+   "dias_pauta": 85,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "nevera"
+   ],
+   "senal": 85
+  },
+  {
+   "anunciante": "Ofertas Imperdibles",
+   "page_id": "113845808198331",
+   "dominio": "tiendasantori.co",
+   "dias_pauta": 42,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "organizador",
+    "taladro"
+   ],
+   "senal": 84
+  },
+  {
+   "anunciante": "Autogroup",
+   "page_id": "104690310925814",
+   "dominio": "autogroup.com.co",
+   "dias_pauta": 83,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "olla"
+   ],
+   "senal": 83
+  },
+  {
+   "anunciante": "Jeanscol.co",
+   "page_id": "905585135967722",
+   "dominio": "jeanscol.co",
+   "dias_pauta": 83,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 83
+  },
+  {
+   "anunciante": "Tuya",
+   "page_id": "1728385660750572",
+   "dominio": "tuya.com.co",
+   "dias_pauta": 41,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "mascota",
+    "parlante"
+   ],
+   "senal": 82
+  },
+  {
+   "anunciante": "UrbMarkets",
+   "page_id": "1053187204544573",
+   "dominio": "urbmarkets.com",
+   "dias_pauta": 82,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "arrancador de batería"
+   ],
+   "senal": 82
+  },
+  {
+   "anunciante": "Maria Perez",
+   "page_id": "1330856180115968",
+   "dominio": "colofertasya.com",
+   "dias_pauta": 41,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "caminadora",
+    "combo cocina"
+   ],
+   "senal": 82
+  },
+  {
+   "anunciante": "Novedades MAGNO",
+   "page_id": "2226006037438339",
+   "dominio": "magnonovedades.com.co",
+   "dias_pauta": 41,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "carro control remoto"
+   ],
+   "senal": 82
+  },
+  {
+   "anunciante": "Vensso CO",
+   "page_id": "1078359875353468",
+   "dominio": "vennssobox.shop",
+   "dias_pauta": 41,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir",
+    "pagas al recibir"
+   ],
+   "senal": 82
+  },
+  {
+   "anunciante": "Escuela Del Crisol Interior",
+   "page_id": "626984833826442",
+   "dominio": "t.me",
+   "dias_pauta": 80,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 80
+  },
+  {
+   "anunciante": "Laura Fitness ",
+   "page_id": "1067250486468120",
+   "dominio": "soonbody.com",
+   "dias_pauta": 40,
+   "versiones": 2,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 80
+  },
+  {
+   "anunciante": "Amapola Store",
+   "page_id": "103173269557073",
+   "dominio": "mundomayoristashop.store",
+   "dias_pauta": 79,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 79
+  },
+  {
+   "anunciante": "MonSite",
+   "page_id": "485546904818727",
+   "dominio": "comprasmonsite.com",
+   "dias_pauta": 39,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "ventilador"
+   ],
+   "senal": 78
+  },
+  {
+   "anunciante": "Compra Online",
+   "page_id": "541131185743837",
+   "dominio": "comprasmart.com.co",
+   "dias_pauta": 78,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "combo cocina"
+   ],
+   "senal": 78
+  },
+  {
+   "anunciante": "Compra Express Col",
+   "page_id": "461612670365357",
+   "dominio": "compraexprescol.com",
+   "dias_pauta": 39,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "luces navidad",
+    "proyector"
+   ],
+   "senal": 78
+  },
+  {
+   "anunciante": "Tiendas Lorito Online",
+   "page_id": "684384158321887",
+   "dominio": "lorito.com.co",
+   "dias_pauta": 77,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "triciclo"
+   ],
+   "senal": 77
+  },
+  {
+   "anunciante": "Colombiafullstore",
+   "page_id": "108725608196122",
+   "dominio": "uzdbhn-ve.myshopify.com",
+   "dias_pauta": 38,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 76
+  },
+  {
+   "anunciante": "Corredorestore",
+   "page_id": "944954132039301",
+   "dominio": "corredorestore.com",
+   "dias_pauta": 76,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 76
+  },
+  {
+   "anunciante": "Naissant",
+   "page_id": "215418338485835",
+   "dominio": "naissant.com",
+   "dias_pauta": 37,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "secador",
+    "termo"
+   ],
+   "senal": 74
+  },
+  {
+   "anunciante": "Zennigo Store",
+   "page_id": "876997258820293",
+   "dominio": "zennigo.com",
+   "dias_pauta": 74,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "licuadora"
+   ],
+   "senal": 74
+  },
+  {
+   "anunciante": "The North Face",
+   "page_id": "262214683814390",
+   "dominio": "thenorthface.com.co",
+   "dias_pauta": 73,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 73
+  },
+  {
+   "anunciante": "Luegopagocol",
+   "page_id": "314120135124312",
+   "dominio": "luegopago.com",
+   "dias_pauta": 73,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 73
+  },
+  {
+   "anunciante": "Not Gonna Lie",
+   "page_id": "1161855783686693",
+   "dominio": "play.google.com",
+   "dias_pauta": 73,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 73
+  },
+  {
+   "anunciante": "Sweet Drama Free",
+   "page_id": "117583248108934",
+   "dominio": "play.google.com",
+   "dias_pauta": 71,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "olla"
+   ],
+   "senal": 71
+  },
+  {
+   "anunciante": "Lclick",
+   "page_id": "960599960461253",
+   "dominio": "yk7t12-ra.myshopify.com",
+   "dias_pauta": 70,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 70
+  },
+  {
+   "anunciante": "Midnight Short Stories-EN3",
+   "page_id": "1150020038195945",
+   "dominio": "quick.cyberocean.io",
+   "dias_pauta": 70,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "caja fuerte"
+   ],
+   "senal": 70
+  },
+  {
+   "anunciante": "Julieta Beauty Tips",
+   "page_id": "617791281426365",
+   "dominio": "drkumal.com",
+   "dias_pauta": 35,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 2,
+   "categorias": [
+    "masajeador de cuello"
+   ],
+   "senal": 70
+  },
+  {
+   "anunciante": "Hindú",
+   "page_id": "36682066843",
+   "dominio": "aratiendas.com",
+   "dias_pauta": 35,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "aspiradora",
+    "cobija"
+   ],
+   "senal": 70
+  },
+  {
+   "anunciante": "Impoventas24",
+   "page_id": "156312387555014",
+   "dominio": "impoventas24.com",
+   "dias_pauta": 68,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 68
+  },
+  {
+   "anunciante": "VCM Store",
+   "page_id": "585241654672075",
+   "dominio": "vcmstore.com",
+   "dias_pauta": 68,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "colchón"
+   ],
+   "senal": 68
+  },
+  {
+   "anunciante": "FountStore",
+   "page_id": "1164409283418364",
+   "dominio": "fountstore.co",
+   "dias_pauta": 34,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "juego de ollas",
+    "set de ollas"
+   ],
+   "senal": 68
+  },
+  {
+   "anunciante": "Bachitag-B",
+   "page_id": "141518589050886",
+   "dominio": "bachitag.com",
+   "dias_pauta": 34,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "aspiradora"
+   ],
+   "senal": 68
+  },
+  {
+   "anunciante": "Roux Oro18k",
+   "page_id": "100379789749604",
+   "dominio": "magiadeoro18k.com",
+   "dias_pauta": 67,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "pagas al recibir"
+   ],
+   "senal": 67
+  },
+  {
+   "anunciante": "Diver Tienda",
+   "page_id": "691343907401422",
+   "dominio": "diversytienda.com",
+   "dias_pauta": 66,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "ventilador"
+   ],
+   "senal": 66
+  },
+  {
+   "anunciante": "Truepify",
+   "page_id": "903262479528946",
+   "dominio": "truepify.com",
+   "dias_pauta": 66,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 66
+  },
+  {
+   "anunciante": "Grupo Brilla",
+   "page_id": "136985426168705",
+   "dominio": "grupobrilla.com.co",
+   "dias_pauta": 66,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 66
+  },
+  {
+   "anunciante": "Compra Fácil Start",
+   "page_id": "655549114312674",
+   "dominio": "tiendarodriguez.shop",
+   "dias_pauta": 33,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "aspiradora inalámbrica",
+    "hidrolavadora inalámbrica"
+   ],
+   "senal": 66
+  },
+  {
+   "anunciante": "ALÍZZ PROFESSIONAL (OFICIAL GROUP)",
+   "page_id": "175724532477601",
+   "dominio": "alizz.com.co",
+   "dias_pauta": 66,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "plancha"
+   ],
+   "senal": 66
+  },
+  {
+   "anunciante": "Kärcher",
+   "page_id": "596529413841951",
+   "dominio": "tiendakarcher.com",
+   "dias_pauta": 66,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "aspiradora"
+   ],
+   "senal": 66
+  },
+  {
+   "anunciante": "Ferreco",
+   "page_id": "991772224194903",
+   "dominio": "ferreco.com",
+   "dias_pauta": 64,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 64
+  },
+  {
+   "anunciante": "Casalimpia",
+   "page_id": "122637847799878",
+   "dominio": "casalimpia.com",
+   "dias_pauta": 64,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "plancha"
+   ],
+   "senal": 64
+  },
+  {
+   "anunciante": "Infinity Shop ",
+   "page_id": "746495325217966",
+   "dominio": "shopinfinitycol.online",
+   "dias_pauta": 63,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "estufa"
+   ],
+   "senal": 63
+  },
+  {
+   "anunciante": "WowCan",
+   "page_id": "479899202155874",
+   "dominio": "wowcan.com.co",
+   "dias_pauta": 62,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 62
+  },
+  {
+   "anunciante": "Gymtone",
+   "page_id": "1236938676160472",
+   "dominio": "attribution.gymtone.ai",
+   "dias_pauta": 31,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 62
+  },
+  {
+   "anunciante": "Almacen Solutodo",
+   "page_id": "111402643870911",
+   "dominio": "solutodo.com.co",
+   "dias_pauta": 31,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 1,
+   "categorias": [
+    "carro control remoto",
+    "freidora de aire"
+   ],
+   "senal": 62
+  },
+  {
+   "anunciante": "Vanity Store",
+   "page_id": "100704651546482",
+   "dominio": "vanitystore.store",
+   "dias_pauta": 62,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 62
+  },
+  {
+   "anunciante": "SoulFilm - Drama Box",
+   "page_id": "108435548452588",
+   "dominio": "play.google.com",
+   "dias_pauta": 30,
+   "versiones": 2,
+   "anuncios": 2,
+   "con_video": 2,
+   "productos": 0,
+   "categorias": [
+    "cocina de juguete"
+   ],
+   "senal": 60
+  },
+  {
+   "anunciante": "El Rincón Montessori",
+   "page_id": "286368664553021",
+   "dominio": "elrinconmontessori.com",
+   "dias_pauta": 60,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 60
+  },
+  {
+   "anunciante": "Javi Manzano",
+   "page_id": "1041786515695771",
+   "dominio": "buzzy.now",
+   "dias_pauta": 59,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bebé"
+   ],
+   "senal": 59
+  },
+  {
+   "anunciante": "Vida en Casa",
+   "page_id": "715530964968701",
+   "dominio": "novalixvital.shop",
+   "dias_pauta": 59,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 59
+  },
+  {
+   "anunciante": "Coros Colombia",
+   "page_id": "102232662666234",
+   "dominio": "fb.com",
+   "dias_pauta": 59,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 59
+  },
+  {
+   "anunciante": "AMBRA by Freddy Ordoñez",
+   "page_id": "1083920861464651",
+   "dominio": "ambrabyfreddy.com",
+   "dias_pauta": 59,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "pagas al recibir"
+   ],
+   "senal": 59
+  },
+  {
+   "anunciante": "Adrianfitvibes",
+   "page_id": "645933821926467",
+   "dominio": "wisemeal.org",
+   "dias_pauta": 58,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 58
+  },
+  {
+   "anunciante": "La Tienda Central",
+   "page_id": "1255003637696209",
+   "dominio": "lacentraltienda.shop",
+   "dias_pauta": 58,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "contra entrega"
+   ],
+   "senal": 58
+  },
+  {
+   "anunciante": "Clickeándolo",
+   "page_id": "293121294898352",
+   "dominio": "commpralo-ya.com",
+   "dias_pauta": 57,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 57
+  },
+  {
+   "anunciante": "Carlos Jaramillo",
+   "page_id": "1549822958473755",
+   "dominio": "quiz.drcarlosjaramillo.com",
+   "dias_pauta": 56,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 56
+  },
+  {
+   "anunciante": "Yiyi-Store",
+   "page_id": "101211445984168",
+   "dominio": "yiyi-store.com",
+   "dias_pauta": 56,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 56
+  },
+  {
+   "anunciante": "Lechal 21",
+   "page_id": "1188853094302500",
+   "dominio": "fb.me",
+   "dias_pauta": 55,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "horno 3 en 1"
+   ],
+   "senal": 55
+  },
+  {
+   "anunciante": "CRX Tecnología",
+   "page_id": "1025319470663269",
+   "dominio": "tecnocrx.myshopify.com",
+   "dias_pauta": 55,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 55
+  },
+  {
+   "anunciante": "Lino Green Oficial",
+   "page_id": "105894158320035",
+   "dominio": "labaratanga.myshopify.com",
+   "dias_pauta": 54,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "proyector navideño"
+   ],
+   "senal": 54
+  },
+  {
+   "anunciante": "AURI",
+   "page_id": "1057766340742994",
+   "dominio": "stockpluscol.myshopify.com",
+   "dias_pauta": 54,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 54
+  },
+  {
+   "anunciante": "Doctor Carlos Jaramillo",
+   "page_id": "1084011678123953",
+   "dominio": "quiz.drcarlosjaramillo.com",
+   "dias_pauta": 53,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 53
+  },
+  {
+   "anunciante": "Virtual Store",
+   "page_id": "636555679541223",
+   "dominio": "hdn9xj-y0.myshopify.com",
+   "dias_pauta": 53,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 53
+  },
+  {
+   "anunciante": "Todo En Uno",
+   "page_id": "973844885802213",
+   "dominio": "todoenunojt.com",
+   "dias_pauta": 52,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "ventilador"
+   ],
+   "senal": 52
+  },
+  {
+   "anunciante": "Somos Internet",
+   "page_id": "110885254782975",
+   "dominio": "somosinternet.com",
+   "dias_pauta": 52,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 52
+  },
+  {
+   "anunciante": "Tu Herramienta",
+   "page_id": "894661557060048",
+   "dominio": "tuherramienta.com.co",
+   "dias_pauta": 52,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "aspiradora"
+   ],
+   "senal": 52
+  },
+  {
+   "anunciante": "Calzado Kavanny",
+   "page_id": "146539228533333",
+   "dominio": "kavannyshoes.com",
+   "dias_pauta": 51,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "caja fuerte"
+   ],
+   "senal": 51
+  },
+  {
+   "anunciante": "Juper colombia",
+   "page_id": "474341472432896",
+   "dominio": "jupertienda.myshopify.com",
+   "dias_pauta": 51,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "cobija piel de conejo"
+   ],
+   "senal": 51
+  },
+  {
+   "anunciante": "Navilandia",
+   "page_id": "131042666748239",
+   "dominio": "navilandia.com.co",
+   "dias_pauta": 50,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "luces navidad"
+   ],
+   "senal": 50
+  },
+  {
+   "anunciante": "dogsnaturalcare",
+   "page_id": "2105548433034064",
+   "dominio": "dogsnaturalcare.com",
+   "dias_pauta": 49,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 49
+  },
+  {
+   "anunciante": "Google Ads",
+   "page_id": "54905507170",
+   "dominio": "ad.doubleclick.net",
+   "dias_pauta": 49,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 49
+  },
+  {
+   "anunciante": "Spiritualfortune",
+   "page_id": "107372675802331",
+   "dominio": "spiritualfortune.co",
+   "dias_pauta": 49,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "termo"
+   ],
+   "senal": 49
+  },
+  {
+   "anunciante": "PilatesJoy",
+   "page_id": "628135117055031",
+   "dominio": "play.google.com",
+   "dias_pauta": 49,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "silla"
+   ],
+   "senal": 49
+  },
+  {
+   "anunciante": "iserra100",
+   "page_id": "167930469952146",
+   "dominio": "iserra100.com",
+   "dias_pauta": 49,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "luces navidad"
+   ],
+   "senal": 49
+  },
+  {
+   "anunciante": "Guias e Manuais para ajuda",
+   "page_id": "999834106555562",
+   "dominio": "juegoseducativosparaprofesores.vercel.app",
+   "dias_pauta": 48,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 48
+  },
+  {
+   "anunciante": "EverCol Tienda Online",
+   "page_id": "1219782987882933",
+   "dominio": "mitiendaevercol.store",
+   "dias_pauta": 47,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "combo cocina"
+   ],
+   "senal": 47
+  },
+  {
+   "anunciante": "Langla: Your AI Tutor",
+   "page_id": "178961648628431",
+   "dominio": "play.google.com",
+   "dias_pauta": 46,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "olla"
+   ],
+   "senal": 46
+  },
+  {
+   "anunciante": "Global Product Updates",
+   "page_id": "1161241860400832",
+   "dominio": "typedeal.com",
+   "dias_pauta": 46,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "freidora de aire"
+   ],
+   "senal": 46
+  },
+  {
+   "anunciante": "Tiendas Isimo",
+   "page_id": "101287559473834",
+   "dominio": "fb.com",
+   "dias_pauta": 45,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "combo cocina"
+   ],
+   "senal": 45
+  },
+  {
+   "anunciante": "Luxur G comunity",
+   "page_id": "1103760859478964",
+   "dominio": "luxurygotti.com",
+   "dias_pauta": 44,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "bicicleta"
+   ],
+   "senal": 44
+  },
+  {
+   "anunciante": "Shop & Go ",
+   "page_id": "610798362112761",
+   "dominio": "comprasexpress.com.co",
+   "dias_pauta": 44,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "depiladora"
+   ],
+   "senal": 44
+  },
+  {
+   "anunciante": "BOSI",
+   "page_id": "41966605364",
+   "dominio": "bosi.com.co",
+   "dias_pauta": 44,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 44
+  },
+  {
+   "anunciante": "Adaranex Salud & Belleza",
+   "page_id": "719829591541340",
+   "dominio": "adarabelleza.com.co",
+   "dias_pauta": 44,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "paga al recibir"
+   ],
+   "senal": 44
+  },
+  {
+   "anunciante": "Pulse Mobile",
+   "page_id": "1239381212590102",
+   "dominio": "play.google.com",
+   "dias_pauta": 43,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 43
+  },
+  {
+   "anunciante": "Encarguelo Colombia",
+   "page_id": "101222352888114",
+   "dominio": "encarguelo.com",
+   "dias_pauta": 43,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "organizador"
+   ],
+   "senal": 43
+  },
+  {
+   "anunciante": "Adelgaza 20",
+   "page_id": "279820228723446",
+   "dominio": "fabn.fit",
+   "dias_pauta": 43,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 43
+  },
+  {
+   "anunciante": "Prime Digital",
+   "page_id": "1296881350167456",
+   "dominio": "play.google.com",
+   "dias_pauta": 43,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "caja fuerte"
+   ],
+   "senal": 43
+  },
+  {
+   "anunciante": "Luciana Ramos",
+   "page_id": "515910701613917",
+   "dominio": "producto.site",
+   "dias_pauta": 43,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 43
+  },
+  {
+   "anunciante": "Palaces Group Education ",
+   "page_id": "1272232619303903",
+   "dominio": "pay.hotmart.com",
+   "dias_pauta": 42,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cámara de seguridad"
+   ],
+   "senal": 42
+  },
+  {
+   "anunciante": "Dr. Saul Méndez",
+   "page_id": "586229977916469",
+   "dominio": "bienestaryculturacol.com",
+   "dias_pauta": 42,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "horno 3 en 1"
+   ],
+   "senal": 42
+  },
+  {
+   "anunciante": "Dr. Elías Forero",
+   "page_id": "106373021340678",
+   "dominio": "eliasalfonsoforero.com",
+   "dias_pauta": 42,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "olla a presión"
+   ],
+   "senal": 42
+  },
+  {
+   "anunciante": "Luna Tienda",
+   "page_id": "1312996308559504",
+   "dominio": "loja-online-100164.myshopify.com",
+   "dias_pauta": 42,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "combo cocina"
+   ],
+   "senal": 42
+  },
+  {
+   "anunciante": "Drone Nerds LT",
+   "page_id": "863365926864358",
+   "dominio": "fb.me",
+   "dias_pauta": 41,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cámara de seguridad"
+   ],
+   "senal": 41
+  },
+  {
+   "anunciante": "Ninja Kitchen Colombia",
+   "page_id": "229994996870766",
+   "dominio": "sharkninjacolombia.com",
+   "dias_pauta": 41,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "freidora de aire"
+   ],
+   "senal": 41
+  },
+  {
+   "anunciante": "Casa Herbolaria Tés e Infusiones",
+   "page_id": "830484273477248",
+   "dominio": "casaherbolaria.com.co",
+   "dias_pauta": 40,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "horno 3 en 1"
+   ],
+   "senal": 40
+  },
+  {
+   "anunciante": "Ferrox",
+   "page_id": "618853017984398",
+   "dominio": "ferrox.website",
+   "dias_pauta": 40,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "masajeador"
+   ],
+   "senal": 40
+  },
+  {
+   "anunciante": "Todo para tu casa",
+   "page_id": "276956468834981",
+   "dominio": "todoparatucasa.co",
+   "dias_pauta": 39,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "ventilador"
+   ],
+   "senal": 39
+  },
+  {
+   "anunciante": "QualySens",
+   "page_id": "932555589949493",
+   "dominio": "qualysense.shop",
+   "dias_pauta": 39,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 39
+  },
+  {
+   "anunciante": "Sword x Staff",
+   "page_id": "885639594624733",
+   "dominio": "play.google.com",
+   "dias_pauta": 38,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "mascota"
+   ],
+   "senal": 38
+  },
+  {
+   "anunciante": "Compras FACIL YA ",
+   "page_id": "493317323874606",
+   "dominio": "comprasfacilya.com",
+   "dias_pauta": 38,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "hidrolavadora"
+   ],
+   "senal": 38
+  },
+  {
+   "anunciante": "CFI Colombia",
+   "page_id": "103370632089005",
+   "dominio": "campaigns.cfifinancial.com",
+   "dias_pauta": 38,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "freidora de aire"
+   ],
+   "senal": 38
+  },
+  {
+   "anunciante": "Free Drama You Need",
+   "page_id": "108548301823218",
+   "dominio": "play.google.com",
+   "dias_pauta": 38,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 38
+  },
+  {
+   "anunciante": "Cámara de Comercio de Bogotá",
+   "page_id": "309026477863",
+   "dominio": "fb.me",
+   "dias_pauta": 37,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "cámara de seguridad"
+   ],
+   "senal": 37
+  },
+  {
+   "anunciante": "Vou Suites",
+   "page_id": "447455265122424",
+   "dominio": "vousuites.com",
+   "dias_pauta": 37,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "cafetera"
+   ],
+   "senal": 37
+  },
+  {
+   "anunciante": "Benjamin",
+   "page_id": "111047515184758",
+   "dominio": "estudiodebiblia.com",
+   "dias_pauta": 36,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 36
+  },
+  {
+   "anunciante": "Better Choice",
+   "page_id": "1242867568912265",
+   "dominio": "play.google.com",
+   "dias_pauta": 36,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 36
+  },
+  {
+   "anunciante": "Growth Harbor",
+   "page_id": "1417117854814714",
+   "dominio": "play.google.com",
+   "dias_pauta": 36,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 36
+  },
+  {
+   "anunciante": "Music Box tiendas musicales",
+   "page_id": "137671109615234",
+   "dominio": "musicbox.com.co",
+   "dias_pauta": 36,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "parlante"
+   ],
+   "senal": 36
+  },
+  {
+   "anunciante": "Ancla Shop Colombia",
+   "page_id": "714201355101816",
+   "dominio": "anclashopcol.com",
+   "dias_pauta": 36,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "cobija"
+   ],
+   "senal": 36
+  },
+  {
+   "anunciante": "Depilé Studio",
+   "page_id": "1442503035609033",
+   "dominio": "comprasexpress.com.co",
+   "dias_pauta": 35,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "depiladora"
+   ],
+   "senal": 35
+  },
+  {
+   "anunciante": "Vaughan Laquan Tal",
+   "page_id": "1024526474081357",
+   "dominio": "play.google.com",
+   "dias_pauta": 35,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 35
+  },
+  {
+   "anunciante": "Harmony at Home",
+   "page_id": "1346713591854014",
+   "dominio": "build-selfcare.com",
+   "dias_pauta": 35,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "lámpara"
+   ],
+   "senal": 35
+  },
+  {
+   "anunciante": "Carmen Rodriguez",
+   "page_id": "1459999767188555",
+   "dominio": "colofertasya.com",
+   "dias_pauta": 35,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 35
+  },
+  {
+   "anunciante": "Enf. Sandra Rincón",
+   "page_id": "1003610366176907",
+   "dominio": "colofertasya.com",
+   "dias_pauta": 35,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "caminadora"
+   ],
+   "senal": 35
+  },
+  {
+   "anunciante": "Químicos para el Hogar",
+   "page_id": "302977606236316",
+   "dominio": "quimicosparaelhogar.com",
+   "dias_pauta": 35,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "combo cocina"
+   ],
+   "senal": 35
+  },
+  {
+   "anunciante": "Importadora Andina",
+   "page_id": "1238089199391759",
+   "dominio": "importadora-andina.myshopify.com",
+   "dias_pauta": 35,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "taladro"
+   ],
+   "senal": 35
+  },
+  {
+   "anunciante": "Más de 40 & Radiantes",
+   "page_id": "1104579779415430",
+   "dominio": "almirabeauty.com",
+   "dias_pauta": 35,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "humidificador"
+   ],
+   "senal": 35
+  },
+  {
+   "anunciante": "Livera+",
+   "page_id": "1198202560052198",
+   "dominio": "liveraplus.co",
+   "dias_pauta": 34,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "cámara de seguridad"
+   ],
+   "senal": 34
+  },
+  {
+   "anunciante": "ArniStore",
+   "page_id": "1103753822828675",
+   "dominio": "arnistore.co",
+   "dias_pauta": 34,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "arrancador de batería"
+   ],
+   "senal": 34
+  },
+  {
+   "anunciante": "Creativo Studio",
+   "page_id": "230466588296384",
+   "dominio": "creativostudio.co",
+   "dias_pauta": 34,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 34
+  },
+  {
+   "anunciante": "Dis tecnologia y gadgets",
+   "page_id": "136094029576716",
+   "dominio": "disimporta.com",
+   "dias_pauta": 34,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 34
+  },
+  {
+   "anunciante": "Glamping La Moraleja",
+   "page_id": "109545401690702",
+   "dominio": "engine.lobbypms.com",
+   "dias_pauta": 33,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "proyector"
+   ],
+   "senal": 33
+  },
+  {
+   "anunciante": "GT Store",
+   "page_id": "1039158492608720",
+   "dominio": "mundoexportacion.myshopify.com",
+   "dias_pauta": 32,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 1,
+   "categorias": [
+    "reloj inteligente"
+   ],
+   "senal": 32
+  },
+  {
+   "anunciante": "Flick-wxj-2",
+   "page_id": "1336524866210965",
+   "dominio": "pages.farsunpteltd.com",
+   "dias_pauta": 31,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "juguete"
+   ],
+   "senal": 31
+  },
+  {
+   "anunciante": "Su academia médica",
+   "page_id": "109672090739398",
+   "dominio": "go.novourl.com",
+   "dias_pauta": 31,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 0,
+   "categorias": [
+    "báscula"
+   ],
+   "senal": 31
+  },
+  {
+   "anunciante": "Bancolombia",
+   "page_id": "97496393516",
+   "dominio": "bancolombia.com",
+   "dias_pauta": 30,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "botas"
+   ],
+   "senal": 30
+  },
+  {
+   "anunciante": "Jpsport",
+   "page_id": "451715348024667",
+   "dominio": "jpsportaccesorios.com",
+   "dias_pauta": 30,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 0,
+   "productos": 1,
+   "categorias": [
+    "freidora de aire"
+   ],
+   "senal": 30
+  },
+  {
+   "anunciante": "Toteat Software Gastronómico",
+   "page_id": "392802360860363",
+   "dominio": "toteat.com",
+   "dias_pauta": 30,
+   "versiones": 1,
+   "anuncios": 1,
+   "con_video": 1,
+   "productos": 0,
+   "categorias": [
+    "kit herramientas"
+   ],
+   "senal": 30
+  }
+ ]
+}
