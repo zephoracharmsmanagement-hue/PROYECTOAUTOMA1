@@ -1,0 +1,180 @@
+{
+  "dominio": "shop-rebel.co",
+  "estado": "ok",
+  "medido_el": "2026-11-19T18:05:21.012Z",
+  "entorno": {
+    "dispositivo": "Pixel 7 (emulado en Chromium)",
+    "locale": "es-CO",
+    "zona_horaria": "America/Bogota",
+    "reposo_tras_carga_ms": 6000,
+    "device_scale_factor_capturas": 2,
+    "nota": "Sin estrangulamiento de red ni CPU: los tiempos son de un móvil emulado sobre la red del contenedor, así que comparan bien entre tiendas pero son optimistas frente a un 4G real."
+  },
+  "anuncios_meta": {
+    "dias_del_anuncio_activo_mas_antiguo": 1163,
+    "versiones_de_anuncio": 25,
+    "medido_el": "2026-11-19",
+    "advertencia": "Son días desde la publicación del anuncio activo más antiguo, NO días de campaña continua. Indica gasto sostenido, no continuidad."
+  },
+  "plataforma": {
+    "detectada": "WooCommerce",
+    "senales": [
+      "/woocommerce/i",
+      "/wp-content\\/plugins\\/woocommerce/i",
+      "/wc-ajax/i"
+    ],
+    "otras_senales_presentes": [
+      "WordPress (sin WooCommerce detectado)"
+    ]
+  },
+  "rendimiento": {
+    "portada": {
+      "ms_dom": 8504,
+      "ms_load": 10971,
+      "ms_respuesta_servidor": 974,
+      "ms_reloj_hasta_dom": 8506,
+      "kb_transferidos": 12010.3,
+      "kb_por_tipo": {
+        "Document": 63.8,
+        "Script": 1982.1,
+        "Stylesheet": 250.5,
+        "Fetch": 15,
+        "Image": 2905.5,
+        "Font": 243.6,
+        "Ping": 13,
+        "XHR": 47.3,
+        "Media": 6489.5
+      },
+      "peticiones": 205,
+      "imagenes_en_dom": 81
+    },
+    "producto": {
+      "ms_dom": 2322,
+      "ms_load": 7450,
+      "ms_respuesta_servidor": 687,
+      "ms_reloj_hasta_dom": 2327,
+      "kb_transferidos": 4011.8,
+      "kb_por_tipo": {
+        "Stylesheet": 34.6,
+        "Script": 199.3,
+        "Image": 2164.9,
+        "Document": 69.6,
+        "Fetch": 19.7,
+        "Font": 85.1,
+        "Ping": 9.2,
+        "XHR": 5.6,
+        "Media": 1423.8
+      },
+      "peticiones": 216,
+      "imagenes_en_dom": 50
+    },
+    "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
+  },
+  "producto": {
+    "url": "https://shop-rebel.co/products/skinperfect/",
+    "como_se_encontro": "enlace en la portada",
+    "es_la_misma_portada": false,
+    "titulo": "SkinPerfect™ Tratamiento Facial 6 en 1 - Rebel Colombia",
+    "nav_error": null,
+    "resenas": {
+      "visibles": true,
+      "evidencia_texto_visible": "orado con de 5 en base a 10 valoraciones de clientes 10 reseñas Compra en hasta 12 cuotas",
+      "widgets_detectados_en_html": [
+        "WooCommerce nativo"
+      ],
+      "nota": "Hay señal de reseñas en el texto visible de la ficha."
+    },
+    "contraentrega": {
+      "mencionada": false,
+      "evidencia": null
+    },
+    "cuotas": {
+      "mencionadas": true,
+      "evidencia": "GRATIS EN TODO COLOMBIA HASTA 12 CUOTAS CON SISTECRÉDITO Previous Next Inicio / RebelSkin",
+      "marcas": [
+        "Addi",
+        "Sistecrédito"
+      ]
+    }
+  },
+  "pixel": {
+    "fiable": true,
+    "motivo_no_fiable": null,
+    "peticiones_tr_sin_parametro_ev": 3,
+    "bloqueos_criticos_por_politica_del_sitio": [],
+    "fbevents_js_cargado": true,
+    "google_tag_manager_cargado": true,
+    "eventos_observados": [],
+    "tipos_de_evento": [],
+    "ids_que_dispararon": [],
+    "ids_declarados_en_html": [
+      "803340261375111"
+    ],
+    "lectura": "No se detectó ningún evento de pixel en el navegador. Esto NO prueba que la tienda no tenga pixel: puede estar usando la API de Conversiones server-side, que es legítima y no se ve desde el navegador."
+  },
+  "whatsapp": {
+    "tiene_enlace": false,
+    "enlaces": [],
+    "lectura": "No se encontró ningún enlace wa.me, wa.link, api.whatsapp.com ni whatsapp.com/send en el HTML de la portada ni de la ficha de producto."
+  },
+  "bloqueados": [
+    {
+      "host": "shop-rebel.co",
+      "motivo": "net::ERR_ABORTED",
+      "origen": "navegacion abortada (no concluyente)",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://shop-rebel.co/wp-content/uploads/2026/03/home-airflow.mp4"
+    }
+  ],
+  "red_limpia_para_el_pixel": true,
+  "banner_cookies": {
+    "portada": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    },
+    "producto": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    }
+  },
+  "capturas": {
+    "portada": {
+      "archivo": "capturas/shop-rebel.co-portada.png",
+      "truncada": true,
+      "alto_css": 9654,
+      "error": null
+    },
+    "producto": {
+      "archivo": "capturas/shop-rebel.co-producto.png",
+      "truncada": true,
+      "alto_css": 11832,
+      "error": null
+    },
+    "nota": "Capturas a deviceScaleFactor 2 (824 px de ancho). Las páginas de más de 3000 px CSS de alto se recortan a esa altura; el campo truncada lo indica."
+  },
+  "hosts_de_terceros": [
+    "ad.doubleclick.net",
+    "analytics-ipv6.tiktokw.us",
+    "analytics.google.com",
+    "analytics.tiktok.com",
+    "cdnjs.cloudflare.com",
+    "connect.facebook.net",
+    "forms.soundestlink.com",
+    "googleads.g.doubleclick.net",
+    "o511301.ingest.us.sentry.io",
+    "omnisnippet1.com",
+    "pagead2.googlesyndication.com",
+    "s.w.org",
+    "stats.g.doubleclick.net",
+    "storage.googleapis.com",
+    "unpkg.com",
+    "wt.omnisendlink.com",
+    "www.facebook.com",
+    "www.google-analytics.com",
+    "www.google.com",
+    "www.googletagmanager.com"
+  ]
+}
