@@ -435,3 +435,60 @@ segunda medición programada para tener 10 o más mensajes antes de tocar nada.
 El costo de un agente no está donde se mira. Está en **cuántas veces vuelve el bucle**, no en lo que
 pesa cada respuesta. Cualquier optimización que ahorre payload pero añada una vuelta sale cara, y
 eso no se puede razonar desde fuera: solo se ve midiendo antes y después.
+
+---
+
+## 9. Segunda medición: no se pudo completar por falta de tráfico (19 nov, 21:35 UTC)
+
+Se intentó tres veces (18:03, 18:32 y 21:35 UTC). **La muestra post-filtro sigue en n=4.** Desde
+las 15:41:23 UTC —casi seis horas— el workflow no ha tenido una sola ejecución.
+
+### Lo que sí se aprendió revisando el día completo
+
+Barriendo todas las ejecuciones desde las 05:00 UTC (medianoche en Bogotá) aparecieron seis
+ejecuciones post-filtro de más de 25 segundos que **no** estaban medidas. No son mensajes: las seis
+duran **exactamente 30,0 segundos** y salen por `Ignorar mensaje viejo` sin llegar al modelo
+(comprobado en la 10877: `runData` vacío, `lastNodeExecuted: "Ignorar mensaje viejo"`). Son
+fragmentos de ráfaga: la clienta manda varios mensajes seguidos, el workflow espera 30 s y solo el
+último pasa al agente. Costo cero.
+
+**El filtro de «más de 25 segundos» no distingue un mensaje de un descarte.** El criterio bueno es
+la duración: los mensajes reales van de 33 a 50 s; los descartes caen clavados en 30,0 s. La línea
+base de la §1 ya lo había manejado bien (20 leídas, 15 al modelo, 5 descartes excluidos), así que
+**los $0.135 no están contaminados** y la comparación con los $0.214 sigue siendo válida. Pero
+cualquier medición futura tiene que excluir los 30,0 s explícitamente.
+
+### Volumen real, que es el dato que importa
+
+Mensajes que llegaron al modelo, por día de Bogotá:
+
+| día | mensajes al modelo | cuándo |
+|---|---|---|
+| 17 nov | 9 | 08:10 y 14:33, y una ráfaga larga a las 20:22–20:34 |
+| 18 nov | 5 | 13:22–14:38 |
+| 19 nov | 9 | 07:06–07:11 (5, pre-filtro) y 10:15–10:41 (4, post-filtro) |
+
+**Media: 7,7 mensajes al modelo por día**, siempre en una o dos ráfagas y nada el resto del día.
+Eso no son 7,7 clientas: una ráfaga es una sola conversación mandando varios mensajes. Hablamos de
+**dos a cuatro conversaciones diarias**.
+
+A ese volumen el bot cuesta **$1,04 al día** con la línea base y **$1,65** con el filtro puesto, o
+sea unos **$31 contra $49 al mes**. La regresión del filtro, si se confirma, vale unos **$18 al
+mes**. Es plata real pero pequeña: la optimización del costo importa **para los clientes de la
+agencia**, no para Zephora.
+
+### Decisión que queda en manos del dueño
+
+No se reprogramó una cuarta vez: a dos o cuatro conversaciones al día, llegar a n=10 post-filtro
+puede tardar días, y esperar a ciegas no es medir. Las opciones:
+
+1. **Dejarlo.** La causa ya está identificada por lectura directa (la 10879 hizo tres llamadas a
+   `disponibilidad` en un mensaje) y las dos correcciones están diseñadas. Se aplican y se mide
+   después, con el tráfico que vaya llegando.
+2. **Seguir esperando** a juntar n=10 antes de tocar nada.
+3. **Probar en un workflow duplicado** con mensajes sintéticos, que da muestra inmediata sin
+   arriesgar el bot en producción.
+
+Las dos correcciones siguen **sin aplicar** y siguen necesitando visto bueno:
+(a) decirle al `toolDescription` que pida todo en una sola llamada, porque `grupo` e `ids` se suman;
+(b) que la función acepte `grupo` con varios grupos separados por coma (otro PR en `proyecto-1`).
