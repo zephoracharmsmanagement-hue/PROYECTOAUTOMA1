@@ -1,0 +1,93 @@
+{
+  "dominio": "lotengotienda.com",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": false,
+    "avisos_consola": [
+      "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
+    ],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [],
+  "bloqueados": [
+    "dropify.dropi.co"
+  ],
+  "rechazados_por_la_tienda": [
+    "shop.app",
+    "lopnbnfpjmgpbppclhclehhgafnifija"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    },
+    {
+      "host": "dropify.dropi.co",
+      "motivo": "net::ERR_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "lopnbnfpjmgpbppclhclehhgafnifija",
+      "motivo": "net::ERR_UNKNOWN_URL_SCHEME",
+      "clase": "tienda"
+    },
+    {
+      "host": "lopnbnfpjmgpbppclhclehhgafnifija",
+      "motivo": "net::ERR_UNKNOWN_URL_SCHEME",
+      "clase": "tienda"
+    },
+    {
+      "host": "dropify.dropi.co",
+      "motivo": "net::ERR_FAILED",
+      "clase": "transporte"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 1934,
+    "estado": 200,
+    "url_final": "https://lotengotienda.com/",
+    "titulo": "Lo Tengo Tienda",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 26,
+    "kb": 1687,
+    "peticiones": 185,
+    "dcl_navegador_ms": 1930
+  },
+  "producto": {
+    "ttdom_ms": 1067,
+    "estado": 200,
+    "url": "https://lotengotienda.com/products/colgante-sello-de-7-arcangeles",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": true,
+    "kb": 2355,
+    "peticiones": 278,
+    "dcl_navegador_ms": 1056,
+    "imagenes": 45,
+    "whatsapp": false
+  },
+  "capturas": {
+    "portada": "lotengotienda.com-portada.png",
+    "producto": "lotengotienda.com-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 22
+}

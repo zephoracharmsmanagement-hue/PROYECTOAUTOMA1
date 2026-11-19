@@ -1,0 +1,90 @@
+{
+  "dominio": "lummia.com.co",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": true,
+    "avisos_consola": [],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [],
+  "bloqueados": [
+    "register.boostymark.com",
+    "a.klaviyo.com"
+  ],
+  "rechazados_por_la_tienda": [
+    "shop.app"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    },
+    {
+      "host": "register.boostymark.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "a.klaviyo.com",
+      "motivo": "net::ERR_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "register.boostymark.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 2544,
+    "estado": 200,
+    "url_final": "https://www.lummia.com.co/",
+    "titulo": "Lummia Colombia",
+    "whatsapp": {
+      "presente": true,
+      "enlaces": [
+        "https://wa.me/573183214405",
+        "https://wa.me/573183214405?text=Hola%2C+%C2%BFpodr%C3%ADas+ayudarme+con+algo%3F",
+        "https://api.whatsapp.com/send?phone=573183214405&text=Hola%2C%20%C2%BFpodr%C3%ADas%20ayudarme%20con%20algo%3F"
+      ],
+      "con_mensaje": true
+    },
+    "imagenes": 107,
+    "kb": 2448,
+    "peticiones": 332,
+    "dcl_navegador_ms": 2542
+  },
+  "producto": {
+    "ttdom_ms": 1573,
+    "estado": 200,
+    "url": "https://www.lummia.com.co/products/lummiskin-pro?variant=49453102432471",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": true,
+    "cuotas": true,
+    "envio_gratis": true,
+    "kb": 926,
+    "peticiones": 371,
+    "dcl_navegador_ms": 1567,
+    "imagenes": 211,
+    "whatsapp": true
+  },
+  "capturas": {
+    "portada": "lummia.com.co-portada.png",
+    "producto": "lummia.com.co-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 23
+}

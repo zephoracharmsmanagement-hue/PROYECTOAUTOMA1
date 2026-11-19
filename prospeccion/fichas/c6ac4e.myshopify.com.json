@@ -1,0 +1,76 @@
+{
+  "dominio": "c6ac4e.myshopify.com",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [
+      "1844503356033314",
+      "276933702066332",
+      "872419677609914"
+    ],
+    "cookie_fbp": true,
+    "gtm": false,
+    "avisos_consola": [
+      "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
+    ],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [
+    "shop.app"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 1395,
+    "estado": 200,
+    "url_final": "https://c6ac4e.myshopify.com/",
+    "titulo": "SOWI",
+    "whatsapp": {
+      "presente": true,
+      "enlaces": [
+        "https://api.whatsapp.com/send?phone=573001396755&text=¡Hola! Estoy interesad@ en el producto SOWI 🛍️. Lo vi en su página:  🔗 ¿Podrían darme más información, p"
+      ],
+      "con_mensaje": true
+    },
+    "imagenes": 10,
+    "kb": 2029,
+    "peticiones": 162,
+    "dcl_navegador_ms": 1391
+  },
+  "producto": {
+    "ttdom_ms": 908,
+    "estado": 200,
+    "url": "https://c6ac4e.myshopify.com/products/combo-ultra-10-en-1-airpods-8-correas-protector-gratis-%F0%9F%8E%81",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": false,
+    "kb": 579,
+    "peticiones": 286,
+    "dcl_navegador_ms": 905,
+    "imagenes": 24,
+    "whatsapp": true
+  },
+  "capturas": {
+    "portada": "c6ac4e.myshopify.com-portada.png",
+    "producto": "c6ac4e.myshopify.com-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 21
+}

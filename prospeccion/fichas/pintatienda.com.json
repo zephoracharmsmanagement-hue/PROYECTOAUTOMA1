@@ -1,0 +1,67 @@
+{
+  "dominio": "pintatienda.com",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": false,
+    "avisos_consola": [
+      "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
+    ],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [
+    "[home] $ is not defined",
+    "[home] SearchForm is not defined",
+    "[producto] $ is not defined",
+    "[producto] SearchForm is not defined"
+  ],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [],
+  "fallos_red": [],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 2938,
+    "estado": 200,
+    "url_final": "https://pintatienda.com/",
+    "titulo": "Pinta Tienda – My Store",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 40,
+    "kb": 1848,
+    "peticiones": 167,
+    "dcl_navegador_ms": 2936
+  },
+  "producto": {
+    "ttdom_ms": 611,
+    "estado": 200,
+    "url": "https://pintatienda.com/products/promo-2x1-burlete-aislante-protector-de-puerta",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": true,
+    "cuotas": false,
+    "envio_gratis": true,
+    "kb": 1441,
+    "peticiones": 251,
+    "dcl_navegador_ms": 604,
+    "imagenes": 44,
+    "whatsapp": false
+  },
+  "capturas": {
+    "portada": "pintatienda.com-portada.png",
+    "producto": "pintatienda.com-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 24
+}

@@ -1,0 +1,72 @@
+{
+  "dominio": "sowicolombia.myshopify.com",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [
+      "1444759909824779"
+    ],
+    "cookie_fbp": true,
+    "gtm": false,
+    "avisos_consola": [],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [
+    "shop.app"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 1375,
+    "estado": 200,
+    "url_final": "https://sowicolombia.myshopify.com/",
+    "titulo": "SOWI 2,0",
+    "whatsapp": {
+      "presente": true,
+      "enlaces": [
+        "https://api.whatsapp.com/send?phone=573001396755&text=¡Hola! Estoy interesad@ en el producto SOWI%202%2C0 🛍️. Lo vi en su página:  🔗 ¿Podrían darme más inform"
+      ],
+      "con_mensaje": true
+    },
+    "imagenes": 9,
+    "kb": 1976,
+    "peticiones": 165,
+    "dcl_navegador_ms": 1372
+  },
+  "producto": {
+    "ttdom_ms": 931,
+    "estado": 200,
+    "url": "https://sowicolombia.myshopify.com/products/combo-3-en-1-sofa-inflable-premium-sillon-inflable-inflador-manual",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": false,
+    "kb": 518,
+    "peticiones": 277,
+    "dcl_navegador_ms": 928,
+    "imagenes": 29,
+    "whatsapp": true
+  },
+  "capturas": {
+    "portada": "sowicolombia.myshopify.com-portada.png",
+    "producto": "sowicolombia.myshopify.com-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 21
+}

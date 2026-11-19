@@ -1,0 +1,47 @@
+{
+  "dominio": "fantasiasnewyork.com",
+  "fecha": "2026-11-19",
+  "plataforma": "WordPress",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": true,
+    "avisos_consola": [],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [],
+  "fallos_red": [],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 2283,
+    "estado": 200,
+    "url_final": "https://fantasiasnewyork.com/",
+    "titulo": "Fantasías New York",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 54,
+    "kb": 1640,
+    "peticiones": 96,
+    "dcl_navegador_ms": 2279
+  },
+  "producto": {},
+  "capturas": {
+    "portada": "fantasiasnewyork.com-portada.png"
+  },
+  "notas": [
+    "no se encontró enlace a una ficha de producto desde la portada"
+  ],
+  "duracion_auditoria_s": 12
+}

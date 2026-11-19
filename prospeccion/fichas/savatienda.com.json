@@ -1,0 +1,75 @@
+{
+  "dominio": "savatienda.com",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": false,
+    "avisos_consola": [],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [
+    "[home] Cannot set properties of null (setting 'innerHTML')",
+    "[home] Cannot set properties of null (setting 'innerHTML')",
+    "[home] Cannot set properties of null (setting 'innerHTML')",
+    "[home] Cannot set properties of null (setting 'innerHTML')",
+    "[home] Cannot set properties of null (setting 'innerHTML')",
+    "[home] Cannot set properties of null (setting 'innerHTML')"
+  ],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [
+    "shop.app"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 1591,
+    "estado": 200,
+    "url_final": "https://savatienda.com/",
+    "titulo": "Sava",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 15,
+    "kb": 2104,
+    "peticiones": 188,
+    "dcl_navegador_ms": 1588
+  },
+  "producto": {
+    "ttdom_ms": 951,
+    "estado": 200,
+    "url": "https://savatienda.com/products/cepillovapor",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": true,
+    "kb": 4660,
+    "peticiones": 298,
+    "dcl_navegador_ms": 949,
+    "imagenes": 41,
+    "whatsapp": false
+  },
+  "capturas": {
+    "portada": "savatienda.com-portada.png",
+    "producto": "savatienda.com-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 21
+}

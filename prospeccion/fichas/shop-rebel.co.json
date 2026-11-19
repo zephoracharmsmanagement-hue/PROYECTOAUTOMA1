@@ -1,0 +1,67 @@
+{
+  "dominio": "shop-rebel.co",
+  "fecha": "2026-11-19",
+  "plataforma": "WooCommerce",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": true,
+    "avisos_consola": [],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [
+    "[home] wp is not defined",
+    "[home] wp is not defined",
+    "[home] wp is not defined",
+    "[home] wp is not defined",
+    "[producto] wp is not defined",
+    "[producto] wp is not defined"
+  ],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [],
+  "fallos_red": [],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 10311,
+    "estado": 200,
+    "url_final": "https://shop-rebel.co/",
+    "titulo": "Rebel Colombia | Sitio Oficial | Tu belleza, nuestro cuidado",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 79,
+    "kb": 6992,
+    "peticiones": 202,
+    "dcl_navegador_ms": 10309
+  },
+  "producto": {
+    "ttdom_ms": 1347,
+    "estado": 200,
+    "url": "https://shop-rebel.co/products/skinperfect/",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": false,
+    "cuotas": true,
+    "envio_gratis": true,
+    "kb": 5977,
+    "peticiones": 210,
+    "dcl_navegador_ms": 1337,
+    "imagenes": 50,
+    "whatsapp": false
+  },
+  "capturas": {
+    "portada": "shop-rebel.co-portada.png",
+    "producto": "shop-rebel.co-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 35
+}

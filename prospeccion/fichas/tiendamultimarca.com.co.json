@@ -1,0 +1,85 @@
+{
+  "dominio": "tiendamultimarca.com.co",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": false,
+    "avisos_consola": [
+      "[Meta Pixel] - Duplicate Pixel ID: 2690299491132346."
+    ],
+    "fiable": true,
+    "nota": "el script del pixel carga pero no envía ningún evento, y la propia librería de Meta explica por qué en la consola: \"[Meta Pixel] - Duplicate Pixel ID: 2690299491132346.\""
+  },
+  "errores_js": [
+    "[home] SearchForm is not defined",
+    "[producto] SearchForm is not defined"
+  ],
+  "bloqueados": [
+    "dropify.dropi.co"
+  ],
+  "rechazados_por_la_tienda": [
+    "shop.app"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    },
+    {
+      "host": "dropify.dropi.co",
+      "motivo": "net::ERR_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "dropify.dropi.co",
+      "motivo": "net::ERR_FAILED",
+      "clase": "transporte"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 2077,
+    "estado": 200,
+    "url_final": "https://www.tiendamultimarca.com.co/",
+    "titulo": "Tienda Multimarca",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 16,
+    "kb": 1934,
+    "peticiones": 166,
+    "dcl_navegador_ms": 2073
+  },
+  "producto": {
+    "ttdom_ms": 762,
+    "estado": 200,
+    "url": "https://www.tiendamultimarca.com.co/products/bombillo-parlante-control",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": true,
+    "kb": 923,
+    "peticiones": 266,
+    "dcl_navegador_ms": 759,
+    "imagenes": 35,
+    "whatsapp": false
+  },
+  "capturas": {
+    "portada": "tiendamultimarca.com.co-portada.png",
+    "producto": "tiendamultimarca.com.co-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 22
+}

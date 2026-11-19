@@ -1,0 +1,113 @@
+{
+  "dominio": "sacriusshop.store",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [
+      "2521053324921915"
+    ],
+    "cookie_fbp": false,
+    "gtm": false,
+    "avisos_consola": [
+      "[Meta pixel] 2521053324921915 is unavailable on this website due to it's traffic permission settings. Go to https://www.facebook.com/business/help/572690630080597 to learn more.",
+      "[Meta Pixel] - Duplicate Pixel ID: 763057085204764."
+    ],
+    "fiable": true,
+    "nota": "el script del pixel carga pero no envía ningún evento, y la propia librería de Meta explica por qué en la consola: \"[Meta pixel] 2521053324921915 is unavailable on this website due to it's traffic permission settings. Go to https://www.facebook.com/business/help/572690630080597 to learn more.\""
+  },
+  "errores_js": [
+    "[home] Cannot read properties of null (reading 'closest')",
+    "[producto] Cannot read properties of null (reading 'closest')"
+  ],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [
+    "shop.app",
+    "cdn.shopify.com",
+    "lovelyproduct.online"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    },
+    {
+      "host": "cdn.shopify.com",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "clase": "tienda"
+    },
+    {
+      "host": "lovelyproduct.online",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "clase": "tienda"
+    },
+    {
+      "host": "lovelyproduct.online",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "clase": "tienda"
+    },
+    {
+      "host": "lovelyproduct.online",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "clase": "tienda"
+    },
+    {
+      "host": "lovelyproduct.online",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "clase": "tienda"
+    },
+    {
+      "host": "lovelyproduct.online",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "clase": "tienda"
+    },
+    {
+      "host": "lovelyproduct.online",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "clase": "tienda"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 1847,
+    "estado": 200,
+    "url_final": "https://sacriusshop.store/",
+    "titulo": "Sacriusshop",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 31,
+    "kb": 2438,
+    "peticiones": 138,
+    "dcl_navegador_ms": 1843
+  },
+  "producto": {
+    "ttdom_ms": 736,
+    "estado": 200,
+    "url": "https://sacriusshop.store/products/auriculares-de-conduccion-osea%C2%AE%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90-original",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": true,
+    "cuotas": false,
+    "envio_gratis": true,
+    "kb": 613,
+    "peticiones": 202,
+    "dcl_navegador_ms": 733,
+    "imagenes": 11,
+    "whatsapp": false
+  },
+  "capturas": {
+    "portada": "sacriusshop.store-portada.png",
+    "producto": "sacriusshop.store-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 25
+}

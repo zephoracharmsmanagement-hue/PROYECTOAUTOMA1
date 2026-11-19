@@ -1,0 +1,113 @@
+{
+  "dominio": "chicsmovile.com",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [
+      "3210476655939535",
+      "866524520811638"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": true,
+    "avisos_consola": [],
+    "fiable": true,
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
+  },
+  "errores_js": [
+    "[home] Cannot read properties of null (reading 'getAttribute')",
+    "[home] Cannot read properties of null (reading 'getAttribute')"
+  ],
+  "bloqueados": [
+    "brunhild.challenges.cloudflare.com"
+  ],
+  "rechazados_por_la_tienda": [
+    "shop.app",
+    "static.cloudflareinsights.com",
+    "trc.taboola.com",
+    "script.hotjar.com",
+    "trc-events.taboola.com"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    },
+    {
+      "host": "static.cloudflareinsights.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "trc.taboola.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "script.hotjar.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "brunhild.challenges.cloudflare.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "trc-events.taboola.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 2323,
+    "estado": 200,
+    "url_final": "https://www.chicsmovile.com/",
+    "titulo": "Chicsmovile – Chics Movile",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 48,
+    "kb": 8442,
+    "peticiones": 178,
+    "dcl_navegador_ms": 2321
+  },
+  "producto": {
+    "ttdom_ms": 1235,
+    "estado": 200,
+    "url": "https://www.chicsmovile.com/products/secadora-profesional-kalley",
+    "resenas": true,
+    "resenas_pista_textual": true,
+    "contraentrega": true,
+    "cuotas": false,
+    "envio_gratis": false,
+    "kb": 3068,
+    "peticiones": 260,
+    "dcl_navegador_ms": 1232,
+    "imagenes": 58,
+    "whatsapp": false
+  },
+  "capturas": {
+    "portada": "chicsmovile.com-portada.png",
+    "producto": "chicsmovile.com-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 22
+}

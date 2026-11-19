@@ -1,0 +1,45 @@
+{
+  "dominio": "tienda-del-valle.com",
+  "fecha": "2026-11-19",
+  "plataforma": null,
+  "pixel": {
+    "script": false,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": false,
+    "ids_en_html": [],
+    "cookie_fbp": null,
+    "gtm": false,
+    "avisos_consola": [],
+    "fiable": null,
+    "nota": null
+  },
+  "errores_js": [],
+  "bloqueados": [
+    "tienda-del-valle.com"
+  ],
+  "rechazados_por_la_tienda": [],
+  "fallos_red": [
+    {
+      "host": "tienda-del-valle.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "tienda-del-valle.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {},
+  "producto": {},
+  "capturas": {},
+  "notas": [
+    "primer intento de carga falló: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tienda-del-valle.com/"
+  ],
+  "error": "page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tienda-del-valle.com/",
+  "duracion_auditoria_s": 0
+}

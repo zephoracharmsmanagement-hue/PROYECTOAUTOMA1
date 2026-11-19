@@ -1,0 +1,71 @@
+{
+  "dominio": "karamelovirtual.com",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": false,
+    "avisos_consola": [
+      "[Meta Pixel] - Invalid PixelID: a non-numeric string.",
+      "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
+    ],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [
+    "shop.app"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 2529,
+    "estado": 200,
+    "url_final": "https://karamelovirtual.com/",
+    "titulo": "Karamelo Tienda Virtual",
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 24,
+    "kb": 2532,
+    "peticiones": 192,
+    "dcl_navegador_ms": 2525
+  },
+  "producto": {
+    "ttdom_ms": 791,
+    "estado": 200,
+    "url": "https://karamelovirtual.com/products/molino-electrico",
+    "resenas": true,
+    "resenas_pista_textual": false,
+    "contraentrega": false,
+    "cuotas": true,
+    "envio_gratis": false,
+    "kb": 395,
+    "peticiones": 303,
+    "dcl_navegador_ms": 783,
+    "imagenes": 21,
+    "whatsapp": false
+  },
+  "capturas": {
+    "portada": "karamelovirtual.com-portada.png",
+    "producto": "karamelovirtual.com-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 24
+}

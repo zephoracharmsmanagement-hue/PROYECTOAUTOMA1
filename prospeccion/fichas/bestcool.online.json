@@ -1,0 +1,45 @@
+{
+  "dominio": "bestcool.online",
+  "fecha": "2026-11-19",
+  "plataforma": null,
+  "pixel": {
+    "script": false,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": false,
+    "ids_en_html": [],
+    "cookie_fbp": null,
+    "gtm": false,
+    "avisos_consola": [],
+    "fiable": null,
+    "nota": null
+  },
+  "errores_js": [],
+  "bloqueados": [
+    "bestcool.online"
+  ],
+  "rechazados_por_la_tienda": [],
+  "fallos_red": [
+    {
+      "host": "bestcool.online",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "bestcool.online",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {},
+  "producto": {},
+  "capturas": {},
+  "notas": [
+    "primer intento de carga falló: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://bestcool.online/"
+  ],
+  "error": "page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://bestcool.online/",
+  "duracion_auditoria_s": 0
+}

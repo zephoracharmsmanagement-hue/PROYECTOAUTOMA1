@@ -1,0 +1,75 @@
+{
+  "dominio": "safeforyourdreamss.com",
+  "fecha": "2026-11-19",
+  "plataforma": "Shopify",
+  "pixel": {
+    "script": true,
+    "ids": [],
+    "eventos": [],
+    "eventos_home": [],
+    "eventos_producto": [],
+    "fbq_en_window": true,
+    "ids_en_html": [],
+    "cookie_fbp": true,
+    "gtm": false,
+    "avisos_consola": [
+      "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
+    ],
+    "fiable": true,
+    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+  },
+  "errores_js": [
+    "[home] Cannot read properties of null (reading 'getAttribute')",
+    "[producto] Cannot read properties of null (reading 'getAttribute')"
+  ],
+  "bloqueados": [],
+  "rechazados_por_la_tienda": [
+    "shop.app"
+  ],
+  "fallos_red": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "clase": "tienda"
+    }
+  ],
+  "banner_cookies": null,
+  "home": {
+    "ttdom_ms": 1675,
+    "estado": 200,
+    "url_final": "https://safeforyourdreamss.com/",
+    "titulo": "SAFE FOR YOUR DREAMS",
+    "whatsapp": {
+      "presente": true,
+      "enlaces": [
+        "https://api.whatsapp.com/send?phone=3150690629&text=¡MOOORRR!💗 Llegaste a la mejor tienda de botas de Colombia ✨   ¿En que estilo estas interesad@? ¿En que ciu"
+      ],
+      "con_mensaje": true
+    },
+    "imagenes": 60,
+    "kb": 3405,
+    "peticiones": 180,
+    "dcl_navegador_ms": 1668
+  },
+  "producto": {
+    "ttdom_ms": 873,
+    "estado": 200,
+    "url": "https://safeforyourdreamss.com/products/mafalda-charol",
+    "resenas": true,
+    "resenas_pista_textual": false,
+    "contraentrega": true,
+    "cuotas": false,
+    "envio_gratis": false,
+    "kb": 597,
+    "peticiones": 244,
+    "dcl_navegador_ms": 870,
+    "imagenes": 12,
+    "whatsapp": true
+  },
+  "capturas": {
+    "portada": "safeforyourdreamss.com-portada.png",
+    "producto": "safeforyourdreamss.com-producto.png"
+  },
+  "notas": [],
+  "duracion_auditoria_s": 21
+}
