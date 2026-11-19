@@ -1,0 +1,285 @@
+{
+  "dominio": "lummia.com.co",
+  "estado": "ok",
+  "medido_el": "2026-11-19T18:18:26.083Z",
+  "entorno": {
+    "dispositivo": "Pixel 7 (emulado en Chromium)",
+    "locale": "es-CO",
+    "zona_horaria": "America/Bogota",
+    "reposo_tras_carga_ms": 6000,
+    "device_scale_factor_capturas": 2,
+    "nota": "Sin estrangulamiento de red ni CPU: los tiempos son de un móvil emulado sobre la red del contenedor, así que comparan bien entre tiendas pero son optimistas frente a un 4G real."
+  },
+  "anuncios_meta": {
+    "dias_del_anuncio_activo_mas_antiguo": 351,
+    "versiones_de_anuncio": 27,
+    "medido_el": "2026-11-19",
+    "advertencia": "Son días desde la publicación del anuncio activo más antiguo, NO días de campaña continua. Indica gasto sostenido, no continuidad."
+  },
+  "plataforma": {
+    "detectada": "Shopify",
+    "senales": [
+      "/cdn\\.shopify\\.com/i",
+      "/\\/cdn\\/shop\\//i",
+      "/Shopify\\.theme/i",
+      "/myshopify\\.com/i",
+      "/shopify-features/i"
+    ],
+    "otras_senales_presentes": []
+  },
+  "rendimiento": {
+    "portada": {
+      "ms_dom": 2315,
+      "ms_load": 4393,
+      "ms_respuesta_servidor": 650,
+      "ms_reloj_hasta_dom": 2316,
+      "kb_transferidos": 4523.1,
+      "kb_por_tipo": {
+        "Document": 126.6,
+        "Stylesheet": 95.2,
+        "Script": 2218.1,
+        "Font": 122.2,
+        "Image": 1258.9,
+        "Fetch": 70.9,
+        "Ping": 7.9,
+        "XHR": 18.2,
+        "Preflight": 0,
+        "Other": 605
+      },
+      "peticiones": 373,
+      "imagenes_en_dom": 107
+    },
+    "producto": {
+      "ms_dom": 1413,
+      "ms_load": 3569,
+      "ms_respuesta_servidor": 388,
+      "ms_reloj_hasta_dom": 2073,
+      "kb_transferidos": 2463.8,
+      "kb_por_tipo": {
+        "Stylesheet": 32.5,
+        "Font": 0,
+        "Document": 307.8,
+        "Script": 778.8,
+        "Image": 708.4,
+        "Other": 555.5,
+        "Fetch": 56.4,
+        "XHR": 8.2,
+        "Ping": 16.2,
+        "Preflight": 0
+      },
+      "peticiones": 404,
+      "imagenes_en_dom": 213
+    },
+    "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
+  },
+  "producto": {
+    "url": "https://www.lummia.com.co/products/lummiskin-pro?variant=49453102432471",
+    "como_se_encontro": "enlace en la portada",
+    "es_la_misma_portada": false,
+    "titulo": "LummiSkin Pro - Lummia Skin Pro - Lummia - Lumia – Lummia Colombia",
+    "nav_error": null,
+    "resenas": {
+      "visibles": true,
+      "evidencia_texto_visible": "· Compra verificada 4,98 969 reseñas LummiSkin Pro: Piel radiante con 5 minutos al día Re",
+      "widgets_detectados_en_html": [
+        "Yotpo",
+        "Okendo"
+      ],
+      "nota": "Hay señal de reseñas en el texto visible de la ficha."
+    },
+    "contraentrega": {
+      "mencionada": true,
+      "evidencia": "2 a 5 días hábiles. Paga contra entrega O con tarjeta, PSE, Nequi y Addi. Tu rutina de Ski"
+    },
+    "cuotas": {
+      "mencionadas": true,
+      "evidencia": "leva tu LummiSkin Pro en 6 cuotas desde $59.983 pagando con *Aplican T&C de Addi Color:",
+      "marcas": [
+        "Addi"
+      ]
+    }
+  },
+  "salud_de_la_pagina": {
+    "titulo": "Lummia Colombia",
+    "parece_dominio_parqueado": false,
+    "parece_pagina_vacia": false,
+    "es_tienda_analizable": true,
+    "nota": null
+  },
+  "pixel": {
+    "fiable": true,
+    "motivo_no_fiable": null,
+    "peticiones_tr_sin_parametro_ev": 0,
+    "bloqueos_criticos_por_politica_del_sitio": [],
+    "fbevents_js_cargado": true,
+    "google_tag_manager_cargado": true,
+    "eventos_observados": [
+      {
+        "pagina": "portada",
+        "id": "180486080737869",
+        "evento": "PageView",
+        "metodo": "POST",
+        "parametros_cd": []
+      },
+      {
+        "pagina": "producto",
+        "id": "180486080737869",
+        "evento": "PageView",
+        "metodo": "POST",
+        "parametros_cd": []
+      },
+      {
+        "pagina": "producto",
+        "id": "180486080737869",
+        "evento": "ViewContent",
+        "metodo": "POST",
+        "parametros_cd": [
+          "cd[content_ids]",
+          "cd[content_type]",
+          "cd[content_name]",
+          "cd[content_category]",
+          "cd[currency]",
+          "cd[value]"
+        ]
+      }
+    ],
+    "tipos_de_evento": [
+      "PageView",
+      "ViewContent"
+    ],
+    "ids_que_dispararon": [
+      "180486080737869"
+    ],
+    "ids_declarados_en_html": [],
+    "lectura": "Se observaron 3 evento(s) de pixel en el navegador: PageView, ViewContent."
+  },
+  "whatsapp": {
+    "tiene_enlace": true,
+    "enlaces": [
+      "https://wa.me/573183214405",
+      "https://wa.me/573183214405?text=Hola%2C+%C2%BFpodr%C3%ADas+ayudarme+con+algo%3F",
+      "https://api.whatsapp.com/send?phone=573183214405&amp;text=Hola%2C%20%C2%BFpodr%C3%ADas%20ayudarme%20con%20algo%3F",
+      "https://api.whatsapp.com/send?phone=573183214405&text=Hola%2C%20%C2%BFpodr%C3%ADas%20ayudarme%20con%20algo%3F"
+    ],
+    "lectura": "Hay al menos un enlace de WhatsApp en el HTML de las páginas medidas."
+  },
+  "bloqueados": [
+    {
+      "host": "register.boostymark.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "origen": "red del entorno",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://register.boostymark.com/a/reg"
+    },
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "origen": "politica del sitio o del navegador",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://shop.app/pay/hop?analytics_trace_id=ae66477e-009b-476b-a2ad-70dfcc0b4348&target_origin=https%3A%2F%2Fwww.lummia.com.co&client_handle=lumiacol.myshopify.com"
+    },
+    {
+      "host": "a.klaviyo.com",
+      "motivo": "net::ERR_FAILED",
+      "origen": "red del entorno",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://a.klaviyo.com/client/sessions/?company_id=VgL2dh"
+    }
+  ],
+  "red_limpia_para_el_pixel": true,
+  "banner_cookies": {
+    "portada": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    },
+    "producto": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    }
+  },
+  "capturas": {
+    "portada": {
+      "archivo": "capturas/lummia.com.co-portada.png",
+      "truncada": true,
+      "alto_css": 7008,
+      "error": null
+    },
+    "producto": {
+      "archivo": "capturas/lummia.com.co-producto.png",
+      "truncada": true,
+      "alto_css": 13166,
+      "error": null
+    },
+    "nota": "Capturas a deviceScaleFactor 2 (824 px de ancho). Las páginas de más de 3000 px CSS de alto se recortan a esa altura; el campo truncada lo indica."
+  },
+  "hosts_de_terceros": [
+    "a.klaviyo.com",
+    "ad.doubleclick.net",
+    "analytics-ipv6.tiktokw.us",
+    "analytics.tiktok.com",
+    "api-na1.hubapi.com",
+    "api.getclipara.com",
+    "api.intelligems.io",
+    "api.mercadopago.com",
+    "backend.alia-prod.com",
+    "c.bing.com",
+    "c.clarity.ms",
+    "c.heatmap.com",
+    "cdn.506.io",
+    "cdn.intelligems.io",
+    "cdn.klaviyomail.com",
+    "cdn.neosocios.com",
+    "cdn.shopify.com",
+    "cdn.uppromote.com",
+    "connect.facebook.net",
+    "conversions.heatmapcore.com",
+    "d1639lhkj5l89m.cloudfront.net",
+    "dashboard.heatmap.com",
+    "data.securykit.com",
+    "fast.a.klaviyo.com",
+    "fonts.googleapis.com",
+    "forms.hscollectedforms.net",
+    "forms.hsforms.com",
+    "get.geojs.io",
+    "googleads.g.doubleclick.net",
+    "hs-website-interactive-analytics.net",
+    "hsr.heatmapcore.com",
+    "js-na1.hs-scripts.com",
+    "js.hs-analytics.net",
+    "js.hs-banner.com",
+    "js.hscollectedforms.net",
+    "o.clarity.ms",
+    "otlp-http-production.shopifysvc.com",
+    "play.gotolstoy.com",
+    "register.boostymark.com",
+    "revie-wwwstatic.b-cdn.net",
+    "scripts.clarity.ms",
+    "shop.app",
+    "sp.stapecdn.com",
+    "sstags.heatmapcore.com",
+    "stapecdn.com",
+    "static-forms.klaviyo.com",
+    "static-tracking.klaviyo.com",
+    "static.klaviyo.com",
+    "track.hubspot.com",
+    "visits.heatmapcore.com",
+    "widget.getclipara.com",
+    "widget.gotolstoy.com",
+    "ws.heatmap.com",
+    "www.clarity.ms",
+    "www.facebook.com",
+    "www.google-analytics.com",
+    "www.google.com",
+    "www.googleadservices.com",
+    "www.googletagmanager.com",
+    "www.mercadolibre.com",
+    "www.mercadopago.com",
+    "www.mercadopago.com.co",
+    "www.merchant-center-analytics.goog"
+  ]
+}
