@@ -50,10 +50,13 @@ const clasificarFallo = texto => {
   return TRANSPORTE.test(texto) ? 'transporte' : 'tienda';
 };
 
-// 6 segundos es el mínimo: el pixel de Meta suele cargarse de forma diferida
-// (GTM, Shopify web pixels, apps de terceros) y dispara PageView bastante
-// después del DOMContentLoaded. Medir antes produciría "no tiene pixel" falsos.
-const ESPERA_SCRIPTS = 6500;
+// Ventana de observación por página. Empezamos en 6,5 s y lo comprobamos: con
+// 6,5 s cuatro tiendas medidas (lotengotienda, savatienda, lummia, viveshop)
+// daban CERO eventos, y con 25 s las cuatro disparaban PageView. Es decir, la
+// espera corta fabricaba el hallazgo falso más caro posible ("no mide nada").
+// Se fija en 30 s IGUAL para todas, para que la frase "en 30 segundos de
+// observación no disparó X" signifique lo mismo en las 20 fichas.
+const VENTANA_MS = 30000;
 
 /** Acepta el banner de cookies si lo hay: muchas tiendas retienen los scripts
  *  de marketing (incluido el pixel) hasta que hay consentimiento. Sin este paso,
@@ -153,6 +156,47 @@ async function buscarEnlaceProducto(page) {
     }
     return null;
   }).catch(() => null);
+}
+
+/** Encuentra una ficha de producto de verdad. Tres vías, en orden de fiabilidad,
+ *  porque una tienda sin ficha medida es una ficha incompleta y porque "no tiene
+ *  ficha de producto" sería falso en tiendas cuyo catálogo simplemente no está
+ *  enlazado desde la portada (que ya es, en sí, un hallazgo aparte). */
+async function descubrirProducto(ctx, page, dominio) {
+  const absoluta = h => { try { return new URL(h, page.url()).toString(); } catch { return null; } };
+
+  const directo = await buscarEnlaceProducto(page);
+  if (directo) return { url: absoluta(directo), via: 'enlace directo desde la portada' };
+
+  // Shopify publica su catálogo en /products.json. Es una lectura pública, sin
+  // efectos sobre la tienda, y evita adivinar URLs.
+  if (await page.evaluate(() => !!window.Shopify).catch(() => false)) {
+    const aux = await ctx.newPage();
+    try {
+      const r = await aux.goto(absoluta('/products.json?limit=1'), { timeout: 30000 });
+      const j = JSON.parse(await r.text());
+      const handle = j.products && j.products[0] && j.products[0].handle;
+      if (handle) return { url: absoluta('/products/' + handle), via: 'catálogo público /products.json (la portada no enlaza ningún producto)' };
+    } catch {} finally { await aux.close().catch(() => {}); }
+  }
+
+  // Último recurso: entrar a un listado de categoría y buscar el producto allí.
+  const catalogo = await page.evaluate(() => {
+    const pats = [/\/collections?\//i, /\/products\?/i, /\/categor/i, /\/catalogo/i, /\/tienda\/?$/i, /\/shop\/?$/i, /\/productos?\/?$/i];
+    const hrefs = [...document.querySelectorAll('a[href]')].map(a => a.getAttribute('href')).filter(Boolean);
+    for (const pat of pats) { const h = hrefs.find(x => pat.test(x) && !/carrito|cart|checkout|account/i.test(x)); if (h) return h; }
+    return null;
+  }).catch(() => null);
+  if (catalogo) {
+    const aux = await ctx.newPage();
+    try {
+      await aux.goto(absoluta(catalogo), { waitUntil: 'domcontentloaded', timeout: 45000 });
+      await espera(4000);
+      const h = await buscarEnlaceProducto(aux);
+      if (h) return { url: new URL(h, aux.url()).toString(), via: 'a través del listado ' + catalogo.slice(0, 60) + ' (la portada no enlaza ningún producto)' };
+    } catch {} finally { await aux.close().catch(() => {}); }
+  }
+  return null;
 }
 
 /** ¿La portada ES la ficha de producto? Es el caso normal en funnels de una sola
@@ -285,8 +329,11 @@ async function auditar(browser, dominio) {
       if (id && !f.pixel.ids.includes(id)) f.pixel.ids.push(id);
       if (!ev) continue;
       if (!f.pixel.eventos.includes(ev)) f.pixel.eventos.push(ev);
-      const lista = fase === 'home' ? f.pixel.eventos_home : f.pixel.eventos_producto;
-      if (!lista.includes(ev)) lista.push(ev);
+      // Durante el descubrimiento del enlace de producto navegamos por catálogos:
+      // esos eventos no son "de la portada" ni "de la ficha", así que no se
+      // atribuyen a ninguna de las dos para no inventar un ViewContent.
+      const lista = fase === 'home' ? f.pixel.eventos_home : fase === 'producto' ? f.pixel.eventos_producto : null;
+      if (lista && !lista.includes(ev)) lista.push(ev);
     }
   });
   ctx.on('requestfailed', r => {
@@ -321,32 +368,47 @@ async function auditar(browser, dominio) {
   });
 
   // ---------- PORTADA ----------
-  const t0 = Date.now();
-  let resp = null;
-  try {
-    resp = await page.goto('https://' + dominio, { waitUntil: 'domcontentloaded', timeout: 60000 });
-  } catch (e) {
-    f.notas.push('primer intento de carga falló: ' + e.message.split('\n')[0]);
+  // Se prueba el dominio tal cual y, si no responde, www. Hay dominios cuyo
+  // ápice no tiene registro A y que solo funcionan con www: medir solo el ápice
+  // haría escribir "su tienda no carga" cuando la tienda existe y vende.
+  const candidatos = ['https://' + dominio];
+  let resp = null, t0 = 0;
+  for (const base of candidatos) {
+    t0 = Date.now();
     try {
-      resp = await page.goto('https://' + dominio, { waitUntil: 'commit', timeout: 60000 });
-    } catch (e2) {
-      f.error = e2.message.split('\n')[0];
-      f.dns = await verificarDns(ctx, dominio);
-      f.notas.push('la portada no cargó. Comprobación DNS independiente: ' + f.dns.veredicto);
-      f.bloqueados = [...bloqueados];
-      f.rechazados_por_la_tienda = [...rechazados];
-      f.fallos_red = fallos;
-      f.pixel.fiable = false;
-      f.pixel.nota = 'NO FIABLE: la página no cargó, no se midió nada del pixel.';
-      await ctx.close();
-      return f;
+      resp = await page.goto(base, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      f.url_medida = base;
+      break;
+    } catch (e) {
+      f.notas.push('no cargó ' + base + ': ' + e.message.split('\n')[0]);
+      if (!f.dns) {
+        f.dns = await verificarDns(ctx, dominio);
+        f.notas.push('comprobación DNS independiente de ' + dominio + ': ' + f.dns.veredicto);
+      }
+      if (candidatos.length === 1 && !dominio.startsWith('www.')) {
+        f.dns_www = await verificarDns(ctx, 'www.' + dominio);
+        if (f.dns_www.resuelve) {
+          candidatos.push('https://www.' + dominio);
+          f.notas.push('www.' + dominio + ' sí resuelve (' + f.dns_www.ips.join(', ') + '): la medición se hace ahí, no en el ápice');
+        }
+      }
     }
+  }
+  if (!resp) {
+    f.error = 'la portada no cargó en ninguna de las direcciones probadas: ' + candidatos.join(', ');
+    f.bloqueados = [...bloqueados];
+    f.rechazados_por_la_tienda = [...rechazados];
+    f.fallos_red = fallos;
+    f.pixel.fiable = false;
+    f.pixel.nota = 'NO FIABLE: la página no cargó, no se midió nada del pixel.';
+    await ctx.close();
+    return f;
   }
   f.home.ttdom_ms = Date.now() - t0;
   f.home.estado = resp && resp.status();
   f.home.url_final = page.url().slice(0, 160);
 
-  await espera(ESPERA_SCRIPTS);
+  await espera(VENTANA_MS);
 
   const cookies = await aceptarCookies(page);
   if (cookies) {
@@ -355,10 +417,16 @@ async function auditar(browser, dominio) {
     // Recarga tras el consentimiento: algunos CMP solo inyectan el pixel en la
     // siguiente carga. Los tiempos se conservan de la PRIMERA carga, que es la
     // que vive el visitante que llega del anuncio.
-    try { await page.goto('https://' + dominio, { waitUntil: 'domcontentloaded', timeout: 60000 }); await espera(ESPERA_SCRIPTS); } catch {}
+    try { await page.goto(f.url_medida, { waitUntil: 'domcontentloaded', timeout: 60000 }); await espera(VENTANA_MS); } catch {}
   }
 
   f.home.titulo = (await page.title().catch(() => '')).slice(0, 120);
+  // Se guarda el principio del texto visible como evidencia bruta: permite
+  // comprobar después si lo que se midió era la tienda o una página de error.
+  f.home.texto_inicio = (await page.evaluate(() => document.body.innerText.replace(/\s+/g, ' ').trim().slice(0, 300)).catch(() => '')) || '';
+  f.home.pagina_de_error = /404|not found|no se encontr|p(á|a)gina no encontrada|no existe/i.test(f.home.titulo + ' ' + f.home.texto_inicio)
+    || (f.home.estado >= 400);
+  if (f.home.pagina_de_error) f.notas.push('ATENCIÓN: lo que responde este dominio parece una página de error, no una tienda (estado HTTP ' + f.home.estado + ')');
   f.plataforma = await detectarPlataforma(page);
   f.home.whatsapp = await detectarWhatsapp(page);
   f.home.imagenes = await page.locator('img').count().catch(() => null);
@@ -383,18 +451,19 @@ async function auditar(browser, dominio) {
   f.capturas.portada = await capturar(page, path.join(DIR_CAPTURAS, `${dominio}-portada.png`));
 
   // ---------- FICHA DE PRODUCTO ----------
-  const enlace = await buscarEnlaceProducto(page);
+  fase = 'descubrimiento';
+  const hallazgo = await descubrirProducto(ctx, page, dominio);
   fase = 'producto';
-  if (enlace) {
-    const url = enlace.startsWith('http') ? enlace
-      : new URL(enlace, page.url()).toString();
+  if (hallazgo && hallazgo.url) {
+    const url = hallazgo.url;
     const t1 = Date.now();
     try {
       const r2 = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
       f.producto.ttdom_ms = Date.now() - t1;
       f.producto.estado = r2 && r2.status();
       f.producto.url = url.slice(0, 180);
-      await espera(ESPERA_SCRIPTS);
+      f.producto.via = hallazgo.via;
+      await espera(VENTANA_MS);
       Object.assign(f.producto, await señalesDeFicha(page));
       const pesoProd = await pesoDeLaPagina(page);
       f.producto.kb = pesoProd.kb; f.producto.peticiones = pesoProd.peticiones; f.producto.dcl_navegador_ms = pesoProd.dcl_navegador;
