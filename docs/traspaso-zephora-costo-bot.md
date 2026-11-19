@@ -4,6 +4,13 @@
 **Para:** `ZC · Sesión 3 · Automatizaciones y Meta` (o la sesión ZC que tenga `proyecto-1` y el deploy de Netlify)
 **Estado:** medición terminada. La implementación no ha empezado y necesita el visto bueno del dueño.
 
+> **Revisión 2 — 19 nov 2026.** La revisión 1 pedía cuatro parámetros (`grupo`, `ids`, `q`, `tipo`).
+> **Quedan dos: `grupo` e `ids`.** `q` se retiró porque es una regresión, no una optimización
+> (ver 3.1); `tipo` porque es redundante. Se añadieron dos requisitos que faltaban (normalizar
+> tildes, vacío = ausente), se corrigieron los tamaños de grupo, y **adelgazar el prompt pasó de
+> «trabajo aparte» a ser la palanca principal** (ver 2d y 3.4). Si empezaste con la revisión 1,
+> lee 3.1 y 2d antes de seguir.
+
 Este documento es autocontenido: no hace falta nada de la conversación en la que se midió.
 
 ---
@@ -44,15 +51,20 @@ Dos poblaciones, muy estables por dentro:
 - **Sin llamar a `disponibilidad`** (7 de 15): 21,144 tokens de media, rango 20,319–22,705 → **$0.065**
 - **Llamando a `disponibilidad`** (8 de 15): 104,905 de media, rango 67,473–210,099 → **$0.21 a $0.64**
 
+Calibración que se usa en todo el resto del documento: **53,352 caracteres de respuesta = 26,204
+tokens**, o sea **2.036 caracteres por token**. Es medido, no estimado. (Ojo: no son los 4 caracteres
+por token de la heurística de n8n; el JSON con URLs y acentos tokeniza mucho más denso.)
+
 ### Salvedades honestas
 
 - Son 15 muestras, no 20–30. Se paró ahí porque la varianza dentro de cada población es ±5%.
 - Las ejecuciones se eligieron por duración entre las 120 más recientes. Las corridas largas
   correlacionan con más llamadas al modelo, así que **el 1.93 puede estar algo alto**. Que 5 de las 20
   resultaran salidas de costo cero sugiere que el sesgo no es grave, pero existe.
-- La atribución del piso de 20,300 tokens (abajo, punto 2b) es **estimación**, no medición:
-  n8n solo reporta `estimatedTokens` de los mensajes y lo calcula con caracteres÷4, que subcuenta
-  el español.
+- La atribución del piso de 20,300 tokens (2b) es **estimación**, no medición.
+- Las proyecciones de 2d y 4 salen de un modelo con 1.93 llamadas uniformes, que da $0.157 por
+  mensaje contra los $0.202 medidos: el modelo no reproduce la cola de mensajes de 5 llamadas.
+  **Los porcentajes son sólidos; los absolutos son modelo.**
 
 ---
 
@@ -92,60 +104,153 @@ caché** (se verificó con `get_node_types` con y sin versión; las opciones son
 directas y reconstruir el bucle de herramientas a mano: es reescribir un bot que está vendiendo.
 No es el camino.
 
+### 2d. El piso domina: añadir una iteración arruina cualquier ahorro
+
+Medido campo por campo, qué pesa dentro de los 26,204 tokens del catálogo:
+
+| campo | % del payload | tokens |
+|---|---|---|
+| `foto` | **35.5%** | 8,776 |
+| `material` | 12% | 2,961 |
+| `nombre` | 9.7% | 2,387 |
+| `id` | 8.1% | 2,011 |
+| `grupo` | 6.1% | 1,498 |
+| `familia` | 5.6% | 1,393 |
+| `agotado` | 5.3% | 1,305 |
+| `tipo` | 5.1% | 1,266 |
+| `precio` | 5% | 1,229 |
+| `disponible` | 4.3% | 1,061 |
+| `tallas` | 2% | 497 |
+
+`foto` es el campo más gordo y la tentación obvia es quitarlo —el nodo de n8n tiene
+`optimizeResponse` + `fieldsToInclude: 'except'`, que lo haría sin tocar la función—.
+**Es un error que sale 48% más caro.** El nombre del archivo no se deduce del id, así que sin ese
+campo el modelo tiene que pedirlo en otra llamada, y **cada iteración extra cuesta el piso de
+20,319 tokens**. Ahorras 8,776 para gastar 21,000.
+
+De ahí la regla que ordena todo lo demás: **cualquier optimización que arriesgue una iteración extra
+del agente es pérdida neta.** El piso, no el payload, es lo que manda.
+
+Jerarquía real de palancas, con el modelo de 1.93 llamadas:
+
+| palanca | baja | por qué |
+|---|---|---|
+| prompt de 13,400 → 5,000 tokens | **31%** | pega en **todas** las iteraciones y en **todos** los mensajes |
+| filtrar por grupo | 19–23% | no añade iteraciones; 23% con Marvel, 19% con Símbolos |
+| quitar `material` del nodo | 3% | gratis: son dos constantes y la info ya está en `tipo` |
+| ~~quitar `foto` del nodo~~ | **−48%** | fuerza una iteración extra |
+
+Y el dato que decide la prioridad: **47% de los mensajes nunca llaman a `disponibilidad`** (7 de 15
+medidos). Para esos el filtro ahorra exactamente $0; el prompt ahorra $0.025 en cada uno.
+Por eso el prompt subió a palanca principal.
+
 ---
 
 ## 3. Lo que hay que hacer, en orden
 
-### Paso 1 — `disponibilidad` acepta filtro (esta sesión, la de Zephora)
+### 3.1 — `disponibilidad` acepta filtro (sesión de Zephora)
 
 **Archivo:** `netlify/functions/disponibilidad.mjs`
 
 **Regla que no se rompe: sin parámetros, la respuesta tiene que ser byte a byte la de hoy.**
 Así nada se rompe mientras el nodo de n8n todavía no manda nada.
 
-Parámetros propuestos (todos opcionales, se combinan con O lógico):
+**Dos parámetros, los dos opcionales.** Se combinan con O lógico.
 
 | parámetro | ejemplo | qué hace |
 |---|---|---|
-| `grupo` | `?grupo=Marvel` | solo ese grupo. Tamaños reales en `catalogo.json`: Símbolos 39, Marvel 16, Disney 15, Zodiaco 12, Anillos 12, Profesiones 8, Pixar 5, Clips 4, Cadenas 3, Muranos 3, Letras 1 (+ brazaletes, que se deducen en `grupoDe`). El grupo más grande son 39 piezas ≈ 6 KB en vez de 52 KB. |
+| `grupo` | `?grupo=Marvel` | solo ese grupo |
 | `ids` | `?ids=letra-m,mickey-mouse` | solo esos ids, tal cual los devuelve la función |
-| `q` | `?q=libelula` | busca en `nombre` y `grupo`, sin tildes y sin distinguir mayúsculas |
-| `tipo` | `?tipo=brazalete` | solo `piezas` o solo `brazaletes` |
 
-Y en la respuesta, dos campos nuevos para que el modelo sepa que recibió un subconjunto:
+**Grupos tal como los devuelve `grupoDe()`** —no como están en `catalogo.json`, que no coinciden—,
+con el tamaño real de la respuesta ya simulado:
+
+| grupo | piezas | caracteres | tokens | % de la respuesta completa |
+|---|---|---|---|---|
+| Símbolos | 39 | 12,306 | 6,044 | 24% |
+| Letras | 27 | 7,521 | 3,694 | 15% |
+| Brazaletes | 22 | 8,306 | 4,080 | 17% |
+| Marvel | 16 | 4,982 | 2,447 | 10% |
+| Disney | 15 | 4,458 | 2,189 | 9% |
+| Zodiaco | 12 | 3,509 | 1,723 | 7% |
+| Anillos | 12 | 4,298 | 2,111 | 9% |
+| Profesiones | 8 | 2,763 | 1,357 | 5% |
+| Pixar | 5 | 1,724 | 847 | 3% |
+| Clips | 4 | 1,583 | 777 | 3% |
+| Cadenas | 3 | 1,322 | 649 | 3% |
+| Muranos | 3 | 1,261 | 619 | 3% |
+
+Suman **166 ítems, que es el total de `stock.json`: ningún ítem queda sin grupo.** Verificado, no
+supuesto. Filtrar por grupo nunca huérfana una pieza. `Letras` son 27 (no 1, que es lo que dice
+`catalogo.json`: `grupoDe()` las deriva del prefijo `letra-`) y `Brazaletes` son 22 (los deriva de
+`it.tallas`).
+
+Un `?ids=` con 3 piezas son ~1,300 caracteres ≈ 640 tokens. El sobre fijo
+(`reglas` + `fuente` + `aviso`, cero piezas) son 339 caracteres ≈ 167 tokens.
+
+#### Lo que se retiró de la revisión 1, y por qué
+
+**`q` (buscador de texto) — NO implementar. Es una regresión.**
+El caso está documentado en el propio prompt: una clienta pide una «libélula» y la pieza se llama
+*Luciérnaga Evangeline*. `?q=libelula` devuelve **cero**. El prompt entonces instruye al bot a
+declararla agotada y anotarla con `anotar_reposicion`: **venta perdida y lista de reposición
+contaminada con una pieza que sí existe.** Hoy eso funciona precisamente porque el modelo ve los
+candidatos y hace el emparejamiento conceptual él mismo —el prompt se lo pide con esas palabras:
+«busca por la IDEA, no por cómo está escrito el nombre»—. Un buscador literal se lo quita.
+Un grupo, en cambio, trae **todas** sus piezas, así que el emparejamiento conceptual sigue
+ocurriendo dentro del grupo. Esa es la diferencia.
+
+**`tipo` — redundante.** `Brazaletes` ya es un grupo, así que `?grupo=Brazaletes` cubre el caso.
+Dos parámetros en vez de cuatro es menos superficie de error para el modelo.
+
+#### Dos requisitos que faltaban
+
+1. **Normalizar tildes y mayúsculas al comparar `grupo`.** El grupo real es `Símbolos` **con tilde**,
+   y el modelo va a mandar `Simbolos`. Comparación literal = cero resultados = el bot cree que no hay
+   nada de Símbolos. Normaliza los dos lados (`NFD` y quitar diacríticos) antes de comparar.
+2. **Un parámetro vacío cuenta como ausente.** `?grupo=&ids=` debe devolver lo mismo que sin
+   parámetros. Así el nodo de n8n puede mandar siempre las dos claves sin romper el contrato, y no
+   dependemos de que `$fromAI` sepa omitir una.
+
+#### Campos nuevos en la respuesta
 
 ```js
-total: <piezas+brazaletes en el catálogo completo>,
+total: <piezas+brazaletes en el catálogo completo>,   // 166 hoy
 devueltas: <cuántas van en esta respuesta>,
-filtro: { grupo, ids, q, tipo },   // lo que se aplicó, o null
+filtro: { grupo, ids } | null,                        // lo que se aplicó
 ```
 
 **Tope duro:** si el filtro deja más de 40 resultados, recortar a 40 y marcar `recortado: true`.
-Sin tope, un `q` muy abierto recarga el catálogo entero y volvemos al punto de partida.
+Hoy ningún grupo pasa de 39, así que el tope no se activa — está para que un `ids` largo o un grupo
+futuro más grande no recarguen el catálogo entero.
 
 **Lo que no se toca:** `reglas`, `fuente`, `aviso` y el comportamiento de `solo-conteo` cuando Blobs
 no responde. Esos tres campos van siempre, con filtro o sin él. El comentario de cabecera del
 archivo explica por qué la resta de inventario vive en el servidor: eso sigue igual, solo se filtra
-la salida.
+la salida. **Y no se quita ningún campo de las piezas** —ver 2d: quitar `foto` sale más caro—.
 
-**Pruebas antes de desplegar** (`pruebas/` ya tiene el patrón):
+#### Pruebas antes de desplegar (`pruebas/` ya tiene el patrón)
 
-1. Sin parámetros → la respuesta es idéntica a la de producción (comparar JSON contra
+1. Sin parámetros → respuesta idéntica a producción (comparar contra
    `curl https://zephoracharms.com/.netlify/functions/disponibilidad`).
-2. `?grupo=Marvel` → 16 piezas, todas con `grupo: "Marvel"`, y `reglas`/`fuente`/`aviso` presentes.
-3. `?ids=letra-m` → una pieza, `devueltas: 1`, `total` con el número completo.
-4. `?q=LIBELULA` y `?q=libélula` → el mismo resultado (sin tildes, sin mayúsculas).
-5. `?grupo=NoExiste` → 200 con listas vacías y `devueltas: 0`, **no** un 404 ni un 500: el prompt
+2. `?grupo=&ids=` → **idéntica al caso 1**. Es el contrato del requisito 2.
+3. `?grupo=Marvel` → 16 piezas, todas con `grupo: "Marvel"`, con `reglas`/`fuente`/`aviso`.
+4. `?grupo=Simbolos` (sin tilde) → **39 piezas**, igual que `?grupo=Símbolos`. Es el requisito 1.
+5. `?grupo=SIMBOLOS` → las mismas 39.
+6. `?grupo=Letras` → 27. `?grupo=Brazaletes` → 22. (Los dos grupos derivados.)
+7. `?ids=letra-m` → una pieza, `devueltas: 1`, `total: 166`.
+8. `?ids=letra-m,noexiste` → una pieza, sin error.
+9. `?grupo=NoExiste` → 200 con listas vacías y `devueltas: 0`, **no** un 404 ni un 500: el prompt
    tiene que poder decir «no encontré eso» sin que el bot vea un error.
-6. Un filtro que deja >40 → 40 resultados y `recortado: true`.
-7. Con Blobs caído (simulado) y filtro → `fuente: 'solo-conteo'`, sin campo `disponible`.
+10. Con Blobs caído (simulado) y filtro → `fuente: 'solo-conteo'`, sin campo `disponible`.
+11. Toda pieza devuelta conserva su campo `foto`.
 
-**Medir el tamaño de la respuesta** en cada caso y anotarlo: es el número que decide si esto sirvió.
-Hoy son 53,352 caracteres.
+**Anotar el tamaño de la respuesta en cada caso.** Es el número que decide si esto sirvió. Hoy son
+53,352 caracteres; la tabla de arriba dice qué se espera por grupo.
 
-### Paso 2 — el nodo de n8n (lo hace la sesión de PROYECTOAUTOMA1)
+### 3.2 — El nodo de n8n (sesión de PROYECTOAUTOMA1)
 
-Esto es importante y **va después del paso 1, nunca antes**.
+**Va después de 3.1, nunca antes.** Al revés, la descripción promete un filtro que no existe.
 
 El nodo `disponibilidad` (`n8n-nodes-base.httpRequestTool` v4.5, id
 `a1c7b6ce-46fc-460f-a454-7cbba633ac55`) hoy es un GET pelado:
@@ -156,51 +261,86 @@ El nodo `disponibilidad` (`n8n-nodes-base.httpRequestTool` v4.5, id
 ```
 
 **No tiene `toolDescription`.** El modelo sabe qué hace solo por el nombre del nodo y por lo que dice
-el prompt. Así que el cambio no es «añadir un parámetro»: hay que **crear** la descripción de la
-herramienta con un `$fromAI`, igual que ya hace `armar_carrito`. La sesión de PROYECTOAUTOMA1 tiene
-acceso de escritura a n8n por MCP y la línea base medida para comparar después, así que lo toma ella.
+el prompt. Así que el cambio no es «añadir un parámetro»: hay que **crear** la descripción con
+`$fromAI`, igual que ya hace `armar_carrito`.
 
-El riesgo real está acá, no en la función: **si la descripción queda mal redactada, el bot deja de
-encontrar piezas y se pierden ventas el mismo día.** Por eso el orden es: función desplegada y
-probada contra producción → descripción del nodo → volver a medir. Y la descripción tiene que decir
-explícitamente que **sin filtro devuelve todo**, para que el bot tenga salida cuando no sepa qué
-filtrar.
+El riesgo real del proyecto está acá, no en la función: **si la descripción queda mal redactada, el
+bot deja de encontrar piezas y se pierden ventas el mismo día.** La descripción tiene que decir
+explícitamente que **sin parámetros devuelve todo y eso siempre es correcto**, para que el bot tenga
+salida cuando no sepa qué filtrar. Esa frase es la válvula de seguridad contra el caso Luciérnaga.
 
-### Paso 3 — volver a medir (sesión de PROYECTOAUTOMA1)
+Ya está redactada y esperando revisión en la sesión de PROYECTOAUTOMA1. No se aplicará hasta que la
+función esté desplegada y probada contra producción.
 
-Mismo método, 15–20 ejecuciones nuevas, y comparar contra esta tabla. Sin esto no sabemos si sirvió.
+Aquí mismo entra el 3% gratis: `optimizeResponse: true` + `fieldsToInclude: 'except'` +
+`fields: 'piezas.material,brazaletes.material'`. `material` son dos constantes repetidas 166 veces
+y la información está íntegra en `tipo` (charm → Plata Esterlina 925, brazalete → baño de plata).
+**Pero esto toca una regla del prompt escrita tras un incidente real** —el bot afirmó que un
+brazalete era 925—, así que va con una línea nueva en el prompt que haga explícito el mapeo, o no va.
+Decisión del dueño, no automática.
+
+### 3.3 — Volver a medir (sesión de PROYECTOAUTOMA1)
+
+Mismo método, 15–20 ejecuciones nuevas, comparar contra la tabla de la sección 1. Sin esto no
+sabemos si sirvió. Dos cosas que hay que vigilar en esa medición, además del costo:
+
+- **cuántas veces el bot llama sin filtro.** Si es casi siempre, el ahorro no aparece y hay que
+  ajustar la descripción, no la función.
+- **cuántas veces un `?grupo=` devuelve `devueltas: 0`.** Cada uno de esos es un posible caso
+  Luciérnaga: una pieza negada que sí existe. Debería ser cero.
+
+### 3.4 — Adelgazar el prompt (trabajo aparte, pero es la palanca principal)
+
+**31% frente al 19–23% del filtro, y es la única que ayuda al 47% de mensajes que nunca llaman a
+ninguna herramienta.** La revisión 1 la dejaba fuera como «trabajo aparte y más delicado»; sigue
+siendo delicada, pero no es secundaria.
+
+El prompt son 40,230 caracteres ≈ 13,400 tokens que se reenvían en **cada** iteración. Buena parte
+son tablas de referencia que el modelo necesita rara vez: los 8 kits con sus piezas, las novedades
+de noviembre, la tabla de tallas de anillos en centímetros, los enlaces de colecciones. Eso cabe en
+una herramienta nueva —`ficha(tema)`— que se consulte cuando haga falta.
+
+Lo que **no** se toca: las reglas de «NUNCA hagas esto», el saludo literal, el camino de pedido ya
+hecho, los medios de pago, el manejo de agotados. Cada una de esas secciones está escrita a raíz de
+un error real del bot y quitarlas lo reabre.
+
+Esto necesita su propio diseño y su propia medición. No va en este traspaso, pero debería ir en el
+siguiente.
 
 ---
 
 ## 4. Cuánto baja
 
-Con el filtro (26,200 → ~1,700 tokens por respuesta):
+Costo por mensaje según el tamaño de lo que devuelve `disponibilidad` (modelo; ver salvedades):
 
-| | mensaje de 2 llamadas | de 3 | de 5 | conversación de 8 mensajes |
+| caso | tokens del catálogo | 2 llamadas | 3 | 5 |
 |---|---|---|---|---|
-| hoy | $0.201 | $0.349 | $0.630 | **$1.58** |
-| solo filtro | $0.127 | $0.202 | $0.336 | **$1.03** |
-| filtro + prompt a 5k | $0.077 | $0.118 | $0.191 | **$0.46** |
+| hoy (completo) | 26,204 | $0.201 | $0.341 | $0.624 |
+| `grupo=Símbolos` (el peor) | 6,044 | $0.140 | $0.220 | $0.382 |
+| `grupo=Letras` | 3,694 | $0.133 | $0.206 | $0.354 |
+| `grupo=Marvel` | 2,447 | $0.129 | $0.198 | $0.339 |
+| `ids` con 3 piezas | 638 | $0.124 | $0.188 | $0.317 |
 
-**El filtro solo baja un 35%.** No más, porque una vez quitado el catálogo lo que domina es el piso
-de 20,300 que se reenvía en cada iteración. La segunda palanca es adelgazar el prompt moviendo las
-tablas de referencia (los 8 kits, novedades, la tabla de tallas de anillos) a una herramienta que se
-consulte cuando haga falta. **Eso es un trabajo aparte y más delicado**, porque esas secciones del
-prompt están escritas a raíz de errores reales del bot. No va en este traspaso.
+Y las tres palancas juntas —filtro por grupo, `material` fuera, prompt a 5,000— **bajan 54%**.
 
 ---
 
 ## 5. Por qué importa más allá de Zephora
 
-$300.000 COP/mes (~$70 USD) cubre hoy **~44 conversaciones**. Con filtro, ~68. Con filtro más prompt
-adelgazado, ~150. Una tienda que vende de verdad hace más de 150 conversaciones al mes.
+Con la media medida de $0.202 por mensaje, una conversación de 8 mensajes cuesta ~$1.62, así que
+**$300.000 COP/mes (~$70 USD) cubre hoy ~43 conversaciones.** Con las tres palancas, ~94. El rango
+es amplio a propósito: depende de cuántas veces el bot necesite herramientas, que es lo que más
+varía entre conversaciones.
 
-Para el proyecto de agencia esto significa dos cosas concretas:
+Una tienda que vende de verdad hace más de 94 conversaciones al mes. Para el proyecto de agencia eso
+significa dos cosas concretas:
 
 1. El precio recurrente del Nivel 3 tiene que subir, o la oferta tiene que llevar escrito un tope de
    conversaciones al mes.
 2. Saber construir un agente de WhatsApp a $0.05 por conversación en vez de $0.20 por **mensaje** es
-   en sí mismo la ventaja competitiva. Nadie que venda bots a tiendas está midiendo esto.
+   en sí mismo la ventaja competitiva. Nadie que venda bots a tiendas está midiendo esto, y la parte
+   que no es obvia —que el piso por iteración domina y que quitar el campo más gordo sale más caro—
+   solo se ve midiendo.
 
 ---
 
@@ -210,9 +350,11 @@ Para el proyecto de agencia esto significa dos cosas concretas:
   lo pide explícitamente.
 - Tocar el nodo `disponibilidad` del workflow activo. Es el paso con riesgo de perder ventas el
   mismo día si la descripción queda mal.
+- Quitar `material` de la respuesta del nodo, porque toca una regla del prompt escrita tras un
+  incidente real (3.2).
 
-El paso 1 se puede escribir y probar entero **sin desplegar**. Lo que no se debe hacer sin
-aprobación es publicar.
+El 3.1 se puede escribir y probar entero **sin desplegar**. Lo que no se debe hacer sin aprobación
+es publicar.
 
 ---
 
@@ -220,9 +362,10 @@ aprobación es publicar.
 
 | | quién | por qué |
 |---|---|---|
-| `disponibilidad.mjs` + pruebas + deploy | sesión de Zephora | tiene el repo y el deploy de Netlify |
-| `toolDescription` del nodo + `$fromAI` | sesión de PROYECTOAUTOMA1 | tiene escritura en n8n por MCP |
-| volver a medir y comparar | sesión de PROYECTOAUTOMA1 | tiene la línea base y el método |
+| `disponibilidad.mjs` + pruebas (3.1) | sesión de Zephora | tiene el repo y el deploy de Netlify |
+| `toolDescription` + `$fromAI` (3.2) | sesión de PROYECTOAUTOMA1 | tiene escritura en n8n por MCP |
+| volver a medir y comparar (3.3) | sesión de PROYECTOAUTOMA1 | tiene la línea base y el método |
+| adelgazar el prompt (3.4) | por decidir | trabajo aparte, siguiente tanda |
 | aprobar el deploy y el cambio del nodo | el dueño | tienda en producción vendiendo |
 
 Si la sesión de Zephora prefiere que el parche de `disponibilidad.mjs` se escriba desde la sesión de
