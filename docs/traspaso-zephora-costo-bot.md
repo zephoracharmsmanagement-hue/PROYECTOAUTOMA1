@@ -10,6 +10,13 @@
 > tildes, vacío = ausente), se corrigieron los tamaños de grupo, y **adelgazar el prompt pasó de
 > «trabajo aparte» a ser la palanca principal** (ver 2d y 3.4). Si empezaste con la revisión 1,
 > lee 3.1 y 2d antes de seguir.
+>
+> **Revisión 3 — 19 nov 2026, 16:40 UTC. Corrección de precio.** Las revisiones 1 y 2 calcularon
+> todo a $3 / $15 por millón de tokens, que es el precio de **Sonnet 4.6**. El bot corre
+> `claude-sonnet-5`, que cuesta **$2 / $10**. Todas las cifras en dólares de este documento estaban
+> **infladas un 33%** y quedan corregidas abajo. Los **porcentajes y la jerarquía de palancas no
+> cambian**, porque son razones entre cifras que escalaban igual. Añadida también la sección 8 con
+> la primera medición después de desplegar.
 
 Este documento es autocontenido: no hace falta nada de la conversación en la que se midió.
 
@@ -23,33 +30,33 @@ modelo**; 5 salieron por `Ignorar mensaje viejo` con costo cero.
 
 Los números salen del campo `tokenUsage` que n8n guarda por cada llamada al nodo `Claude`
 (`@n8n/n8n-nodes-langchain.lmChatAnthropic` v1.5, modelo `claude-sonnet-5`, `maxTokensToSample: 1024`).
-Precio aplicado: $3/M entrada, $15/M salida.
+Precio aplicado: **$2/M entrada, $10/M salida** (`claude-sonnet-5`, precio verificado el 19-nov).
 
 | exec | llamadas al modelo | tokens entrada | USD |
 |---|---|---|---|
-| 10123 | **5** | 210,099 | **0.644** |
-| 9457 | 3 | 119,685 | 0.369 |
-| 9446 | 3 | 117,778 | 0.358 |
-| 10736 | 3 | 116,448 | 0.357 |
-| 9454 | 2 | 69,902 | 0.213 |
-| 9441 | 2 | 68,970 | 0.211 |
-| 10746 | 2 | 68,886 | 0.211 |
-| 10730 | 2 | 67,473 | 0.206 |
-| 10075 | 1 | 22,705 | 0.072 |
-| 10070 | 1 | 22,284 | 0.068 |
-| 10733 | 1 | 20,903 | 0.066 |
-| 10134 | 1 | 20,841 | 0.065 |
-| 9163 | 1 | 20,603 | 0.065 |
-| 10725 | 1 | 20,352 | 0.063 |
-| 10117 | 1 | 20,319 | 0.063 |
+| 10123 | **5** | 210,099 | **0.429** |
+| 9457 | 3 | 119,685 | 0.246 |
+| 9446 | 3 | 117,778 | 0.239 |
+| 10736 | 3 | 116,448 | 0.238 |
+| 9454 | 2 | 69,902 | 0.142 |
+| 9441 | 2 | 68,970 | 0.141 |
+| 10746 | 2 | 68,886 | 0.141 |
+| 10730 | 2 | 67,473 | 0.137 |
+| 10075 | 1 | 22,705 | 0.048 |
+| 10070 | 1 | 22,284 | 0.046 |
+| 10733 | 1 | 20,903 | 0.044 |
+| 10134 | 1 | 20,841 | 0.043 |
+| 9163 | 1 | 20,603 | 0.043 |
+| 10725 | 1 | 20,352 | 0.042 |
+| 10117 | 1 | 20,319 | 0.042 |
 
-**Por mensaje de clienta:** media $0.202 · mediana $0.206 · peor caso medido **$0.644**.
+**Por mensaje de clienta:** media **$0.135** · mediana **$0.137** · peor caso medido **$0.429**.
 **Llamadas al modelo por mensaje:** media 1.93 · mediana 2 · máximo 5.
 
 Dos poblaciones, muy estables por dentro:
 
-- **Sin llamar a `disponibilidad`** (7 de 15): 21,144 tokens de media, rango 20,319–22,705 → **$0.065**
-- **Llamando a `disponibilidad`** (8 de 15): 104,905 de media, rango 67,473–210,099 → **$0.21 a $0.64**
+- **Sin llamar a `disponibilidad`** (7 de 15): 21,144 tokens de media, rango 20,319–22,705 → **$0.044**
+- **Llamando a `disponibilidad`** (8 de 15): 104,905 de media, rango 67,473–210,099 → **$0.14 a $0.43**
 
 Calibración que se usa en todo el resto del documento: **53,352 caracteres de respuesta = 26,204
 tokens**, o sea **2.036 caracteres por token**. Es medido, no estimado. (Ojo: no son los 4 caracteres
@@ -62,8 +69,8 @@ por token de la heurística de n8n; el JSON con URLs y acentos tokeniza mucho m�
   correlacionan con más llamadas al modelo, así que **el 1.93 puede estar algo alto**. Que 5 de las 20
   resultaran salidas de costo cero sugiere que el sesgo no es grave, pero existe.
 - La atribución del piso de 20,300 tokens (2b) es **estimación**, no medición.
-- Las proyecciones de 2d y 4 salen de un modelo con 1.93 llamadas uniformes, que da $0.157 por
-  mensaje contra los $0.202 medidos: el modelo no reproduce la cola de mensajes de 5 llamadas.
+- Las proyecciones de 2d y 4 salen de un modelo con 1.93 llamadas uniformes, que da $0.105 por
+  mensaje contra los $0.135 medidos: el modelo no reproduce la cola de mensajes de 5 llamadas.
   **Los porcentajes son sólidos; los absolutos son modelo.**
 
 ---
@@ -141,7 +148,7 @@ Jerarquía real de palancas, con el modelo de 1.93 llamadas:
 | ~~quitar `foto` del nodo~~ | **−48%** | fuerza una iteración extra |
 
 Y el dato que decide la prioridad: **47% de los mensajes nunca llaman a `disponibilidad`** (7 de 15
-medidos). Para esos el filtro ahorra exactamente $0; el prompt ahorra $0.025 en cada uno.
+medidos). Para esos el filtro ahorra exactamente $0; el prompt ahorra $0.017 en cada uno.
 Por eso el prompt subió a palanca principal.
 
 ---
@@ -315,11 +322,11 @@ Costo por mensaje según el tamaño de lo que devuelve `disponibilidad` (modelo;
 
 | caso | tokens del catálogo | 2 llamadas | 3 | 5 |
 |---|---|---|---|---|
-| hoy (completo) | 26,204 | $0.201 | $0.341 | $0.624 |
-| `grupo=Símbolos` (el peor) | 6,044 | $0.140 | $0.220 | $0.382 |
-| `grupo=Letras` | 3,694 | $0.133 | $0.206 | $0.354 |
-| `grupo=Marvel` | 2,447 | $0.129 | $0.198 | $0.339 |
-| `ids` con 3 piezas | 638 | $0.124 | $0.188 | $0.317 |
+| hoy (completo) | 26,204 | $0.134 | $0.227 | $0.416 |
+| `grupo=Símbolos` (el peor) | 6,044 | $0.093 | $0.147 | $0.255 |
+| `grupo=Letras` | 3,694 | $0.089 | $0.137 | $0.236 |
+| `grupo=Marvel` | 2,447 | $0.086 | $0.132 | $0.226 |
+| `ids` con 3 piezas | 638 | $0.083 | $0.125 | $0.211 |
 
 Y las tres palancas juntas —filtro por grupo, `material` fuera, prompt a 5,000— **bajan 54%**.
 
@@ -327,17 +334,17 @@ Y las tres palancas juntas —filtro por grupo, `material` fuera, prompt a 5,000
 
 ## 5. Por qué importa más allá de Zephora
 
-Con la media medida de $0.202 por mensaje, una conversación de 8 mensajes cuesta ~$1.62, así que
-**$300.000 COP/mes (~$70 USD) cubre hoy ~43 conversaciones.** Con las tres palancas, ~94. El rango
+Con la media medida de **$0.135** por mensaje, una conversación de 8 mensajes cuesta **~$1.08**, así que
+**$300.000 COP/mes (~$70 USD) cubre hoy ~65 conversaciones.** Con las tres palancas, **~141**. El rango
 es amplio a propósito: depende de cuántas veces el bot necesite herramientas, que es lo que más
 varía entre conversaciones.
 
-Una tienda que vende de verdad hace más de 94 conversaciones al mes. Para el proyecto de agencia eso
+Una tienda que vende de verdad hace más de 141 conversaciones al mes. Para el proyecto de agencia eso
 significa dos cosas concretas:
 
 1. El precio recurrente del Nivel 3 tiene que subir, o la oferta tiene que llevar escrito un tope de
    conversaciones al mes.
-2. Saber construir un agente de WhatsApp a $0.05 por conversación en vez de $0.20 por **mensaje** es
+2. Saber construir un agente de WhatsApp a $0.05 por conversación en vez de $0.135 por **mensaje** es
    en sí mismo la ventaja competitiva. Nadie que venda bots a tiendas está midiendo esto, y la parte
    que no es obvia —que el piso por iteración domina y que quitar el campo más gordo sale más caro—
    solo se ve midiendo.
@@ -372,3 +379,59 @@ Si la sesión de Zephora prefiere que el parche de `disponibilidad.mjs` se escri
 PROYECTOAUTOMA1, se puede: `proyecto-1` está clonado en ese contenedor en
 `/home/user/zephoracharmsmanagement-hue/proyecto-1` (HEAD `02f6e89`). Pero las pruebas y el deploy es
 mejor que corran donde siempre.
+
+---
+
+## 8. Primera medición después de desplegar (19 nov, 15:59 UTC)
+
+El filtro se desplegó (PR #53), el nodo se cambió y se publicó a las ~13:37 UTC. Primera muestra de
+ejecuciones reales posteriores: **n = 4 mensajes**, contra los 15 de la línea base.
+
+| | línea base (n=15) | con filtro (n=4) |
+|---|---|---|
+| USD por mensaje | $0.135 | **$0.214** |
+| llamadas al modelo por mensaje | 1.93 | **3.25** |
+
+**Sale un 59% más caro.** Las tres cosas que se vigilaban salieron así:
+
+1. **El bot usa el filtro bien.** 5 de 6 llamadas llevaron `grupo` o `ids`, con la forma exacta que
+   se pretendía: `{"grupo":"Símbolos"}`, `{"ids":"letra-m,letra-j"}`, `{"grupo":"Brazaletes"}`.
+2. **Cero consultas con `devueltas: 0`.** No se negó ninguna pieza por error. La válvula de
+   seguridad del `toolDescription` funciona.
+3. El costo subió.
+
+### La causa
+
+En la ejecución 10879, **un solo mensaje** hizo tres llamadas a `disponibilidad`:
+
+```
+{"grupo": "Símbolos"}      → 39 piezas, 13,202 caracteres
+{"ids": "letra-m,letra-j"} →  2 piezas,  1,039 caracteres
+{"grupo": "Brazaletes"}    → 22 piezas,  8,527 caracteres
+```
+
+Antes habría hecho **una** llamada con todo el catálogo. Ahora hace varias pequeñas, y **cada
+iteración extra cuesta el piso de ~22,000 tokens**. Se ahorran ~20,000 de catálogo y se gastan
+~22,000 de piso: pérdida neta.
+
+Es exactamente el mecanismo descrito en 2d —el piso domina— pero por una vía que no se previó: no
+fue quitar un campo lo que añadió iteraciones, **fue el filtro mismo cambiando el comportamiento del
+agente**, de una llamada gorda a varias finas.
+
+### Las dos correcciones candidatas
+
+1. **En el `toolDescription`** (barata): decirle que pida todo lo que necesite en **una sola
+   llamada**, porque `grupo` e `ids` se suman.
+2. **En la función** (otro PR): que `grupo` acepte varios grupos separados por coma. Hoy acepta uno
+   solo, así que un mensaje que necesite Símbolos *y* Brazaletes **no tiene más remedio** que llamar
+   dos veces. Sin esto, la corrección 1 no puede cumplirse siempre.
+
+**Ninguna se ha aplicado.** n=4 contra n=15 es muestra insuficiente para decidir, y nada se está
+rompiendo: las clientas reciben respuestas correctas y lo único que sube es el costo. Hay una
+segunda medición programada para tener 10 o más mensajes antes de tocar nada.
+
+### Lo que este episodio enseña, y vale para cualquier cliente
+
+El costo de un agente no está donde se mira. Está en **cuántas veces vuelve el bucle**, no en lo que
+pesa cada respuesta. Cualquier optimización que ahorre payload pero añada una vuelta sale cara, y
+eso no se puede razonar desde fuera: solo se ve midiendo antes y después.
