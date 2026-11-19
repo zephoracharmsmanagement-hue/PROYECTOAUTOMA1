@@ -1,7 +1,7 @@
 {
   "dominio": "shop-rebel.co",
   "estado": "ok",
-  "medido_el": "2026-11-19T18:05:21.012Z",
+  "medido_el": "2026-11-19T18:15:29.750Z",
   "entorno": {
     "dispositivo": "Pixel 7 (emulado en Chromium)",
     "locale": "es-CO",
@@ -20,7 +20,6 @@
     "detectada": "WooCommerce",
     "senales": [
       "/woocommerce/i",
-      "/wp-content\\/plugins\\/woocommerce/i",
       "/wc-ajax/i"
     ],
     "otras_senales_presentes": [
@@ -29,43 +28,42 @@
   },
   "rendimiento": {
     "portada": {
-      "ms_dom": 8504,
-      "ms_load": 10971,
-      "ms_respuesta_servidor": 974,
-      "ms_reloj_hasta_dom": 8506,
-      "kb_transferidos": 12010.3,
+      "ms_dom": 21917,
+      "ms_load": null,
+      "ms_respuesta_servidor": 795,
+      "ms_reloj_hasta_dom": 21920,
+      "kb_transferidos": 3202.5,
       "kb_por_tipo": {
         "Document": 63.8,
-        "Script": 1982.1,
-        "Stylesheet": 250.5,
-        "Fetch": 15,
-        "Image": 2905.5,
-        "Font": 243.6,
-        "Ping": 13,
-        "XHR": 47.3,
-        "Media": 6489.5
+        "Script": 1993.2,
+        "Stylesheet": 240.4,
+        "Fetch": 15.1,
+        "Image": 619.6,
+        "Font": 243.7,
+        "XHR": 15.4,
+        "Ping": 11.4
       },
-      "peticiones": 205,
-      "imagenes_en_dom": 81
+      "peticiones": 179,
+      "imagenes_en_dom": 59
     },
     "producto": {
-      "ms_dom": 2322,
-      "ms_load": 7450,
-      "ms_respuesta_servidor": 687,
-      "ms_reloj_hasta_dom": 2327,
-      "kb_transferidos": 4011.8,
+      "ms_dom": 1367,
+      "ms_load": 6603,
+      "ms_respuesta_servidor": 362,
+      "ms_reloj_hasta_dom": 1369,
+      "kb_transferidos": 2925.5,
       "kb_por_tipo": {
-        "Stylesheet": 34.6,
-        "Script": 199.3,
-        "Image": 2164.9,
-        "Document": 69.6,
-        "Fetch": 19.7,
+        "Stylesheet": 48.6,
+        "Image": 1039.9,
+        "Script": 240.6,
+        "Document": 71.9,
         "Font": 85.1,
-        "Ping": 9.2,
-        "XHR": 5.6,
-        "Media": 1423.8
+        "XHR": 3.2,
+        "Fetch": 5.4,
+        "Ping": 9.8,
+        "Media": 1420.9
       },
-      "peticiones": 216,
+      "peticiones": 223,
       "imagenes_en_dom": 50
     },
     "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
@@ -97,20 +95,101 @@
       ]
     }
   },
+  "salud_de_la_pagina": {
+    "titulo": "Rebel Colombia | Sitio Oficial | Tu belleza, nuestro cuidado",
+    "parece_dominio_parqueado": false,
+    "parece_pagina_vacia": false,
+    "es_tienda_analizable": true,
+    "nota": null
+  },
   "pixel": {
     "fiable": true,
     "motivo_no_fiable": null,
-    "peticiones_tr_sin_parametro_ev": 3,
+    "peticiones_tr_sin_parametro_ev": 0,
     "bloqueos_criticos_por_politica_del_sitio": [],
     "fbevents_js_cargado": true,
     "google_tag_manager_cargado": true,
-    "eventos_observados": [],
-    "tipos_de_evento": [],
-    "ids_que_dispararon": [],
+    "eventos_observados": [
+      {
+        "pagina": "portada",
+        "id": "803340261375111",
+        "evento": "PageView",
+        "metodo": "POST",
+        "parametros_cd": [
+          "cd[page_title]",
+          "cd[post_type]",
+          "cd[post_id]",
+          "cd[plugin]",
+          "cd[event_url]",
+          "cd[user_role]",
+          "cd[traffic_source]",
+          "cd[event_hour]",
+          "cd[event_day]",
+          "cd[event_month]",
+          "cd[landing_page]"
+        ]
+      },
+      {
+        "pagina": "producto",
+        "id": "803340261375111",
+        "evento": "ViewContent",
+        "metodo": "POST",
+        "parametros_cd": [
+          "cd[content_type]",
+          "cd[content_ids]",
+          "cd[tags]",
+          "cd[value]",
+          "cd[currency]",
+          "cd[contents]",
+          "cd[product_price]",
+          "cd[content_name]",
+          "cd[category_name]",
+          "cd[page_title]",
+          "cd[post_type]",
+          "cd[post_id]",
+          "cd[plugin]",
+          "cd[event_url]",
+          "cd[user_role]",
+          "cd[traffic_source]",
+          "cd[event_hour]",
+          "cd[event_day]",
+          "cd[event_month]",
+          "cd[landing_page]"
+        ]
+      },
+      {
+        "pagina": "producto",
+        "id": "803340261375111",
+        "evento": "PageView",
+        "metodo": "POST",
+        "parametros_cd": [
+          "cd[categories]",
+          "cd[tags]",
+          "cd[page_title]",
+          "cd[post_type]",
+          "cd[post_id]",
+          "cd[plugin]",
+          "cd[event_url]",
+          "cd[user_role]",
+          "cd[traffic_source]",
+          "cd[event_hour]",
+          "cd[event_day]",
+          "cd[event_month]",
+          "cd[landing_page]"
+        ]
+      }
+    ],
+    "tipos_de_evento": [
+      "PageView",
+      "ViewContent"
+    ],
+    "ids_que_dispararon": [
+      "803340261375111"
+    ],
     "ids_declarados_en_html": [
       "803340261375111"
     ],
-    "lectura": "No se detectó ningún evento de pixel en el navegador. Esto NO prueba que la tienda no tenga pixel: puede estar usando la API de Conversiones server-side, que es legítima y no se ve desde el navegador."
+    "lectura": "Se observaron 3 evento(s) de pixel en el navegador: PageView, ViewContent."
   },
   "whatsapp": {
     "tiene_enlace": false,
@@ -124,7 +203,7 @@
       "origen": "navegacion abortada (no concluyente)",
       "critico_para_el_pixel": false,
       "pagina": "portada",
-      "url": "https://shop-rebel.co/wp-content/uploads/2026/03/home-airflow.mp4"
+      "url": "https://shop-rebel.co/?wc-ajax=get_refreshed_fragments"
     }
   ],
   "red_limpia_para_el_pixel": true,
@@ -144,7 +223,7 @@
     "portada": {
       "archivo": "capturas/shop-rebel.co-portada.png",
       "truncada": true,
-      "alto_css": 9654,
+      "alto_css": 9600,
       "error": null
     },
     "producto": {

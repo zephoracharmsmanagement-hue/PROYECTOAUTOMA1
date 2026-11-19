@@ -1,7 +1,7 @@
 {
   "dominio": "sacriusshop.store",
   "estado": "ok",
-  "medido_el": "2026-11-19T18:05:03.113Z",
+  "medido_el": "2026-11-19T18:15:11.861Z",
   "entorno": {
     "dispositivo": "Pixel 7 (emulado en Chromium)",
     "locale": "es-CO",
@@ -31,45 +31,45 @@
   },
   "rendimiento": {
     "portada": {
-      "ms_dom": 1726,
-      "ms_load": 2278,
-      "ms_respuesta_servidor": 531,
-      "ms_reloj_hasta_dom": 1731,
-      "kb_transferidos": 2751.5,
+      "ms_dom": 1538,
+      "ms_load": 2434,
+      "ms_respuesta_servidor": 508,
+      "ms_reloj_hasta_dom": 1541,
+      "kb_transferidos": 2698.3,
       "kb_por_tipo": {
         "Document": 83.5,
-        "Script": 774.8,
-        "Stylesheet": 71.7,
+        "Script": 775.3,
+        "Stylesheet": 72,
         "Font": 21.7,
-        "Image": 1056.4,
         "Preflight": 0,
+        "Image": 1056.4,
         "Fetch": 13.5,
-        "Ping": 9.9,
         "XHR": 1.9,
-        "Other": 718.1
+        "Ping": 9.9,
+        "Other": 664
       },
-      "peticiones": 161,
+      "peticiones": 154,
       "imagenes_en_dom": 31
     },
     "producto": {
-      "ms_dom": 507,
-      "ms_load": 1932,
-      "ms_respuesta_servidor": 181,
-      "ms_reloj_hasta_dom": 509,
-      "kb_transferidos": 1181.6,
+      "ms_dom": 773,
+      "ms_load": 4739,
+      "ms_respuesta_servidor": 289,
+      "ms_reloj_hasta_dom": 774,
+      "kb_transferidos": 647.8,
       "kb_por_tipo": {
         "Stylesheet": 2.1,
         "Font": 362.7,
         "Document": 88.7,
-        "Script": 14.5,
+        "Script": 14.4,
         "Image": 42.7,
         "XHR": 3.8,
-        "Ping": 10.2,
-        "Fetch": 9.6,
+        "Fetch": 9.4,
         "Preflight": 0,
-        "Other": 647.3
+        "Ping": 22.4,
+        "Other": 101.7
       },
-      "peticiones": 153,
+      "peticiones": 182,
       "imagenes_en_dom": 11
     },
     "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
@@ -100,6 +100,13 @@
       ]
     }
   },
+  "salud_de_la_pagina": {
+    "titulo": "Sacriusshop",
+    "parece_dominio_parqueado": false,
+    "parece_pagina_vacia": false,
+    "es_tienda_analizable": true,
+    "nota": null
+  },
   "pixel": {
     "fiable": true,
     "motivo_no_fiable": null,
@@ -127,7 +134,7 @@
       "origen": "politica del sitio o del navegador",
       "critico_para_el_pixel": false,
       "pagina": "portada",
-      "url": "https://shop.app/pay/hop?analytics_trace_id=c83939c5-2a9c-450b-bd88-59eb919dd77c&target_origin=https%3A%2F%2Fsacriusshop.store&client_handle=csysur-xd.myshopify.com"
+      "url": "https://shop.app/pay/hop?analytics_trace_id=08634d43-a7a5-4ae7-a39e-59957c47320b&target_origin=https%3A%2F%2Fsacriusshop.store&client_handle=csysur-xd.myshopify.com"
     },
     {
       "host": "cdn.shopify.com",
@@ -143,7 +150,7 @@
       "origen": "politica del sitio o del navegador",
       "critico_para_el_pixel": false,
       "pagina": "producto",
-      "url": "https://lovelyproduct.online/wp-content/uploads/2023/06/auricular-oseo-dcu-34153500-negro_480x480.jpg"
+      "url": "https://lovelyproduct.online/wp-content/uploads/2023/06/2117-des-1_480x480.gif"
     }
   ],
   "red_limpia_para_el_pixel": true,

@@ -111,6 +111,31 @@ const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 const log = (...a) => console.log(`[${new Date().toISOString()}]`, ...a);
 const kb = (bytes) => Math.round((bytes / 1024) * 10) / 10;
 
+/**
+ * Extrae los campos de un cuerpo POST, sea multipart/form-data o
+ * urlencoded.
+ *
+ * POR QUÉ EXISTE ESTO: el pixel de Meta no siempre manda el evento en la
+ * query string. Shopify y otras integraciones lo envían por POST a
+ * https://www.facebook.com/tr/ con el id y el ev dentro de un cuerpo
+ * multipart. Leyendo solo la query string, esas tiendas parecían no tener
+ * ningún evento de pixel cuando en realidad lo disparan correctamente.
+ * Ese falso negativo es justo la afirmación que no se puede permitir, así
+ * que aquí se leen también los cuerpos.
+ */
+function camposDePost(post) {
+  const out = {};
+  if (!post) return out;
+  if (/name="/.test(post)) {
+    const re = /name="([^"]+)"\s*\r?\n\r?\n([\s\S]*?)(?=\r?\n--|\s*$)/g;
+    let m;
+    while ((m = re.exec(post)) !== null) out[m[1]] = m[2].trim();
+  } else {
+    try { for (const [k, v] of new URLSearchParams(post)) out[k] = v; } catch { /* cuerpo no parseable */ }
+  }
+  return out;
+}
+
 function hostDe(url) {
   try { return new URL(url).hostname; } catch { return null; }
 }
@@ -152,6 +177,8 @@ const SENALES_PLATAFORMA = [
   ['Funnelish', [/funnelish\.com/i, /funnelish/i]],
   ['Tiendanube', [/tiendanube\.com/i, /nuvemshop/i, /d2r9epyceweg5n\.cloudfront\.net/i, /LS\.store/i]],
   ['WooCommerce', [/woocommerce/i, /wp-content\/plugins\/woocommerce/i, /wc-ajax/i]],
+  ['Tienda a medida (Nuxt/Vue)', [/_nuxt\//i, /__NUXT__/i]],
+  ['Tienda a medida (Next.js/React)', [/\/_next\//i, /__NEXT_DATA__/i]],
   ['WordPress (sin WooCommerce detectado)', [/wp-content/i, /wp-includes/i]],
   ['VTEX', [/vtexassets\.com/i, /vtexcommercestable/i, /vtex\.com/i]],
   ['Wix', [/parastorage\.com/i, /wix\.com/i, /wixstatic/i]],
@@ -164,11 +191,29 @@ const SENALES_PLATAFORMA = [
   ['Dropi', [/dropi\.co/i]],
 ];
 
-function detectarPlataforma(html, hosts) {
+function detectarPlataforma(html, hosts, dominio) {
   const corpus = html + '\n' + hosts.join('\n');
+  const dom = String(dominio || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Varias de estas tiendas enlazan imágenes alojadas en WordPress AJENOS
+  // (medios, bancos de imágenes). Que el HTML contenga "wp-content" no las
+  // convierte en WordPress, así que la señal solo cuenta si la ruta es del
+  // propio sitio: root-relativa o bajo su dominio.
+  const wpPropio = new RegExp(`(?:["'(=]|${dom})/wp-(?:content|includes)/`, 'i');
+
   const encontradas = [];
   for (const [nombre, patrones] of SENALES_PLATAFORMA) {
-    const senales = patrones.filter((p) => p.test(corpus)).map((p) => String(p));
+    let senales;
+    if (nombre === 'WooCommerce') {
+      // WooCommerce exige ser WordPress propio Y tener rastro de Woo.
+      senales = wpPropio.test(corpus)
+        ? [/woocommerce/i, /wc-ajax/i].filter((p) => p.test(corpus)).map((p) => String(p))
+        : [];
+    } else if (nombre.startsWith('WordPress')) {
+      senales = wpPropio.test(corpus) ? [String(wpPropio)] : [];
+    } else {
+      senales = patrones.filter((p) => p.test(corpus)).map((p) => String(p));
+    }
     if (senales.length) encontradas.push({ plataforma: nombre, senales });
   }
   // El primero de la lista que haya coincidido gana: la lista está ordenada de
@@ -279,16 +324,24 @@ async function instrumentar(page) {
     // de que el pixel se inicializó y disparó. Esto es lo único que permite
     // afirmar que el pixel funciona.
     if (/facebook\.com\/tr/i.test(url)) {
+      let id = null, ev = null, cds = [];
       try {
         const u = new URL(url);
-        estado.eventosPixel.push({
-          id: u.searchParams.get('id'),
-          evento: u.searchParams.get('ev'),
-          // `cd[content_ids]`/`cd[value]` dicen si el evento lleva datos útiles
-          // para optimizar campañas o si va vacío.
-          parametros_cd: Array.from(u.searchParams.keys()).filter((k) => k.startsWith('cd[')),
-        });
-      } catch { /* URL malformada: se ignora, no se inventa */ }
+        id = u.searchParams.get('id');
+        ev = u.searchParams.get('ev');
+        // `cd[content_ids]`/`cd[value]` dicen si el evento lleva datos útiles
+        // para optimizar campañas o si va vacío.
+        cds = Array.from(u.searchParams.keys()).filter((k) => k.startsWith('cd['));
+      } catch { /* URL malformada: se sigue intentando por el cuerpo */ }
+      // Si no venía en la query, el evento va en el cuerpo del POST.
+      if (!id || !ev) {
+        let campos = {};
+        try { campos = camposDePost(req.postData()); } catch { /* sin cuerpo legible */ }
+        id = id || campos.id || null;
+        ev = ev || campos.ev || null;
+        if (!cds.length) cds = Object.keys(campos).filter((k) => k.startsWith('cd['));
+      }
+      estado.eventosPixel.push({ id, evento: ev, metodo: req.method(), parametros_cd: cds });
     }
     if (/connect\.facebook\.net\/.*fbevents\.js/i.test(url)) estado.urls.push(url);
   });
@@ -615,7 +668,7 @@ function veredictoPixel(resultados) {
       // sin ev (p. ej. el iframe de respaldo) no es un evento y contarla
       // exageraria el hallazgo.
       if (ev.evento) {
-        eventos.push({ pagina: r._etiqueta, id: ev.id, evento: ev.evento, parametros_cd: ev.parametros_cd });
+        eventos.push({ pagina: r._etiqueta, id: ev.id, evento: ev.evento, metodo: ev.metodo || null, parametros_cd: ev.parametros_cd });
         if (ev.id) idsDispararon.add(ev.id);
       } else {
         peticionesTrSinEvento++;
@@ -737,7 +790,7 @@ async function auditarTienda(browser, dominio) {
 
     // --- Plataforma ---
     const hosts = Array.from(portada._interno.estado.hostsVistos || []);
-    const plat = detectarPlataforma(portada._interno.html || '', hosts);
+    const plat = detectarPlataforma(portada._interno.html || '', hosts, dominio);
     ficha.plataforma = {
       detectada: plat.plataforma,
       senales: plat.senales,
@@ -748,12 +801,20 @@ async function auditarTienda(browser, dominio) {
     let urlProducto = elegirUrlProducto(portada._interno.enlaces || [], origen);
     let comoSeEncontro = urlProducto ? 'enlace en la portada' : null;
 
-    // Reserva 1: en Shopify, /collections/all casi siempre lista productos.
-    if (!urlProducto && /Shopify/i.test(plat.plataforma)) {
-      const col = await medirPagina(context, `${origen}/collections/all`, `${dominio}-tmp-coleccion.png`);
-      urlProducto = elegirUrlProducto(col._interno.enlaces || [], origen);
-      if (urlProducto) comoSeEncontro = 'enlace en /collections/all';
-      try { fs.unlinkSync(path.join(DIR_CAPTURAS, `${dominio}-tmp-coleccion.png`)); } catch {}
+    // Reserva: visitar páginas de listado habituales y buscar ahí el enlace.
+    // Hace falta porque en las tiendas que son una SPA (Nuxt/React) la portada
+    // solo trae enlaces a categorías: las fichas se pintan en el cliente, así
+    // que hay que entrar al listado y volver a mirar el DOM ya renderizado.
+    const RUTAS_LISTADO = ['/collections/all', '/products', '/productos', '/tienda', '/shop', '/catalogo'];
+    if (!urlProducto) {
+      for (const ruta of RUTAS_LISTADO.slice(0, 4)) {
+        const tmp = `${dominio}-tmp-listado.png`;
+        const lst = await medirPagina(context, `${origen}${ruta}`, tmp);
+        try { fs.unlinkSync(path.join(DIR_CAPTURAS, tmp)); } catch {}
+        if (lst.nav_error) continue;
+        urlProducto = elegirUrlProducto(lst._interno.enlaces || [], origen);
+        if (urlProducto) { comoSeEncontro = `enlace en ${ruta}`; break; }
+      }
     }
 
     let producto;
@@ -812,8 +873,39 @@ async function auditarTienda(browser, dominio) {
       ...(await analizarContenidoProducto(context, urlProducto, producto)),
     };
 
+    // --- Salud de la página servida ---
+    // POR QUÉ: si el dominio está parqueado o devuelve una página vacía, las
+    // métricas existen pero NO describen una tienda. Reportar "no se detectó
+    // pixel" o "no hay WhatsApp" sobre una página aparcada sería engañoso.
+    const tituloPortada = (portada._interno.estado.titulo || '').trim();
+    const textoPortada = (portada._interno.texto || '').slice(0, 3000);
+    const patronParqueado = /parked domain|domain (is )?(for sale|parked)|dominio (parqueado|en venta)|under construction|en construcci[oó]n|coming soon|pr[oó]ximamente|default web page|apache2? (ubuntu )?default/i;
+    const pareceParqueado = patronParqueado.test(tituloPortada) || patronParqueado.test(textoPortada);
+    const pareceVacia = (portada.peticiones || 0) <= 3 && (portada.kb_transferidos || 0) < 20;
+
+    ficha.salud_de_la_pagina = {
+      titulo: tituloPortada || null,
+      parece_dominio_parqueado: pareceParqueado,
+      parece_pagina_vacia: pareceVacia,
+      es_tienda_analizable: !pareceParqueado && !pareceVacia && !portada.nav_error,
+      nota: pareceParqueado
+        ? 'La página servida parece un dominio parqueado o una plantilla por defecto, no una tienda. Las métricas de abajo describen esa página, no un negocio en funcionamiento.'
+        : (pareceVacia
+            ? `La portada respondió con muy poco contenido (${portada.peticiones} petición/es, ${portada.kb_transferidos} KB) y sin título: no se obtuvo una tienda que auditar.`
+            : null),
+    };
+
     // --- Pixel ---
     ficha.pixel = veredictoPixel(resultados);
+
+    // Sobre una página parqueada o vacía no se puede concluir nada del pixel
+    // de la tienda: no hay tienda.
+    if (pareceParqueado || pareceVacia) {
+      ficha.pixel.fiable = false;
+      ficha.pixel.motivo_no_fiable = ficha.salud_de_la_pagina.nota
+        + ' No se mide el pixel de esta tienda.';
+      ficha.pixel.lectura = 'Sin medición útil: la página servida no es una tienda.';
+    }
 
     // Si la portada no cargó, NO hay medición de pixel que valga. Dejar
     // `fiable: true` junto a "no se detectó ningún evento" sería una

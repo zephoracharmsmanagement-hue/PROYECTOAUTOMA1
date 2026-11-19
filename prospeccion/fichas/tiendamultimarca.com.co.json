@@ -1,7 +1,7 @@
 {
   "dominio": "tiendamultimarca.com.co",
   "estado": "ok",
-  "medido_el": "2026-11-19T18:06:06.883Z",
+  "medido_el": "2026-11-19T18:16:27.762Z",
   "entorno": {
     "dispositivo": "Pixel 7 (emulado en Chromium)",
     "locale": "es-CO",
@@ -31,45 +31,45 @@
   },
   "rendimiento": {
     "portada": {
-      "ms_dom": 1516,
-      "ms_load": 1986,
-      "ms_respuesta_servidor": 591,
-      "ms_reloj_hasta_dom": 1519,
-      "kb_transferidos": 2543,
+      "ms_dom": 1585,
+      "ms_load": 1985,
+      "ms_respuesta_servidor": 717,
+      "ms_reloj_hasta_dom": 1587,
+      "kb_transferidos": 2521.5,
       "kb_por_tipo": {
         "Document": 47.6,
-        "Script": 1104.8,
-        "Stylesheet": 75.2,
+        "Stylesheet": 75.3,
+        "Script": 1105.1,
+        "Image": 566.1,
         "Font": 40.9,
-        "Fetch": 20.5,
-        "Image": 566.2,
+        "Fetch": 16.6,
         "Preflight": 0,
         "XHR": 5.7,
         "Ping": 10.9,
-        "Other": 671.2
+        "Other": 653.4
       },
-      "peticiones": 184,
+      "peticiones": 181,
       "imagenes_en_dom": 16
     },
     "producto": {
-      "ms_dom": 748,
-      "ms_load": 1155,
-      "ms_respuesta_servidor": 218,
-      "ms_reloj_hasta_dom": 749,
-      "kb_transferidos": 16686.1,
+      "ms_dom": 894,
+      "ms_load": 1928,
+      "ms_respuesta_servidor": 442,
+      "ms_reloj_hasta_dom": 899,
+      "kb_transferidos": 16659.7,
       "kb_por_tipo": {
         "Stylesheet": 19.3,
         "Font": 45.9,
-        "Script": 34.6,
-        "Document": 53.8,
+        "Script": 34.4,
+        "Document": 53.7,
         "Image": 15792.9,
         "Fetch": 14.5,
-        "Preflight": 0,
         "Ping": 11.4,
-        "XHR": 20.3,
-        "Other": 693.4
+        "Preflight": 0,
+        "XHR": 20.2,
+        "Other": 667.3
       },
-      "peticiones": 227,
+      "peticiones": 217,
       "imagenes_en_dom": 35
     },
     "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
@@ -98,18 +98,64 @@
       ]
     }
   },
+  "salud_de_la_pagina": {
+    "titulo": "Tienda Multimarca",
+    "parece_dominio_parqueado": false,
+    "parece_pagina_vacia": false,
+    "es_tienda_analizable": true,
+    "nota": null
+  },
   "pixel": {
     "fiable": true,
     "motivo_no_fiable": null,
-    "peticiones_tr_sin_parametro_ev": 3,
+    "peticiones_tr_sin_parametro_ev": 0,
     "bloqueos_criticos_por_politica_del_sitio": [],
     "fbevents_js_cargado": true,
     "google_tag_manager_cargado": false,
-    "eventos_observados": [],
-    "tipos_de_evento": [],
-    "ids_que_dispararon": [],
+    "eventos_observados": [
+      {
+        "pagina": "portada",
+        "id": "2690299491132346",
+        "evento": "PageView",
+        "metodo": "POST",
+        "parametros_cd": [
+          "cd[content_ids]",
+          "cd[num_items]",
+          "cd[value]",
+          "cd[content_name]"
+        ]
+      },
+      {
+        "pagina": "producto",
+        "id": "2690299491132346",
+        "evento": "PageView",
+        "metodo": "POST",
+        "parametros_cd": []
+      },
+      {
+        "pagina": "producto",
+        "id": "2690299491132346",
+        "evento": "ViewContent",
+        "metodo": "POST",
+        "parametros_cd": [
+          "cd[content_ids]",
+          "cd[content_type]",
+          "cd[content_name]",
+          "cd[content_category]",
+          "cd[currency]",
+          "cd[value]"
+        ]
+      }
+    ],
+    "tipos_de_evento": [
+      "PageView",
+      "ViewContent"
+    ],
+    "ids_que_dispararon": [
+      "2690299491132346"
+    ],
     "ids_declarados_en_html": [],
-    "lectura": "No se detectó ningún evento de pixel en el navegador. Esto NO prueba que la tienda no tenga pixel: puede estar usando la API de Conversiones server-side, que es legítima y no se ve desde el navegador."
+    "lectura": "Se observaron 3 evento(s) de pixel en el navegador: PageView, ViewContent."
   },
   "whatsapp": {
     "tiene_enlace": false,
@@ -123,7 +169,7 @@
       "origen": "politica del sitio o del navegador",
       "critico_para_el_pixel": false,
       "pagina": "portada",
-      "url": "https://shop.app/pay/hop?analytics_trace_id=83ac10ba-a00a-4ad6-b2fa-fef57eaa8335&target_origin=https%3A%2F%2Fwww.tiendamultimarca.com.co&client_handle=0fbc26.myshopify.com"
+      "url": "https://shop.app/pay/hop?analytics_trace_id=fcd399ef-f118-4f01-8024-827917604b37&target_origin=https%3A%2F%2Fwww.tiendamultimarca.com.co&client_handle=0fbc26.myshopify.com"
     },
     {
       "host": "dropify.dropi.co",
