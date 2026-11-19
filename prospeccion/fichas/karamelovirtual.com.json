@@ -1,0 +1,174 @@
+{
+  "dominio": "karamelovirtual.com",
+  "estado": "ok",
+  "medido_el": "2026-11-19T18:10:43.169Z",
+  "entorno": {
+    "dispositivo": "Pixel 7 (emulado en Chromium)",
+    "locale": "es-CO",
+    "zona_horaria": "America/Bogota",
+    "reposo_tras_carga_ms": 6000,
+    "device_scale_factor_capturas": 2,
+    "nota": "Sin estrangulamiento de red ni CPU: los tiempos son de un móvil emulado sobre la red del contenedor, así que comparan bien entre tiendas pero son optimistas frente a un 4G real."
+  },
+  "anuncios_meta": {
+    "dias_del_anuncio_activo_mas_antiguo": 407,
+    "versiones_de_anuncio": 12,
+    "medido_el": "2026-11-19",
+    "advertencia": "Son días desde la publicación del anuncio activo más antiguo, NO días de campaña continua. Indica gasto sostenido, no continuidad."
+  },
+  "plataforma": {
+    "detectada": "Shopify",
+    "senales": [
+      "/cdn\\.shopify\\.com/i",
+      "/\\/cdn\\/shop\\//i",
+      "/Shopify\\.theme/i",
+      "/myshopify\\.com/i",
+      "/shopify-features/i"
+    ],
+    "otras_senales_presentes": []
+  },
+  "rendimiento": {
+    "portada": {
+      "ms_dom": 2307,
+      "ms_load": 2737,
+      "ms_respuesta_servidor": 347,
+      "ms_reloj_hasta_dom": 2310,
+      "kb_transferidos": 3068.2,
+      "kb_por_tipo": {
+        "Document": 66.5,
+        "Script": 1031.6,
+        "Stylesheet": 51.4,
+        "Image": 963.2,
+        "Font": 205.8,
+        "Other": 705,
+        "Fetch": 37.6,
+        "Preflight": 0,
+        "Ping": 7
+      },
+      "peticiones": 211,
+      "imagenes_en_dom": 24
+    },
+    "producto": {
+      "ms_dom": 689,
+      "ms_load": 798,
+      "ms_respuesta_servidor": 202,
+      "ms_reloj_hasta_dom": 691,
+      "kb_transferidos": 530.7,
+      "kb_por_tipo": {
+        "Stylesheet": 26.2,
+        "Script": 107,
+        "Document": 67.9,
+        "Image": 38.4,
+        "Font": 0,
+        "XHR": 2.9,
+        "Fetch": 52.9,
+        "Other": 228,
+        "Ping": 7.4,
+        "Preflight": 0
+      },
+      "peticiones": 280,
+      "imagenes_en_dom": 21
+    },
+    "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
+  },
+  "producto": {
+    "url": "https://karamelovirtual.com/products/molino-electrico",
+    "como_se_encontro": "enlace en la portada",
+    "es_la_misma_portada": false,
+    "titulo": "MOLINO ELECTRICO – Karamelo Tienda Virtual",
+    "nav_error": null,
+    "resenas": {
+      "visibles": false,
+      "evidencia_texto_visible": null,
+      "widgets_detectados_en_html": [
+        "Yotpo",
+        "Okendo"
+      ],
+      "nota": "Se detectó código de un widget de reseñas pero NO apareció señal de reseñas en el texto visible: puede estar instalado sin reseñas publicadas o cargando tras el reposo de 6 s."
+    },
+    "contraentrega": {
+      "mencionada": false,
+      "evidencia": null
+    },
+    "cuotas": {
+      "mencionadas": true,
+      "evidencia": "ido Pagos a Credito con ADDI Y SISTECREDITO💵 MOLINO ELECTRICO Precio de oferta $39.90",
+      "marcas": [
+        "Addi",
+        "Sistecrédito"
+      ]
+    }
+  },
+  "pixel": {
+    "fiable": true,
+    "motivo_no_fiable": null,
+    "peticiones_tr_sin_parametro_ev": 3,
+    "bloqueos_criticos_por_politica_del_sitio": [],
+    "fbevents_js_cargado": true,
+    "google_tag_manager_cargado": false,
+    "eventos_observados": [],
+    "tipos_de_evento": [],
+    "ids_que_dispararon": [],
+    "ids_declarados_en_html": [],
+    "lectura": "No se detectó ningún evento de pixel en el navegador. Esto NO prueba que la tienda no tenga pixel: puede estar usando la API de Conversiones server-side, que es legítima y no se ve desde el navegador."
+  },
+  "whatsapp": {
+    "tiene_enlace": false,
+    "enlaces": [],
+    "lectura": "No se encontró ningún enlace wa.me, wa.link, api.whatsapp.com ni whatsapp.com/send en el HTML de la portada ni de la ficha de producto."
+  },
+  "bloqueados": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "origen": "politica del sitio o del navegador",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://shop.app/pay/hop?analytics_trace_id=75a0f56c-9586-4aa6-bc4a-c62a91052cda&target_origin=https%3A%2F%2Fkaramelovirtual.com&client_handle=karamelo-tienda-virtual-store.myshopify.com"
+    }
+  ],
+  "red_limpia_para_el_pixel": true,
+  "banner_cookies": {
+    "portada": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    },
+    "producto": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    }
+  },
+  "capturas": {
+    "portada": {
+      "archivo": "capturas/karamelovirtual.com-portada.png",
+      "truncada": false,
+      "alto_css": 2809,
+      "error": null
+    },
+    "producto": {
+      "archivo": "capturas/karamelovirtual.com-producto.png",
+      "truncada": true,
+      "alto_css": 3344,
+      "error": null
+    },
+    "nota": "Capturas a deviceScaleFactor 2 (824 px de ancho). Las páginas de más de 3000 px CSS de alto se recortan a esa altura; el campo truncada lo indica."
+  },
+  "hosts_de_terceros": [
+    "analytics-ipv6.tiktokw.us",
+    "analytics.tiktok.com",
+    "cdn.shopify.com",
+    "connect.facebook.net",
+    "d13jtzxyphp9rk.cloudfront.net",
+    "e1-0850197d5e074be58352ddc860645af6.ecs.us-east-1.on.aws",
+    "error-analytics-sessions-production.shopifysvc.com",
+    "monorail-edge.shopifysvc.com",
+    "otlp-http-production.shopifysvc.com",
+    "releasit-coverages.s3.eu-west-3.amazonaws.com",
+    "shop.app",
+    "static-tracking.klaviyo.com",
+    "static.klaviyo.com",
+    "www.facebook.com"
+  ]
+}

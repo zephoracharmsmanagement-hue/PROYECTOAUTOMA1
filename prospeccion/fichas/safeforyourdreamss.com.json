@@ -1,0 +1,178 @@
+{
+  "dominio": "safeforyourdreamss.com",
+  "estado": "ok",
+  "medido_el": "2026-11-19T18:09:25.608Z",
+  "entorno": {
+    "dispositivo": "Pixel 7 (emulado en Chromium)",
+    "locale": "es-CO",
+    "zona_horaria": "America/Bogota",
+    "reposo_tras_carga_ms": 6000,
+    "device_scale_factor_capturas": 2,
+    "nota": "Sin estrangulamiento de red ni CPU: los tiempos son de un móvil emulado sobre la red del contenedor, así que comparan bien entre tiendas pero son optimistas frente a un 4G real."
+  },
+  "anuncios_meta": {
+    "dias_del_anuncio_activo_mas_antiguo": 498,
+    "versiones_de_anuncio": 13,
+    "medido_el": "2026-11-19",
+    "advertencia": "Son días desde la publicación del anuncio activo más antiguo, NO días de campaña continua. Indica gasto sostenido, no continuidad."
+  },
+  "plataforma": {
+    "detectada": "Shopify",
+    "senales": [
+      "/cdn\\.shopify\\.com/i",
+      "/\\/cdn\\/shop\\//i",
+      "/Shopify\\.theme/i",
+      "/myshopify\\.com/i",
+      "/shopify-features/i"
+    ],
+    "otras_senales_presentes": []
+  },
+  "rendimiento": {
+    "portada": {
+      "ms_dom": 1418,
+      "ms_load": 2911,
+      "ms_respuesta_servidor": 407,
+      "ms_reloj_hasta_dom": 1420,
+      "kb_transferidos": 3617,
+      "kb_por_tipo": {
+        "Document": 49,
+        "Script": 548.8,
+        "Font": 45.7,
+        "Stylesheet": 68.1,
+        "Image": 2272.7,
+        "Preflight": 0,
+        "Fetch": 17.8,
+        "Ping": 5.8,
+        "Other": 609.3
+      },
+      "peticiones": 191,
+      "imagenes_en_dom": 60
+    },
+    "producto": {
+      "ms_dom": 914,
+      "ms_load": 928,
+      "ms_respuesta_servidor": 233,
+      "ms_reloj_hasta_dom": 916,
+      "kb_transferidos": 1135,
+      "kb_por_tipo": {
+        "Stylesheet": 19.7,
+        "Font": 0,
+        "Script": 105.5,
+        "Document": 46,
+        "Image": 253.4,
+        "Ping": 7.4,
+        "Fetch": 22.6,
+        "Other": 680.5,
+        "Preflight": 0
+      },
+      "peticiones": 206,
+      "imagenes_en_dom": 12
+    },
+    "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
+  },
+  "producto": {
+    "url": "https://safeforyourdreamss.com/products/mafalda-charol",
+    "como_se_encontro": "enlace en la portada",
+    "es_la_misma_portada": false,
+    "titulo": "MAFALDA | NEGRO CHAROL – SAFE FOR YOUR DREAMS",
+    "nav_error": null,
+    "resenas": {
+      "visibles": true,
+      "evidencia_texto_visible": "rito Comprar ahora ⭐⭐⭐⭐⭐ 4.9/5 |MAS DE 12.000 CLIENTES FELICES|🚚ENVIOS A TODO COLOMBIA|🔄",
+      "widgets_detectados_en_html": [],
+      "nota": "Hay señal de reseñas en el texto visible de la ficha."
+    },
+    "contraentrega": {
+      "mencionada": true,
+      "evidencia": "P PARA AGENDAR TU 🚚PAGO CONTRAENTREGA - EN TODO COLOMBIA💗🫰🏻 Ir directamente a la infor"
+    },
+    "cuotas": {
+      "mencionadas": false,
+      "evidencia": null,
+      "marcas": [
+        "Addi"
+      ]
+    }
+  },
+  "pixel": {
+    "fiable": true,
+    "motivo_no_fiable": null,
+    "peticiones_tr_sin_parametro_ev": 3,
+    "bloqueos_criticos_por_politica_del_sitio": [],
+    "fbevents_js_cargado": true,
+    "google_tag_manager_cargado": false,
+    "eventos_observados": [],
+    "tipos_de_evento": [],
+    "ids_que_dispararon": [],
+    "ids_declarados_en_html": [],
+    "lectura": "No se detectó ningún evento de pixel en el navegador. Esto NO prueba que la tienda no tenga pixel: puede estar usando la API de Conversiones server-side, que es legítima y no se ve desde el navegador."
+  },
+  "whatsapp": {
+    "tiene_enlace": true,
+    "enlaces": [
+      "https://wa.link/k8v3r2",
+      "https://api.whatsapp.com/send?phone=3150690629&amp;text=¡MOOORRR!💗",
+      "https://api.whatsapp.com/send?phone=3150690629&text=%C2%A1MOOORRR!%F0%9F%92%97%20Llegaste%20a%20la%20mejor%20tienda%20de%20botas%20de%20Colombia%20%E2%9C%A8%20%20%20%C2%BFEn%20que%20estilo%20estas%20i"
+    ],
+    "lectura": "Hay al menos un enlace de WhatsApp en el HTML de las páginas medidas."
+  },
+  "bloqueados": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "origen": "politica del sitio o del navegador",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://shop.app/pay/hop?analytics_trace_id=8815b6c1-f203-4030-889b-a18decbd93de&target_origin=https%3A%2F%2Fsafeforyourdreamss.com&client_handle=01rgmc-vw.myshopify.com"
+    },
+    {
+      "host": "cdn.shopify.com",
+      "motivo": "net::ERR_ABORTED",
+      "origen": "navegacion abortada (no concluyente)",
+      "critico_para_el_pixel": false,
+      "pagina": "producto",
+      "url": "https://cdn.shopify.com/videos/c/o/v/329817eecf454827b366cb8429a4ccac.mp4"
+    }
+  ],
+  "red_limpia_para_el_pixel": true,
+  "banner_cookies": {
+    "portada": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    },
+    "producto": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    }
+  },
+  "capturas": {
+    "portada": {
+      "archivo": "capturas/safeforyourdreamss.com-portada.png",
+      "truncada": true,
+      "alto_css": 5719,
+      "error": null
+    },
+    "producto": {
+      "archivo": "capturas/safeforyourdreamss.com-producto.png",
+      "truncada": false,
+      "alto_css": 2318,
+      "error": null
+    },
+    "nota": "Capturas a deviceScaleFactor 2 (824 px de ancho). Las páginas de más de 3000 px CSS de alto se recortan a esa altura; el campo truncada lo indica."
+  },
+  "hosts_de_terceros": [
+    "analytics-ipv6.tiktokw.us",
+    "analytics.tiktok.com",
+    "cdn.shopify.com",
+    "connect.facebook.net",
+    "error-analytics-sessions-production.shopifysvc.com",
+    "monorail-edge.shopifysvc.com",
+    "mpc2-prod-26-is5qnl632q-uc.a.run.app",
+    "otlp-http-production.shopifysvc.com",
+    "shop.app",
+    "statics.addi.com",
+    "www.facebook.com"
+  ]
+}
