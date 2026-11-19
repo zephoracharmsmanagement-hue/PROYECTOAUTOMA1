@@ -91,7 +91,7 @@ La versión 1 se apoyaba en grabar la espera real de carga. **Eso se acabó**: l
 debajo de 2,2 s y los tiempos no son dato de campo. Las dos anclas que sí funcionan:
 
 **El botón que no está.** Recorres su portada de arriba abajo, despacio, buscando el botón verde de
-WhatsApp. No aparece. Se demuestra solo, no hace falta ningún número, y **lo tienen 12 de las 16
+WhatsApp. No aparece. Se demuestra solo, no hace falta ningún número, y **lo tienen 14 de las 19
 tiendas auditables**. Es el hallazgo más repetido del lote y justo lo que vendes.
 
 **El archivo que se señala.** Para el peso no narres megas en abstracto: **enséñale la cosa
@@ -146,19 +146,29 @@ con la API de Conversiones, «no tienes pixel» es falso y te lo pueden refutar 
 
 ---
 
-## 3. Los cinco primeros, en orden
+## 3. Los primeros, en orden
 
 Ordenados por fuerza del hallazgo, no por tamaño del anunciante.
 
 | # | tienda | el hallazgo que vende | señal de gasto |
 |---|---|---|---|
 | 1 | **tiendamultimarca.com.co** | 3 GIFs de Giphy: 7,3 + 5,8 + 2,0 MB en una ficha de 16,7 MB | 872 d · 18 v |
-| 2 | **sowicolombia.myshopify.com** | un solo GIF de 11,4 MB; y el pixel nunca manda `ViewContent` | 285 d · 30 v |
+| 2 | **sowicolombia.myshopify.com** + **c6ac4e.myshopify.com** | **son el mismo dueño.** Un GIF de 11,4 MB; y los pixeles de las dos tiendas miden mal al revés: uno nunca manda `ViewContent`, el otro lo manda doble | 285 d · 30 v · · 562 d · 12 v |
 | 3 | **sacriusshop.store** | dos pixeles arrancados, cero eventos — ni `PageView` | 365 d · **90 v** |
 | 4 | **karamelovirtual.com** | paga Yotpo **y** Okendo y no muestra ni una reseña | 407 d · 12 v |
-| 5 | **c6ac4e.myshopify.com** | un pixel cuenta `ViewContent` dos veces: campañas infladas | 562 d · 12 v |
 
-**Por qué estos cinco:** cada uno tiene un hallazgo que se señala en pantalla o se prueba con un ID,
+> **Por qué son cuatro y no cinco.** `sowicolombia.myshopify.com` y `c6ac4e.myshopify.com` son
+> **del mismo dueño**: comparten el WhatsApp `573001396755` y las dos fichas de producto llevan
+> la marca «SOWI». Mandarle dos videos distintos, cada uno diciendo «entré a tu tienda», lo
+> destruiría todo. Van en **un solo video**, el guion 2, y eso lo deja más fuerte, no más débil:
+> haber visto las dos tiendas es la prueba de que lo miró una persona.
+>
+> **Candidato al quinto puesto: `fantasiasnewyork.com`** — 201 días de anuncio activo y **45
+> versiones** (la segunda cifra más alta del lote: alguien está iterando y gastando). Su pixel
+> `839855401097678` dispara `PageView` y **nunca `ViewContent`**, y no tiene botón de WhatsApp.
+> Dos hallazgos limpios, con la misma forma que el guion 3. Guion sin escribir.
+
+**Por qué estos:** cada uno tiene un hallazgo que se señala en pantalla o se prueba con un ID,
 que cuesta plata de forma evidente, y que ustedes arreglan. Los tres primeros además tienen un
 archivo o un número tan desproporcionado que el dueño no puede no reaccionar.
 
@@ -171,7 +181,7 @@ con menos fuerza.
 
 ---
 
-## 4. Los cinco guiones
+## 4. Los guiones
 
 Léelos tuteando, con calma. Donde dice `[CORTE]` cambia lo que se ve.
 
@@ -215,44 +225,48 @@ Léelos tuteando, con calma. Donde dice `[CORTE]` cambia lo que se ve.
 
 ---
 
-### Guion 2 · sowicolombia.myshopify.com
+### Guion 2 · sowicolombia.myshopify.com + c6ac4e.myshopify.com · **un solo video**
 
-*Hallazgos: el GIF de 11,4 MB (visual y caro), el pixel sin `ViewContent` (caro), el dominio
-(visual, de refuerzo).*
+*Son el mismo dueño: mismo WhatsApp `573001396755`, las dos fichas marcadas «SOWI». Hallazgos: el
+GIF de 11,4 MB (visual y caro), y la contradicción de los dos pixeles (caro, y nadie más se lo
+puede decir). El dominio por defecto, de refuerzo, sirve para las dos.*
 
 > `[PANTALLA: la ficha de producto de sowicolombia, en celular]`
 >
-> Entré a Sowi desde el celular y encontré tres cosas. Van en noventa segundos.
+> Entré a tus dos tiendas desde el celular. A Sowi Colombia y a la otra, la que empieza en ce seis
+> a ce cuatro e. Las dos son tuyas: el WhatsApp es el mismo. Tres cosas.
 >
 > `[CORTE: bajas hasta el GIF grande. Que se vea moviéndose.]`
 >
-> Esta sola animación pesa **once megas y medio**. Para que te hagas una idea: es seis veces más
-> que todo el resto de la página junta. Un solo archivo.
+> Esta sola animación pesa **once megas y medio**: seis veces más que todo el resto de la página
+> junta. Tu cliente se la descarga con sus datos antes de decidir si compra.
 >
-> La ficha entera son dieciséis megas, y once son esto.
+> `[CORTE: te quedas quieto sobre el GIF]`
 >
-> `[CORTE: te quedas quieto]`
+> Comprimido se ve igual. No hay que quitarlo.
 >
-> Comprimido se ve igual y pesa una fracción. No hay que quitarlo.
+> `[CORTE: la ficha de sowicolombia, quieta]`
 >
-> `[CORTE: la ficha, quieto]`
+> La segunda no se ve y es la más caro: tus dos pixeles de navegador miden mal, y al revés. El de
+> Sowi Colombia, que termina en **cuatro siete siete nueve**, avisa que alguien entró pero **nunca
+> cuál producto miró**.
 >
-> La segunda no se ve, y es la que más caro te sale: tu pixel de navegador, el que termina en
-> **cuatro siete siete nueve**, manda el aviso de que alguien entró, pero **nunca manda cuál
-> producto miró ni cuánto vale**.
+> `[CORTE: la ficha de c6ac4e]`
 >
-> Eso significa que Meta sabe que entró gente, pero no sabe qué les interesó. Y sin eso no te puede
-> buscar compradores parecidos. Está adivinando con tu plata.
+> El de la otra tienda, que termina en **nueve nueve uno cuatro**, avisa el mismo producto **dos
+> veces en una sola visita**.
+>
+> En una Meta no sabe qué les interesó; en la otra le cuentas el doble.
 >
 > `[CORTE: señalas la barra de direcciones]`
 >
-> Y la tercera, más chica: tu tienda sigue en la dirección que te da Shopify por defecto, punto
-> myshopify punto com. El que viene de un anuncio lee esa dirección antes de ver tu producto.
+> Y la tercera: las dos siguen en la dirección que te da Shopify por defecto. El que llega de un
+> anuncio lee eso antes de ver tu producto.
 >
 > `[CORTE: tu cara o tarjeta]`
 >
-> Soy Martín. Las tres se arreglan, y las dos primeras en días. Si quieres, te mando el detalle sin
-> costo y sin compromiso. Me respondes por aquí.
+> Soy Martín. Las tres se arreglan, y las de los pixeles en minutos. Si quieres te mando el
+> detalle, sin compromiso. Me respondes por aquí.
 
 ---
 
@@ -334,39 +348,6 @@ Léelos tuteando, con calma. Donde dice `[CORTE]` cambia lo que se ve.
 
 ---
 
-### Guion 5 · c6ac4e.myshopify.com
-
-*Hallazgos: el pixel que cuenta doble (caro), el peso de la ficha, el dominio (visual).*
-
-> `[PANTALLA: señalas la barra de direcciones, con c6ac4e.myshopify.com bien visible]`
->
-> Entré a tu tienda desde el celular y lo primero que vi fue esto. `[señalas la barra]`
->
-> Tu dirección es ce seis a ce cuatro e, punto myshopify punto com. Ni siquiera lleva el nombre de
-> tu marca. Es lo primero que lee alguien que llega de tu anuncio y no te conoce.
->
-> `[CORTE: te quedas quieto en la ficha de producto]`
->
-> La segunda no se ve y es la importante. Tienes **tres pixeles de Meta** corriendo a la vez. Eso
-> por sí solo no está mal.
->
-> Lo que sí medí es esto: en **una sola visita** a esta ficha, el pixel que termina en **nueve nueve uno cuatro** mandó el aviso de «miró este producto» **dos veces**. Los otros dos lo mandaron una.
->
-> Ese pixel está contando de más. Los números de tus campañas están inflados, y las decisiones que
-> tomas mirándolos están basadas en datos que no son.
->
-> `[CORTE: bajas por la ficha de producto]`
->
-> Y la tercera: esta ficha pesa casi **catorce megas**. Eso se lo descarga tu cliente con sus datos
-> antes de decidir.
->
-> `[CORTE: tu cara o tarjeta]`
->
-> Soy Martín. Lo del pixel doble se arregla en minutos, y mientras tanto estás midiendo mal. Si
-> quieres te mando el detalle, sin costo y sin compromiso. Me respondes por aquí.
-
----
-
 ## 5. Qué NO decir
 
 Estas frases suenan mejor y por eso son peligrosas.
@@ -425,7 +406,7 @@ más trabajo ahorra.
 
 **El audio** se normaliza a −14 LUFS con pico −1,5 dB. `video_pauta.py` ya lo hace al armar.
 
-**Flujo para hoy:** grabas la pantalla de las cinco tiendas siguiendo cada guion → grabas las voces
+**Flujo para hoy:** grabas la pantalla de las cuatro tiendas siguiendo cada guion (el guion 2 cubre dos tiendas del mismo dueño, así que son cinco tiendas en cuatro videos) → grabas las voces
 → montas → revisas el borrador → mandas.
 
 ---
@@ -433,6 +414,12 @@ más trabajo ahorra.
 ## 8. Antes de mandar cada video, comprueba
 
 - [ ] Cada número que dije está en `prospeccion/fichas/<dominio>.json`, tal cual.
+- [ ] **Los pesos por archivo los volví a medir yo.** Los JSON solo traen agregados; las cifras
+      por archivo de `RESUMEN.md` no están respaldadas por evidencia legible por máquina.
+- [ ] **Este prospecto no comparte WhatsApp, pixel ni marca con otro al que ya le mandé.**
+      Cruzar esto antes de grabar: `sowicolombia` y `c6ac4e` son el mismo dueño y casi se van
+      dos videos al mismo número.
+- [ ] Los IDs los leo **dígito por dígito**, no como número.
 - [ ] **No digo ningún tiempo de carga.** Ninguno es dato de campo.
 - [ ] Donde hablo del pixel digo **«tu pixel de navegador»**, no «tu pixel».
 - [ ] No afirmo nada sobre a dónde llevan sus anuncios.
