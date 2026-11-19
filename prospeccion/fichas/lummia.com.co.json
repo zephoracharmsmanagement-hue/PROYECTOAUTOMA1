@@ -4,19 +4,35 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "180486080737869"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "peticiones_tr": 3,
+    "eventos_sin_nombre": 3,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
     "gtm": true,
-    "avisos_consola": [],
+    "avisos_consola": [
+      "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
+    ],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
-  "errores_js": [],
+  "errores_js": [
+    "[home] Failed to execute 'importScripts' on 'WorkerGlobalScope': The script at 'https://www.lummia.com.co/web-pixels/strict/app/web-pixel-1217659095@a9a83cf44fb282052ff936f7ab101058.js' f"
+  ],
   "bloqueados": [
     "register.boostymark.com",
     "a.klaviyo.com"
@@ -25,6 +41,11 @@
     "shop.app"
   ],
   "fallos_red": [
+    {
+      "host": "register.boostymark.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    },
     {
       "host": "shop.app",
       "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
@@ -39,19 +60,16 @@
       "host": "a.klaviyo.com",
       "motivo": "net::ERR_FAILED",
       "clase": "transporte"
-    },
-    {
-      "host": "register.boostymark.com",
-      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
-      "clase": "transporte"
     }
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 2544,
+    "ttdom_ms": 1948,
     "estado": 200,
     "url_final": "https://www.lummia.com.co/",
     "titulo": "Lummia Colombia",
+    "texto_inicio": "Saltar el contenido ENVÍO GRATIS A TODO COLOMBIA HASTA 40% OFF +5% 03 : 11 : 06 : 06 Regístrate Lummia Colombia Carrito 0 productos Early Access Regístrate y compra antes que todos 40 % OFF Hasta +5% adicional en toda la tienda El registro cierra en 03 días : 11 horas : 06 min : 06 seg Quiero mi acc",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": true,
       "enlaces": [
@@ -62,23 +80,31 @@
       "con_mensaje": true
     },
     "imagenes": 107,
-    "kb": 2448,
-    "peticiones": 332,
-    "dcl_navegador_ms": 2542
+    "kb": 3024,
+    "peticiones": 521,
+    "dcl_navegador_ms": 1945
   },
   "producto": {
-    "ttdom_ms": 1573,
+    "ttdom_ms": 2002,
     "estado": 200,
     "url": "https://www.lummia.com.co/products/lummiskin-pro?variant=49453102432471",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"969 reseñas\"",
+      "widget de reseñas: Yotpo"
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": true,
+    "contraentrega_evidencia": "contra entrega",
     "cuotas": true,
+    "cuotas_evidencia": "6 cuotas",
     "envio_gratis": true,
-    "kb": 926,
-    "peticiones": 371,
-    "dcl_navegador_ms": 1567,
-    "imagenes": 211,
+    "muro_de_registro": false,
+    "kb": 1818,
+    "peticiones": 533,
+    "dcl_navegador_ms": 1993,
+    "imagenes": 213,
     "whatsapp": true
   },
   "capturas": {
@@ -86,5 +112,6 @@
     "producto": "lummia.com.co-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 23
+  "url_medida": "https://lummia.com.co",
+  "duracion_auditoria_s": 70
 }

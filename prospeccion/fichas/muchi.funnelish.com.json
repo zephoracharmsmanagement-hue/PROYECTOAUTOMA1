@@ -8,6 +8,8 @@
     "eventos": [],
     "eventos_home": [],
     "eventos_producto": [],
+    "peticiones_tr": 0,
+    "eventos_sin_nombre": 0,
     "fbq_en_window": false,
     "ids_en_html": [],
     "cookie_fbp": false,
@@ -41,10 +43,12 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 577,
+    "ttdom_ms": 598,
     "estado": 404,
     "url_final": "https://muchi.funnelish.com/",
     "titulo": "Parked Domain",
+    "texto_inicio": "This page is not available It might be waiting to be connected to Funnelish right now. Check the page URL or start selling yourself in minutes! Start selling for free Log into account Discover how Funnelish helps you build and sell online From high-converting funnels to stores, analytics, and automa",
+    "pagina_de_error": true,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
@@ -53,14 +57,26 @@
     "imagenes": 5,
     "kb": 256,
     "peticiones": 12,
-    "dcl_navegador_ms": 575
+    "dcl_navegador_ms": 597
   },
-  "producto": {},
+  "producto": {
+    "resenas": false,
+    "resenas_evidencia": [],
+    "estrellas_decorativas": false,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": false,
+    "muro_de_registro": false,
+    "sin_ficha": true
+  },
   "capturas": {
-    "portada": "muchi.funnelish.com-portada.png"
+    "portada": "muchi.funnelish.com-portada.png",
+    "sin_ficha_de_producto": "muchi.funnelish.com-sin-ficha-de-producto.png"
   },
   "notas": [
-    "no se encontró enlace a una ficha de producto desde la portada"
+    "ATENCIÓN: lo que responde este dominio parece una página de error, no una tienda (estado HTTP 404)",
+    "no se encontró ninguna ficha de producto navegable desde la portada ni desde el catálogo"
   ],
-  "duracion_auditoria_s": 10
+  "url_medida": "https://muchi.funnelish.com",
+  "duracion_auditoria_s": 36
 }

@@ -4,10 +4,22 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "2690299491132346"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "peticiones_tr": 3,
+    "eventos_sin_nombre": 3,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
@@ -16,7 +28,7 @@
       "[Meta Pixel] - Duplicate Pixel ID: 2690299491132346."
     ],
     "fiable": true,
-    "nota": "el script del pixel carga pero no envía ningún evento, y la propia librería de Meta explica por qué en la consola: \"[Meta Pixel] - Duplicate Pixel ID: 2690299491132346.\""
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [
     "[home] SearchForm is not defined",
@@ -47,32 +59,39 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 2077,
+    "ttdom_ms": 1671,
     "estado": 200,
     "url_final": "https://www.tiendamultimarca.com.co/",
     "titulo": "Tienda Multimarca",
+    "texto_inicio": "Ir directamente al contenido ENVÍO GRATIS - PAGA EN CASA Tienda Multimarca ¡Bienvenido a Tienda Multimarca! Somos tu destino en línea para encontrar productos de alta calidad y satisfacer tus necesidades desde la comodidad de tu hogar. Nuestra tienda en línea ofrece una amplia gama de productos, des",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
     "imagenes": 16,
-    "kb": 1934,
-    "peticiones": 166,
-    "dcl_navegador_ms": 2073
+    "kb": 2218,
+    "peticiones": 302,
+    "dcl_navegador_ms": 1668
   },
   "producto": {
-    "ttdom_ms": 762,
+    "ttdom_ms": 893,
     "estado": 200,
     "url": "https://www.tiendamultimarca.com.co/products/bombillo-parlante-control",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"15 Reseñas\""
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": false,
     "cuotas": false,
     "envio_gratis": true,
-    "kb": 923,
-    "peticiones": 266,
-    "dcl_navegador_ms": 759,
+    "muro_de_registro": false,
+    "kb": 810,
+    "peticiones": 336,
+    "dcl_navegador_ms": 891,
     "imagenes": 35,
     "whatsapp": false
   },
@@ -81,5 +100,6 @@
     "producto": "tiendamultimarca.com.co-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 22
+  "url_medida": "https://tiendamultimarca.com.co",
+  "duracion_auditoria_s": 68
 }

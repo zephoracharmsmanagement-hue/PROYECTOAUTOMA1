@@ -8,13 +8,15 @@
     "eventos": [],
     "eventos_home": [],
     "eventos_producto": [],
+    "peticiones_tr": 0,
+    "eventos_sin_nombre": 0,
     "fbq_en_window": false,
     "ids_en_html": [],
     "cookie_fbp": null,
     "gtm": false,
     "avisos_consola": [],
-    "fiable": null,
-    "nota": null
+    "fiable": false,
+    "nota": "NO FIABLE: la página no cargó, no se midió nada del pixel."
   },
   "errores_js": [],
   "bloqueados": [
@@ -26,11 +28,6 @@
       "host": "tienda-del-valle.com",
       "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
       "clase": "transporte"
-    },
-    {
-      "host": "tienda-del-valle.com",
-      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
-      "clase": "transporte"
     }
   ],
   "banner_cookies": null,
@@ -38,8 +35,19 @@
   "producto": {},
   "capturas": {},
   "notas": [
-    "primer intento de carga falló: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tienda-del-valle.com/"
+    "no cargó https://tienda-del-valle.com: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tienda-del-valle.com/",
+    "comprobación DNS independiente de tienda-del-valle.com: NXDOMAIN: el dominio no existe en el DNS (respuesta autoritativa del TLD). Quien haga clic en un anuncio que apunte aquí no llega a ninguna página."
   ],
-  "error": "page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tienda-del-valle.com/",
-  "duracion_auditoria_s": 0
+  "dns": {
+    "resuelve": false,
+    "veredicto": "NXDOMAIN: el dominio no existe en el DNS (respuesta autoritativa del TLD). Quien haga clic en un anuncio que apunte aquí no llega a ninguna página.",
+    "ips": []
+  },
+  "dns_www": {
+    "resuelve": false,
+    "veredicto": "NXDOMAIN: el dominio no existe en el DNS (respuesta autoritativa del TLD). Quien haga clic en un anuncio que apunte aquí no llega a ninguna página.",
+    "ips": []
+  },
+  "error": "la portada no cargó en ninguna de las direcciones probadas: https://tienda-del-valle.com",
+  "duracion_auditoria_s": 1
 }

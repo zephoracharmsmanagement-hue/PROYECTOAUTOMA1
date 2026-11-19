@@ -4,17 +4,25 @@
   "plataforma": "WordPress",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
+    "ids": [
+      "839855401097678"
+    ],
+    "eventos": [
+      "PageView"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
     "eventos_producto": [],
+    "peticiones_tr": 2,
+    "eventos_sin_nombre": 2,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
     "gtm": true,
     "avisos_consola": [],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [],
   "bloqueados": [],
@@ -22,10 +30,12 @@
   "fallos_red": [],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 2283,
+    "ttdom_ms": 2374,
     "estado": 200,
     "url_final": "https://fantasiasnewyork.com/",
     "titulo": "Fantasías New York",
+    "texto_inicio": "Lo que quieras esta aquí ¡Servicio calidad y precio! ¡Pago contra entrega! Fantasías New York TODAS LAS CATEGORÍAS Iniciar sesión Registrarse Cédula También puedes ingresar el correo electrónico Contraseña ¿Olvidaste tu contraseña? Iniciar sesión PRODUCTOS NUEVOS PROMOCIONES Off PAPELERIA HOGAR JUGU",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
@@ -33,15 +43,27 @@
     },
     "imagenes": 54,
     "kb": 1640,
-    "peticiones": 96,
-    "dcl_navegador_ms": 2279
+    "peticiones": 97,
+    "dcl_navegador_ms": 2371
   },
-  "producto": {},
+  "producto": {
+    "resenas": false,
+    "resenas_evidencia": [],
+    "estrellas_decorativas": false,
+    "contraentrega": true,
+    "contraentrega_evidencia": "contra entrega",
+    "cuotas": false,
+    "envio_gratis": false,
+    "muro_de_registro": true,
+    "sin_ficha": true
+  },
   "capturas": {
-    "portada": "fantasiasnewyork.com-portada.png"
+    "portada": "fantasiasnewyork.com-portada.png",
+    "sin_ficha_de_producto": "fantasiasnewyork.com-sin-ficha-de-producto.png"
   },
   "notas": [
-    "no se encontró enlace a una ficha de producto desde la portada"
+    "no se encontró ninguna ficha de producto navegable desde la portada ni desde el catálogo"
   ],
-  "duracion_auditoria_s": 12
+  "url_medida": "https://fantasiasnewyork.com",
+  "duracion_auditoria_s": 43
 }

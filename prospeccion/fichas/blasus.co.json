@@ -9,14 +9,18 @@
       "866524520811638"
     ],
     "eventos": [
-      "PageView"
+      "PageView",
+      "ViewContent"
     ],
     "eventos_home": [
       "PageView"
     ],
     "eventos_producto": [
-      "PageView"
+      "PageView",
+      "ViewContent"
     ],
+    "peticiones_tr": 4,
+    "eventos_sin_nombre": 2,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
@@ -34,8 +38,8 @@
   "rechazados_por_la_tienda": [
     "shop.app",
     "static.cloudflareinsights.com",
-    "script.hotjar.com",
     "trc.taboola.com",
+    "script.hotjar.com",
     "trc-events.taboola.com"
   ],
   "fallos_red": [
@@ -50,12 +54,37 @@
       "clase": "tienda"
     },
     {
+      "host": "trc.taboola.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
       "host": "script.hotjar.com",
       "motivo": "csp",
       "clase": "tienda"
     },
     {
-      "host": "trc.taboola.com",
+      "host": "brunhild.challenges.cloudflare.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "trc-events.taboola.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "trc-events.taboola.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "brunhild.challenges.cloudflare.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "trc-events.taboola.com",
       "motivo": "csp",
       "clase": "tienda"
     },
@@ -72,10 +101,12 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 1364,
+    "ttdom_ms": 1184,
     "estado": 200,
     "url_final": "https://blasus.co/",
     "titulo": "Blasus - Productos diseñados para hogar. – Blasus Colombia",
+    "texto_inicio": "ENVÍOS GRATIS POR COMPRAS SUPERIORES A $149.000 0 Buscar nuestro sitio Blasus Colombia Quiero comprar por mayor Haz click aquí Lo nuevo en Blasus Casita Galleta de Jengibre $35.000 3x2 Sprays Navideños $124.000 $79.900 35% off Kit Navidad en Ruta $39.000 Kit Carrusel Encantado $39.000 Ver todo Líder",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": true,
       "enlaces": [
@@ -86,22 +117,25 @@
       "con_mensaje": false
     },
     "imagenes": 45,
-    "kb": 3709,
-    "peticiones": 185,
-    "dcl_navegador_ms": 1360
+    "kb": 4121,
+    "peticiones": 338,
+    "dcl_navegador_ms": 1181
   },
   "producto": {
-    "ttdom_ms": 883,
+    "ttdom_ms": 985,
     "estado": 200,
     "url": "https://blasus.co/products/kit-navidad-en-ruta",
+    "via": "enlace directo desde la portada",
     "resenas": false,
-    "resenas_pista_textual": false,
+    "resenas_evidencia": [],
+    "estrellas_decorativas": false,
     "contraentrega": false,
     "cuotas": false,
     "envio_gratis": true,
-    "kb": 1289,
-    "peticiones": 243,
-    "dcl_navegador_ms": 879,
+    "muro_de_registro": false,
+    "kb": 1232,
+    "peticiones": 330,
+    "dcl_navegador_ms": 981,
     "imagenes": 25,
     "whatsapp": true
   },
@@ -110,5 +144,6 @@
     "producto": "blasus.co-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 21
+  "url_medida": "https://blasus.co",
+  "duracion_auditoria_s": 68
 }

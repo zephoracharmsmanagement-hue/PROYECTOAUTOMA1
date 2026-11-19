@@ -4,10 +4,20 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "1148743066661797"
+    ],
+    "eventos": [
+      "PageView"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView"
+    ],
+    "peticiones_tr": 2,
+    "eventos_sin_nombre": 2,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
@@ -16,7 +26,7 @@
       "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
     ],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [],
   "bloqueados": [],
@@ -32,26 +42,45 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 2072,
+    "ttdom_ms": 1832,
     "estado": 200,
     "url_final": "https://nesimu.com/",
     "titulo": "Nesimú Shop – Colombia #1",
+    "texto_inicio": "Ir directamente al contenido ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATIS PAGA EN CASA ENVÍO GRATI",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
     "imagenes": 2,
-    "kb": 1478,
-    "peticiones": 170,
-    "dcl_navegador_ms": 2069
+    "kb": 1911,
+    "peticiones": 314,
+    "dcl_navegador_ms": 1827
   },
-  "producto": {},
+  "producto": {
+    "ttdom_ms": 819,
+    "estado": 200,
+    "url": "https://nesimu.com/products/tablas-en-acero-inoxidable",
+    "via": "catálogo público /products.json (la portada no enlaza ningún producto)",
+    "resenas": false,
+    "resenas_evidencia": [],
+    "estrellas_decorativas": false,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": true,
+    "muro_de_registro": false,
+    "kb": 119,
+    "peticiones": 327,
+    "dcl_navegador_ms": 815,
+    "imagenes": 3,
+    "whatsapp": false
+  },
   "capturas": {
-    "portada": "nesimu.com-portada.png"
+    "portada": "nesimu.com-portada.png",
+    "producto": "nesimu.com-producto.png"
   },
-  "notas": [
-    "no se encontró enlace a una ficha de producto desde la portada"
-  ],
-  "duracion_auditoria_s": 12
+  "notas": [],
+  "url_medida": "https://nesimu.com",
+  "duracion_auditoria_s": 70
 }

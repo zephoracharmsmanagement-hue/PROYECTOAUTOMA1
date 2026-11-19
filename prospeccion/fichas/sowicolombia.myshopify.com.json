@@ -4,10 +4,20 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "1444759909824779"
+    ],
+    "eventos": [
+      "PageView"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView"
+    ],
+    "peticiones_tr": 2,
+    "eventos_sin_nombre": 1,
     "fbq_en_window": true,
     "ids_en_html": [
       "1444759909824779"
@@ -16,7 +26,7 @@
     "gtm": false,
     "avisos_consola": [],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [],
   "bloqueados": [],
@@ -32,10 +42,12 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 1375,
+    "ttdom_ms": 1348,
     "estado": 200,
     "url_final": "https://sowicolombia.myshopify.com/",
     "titulo": "SOWI 2,0",
+    "texto_inicio": "Ir directamente al contenido 📦 Promociones | 🚚 Envíos nacionales | 🛡️ Garantía disponible | 🎁 Paga al recibir vigentes Carrito Aprovecha nuestros increíbles descuentos del 40% en una amplia selección de productos. Comprar Productos Estrella COMBO 3 EN 1 SOFA INFLABLE PREMIUM+ SILLON INFLABLE + I",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": true,
       "enlaces": [
@@ -44,22 +56,27 @@
       "con_mensaje": true
     },
     "imagenes": 9,
-    "kb": 1976,
-    "peticiones": 165,
-    "dcl_navegador_ms": 1372
+    "kb": 2256,
+    "peticiones": 293,
+    "dcl_navegador_ms": 1346
   },
   "producto": {
-    "ttdom_ms": 931,
+    "ttdom_ms": 987,
     "estado": 200,
     "url": "https://sowicolombia.myshopify.com/products/combo-3-en-1-sofa-inflable-premium-sillon-inflable-inflador-manual",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"6 Reseñas\""
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": false,
     "cuotas": false,
     "envio_gratis": false,
-    "kb": 518,
-    "peticiones": 277,
-    "dcl_navegador_ms": 928,
+    "muro_de_registro": false,
+    "kb": 397,
+    "peticiones": 338,
+    "dcl_navegador_ms": 983,
     "imagenes": 29,
     "whatsapp": true
   },
@@ -68,5 +85,6 @@
     "producto": "sowicolombia.myshopify.com-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 21
+  "url_medida": "https://sowicolombia.myshopify.com",
+  "duracion_auditoria_s": 68
 }

@@ -1,26 +1,31 @@
 {
   "dominio": "bestcool.online",
   "fecha": "2026-11-19",
-  "plataforma": null,
+  "plataforma": "Funnelish",
   "pixel": {
     "script": false,
     "ids": [],
     "eventos": [],
     "eventos_home": [],
     "eventos_producto": [],
+    "peticiones_tr": 0,
+    "eventos_sin_nombre": 0,
     "fbq_en_window": false,
     "ids_en_html": [],
-    "cookie_fbp": null,
+    "cookie_fbp": false,
     "gtm": false,
     "avisos_consola": [],
-    "fiable": null,
-    "nota": null
+    "fiable": true,
+    "nota": "no se detectó ningún evento de pixel en el navegador; podría usar la API de Conversiones (servidor), que es legítima y no se ve desde aquí"
   },
   "errores_js": [],
   "bloqueados": [
     "bestcool.online"
   ],
-  "rechazados_por_la_tienda": [],
+  "rechazados_por_la_tienda": [
+    "www.bestcool.online",
+    "img.funnelish.com"
+  ],
   "fallos_red": [
     {
       "host": "bestcool.online",
@@ -28,18 +33,75 @@
       "clase": "transporte"
     },
     {
-      "host": "bestcool.online",
-      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
-      "clase": "transporte"
+      "host": "www.bestcool.online",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "www.bestcool.online",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "img.funnelish.com",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "clase": "tienda"
     }
   ],
   "banner_cookies": null,
-  "home": {},
-  "producto": {},
-  "capturas": {},
+  "home": {
+    "ttdom_ms": 787,
+    "estado": 404,
+    "url_final": "https://www.bestcool.online/",
+    "titulo": "Parked Domain",
+    "texto_inicio": "This page is not available It might be waiting to be connected to Funnelish right now. Check the page URL or start selling yourself in minutes! Start selling for free Log into account Discover how Funnelish helps you build and sell online From high-converting funnels to stores, analytics, and automa",
+    "pagina_de_error": true,
+    "whatsapp": {
+      "presente": false,
+      "enlaces": [],
+      "con_mensaje": false
+    },
+    "imagenes": 5,
+    "kb": 256,
+    "peticiones": 12,
+    "dcl_navegador_ms": 783
+  },
+  "producto": {
+    "resenas": false,
+    "resenas_evidencia": [],
+    "estrellas_decorativas": false,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": false,
+    "muro_de_registro": false,
+    "sin_ficha": true
+  },
+  "capturas": {
+    "portada": "bestcool.online-portada.png",
+    "sin_ficha_de_producto": "bestcool.online-sin-ficha-de-producto.png"
+  },
   "notas": [
-    "primer intento de carga falló: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://bestcool.online/"
+    "no cargó https://bestcool.online: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://bestcool.online/",
+    "comprobación DNS independiente de bestcool.online: el DNS respondió con estado 0 y sin dirección IP; no es concluyente.",
+    "www.bestcool.online sí resuelve (151.101.130.184, 151.101.2.184, 151.101.194.184, 151.101.66.184): la medición se hace ahí, no en el ápice",
+    "ATENCIÓN: lo que responde este dominio parece una página de error, no una tienda (estado HTTP 404)",
+    "no se encontró ninguna ficha de producto navegable desde la portada ni desde el catálogo"
   ],
-  "error": "page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://bestcool.online/",
-  "duracion_auditoria_s": 0
+  "dns": {
+    "resuelve": null,
+    "veredicto": "el DNS respondió con estado 0 y sin dirección IP; no es concluyente.",
+    "ips": []
+  },
+  "dns_www": {
+    "resuelve": true,
+    "veredicto": "el dominio sí resuelve (151.101.130.184, 151.101.2.184, 151.101.194.184, 151.101.66.184), así que el fallo de carga NO es del DNS: puede ser el servidor de la tienda o nuestra propia red. No se puede culpar a la tienda sin más comprobaciones.",
+    "ips": [
+      "151.101.130.184",
+      "151.101.2.184",
+      "151.101.194.184",
+      "151.101.66.184"
+    ]
+  },
+  "url_medida": "https://www.bestcool.online",
+  "duracion_auditoria_s": 37
 }

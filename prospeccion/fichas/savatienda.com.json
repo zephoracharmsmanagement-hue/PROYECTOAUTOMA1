@@ -4,21 +4,33 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "466170178315761"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "peticiones_tr": 3,
+    "eventos_sin_nombre": 3,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
     "gtm": false,
     "avisos_consola": [],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [
     "[home] Cannot set properties of null (setting 'innerHTML')",
-    "[home] Cannot set properties of null (setting 'innerHTML')",
+    "[home] Failed to execute 'importScripts' on 'WorkerGlobalScope': The script at 'https://savatienda.com/web-pixels/strict/app/web-pixel-403833090@22e92c2ad45662f435e4801458fb78cc.js' faile",
     "[home] Cannot set properties of null (setting 'innerHTML')",
     "[home] Cannot set properties of null (setting 'innerHTML')",
     "[home] Cannot set properties of null (setting 'innerHTML')",
@@ -37,32 +49,39 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 1591,
+    "ttdom_ms": 1631,
     "estado": 200,
     "url_final": "https://savatienda.com/",
     "titulo": "Sava",
+    "texto_inicio": "Ir directamente al contenido ENVÍOS A TODA COLOMBIA 🇨🇴 PAGA AL RECIBIR 🤝 ENVÍO GRATIS 🚚 ¡Descubre lo mejor de SAVA! 💚 Productos prácticos e innovadores para ti y tu hogar. Ver Colecciones Explorar productos Colecciones Hogar Belleza Deportes y Fitness Gadgets Colección destacada En Sava Tienda ",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
     "imagenes": 15,
-    "kb": 2104,
-    "peticiones": 188,
-    "dcl_navegador_ms": 1588
+    "kb": 2518,
+    "peticiones": 326,
+    "dcl_navegador_ms": 1627
   },
   "producto": {
-    "ttdom_ms": 951,
+    "ttdom_ms": 887,
     "estado": 200,
     "url": "https://savatienda.com/products/cepillovapor",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"71 Reseñas\""
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": false,
     "cuotas": false,
     "envio_gratis": true,
-    "kb": 4660,
-    "peticiones": 298,
-    "dcl_navegador_ms": 949,
+    "muro_de_registro": false,
+    "kb": 4550,
+    "peticiones": 367,
+    "dcl_navegador_ms": 883,
     "imagenes": 41,
     "whatsapp": false
   },
@@ -71,5 +90,6 @@
     "producto": "savatienda.com-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 21
+  "url_medida": "https://savatienda.com",
+  "duracion_auditoria_s": 68
 }

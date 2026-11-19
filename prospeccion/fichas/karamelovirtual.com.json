@@ -4,10 +4,22 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "1948841855455369"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "peticiones_tr": 3,
+    "eventos_sin_nombre": 3,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
@@ -17,7 +29,7 @@
       "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
     ],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [],
   "bloqueados": [],
@@ -33,32 +45,40 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 2529,
+    "ttdom_ms": 2539,
     "estado": 200,
     "url_final": "https://karamelovirtual.com/",
     "titulo": "Karamelo Tienda Virtual",
+    "texto_inicio": "Ir directamente al contenido Pagos a Credito con ADDI Y SISTECREDITO💵 Karamelo Tienda Virtual 🇨🇴PAGA CON ADDI Y SISTECREDITO Y RECIBE EN CUALQUIER PARTE DEL PAIS🇨🇴 🇨🇴PAGA CON ADDI Y SISTECREDITO Y RECIBE EN CUALQUIER PARTE DEL PAIS🇨🇴 Promo del Mes MOLINO ELECTRICO Oferta MOLINO ELECTRICO Pr",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
     "imagenes": 24,
-    "kb": 2532,
-    "peticiones": 192,
-    "dcl_navegador_ms": 2525
+    "kb": 2847,
+    "peticiones": 329,
+    "dcl_navegador_ms": 2533
   },
   "producto": {
-    "ttdom_ms": 791,
+    "ttdom_ms": 892,
     "estado": 200,
     "url": "https://karamelovirtual.com/products/molino-electrico",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": false,
+    "resenas_evidencia": [
+      "widget de reseñas: Yotpo"
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": false,
     "cuotas": true,
+    "cuotas_evidencia": "ADDI",
     "envio_gratis": false,
-    "kb": 395,
-    "peticiones": 303,
-    "dcl_navegador_ms": 783,
+    "muro_de_registro": false,
+    "kb": 251,
+    "peticiones": 343,
+    "dcl_navegador_ms": 890,
     "imagenes": 21,
     "whatsapp": false
   },
@@ -67,5 +87,6 @@
     "producto": "karamelovirtual.com-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 24
+  "url_medida": "https://karamelovirtual.com",
+  "duracion_auditoria_s": 72
 }

@@ -19,6 +19,8 @@
       "PageView",
       "ViewContent"
     ],
+    "peticiones_tr": 4,
+    "eventos_sin_nombre": 0,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
@@ -32,13 +34,14 @@
     "[home] Cannot read properties of null (reading 'getAttribute')"
   ],
   "bloqueados": [
+    "www.chicsmovile.com",
     "brunhild.challenges.cloudflare.com"
   ],
   "rechazados_por_la_tienda": [
     "shop.app",
     "static.cloudflareinsights.com",
-    "trc.taboola.com",
     "script.hotjar.com",
+    "trc.taboola.com",
     "trc-events.taboola.com"
   ],
   "fallos_red": [
@@ -48,17 +51,22 @@
       "clase": "tienda"
     },
     {
+      "host": "www.chicsmovile.com",
+      "motivo": "net::ERR_FAILED",
+      "clase": "transporte"
+    },
+    {
       "host": "static.cloudflareinsights.com",
       "motivo": "csp",
       "clase": "tienda"
     },
     {
-      "host": "trc.taboola.com",
+      "host": "script.hotjar.com",
       "motivo": "csp",
       "clase": "tienda"
     },
     {
-      "host": "script.hotjar.com",
+      "host": "trc.taboola.com",
       "motivo": "csp",
       "clase": "tienda"
     },
@@ -71,36 +79,64 @@
       "host": "trc-events.taboola.com",
       "motivo": "csp",
       "clase": "tienda"
+    },
+    {
+      "host": "trc-events.taboola.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "brunhild.challenges.cloudflare.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
+    },
+    {
+      "host": "trc-events.taboola.com",
+      "motivo": "csp",
+      "clase": "tienda"
+    },
+    {
+      "host": "brunhild.challenges.cloudflare.com",
+      "motivo": "net::ERR_TUNNEL_CONNECTION_FAILED",
+      "clase": "transporte"
     }
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 2323,
+    "ttdom_ms": 1770,
     "estado": 200,
     "url_final": "https://www.chicsmovile.com/",
     "titulo": "Chicsmovile – Chics Movile",
+    "texto_inicio": "Ir directamente al contenido 🚚 Envíos a todo el país 💳 Pagos contra entrega 🛡️ Compras seguras 🚚 Envíos a todo el país 💳 Pagos contra entrega 🛡️ Compras seguras Carrito Categorías Electrodoméstico Muebles Herramientas Hogar Infantil Tecnología Salud Belleza y cuidado personal 1 / de 7 ¡Todo pa",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
     "imagenes": 48,
-    "kb": 8442,
-    "peticiones": 178,
-    "dcl_navegador_ms": 2321
+    "kb": 8786,
+    "peticiones": 323,
+    "dcl_navegador_ms": 1767
   },
   "producto": {
-    "ttdom_ms": 1235,
+    "ttdom_ms": 1222,
     "estado": 200,
     "url": "https://www.chicsmovile.com/products/secadora-profesional-kalley",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"30 reseñas\""
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": true,
+    "contraentrega_evidencia": "contra entrega",
     "cuotas": false,
     "envio_gratis": false,
-    "kb": 3068,
-    "peticiones": 260,
-    "dcl_navegador_ms": 1232,
+    "muro_de_registro": false,
+    "kb": 3870,
+    "peticiones": 355,
+    "dcl_navegador_ms": 1218,
     "imagenes": 58,
     "whatsapp": false
   },
@@ -109,5 +145,6 @@
     "producto": "chicsmovile.com-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 22
+  "url_medida": "https://chicsmovile.com",
+  "duracion_auditoria_s": 69
 }

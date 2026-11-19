@@ -219,18 +219,41 @@ async function señalesDeFicha(page) {
   return page.evaluate(() => {
     const txt = document.body.innerText.slice(0, 40000);
     const html = document.documentElement.innerHTML;
-    return {
-      // Se exige una señal concreta de reseña (estrellas, "N reseñas", widget
-      // conocido) en vez de la palabra sola: "reseñas" aparece en menús y en
-      // pies de página de tiendas que no tienen ninguna reseña publicada.
-      resenas: /(\d+\s*(rese(ñ|n)as?|opiniones|reviews?))|(★|⭐){1,}|\b\d[.,]\d\s*(de\s*5|\/\s*5)\b/i.test(txt)
-               || /judge\.me|loox|stamped|okendo|yotpo|reviews\.io|trustpilot|opinew|rivyo|ryviu|jdgm/i.test(html),
-      resenas_pista_textual: /rese(ñ|n)a|opinion|review|valoracion/i.test(txt),
-      contraentrega: /contra\s?entrega|contraentrega|pago al recibir|pagas al recibir|paga(s)? cuando recibas|pago contra entrega/i.test(txt),
-      cuotas: /\baddi\b|sistecr(e|é)dito|cuotas sin inter(e|é)s|hasta \d+ cuotas|\b[2-9] cuotas\b|paga en cuotas/i.test(txt),
-      // Un envío gratis anunciado en la ficha es palanca; su ausencia también se dice.
-      envio_gratis: /env(í|i)o gratis|env(í|i)os gratis|free shipping/i.test(txt),
-    };
+    const r = {};
+
+    // RESEÑAS. La versión anterior daba por buena cualquier estrella en el texto,
+    // y eso marcaba "tiene reseñas" en fichas cuyo TÍTULO llevaba ⭐⭐⭐⭐⭐ de
+    // adorno. Ahora hace falta una prueba de reseña real (un recuento, una nota
+    // sobre 5 o un widget de reseñas conocido) y se guarda qué la activó, para
+    // que la afirmación se pueda comprobar sin volver a la tienda.
+    const pruebas = [];
+    // El número no puede venir pegado a un decimal: sin esto, "5.0 reseñas"
+    // se leía como "0 reseñas" y la ficha afirmaba lo contrario de la realidad.
+    const recuento = txt.match(/(?<![\d.,])\d+\s*(rese(ñ|n)as?|opiniones|reviews?|valoraciones)/i);
+    if (recuento) pruebas.push('recuento en el texto: "' + recuento[0].trim() + '"');
+    const nota = txt.match(/\b\d[.,]\d\s*(de\s*5|\/\s*5|estrellas)/i);
+    if (nota) pruebas.push('nota media: "' + nota[0].trim() + '"');
+    const widget = /judge\.?me|jdgm|loox|stamped\.io|okendo|yotpo|reviews\.io|opinew|rivyo|ryviu|growave|ali-?reviews/i.exec(html);
+    if (widget) pruebas.push('widget de reseñas: ' + widget[0]);
+    r.resenas = pruebas.length > 0;
+    r.resenas_evidencia = pruebas.slice(0, 3);
+    // Caso aparte y honesto: estrellas de adorno sin ninguna reseña detrás.
+    r.estrellas_decorativas = !r.resenas && /(★|⭐)/.test(txt);
+
+    const cEntrega = txt.match(/contra\s?entrega|contraentrega|pago al recibir|pagas al recibir|paga(s)? cuando recibas/i);
+    r.contraentrega = !!cEntrega;
+    if (cEntrega) r.contraentrega_evidencia = cEntrega[0].trim();
+
+    const cuota = txt.match(/\baddi\b|sistecr(e|é)dito|cuotas sin inter(e|é)s|hasta \d+ cuotas|\b[2-9] cuotas\b|paga en cuotas/i);
+    r.cuotas = !!cuota;
+    if (cuota) r.cuotas_evidencia = cuota[0].trim();
+
+    r.envio_gratis = /env(í|i)o(s)? gratis|free shipping/i.test(txt);
+    // Muro de registro: si para ver o comprar hay que crear cuenta, el tráfico
+    // del anuncio no puede comprar, y eso vale más que cualquier métrica de peso.
+    r.muro_de_registro = /(iniciar sesi(ó|o)n|reg(í|i)strate|registrarse|crear cuenta)/i.test(txt.slice(0, 2500))
+      && !!document.querySelector('input[type="password"]');
+    return r;
   }).catch(() => ({}));
 }
 
@@ -267,6 +290,21 @@ async function verificarDns(ctx, dominio) {
   } finally { await p.close().catch(() => {}); }
 }
 
+/** Extrae los campos de un envío del pixel. Estas tiendas mandan los eventos por
+ *  POST en multipart/form-data, no en la query ni en urlencoded: sin entender el
+ *  multipart se ve que la tienda envía algo pero no QUÉ envía, y entonces no se
+ *  puede decir ni "dispara ViewContent" ni lo contrario. */
+function leerCampos(cuerpo) {
+  const campos = {};
+  if (!cuerpo) return campos;
+  if (/Content-Disposition/i.test(cuerpo)) {
+    for (const m of cuerpo.matchAll(/name="([^"]+)"\r?\n\r?\n([\s\S]*?)\r?\n--/g)) campos[m[1]] = m[2].trim();
+    return campos;
+  }
+  try { for (const [k, v] of new URLSearchParams(cuerpo)) campos[k] = v; } catch {}
+  return campos;
+}
+
 async function auditar(browser, dominio) {
   const f = {
     dominio,
@@ -275,6 +313,8 @@ async function auditar(browser, dominio) {
     pixel: {
       script: false, ids: [], eventos: [],
       eventos_home: [], eventos_producto: [],   // separados: "no dispara ViewContent en la ficha" es un hallazgo distinto a "no dispara nada"
+      peticiones_tr: 0,                         // nº de envíos reales a facebook.com/tr
+      eventos_sin_nombre: 0,                    // envíos cuyo nombre de evento no se pudo leer
       fbq_en_window: false, ids_en_html: [], cookie_fbp: null, gtm: false,
       avisos_consola: [],                       // diagnóstico que Meta imprime en la consola del visitante: es prueba directa
       fiable: null, nota: null,
@@ -308,6 +348,38 @@ async function auditar(browser, dominio) {
   });
   const page = await ctx.newPage();
 
+  // Playwright devuelve null para estos cuerpos; el protocolo de depuración de
+  // Chrome sí los conserva, así que es la única vía para leer el nombre del
+  // evento sin modificar la página de la tienda.
+  const anotarEvento = (ev, id) => {
+    if (id && !f.pixel.ids.includes(id)) f.pixel.ids.push(id);
+    if (!ev) return;
+    if (!f.pixel.eventos.includes(ev)) f.pixel.eventos.push(ev);
+    const lista = fase === 'home' ? f.pixel.eventos_home : fase === 'producto' ? f.pixel.eventos_producto : null;
+    if (lista && !lista.includes(ev)) lista.push(ev);
+  };
+  try {
+    const cdp = await ctx.newCDPSession(page);
+    await cdp.send('Network.enable');
+    // Los pixels de Shopify disparan desde un iframe aislado: sin autoAttach sus
+    // envíos no se verían y la tienda parecería no medir nada.
+    await cdp.send('Target.setAutoAttach', { autoAttach: true, waitForDebuggerOnStart: false, flatten: true }).catch(() => {});
+    cdp.on('Network.requestWillBeSent', async e => {
+      const u = e.request.url;
+      if (!/facebook\.com\/(tr|privacy_sandbox\/pixel\/register\/trigger)/.test(u)) return;
+      let cuerpo = e.request.postData || '';
+      if (!cuerpo && e.request.hasPostData) {
+        try { cuerpo = (await cdp.send('Network.getRequestPostData', { requestId: e.requestId })).postData || ''; } catch {}
+      }
+      const deQuery = leerCampos(u.includes('?') ? u.slice(u.indexOf('?') + 1) : '');
+      const deCuerpo = leerCampos(cuerpo);
+      anotarEvento(deQuery.ev || deCuerpo.ev, deQuery.id || deCuerpo.id);
+    });
+  } catch (e) {
+    f.notas.push('no se pudo abrir la sesión de depuración para leer los eventos del pixel: ' + e.message.split('\n')[0]);
+  }
+
+
   // Los oyentes van en el CONTEXTO, no en la pestaña: el pixel de Shopify ("web
   // pixels") y muchas apps disparan desde un iframe aislado o un worker, y a nivel
   // de pestaña esos eventos se pierden. Perderlos produciría el peor error posible:
@@ -316,18 +388,29 @@ async function auditar(browser, dominio) {
     const u = r.url();
     if (/connect\.facebook\.net\/.*\/fbevents\.js/.test(u)) f.pixel.script = true;
     if (/googletagmanager\.com\/(gtm\.js|gtag\/js)/.test(u)) f.pixel.gtm = true;
-    // La prueba de que el pixel no solo está instalado sino que dispara. Los eventos
-    // viajan en la query (GET) o, cuando el payload crece, en el cuerpo (POST): hay
-    // que mirar los dos sitios o se cuentan menos eventos de los reales.
+    // La prueba de que el pixel dispara es la petición a facebook.com/tr. Hay dos
+    // formas de envío y las dos cuentan:
+    //   - GET con los datos en la query (integraciones clásicas).
+    //   - POST con los datos en el cuerpo, que es lo que usan la mayoría de estas
+    //     tiendas. Leer solo la query hacía que estas salieran con CERO eventos
+    //     teniendo el pixel funcionando: el falso negativo más caro del informe.
+    // Por eso se cuenta SIEMPRE la petición, y aparte se intenta leer el nombre
+    // del evento; si el cuerpo no se puede leer, se dice así en vez de callarlo.
     if (!/facebook\.com\/(tr|privacy_sandbox\/pixel\/register\/trigger)/.test(u)) return;
+    f.pixel.peticiones_tr++;
     const fuentes = [u.includes('?') ? u.slice(u.indexOf('?') + 1) : ''];
-    if (r.method() === 'POST') { try { fuentes.push(r.postData() || ''); } catch {} }
+    if (r.method() === 'POST') {
+      // postDataBuffer() lee cuerpos que postData() devuelve como null.
+      try { const b = r.postDataBuffer(); if (b) fuentes.push(b.toString('utf8')); } catch {}
+    }
+    let nombrado = false;
     for (const fuente of fuentes) {
       if (!fuente) continue;
       let p; try { p = new URLSearchParams(fuente); } catch { continue; }
       const ev = p.get('ev'), id = p.get('id');
       if (id && !f.pixel.ids.includes(id)) f.pixel.ids.push(id);
       if (!ev) continue;
+      nombrado = true;
       if (!f.pixel.eventos.includes(ev)) f.pixel.eventos.push(ev);
       // Durante el descubrimiento del enlace de producto navegamos por catálogos:
       // esos eventos no son "de la portada" ni "de la ficha", así que no se
@@ -335,6 +418,7 @@ async function auditar(browser, dominio) {
       const lista = fase === 'home' ? f.pixel.eventos_home : fase === 'producto' ? f.pixel.eventos_producto : null;
       if (lista && !lista.includes(ev)) lista.push(ev);
     }
+    if (!nombrado) f.pixel.eventos_sin_nombre++;
   });
   ctx.on('requestfailed', r => {
     const motivo = (r.failure() && r.failure().errorText) || '';
@@ -486,7 +570,13 @@ async function auditar(browser, dominio) {
     f.notas.push('la portada es la propia ficha de producto (embudo de una sola página): las medidas de producto son las de la portada');
     f.capturas.producto = await capturar(page, path.join(DIR_CAPTURAS, `${dominio}-producto.png`));
   } else {
-    f.notas.push('no se encontró enlace a una ficha de producto desde la portada');
+    // Sin ficha de producto no se inventa una captura llamada "-producto": se
+    // guarda lo que sí había, con un nombre que no se puede confundir, para que
+    // el video pueda mostrar la evidencia de lo que falta.
+    f.notas.push('no se encontró ninguna ficha de producto navegable desde la portada ni desde el catálogo');
+    Object.assign(f.producto, await señalesDeFicha(page));
+    f.producto.sin_ficha = true;
+    f.capturas.sin_ficha_de_producto = await capturar(page, path.join(DIR_CAPTURAS, `${dominio}-sin-ficha-de-producto.png`));
   }
 
   // ---------- VEREDICTO DE FIABILIDAD ----------
@@ -499,6 +589,9 @@ async function auditar(browser, dominio) {
   if (f.pixel.eventos.length) {
     f.pixel.fiable = true;
     f.pixel.nota = 'se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad';
+  } else if (f.pixel.peticiones_tr > 0) {
+    f.pixel.fiable = true;
+    f.pixel.nota = 'el pixel SÍ envía datos (' + f.pixel.peticiones_tr + ' envíos a facebook.com/tr), pero el nombre del evento viajaba en un cuerpo que no se pudo leer: no se puede afirmar QUÉ eventos dispara, solo que dispara.';
   } else if (avisoMeta) {
     // Meta explica ella misma por qué no mide: no hay ambigüedad que resolver.
     f.pixel.fiable = true;

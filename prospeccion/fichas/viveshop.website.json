@@ -4,19 +4,33 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "791174826836498"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "peticiones_tr": 3,
+    "eventos_sin_nombre": 3,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
     "gtm": false,
     "avisos_consola": [],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
-  "errores_js": [],
+  "errores_js": [
+    "[producto] debounce is not defined"
+  ],
   "bloqueados": [],
   "rechazados_por_la_tienda": [
     "shop.app"
@@ -30,26 +44,47 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 1504,
+    "ttdom_ms": 1568,
     "estado": 200,
     "url_final": "https://viveshop.website/",
     "titulo": "Vive Shop",
+    "texto_inicio": "Ir directamente al contenido TODA LA TIENDA A 50% DESCUENTO! 😍 VER CATALOGO PRODUCTOS MAS VENDIDOS! 😍 VER CATALOGO SOMOS LOS MEJORES Ninguna tienda te vende como Vive Shop Vive Shop Otras tiendas Envios Gratis 30 Dias de Garantia Pago Contra Entrega Formulario de Contacto Nombre Correo electrónico",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
     "imagenes": 1,
-    "kb": 1412,
-    "peticiones": 124,
-    "dcl_navegador_ms": 1498
+    "kb": 1700,
+    "peticiones": 267,
+    "dcl_navegador_ms": 1566
   },
-  "producto": {},
+  "producto": {
+    "ttdom_ms": 870,
+    "estado": 200,
+    "url": "https://viveshop.website/products/protector-oferta-cob-navidad",
+    "via": "catálogo público /products.json (la portada no enlaza ningún producto)",
+    "resenas": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"9 reseñas\""
+    ],
+    "estrellas_decorativas": false,
+    "contraentrega": false,
+    "cuotas": false,
+    "envio_gratis": true,
+    "muro_de_registro": false,
+    "kb": 21414,
+    "peticiones": 285,
+    "dcl_navegador_ms": 866,
+    "imagenes": 21,
+    "whatsapp": false
+  },
   "capturas": {
-    "portada": "viveshop.website-portada.png"
+    "portada": "viveshop.website-portada.png",
+    "producto": "viveshop.website-producto.png"
   },
-  "notas": [
-    "no se encontró enlace a una ficha de producto desde la portada"
-  ],
-  "duracion_auditoria_s": 12
+  "notas": [],
+  "url_medida": "https://viveshop.website",
+  "duracion_auditoria_s": 71
 }

@@ -4,10 +4,24 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "1844503356033314",
+      "276933702066332",
+      "872419677609914"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "peticiones_tr": 9,
+    "eventos_sin_nombre": 9,
     "fbq_en_window": true,
     "ids_en_html": [
       "1844503356033314",
@@ -20,7 +34,7 @@
       "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
     ],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [],
   "bloqueados": [],
@@ -36,10 +50,12 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 1395,
+    "ttdom_ms": 1364,
     "estado": 200,
     "url_final": "https://c6ac4e.myshopify.com/",
     "titulo": "SOWI",
+    "texto_inicio": "Ir directamente al contenido 📦 Paga al recibir | 🚚 Envíos nacionales | 🛡️ Garantía disponible | 🎁 Promociones vigentes Carrito Aprovecha nuestros increíbles descuentos del 40% en una amplia selección de productos. Comprar Productos Estrella Oferta COMBO ULTRA (10 EN 1)+AIRPODS+8 CORREAS+PROTECTO",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": true,
       "enlaces": [
@@ -48,22 +64,27 @@
       "con_mensaje": true
     },
     "imagenes": 10,
-    "kb": 2029,
-    "peticiones": 162,
-    "dcl_navegador_ms": 1391
+    "kb": 2341,
+    "peticiones": 298,
+    "dcl_navegador_ms": 1362
   },
   "producto": {
-    "ttdom_ms": 908,
+    "ttdom_ms": 1118,
     "estado": 200,
     "url": "https://c6ac4e.myshopify.com/products/combo-ultra-10-en-1-airpods-8-correas-protector-gratis-%F0%9F%8E%81",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"4 Reseñas\""
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": false,
     "cuotas": false,
     "envio_gratis": false,
-    "kb": 579,
-    "peticiones": 286,
-    "dcl_navegador_ms": 905,
+    "muro_de_registro": false,
+    "kb": 454,
+    "peticiones": 345,
+    "dcl_navegador_ms": 1115,
     "imagenes": 24,
     "whatsapp": true
   },
@@ -72,5 +93,6 @@
     "producto": "c6ac4e.myshopify.com-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 21
+  "url_medida": "https://c6ac4e.myshopify.com",
+  "duracion_auditoria_s": 68
 }

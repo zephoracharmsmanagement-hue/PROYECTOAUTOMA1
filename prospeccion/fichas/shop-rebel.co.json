@@ -4,17 +4,29 @@
   "plataforma": "WooCommerce",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "803340261375111"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "ViewContent",
+      "PageView"
+    ],
+    "peticiones_tr": 3,
+    "eventos_sin_nombre": 3,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
     "gtm": true,
     "avisos_consola": [],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [
     "[home] wp is not defined",
@@ -29,32 +41,40 @@
   "fallos_red": [],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 10311,
+    "ttdom_ms": 5901,
     "estado": 200,
     "url_final": "https://shop-rebel.co/",
     "titulo": "Rebel Colombia | Sitio Oficial | Tu belleza, nuestro cuidado",
+    "texto_inicio": "BLACK REBEL PRECIOS QUE SE REBELAN HASTA 50% OFF EN TODA LA TIENDA ENVÍO GRATIS EN TODO COLOMBIA HASTA 12 CUOTAS CON SISTECRÉDITO Secador AirMax PRO™ $529.990 Secador AirMax PRO™ $529.990 1 Add to cart Secador y Alisador AIRFLOW™ $379.990 Secador y Alisador AIRFLOW™ $379.990 1 Add to cart Secador 5 ",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
-    "imagenes": 79,
-    "kb": 6992,
+    "imagenes": 81,
+    "kb": 5938,
     "peticiones": 202,
-    "dcl_navegador_ms": 10309
+    "dcl_navegador_ms": 5897
   },
   "producto": {
-    "ttdom_ms": 1347,
+    "ttdom_ms": 1190,
     "estado": 200,
     "url": "https://shop-rebel.co/products/skinperfect/",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"10 valoraciones\""
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": false,
     "cuotas": true,
+    "cuotas_evidencia": "HASTA 12 CUOTAS",
     "envio_gratis": true,
-    "kb": 5977,
-    "peticiones": 210,
-    "dcl_navegador_ms": 1337,
+    "muro_de_registro": false,
+    "kb": 6182,
+    "peticiones": 219,
+    "dcl_navegador_ms": 1186,
     "imagenes": 50,
     "whatsapp": false
   },
@@ -63,5 +83,6 @@
     "producto": "shop-rebel.co-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 35
+  "url_medida": "https://shop-rebel.co",
+  "duracion_auditoria_s": 77
 }

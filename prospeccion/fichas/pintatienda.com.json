@@ -4,10 +4,22 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "1590014615088275"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "peticiones_tr": 3,
+    "eventos_sin_nombre": 3,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
@@ -16,7 +28,7 @@
       "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
     ],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [
     "[home] $ is not defined",
@@ -29,32 +41,41 @@
   "fallos_red": [],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 2938,
+    "ttdom_ms": 2145,
     "estado": 200,
     "url_final": "https://pintatienda.com/",
     "titulo": "Pinta Tienda – My Store",
+    "texto_inicio": "Ir directamente al contenido ¡Ultimos dias de Envio Gratis! Hasta 40% OFF Envio Gratis y pago al recibir el pedido en Todo Colombia solo por esta Semana Ver Ofertas Nuestro Producto Mas Vendido PROMO 2x1 Burlete Aislante Protector de Puerta Precio habitual $100,000 COP Precio de oferta $64,900 COP V",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
     "imagenes": 40,
-    "kb": 1848,
-    "peticiones": 167,
-    "dcl_navegador_ms": 2936
+    "kb": 2164,
+    "peticiones": 306,
+    "dcl_navegador_ms": 2142
   },
   "producto": {
-    "ttdom_ms": 611,
+    "ttdom_ms": 819,
     "estado": 200,
     "url": "https://pintatienda.com/products/promo-2x1-burlete-aislante-protector-de-puerta",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"35 reseñas\"",
+      "widget de reseñas: judgeme"
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": true,
+    "contraentrega_evidencia": "Pago al Recibir",
     "cuotas": false,
     "envio_gratis": true,
-    "kb": 1441,
-    "peticiones": 251,
-    "dcl_navegador_ms": 604,
+    "muro_de_registro": false,
+    "kb": 1323,
+    "peticiones": 320,
+    "dcl_navegador_ms": 815,
     "imagenes": 44,
     "whatsapp": false
   },
@@ -63,5 +84,6 @@
     "producto": "pintatienda.com-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 24
+  "url_medida": "https://pintatienda.com",
+  "duracion_auditoria_s": 70
 }

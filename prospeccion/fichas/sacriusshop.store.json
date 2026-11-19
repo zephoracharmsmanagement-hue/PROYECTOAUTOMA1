@@ -8,6 +8,8 @@
     "eventos": [],
     "eventos_home": [],
     "eventos_producto": [],
+    "peticiones_tr": 0,
+    "eventos_sin_nombre": 0,
     "fbq_en_window": true,
     "ids_en_html": [
       "2521053324921915"
@@ -23,6 +25,7 @@
   },
   "errores_js": [
     "[home] Cannot read properties of null (reading 'closest')",
+    "[home] Failed to execute 'importScripts' on 'WorkerGlobalScope': The script at 'https://sacriusshop.store/web-pixels/strict/app/web-pixel-shopify-app-pixel@0540.js' failed to load.",
     "[producto] Cannot read properties of null (reading 'closest')"
   ],
   "bloqueados": [],
@@ -75,32 +78,41 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 1847,
+    "ttdom_ms": 1808,
     "estado": 200,
     "url_final": "https://sacriusshop.store/",
     "titulo": "Sacriusshop",
+    "texto_inicio": "Ir directamente al contenido ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO G",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": false,
       "enlaces": [],
       "con_mensaje": false
     },
     "imagenes": 31,
-    "kb": 2438,
-    "peticiones": 138,
-    "dcl_navegador_ms": 1843
+    "kb": 2754,
+    "peticiones": 289,
+    "dcl_navegador_ms": 1803
   },
   "producto": {
-    "ttdom_ms": 736,
+    "ttdom_ms": 916,
     "estado": 200,
     "url": "https://sacriusshop.store/products/auriculares-de-conduccion-osea%C2%AE%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90-original",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": true,
+    "resenas_evidencia": [
+      "recuento en el texto: \"176 Reseñas\"",
+      "widget de reseñas: Judge.me"
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": true,
+    "contraentrega_evidencia": "CONTRA ENTREGA",
     "cuotas": false,
     "envio_gratis": true,
-    "kb": 613,
-    "peticiones": 202,
-    "dcl_navegador_ms": 733,
+    "muro_de_registro": false,
+    "kb": 1289,
+    "peticiones": 275,
+    "dcl_navegador_ms": 913,
     "imagenes": 11,
     "whatsapp": false
   },
@@ -109,5 +121,6 @@
     "producto": "sacriusshop.store-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 25
+  "url_medida": "https://sacriusshop.store",
+  "duracion_auditoria_s": 72
 }

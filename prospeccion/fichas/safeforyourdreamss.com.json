@@ -4,10 +4,22 @@
   "plataforma": "Shopify",
   "pixel": {
     "script": true,
-    "ids": [],
-    "eventos": [],
-    "eventos_home": [],
-    "eventos_producto": [],
+    "ids": [
+      "1126724432600978"
+    ],
+    "eventos": [
+      "PageView",
+      "ViewContent"
+    ],
+    "eventos_home": [
+      "PageView"
+    ],
+    "eventos_producto": [
+      "PageView",
+      "ViewContent"
+    ],
+    "peticiones_tr": 3,
+    "eventos_sin_nombre": 3,
     "fbq_en_window": true,
     "ids_en_html": [],
     "cookie_fbp": true,
@@ -16,7 +28,7 @@
       "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications."
     ],
     "fiable": true,
-    "nota": "el script del pixel cargó, así que la medición es válida; ver eventos interceptados"
+    "nota": "se interceptaron eventos reales del pixel: lo medido es lo que pasa de verdad"
   },
   "errores_js": [
     "[home] Cannot read properties of null (reading 'getAttribute')",
@@ -35,10 +47,12 @@
   ],
   "banner_cookies": null,
   "home": {
-    "ttdom_ms": 1675,
+    "ttdom_ms": 1442,
     "estado": 200,
     "url_final": "https://safeforyourdreamss.com/",
     "titulo": "SAFE FOR YOUR DREAMS",
+    "texto_inicio": "Ir directamente al contenido SAFE FOR YOUR DREAMS - VAL SANCHEZ SAS Carrito 1 / de 3 ESCRIBENOS A WHATSAPP PARA AGENDAR TU 🚚PAGO CONTRAENTREGA - EN TODO COLOMBIA💗🫰🏻 LO MAS VENDIDO JADE CON PLATAFORMA LONDON RESORTE | MILFORD MILITAR|LUNA | MILFORD MAFALDA OSLO OBRERO | RIGIDA TACON 1 / de 5 ✨DIS",
+    "pagina_de_error": false,
     "whatsapp": {
       "presente": true,
       "enlaces": [
@@ -47,22 +61,28 @@
       "con_mensaje": true
     },
     "imagenes": 60,
-    "kb": 3405,
-    "peticiones": 180,
-    "dcl_navegador_ms": 1668
+    "kb": 3723,
+    "peticiones": 321,
+    "dcl_navegador_ms": 1439
   },
   "producto": {
-    "ttdom_ms": 873,
+    "ttdom_ms": 834,
     "estado": 200,
     "url": "https://safeforyourdreamss.com/products/mafalda-charol",
+    "via": "enlace directo desde la portada",
     "resenas": true,
-    "resenas_pista_textual": false,
+    "resenas_evidencia": [
+      "nota media: \"4.9/5\""
+    ],
+    "estrellas_decorativas": false,
     "contraentrega": true,
+    "contraentrega_evidencia": "CONTRAENTREGA",
     "cuotas": false,
     "envio_gratis": false,
-    "kb": 597,
-    "peticiones": 244,
-    "dcl_navegador_ms": 870,
+    "muro_de_registro": false,
+    "kb": 1227,
+    "peticiones": 309,
+    "dcl_navegador_ms": 832,
     "imagenes": 12,
     "whatsapp": true
   },
@@ -71,5 +91,6 @@
     "producto": "safeforyourdreamss.com-producto.png"
   },
   "notas": [],
-  "duracion_auditoria_s": 21
+  "url_medida": "https://safeforyourdreamss.com",
+  "duracion_auditoria_s": 68
 }
