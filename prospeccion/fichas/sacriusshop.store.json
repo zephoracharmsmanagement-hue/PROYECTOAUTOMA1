@@ -1,0 +1,200 @@
+{
+  "dominio": "sacriusshop.store",
+  "estado": "ok",
+  "medido_el": "2026-11-19T18:29:06.760Z",
+  "entorno": {
+    "dispositivo": "Pixel 7 (emulado en Chromium)",
+    "locale": "es-CO",
+    "zona_horaria": "America/Bogota",
+    "reposo_tras_carga_ms": 6000,
+    "device_scale_factor_capturas": 2,
+    "nota": "Sin estrangulamiento de red ni CPU: los tiempos son de un móvil emulado sobre la red del contenedor, así que comparan bien entre tiendas pero son optimistas frente a un 4G real."
+  },
+  "anuncios_meta": {
+    "dias_del_anuncio_activo_mas_antiguo": 365,
+    "versiones_de_anuncio": 90,
+    "medido_el": "2026-11-19",
+    "advertencia": "Son días desde la publicación del anuncio activo más antiguo, NO días de campaña continua. Indica gasto sostenido, no continuidad."
+  },
+  "plataforma": {
+    "detectada": "Shopify",
+    "senales": [
+      "/cdn\\.shopify\\.com/i",
+      "/\\/cdn\\/shop\\//i",
+      "/Shopify\\.theme/i",
+      "/myshopify\\.com/i",
+      "/shopify-features/i"
+    ],
+    "otras_senales_presentes": [
+      "GemPages / constructor de landings"
+    ]
+  },
+  "rendimiento": {
+    "portada": {
+      "ms_dom": 1449,
+      "ms_load": 2090,
+      "ms_respuesta_servidor": 171,
+      "ms_reloj_hasta_dom": 1452,
+      "kb_transferidos": 2756.8,
+      "kb_por_tipo": {
+        "Document": 83.4,
+        "Script": 774.7,
+        "Font": 21.7,
+        "Stylesheet": 72.2,
+        "Preflight": 0,
+        "Image": 1056.4,
+        "Fetch": 15.6,
+        "Ping": 9.9,
+        "XHR": 1.9,
+        "Other": 721
+      },
+      "peticiones": 164,
+      "imagenes_en_dom": 31
+    },
+    "producto": {
+      "ms_dom": 499,
+      "ms_load": 1144,
+      "ms_respuesta_servidor": 119,
+      "ms_reloj_hasta_dom": 506,
+      "kb_transferidos": 688.2,
+      "kb_por_tipo": {
+        "Stylesheet": 2.1,
+        "Font": 362.7,
+        "Script": 14.4,
+        "Document": 88.7,
+        "Image": 42.7,
+        "Fetch": 9.1,
+        "XHR": 3.8,
+        "Ping": 9.8,
+        "Preflight": 0,
+        "Other": 154.9
+      },
+      "peticiones": 198,
+      "imagenes_en_dom": 11
+    },
+    "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
+  },
+  "producto": {
+    "url": "https://sacriusshop.store/products/auriculares-de-conduccion-osea%C2%AE%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90-original",
+    "como_se_encontro": "enlace en la portada",
+    "es_la_misma_portada": false,
+    "titulo": "AURICULARES DE CONDUCCION OSEA®⭐⭐⭐⭐⭐ ORIGINAL – Sacriusshop",
+    "nav_error": null,
+    "resenas": {
+      "visibles": true,
+      "evidencia_texto_visible": "ION OSEA®⭐⭐⭐⭐⭐ ORIGINAL 176 Reseñas Precio habitual $87.900,00 Precio de oferta $139.900",
+      "widgets_detectados_en_html": [
+        "Judge.me"
+      ],
+      "nota": "Hay señal de reseñas en el texto visible de la ficha."
+    },
+    "contraentrega": {
+      "mencionada": true,
+      "evidencia": "contenido ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRATIS PAGO CONTRA ENTREGA ENVIO GRA"
+    },
+    "cuotas": {
+      "mencionadas": false,
+      "evidencia": null,
+      "marcas": [
+        "Addi"
+      ]
+    }
+  },
+  "salud_de_la_pagina": {
+    "titulo": "Sacriusshop",
+    "parece_dominio_parqueado": false,
+    "parece_pagina_vacia": false,
+    "es_tienda_analizable": true,
+    "nota": null
+  },
+  "pixel": {
+    "fiable": true,
+    "motivo_no_fiable": null,
+    "peticiones_tr_sin_parametro_ev": 0,
+    "bloqueos_criticos_por_politica_del_sitio": [],
+    "fbq_presente_en_la_pagina": "2.9.441",
+    "ids_inicializados_en_navegador": [
+      "2521053324921915",
+      "763057085204764"
+    ],
+    "fbevents_js_cargado": true,
+    "google_tag_manager_cargado": false,
+    "eventos_observados": [],
+    "tipos_de_evento": [],
+    "ids_que_dispararon": [],
+    "ids_declarados_en_html": [
+      "2521053324921915"
+    ],
+    "lectura": "El navegador cargó fbevents.js e inicializó 2 pixel(es) (2521053324921915, 763057085204764), pero no se observó NINGÚN evento saliendo hacia facebook.com/tr, ni siquiera PageView. No se afirma que la tienda no tenga pixel: puede complementarse con la API de Conversiones server-side, que no se ve desde el navegador. Lo comprobado es que el pixel de navegador arranca y no envía eventos."
+  },
+  "whatsapp": {
+    "tiene_enlace": false,
+    "enlaces": [],
+    "lectura": "No se encontró ningún enlace wa.me, wa.link, api.whatsapp.com ni whatsapp.com/send en el HTML de la portada ni de la ficha de producto."
+  },
+  "bloqueados": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "origen": "politica del sitio o del navegador",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://shop.app/pay/hop?analytics_trace_id=2073195f-d725-4d62-9103-3b96580e58bd&target_origin=https%3A%2F%2Fsacriusshop.store&client_handle=csysur-xd.myshopify.com"
+    },
+    {
+      "host": "cdn.shopify.com",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "origen": "politica del sitio o del navegador",
+      "critico_para_el_pixel": false,
+      "pagina": "producto",
+      "url": "https://cdn.shopify.com/s/files/1/0619/1438/2556/files/Sintitulo_480x480.png?v=1670730818"
+    },
+    {
+      "host": "lovelyproduct.online",
+      "motivo": "net::ERR_BLOCKED_BY_ORB",
+      "origen": "politica del sitio o del navegador",
+      "critico_para_el_pixel": false,
+      "pagina": "producto",
+      "url": "https://lovelyproduct.online/wp-content/uploads/2023/06/te-molestan-todos-auriculares-trucos-hacer-cascos-sean-comodos-2316907_480x480_1_480x480.jpg"
+    }
+  ],
+  "red_limpia_para_el_pixel": true,
+  "banner_cookies": {
+    "portada": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    },
+    "producto": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    }
+  },
+  "capturas": {
+    "portada": {
+      "archivo": "capturas/sacriusshop.store-portada.png",
+      "truncada": true,
+      "alto_css": 4646,
+      "error": null
+    },
+    "producto": {
+      "archivo": "capturas/sacriusshop.store-producto.png",
+      "truncada": true,
+      "alto_css": 8670,
+      "error": null
+    },
+    "nota": "Capturas a deviceScaleFactor 2 (824 px de ancho). Las páginas de más de 3000 px CSS de alto se recortan a esa altura; el campo truncada lo indica."
+  },
+  "hosts_de_terceros": [
+    "analytics-ipv6.tiktokw.us",
+    "analytics.tiktok.com",
+    "cdn.shopify.com",
+    "connect.facebook.net",
+    "fonts.gstatic.com",
+    "lovelyproduct.online",
+    "otlp-http-production.shopifysvc.com",
+    "releasit-coverages.s3.eu-west-3.amazonaws.com",
+    "shop.app"
+  ]
+}
