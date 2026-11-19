@@ -136,5 +136,12 @@
     },
     "nota": "Capturas a deviceScaleFactor 2 (824 px de ancho). Las páginas de más de 3000 px CSS de alto se recortan a esa altura; el campo truncada lo indica."
   },
-  "hosts_de_terceros": []
+  "hosts_de_terceros": [],
+  "comprobacion_externa": {
+    "comprobado_el": "2026-11-19",
+    "dns_publico_google": "Status 3 (NXDOMAIN) para tienda-del-valle.com y www.tienda-del-valle.com; la respuesta viene de los servidores de .com (a.gtld-servers.net), es decir el dominio no esta delegado.",
+    "http": "El gateway respondio 502 a CONNECT en https y la resolucion directa fallo con \"Could not resolve host\" en http. Dos vias distintas coinciden.",
+    "conclusion": "El dominio no resuelve. No es un fallo de nuestro entorno: un dominio de control (nesimu.com) resolvio y respondio 200 en el mismo momento.",
+    "lo_que_no_sabemos": "No comprobamos a que URL apunta el anuncio activo. Puede apuntar a otro dominio, a un perfil o a una tienda dentro de Meta."
+  }
 }

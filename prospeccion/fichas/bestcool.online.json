@@ -157,5 +157,12 @@
   },
   "hosts_de_terceros": [
     "img.funnelish.com"
-  ]
+  ],
+  "comprobacion_externa": {
+    "comprobado_el": "2026-11-19",
+    "dns_publico_google": "bestcool.online (apex): Status 0 pero SIN ningun registro A. www.bestcool.online si resuelve, via domains.funnelish.com -> funnelish.map.fastly.net.",
+    "http": "El apex fallo con ERR_TUNNEL_CONNECTION_FAILED; la medicion se hizo sobre www.bestcool.online.",
+    "conclusion": "Solo responde el subdominio www. El dominio raiz no tiene registro A, asi que cualquier enlace a bestcool.online sin www no abre.",
+    "lo_que_no_sabemos": "No comprobamos a cual de las dos formas apuntan los anuncios."
+  }
 }
