@@ -815,6 +815,16 @@ async function auditarTienda(browser, dominio) {
     // --- Pixel ---
     ficha.pixel = veredictoPixel(resultados);
 
+    // Si la portada no cargó, NO hay medición de pixel que valga. Dejar
+    // `fiable: true` junto a "no se detectó ningún evento" sería una
+    // afirmación falsa: no se detectó nada porque nunca se cargó la página.
+    if (portada.nav_error) {
+      ficha.pixel.fiable = false;
+      ficha.pixel.motivo_no_fiable =
+        `La página no llegó a cargar (${portada.nav_error}), así que no hubo ninguna oportunidad de observar eventos de pixel. No se mide nada sobre el pixel de esta tienda.`;
+      ficha.pixel.lectura = 'Sin medición: la página no cargó.';
+    }
+
     // --- WhatsApp ---
     const wa = await detectarWhatsApp(resultados);
     ficha.whatsapp = {

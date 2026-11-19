@@ -1,0 +1,210 @@
+{
+  "dominio": "lotengotienda.com",
+  "estado": "ok",
+  "medido_el": "2026-11-19T18:06:24.867Z",
+  "entorno": {
+    "dispositivo": "Pixel 7 (emulado en Chromium)",
+    "locale": "es-CO",
+    "zona_horaria": "America/Bogota",
+    "reposo_tras_carga_ms": 6000,
+    "device_scale_factor_capturas": 2,
+    "nota": "Sin estrangulamiento de red ni CPU: los tiempos son de un móvil emulado sobre la red del contenedor, así que comparan bien entre tiendas pero son optimistas frente a un 4G real."
+  },
+  "anuncios_meta": {
+    "dias_del_anuncio_activo_mas_antiguo": 356,
+    "versiones_de_anuncio": 41,
+    "medido_el": "2026-11-19",
+    "advertencia": "Son días desde la publicación del anuncio activo más antiguo, NO días de campaña continua. Indica gasto sostenido, no continuidad."
+  },
+  "plataforma": {
+    "detectada": "Shopify",
+    "senales": [
+      "/cdn\\.shopify\\.com/i",
+      "/\\/cdn\\/shop\\//i",
+      "/Shopify\\.theme/i",
+      "/myshopify\\.com/i",
+      "/shopify-features/i"
+    ],
+    "otras_senales_presentes": [
+      "Dropi"
+    ]
+  },
+  "rendimiento": {
+    "portada": {
+      "ms_dom": 1116,
+      "ms_load": 2099,
+      "ms_respuesta_servidor": 247,
+      "ms_reloj_hasta_dom": 1118,
+      "kb_transferidos": 2438.8,
+      "kb_por_tipo": {
+        "Document": 70,
+        "Stylesheet": 70.1,
+        "Script": 1147.3,
+        "Font": 47.3,
+        "Fetch": 18.7,
+        "Image": 405.6,
+        "XHR": 6.9,
+        "Preflight": 0,
+        "Ping": 9.7,
+        "Other": 663.1
+      },
+      "peticiones": 205,
+      "imagenes_en_dom": 26
+    },
+    "producto": {
+      "ms_dom": 794,
+      "ms_load": 2035,
+      "ms_respuesta_servidor": 206,
+      "ms_reloj_hasta_dom": 798,
+      "kb_transferidos": 2613.7,
+      "kb_por_tipo": {
+        "Stylesheet": 29.9,
+        "Script": 55.5,
+        "Font": 0,
+        "Document": 84.7,
+        "Image": 2172.6,
+        "Fetch": 19.8,
+        "Ping": 11.1,
+        "XHR": 20.4,
+        "Preflight": 0,
+        "Other": 219.8
+      },
+      "peticiones": 286,
+      "imagenes_en_dom": 45
+    },
+    "nota_metrica": "ms_dom es domContentLoadedEventEnd de Navigation Timing (el propio navegador). kb_transferidos son bytes reales de red (comprimidos, con encabezados) vía CDP, en un contexto sin caché."
+  },
+  "producto": {
+    "url": "https://lotengotienda.com/products/colgante-sello-de-7-arcangeles",
+    "como_se_encontro": "enlace en la portada",
+    "es_la_misma_portada": false,
+    "titulo": "Colgante de Protección de los 7 Arcángeles – Lo Tengo Tienda",
+    "nav_error": null,
+    "resenas": {
+      "visibles": true,
+      "evidencia_texto_visible": "r de Ventas en Colombia 4.9 Estrellas Compras Verificadas EQUILIBRIO ANTE CARGAS FINANC",
+      "widgets_detectados_en_html": [],
+      "nota": "Hay señal de reseñas en el texto visible de la ficha."
+    },
+    "contraentrega": {
+      "mencionada": false,
+      "evidencia": null
+    },
+    "cuotas": {
+      "mencionadas": false,
+      "evidencia": null,
+      "marcas": [
+        "Addi"
+      ]
+    }
+  },
+  "pixel": {
+    "fiable": true,
+    "motivo_no_fiable": null,
+    "peticiones_tr_sin_parametro_ev": 3,
+    "bloqueos_criticos_por_politica_del_sitio": [],
+    "fbevents_js_cargado": true,
+    "google_tag_manager_cargado": false,
+    "eventos_observados": [],
+    "tipos_de_evento": [],
+    "ids_que_dispararon": [],
+    "ids_declarados_en_html": [],
+    "lectura": "No se detectó ningún evento de pixel en el navegador. Esto NO prueba que la tienda no tenga pixel: puede estar usando la API de Conversiones server-side, que es legítima y no se ve desde el navegador."
+  },
+  "whatsapp": {
+    "tiene_enlace": false,
+    "enlaces": [],
+    "lectura": "No se encontró ningún enlace wa.me, wa.link, api.whatsapp.com ni whatsapp.com/send en el HTML de la portada ni de la ficha de producto."
+  },
+  "bloqueados": [
+    {
+      "host": "shop.app",
+      "motivo": "net::ERR_BLOCKED_BY_RESPONSE",
+      "origen": "politica del sitio o del navegador",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://shop.app/pay/hop?analytics_trace_id=924443fa-ded5-471c-a5d6-967ce65416bf&target_origin=https%3A%2F%2Flotengotienda.com&client_handle=lo-tengo-tienda.myshopify.com"
+    },
+    {
+      "host": "lotengotienda.com",
+      "motivo": "net::ERR_ABORTED",
+      "origen": "navegacion abortada (no concluyente)",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://lotengotienda.com/cdn/shop/t/36/assets/component-rte.css?v=7978"
+    },
+    {
+      "host": "dropify.dropi.co",
+      "motivo": "net::ERR_FAILED",
+      "origen": "red del entorno",
+      "critico_para_el_pixel": false,
+      "pagina": "portada",
+      "url": "https://dropify.dropi.co/api/setting-checkout/getIndispensableSettings?domain=lo-tengo-tienda.myshopify.com"
+    },
+    {
+      "host": "lopnbnfpjmgpbppclhclehhgafnifija",
+      "motivo": "net::ERR_UNKNOWN_URL_SCHEME",
+      "origen": "red del entorno",
+      "critico_para_el_pixel": false,
+      "pagina": "producto",
+      "url": "chrome-extension://lopnbnfpjmgpbppclhclehhgafnifija/aiscripts/t.js"
+    }
+  ],
+  "red_limpia_para_el_pixel": true,
+  "banner_cookies": {
+    "portada": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    },
+    "producto": {
+      "detectado": false,
+      "aceptado": false,
+      "texto_boton": null
+    }
+  },
+  "capturas": {
+    "portada": {
+      "archivo": "capturas/lotengotienda.com-portada.png",
+      "truncada": true,
+      "alto_css": 3427,
+      "error": null
+    },
+    "producto": {
+      "archivo": "capturas/lotengotienda.com-producto.png",
+      "truncada": true,
+      "alto_css": 8866,
+      "error": null
+    },
+    "nota": "Capturas a deviceScaleFactor 2 (824 px de ancho). Las páginas de más de 3000 px CSS de alto se recortan a esa altura; el campo truncada lo indica."
+  },
+  "hosts_de_terceros": [
+    "analytics-ipv6.tiktokw.us",
+    "analytics.tiktok.com",
+    "api.mercadopago.com",
+    "api.trustoo.io",
+    "c.bing.com",
+    "c.clarity.ms",
+    "cdn.shopify.com",
+    "cdn.vstar.app",
+    "code.jquery.com",
+    "connect.facebook.net",
+    "dropify.dropi.co",
+    "fonts.googleapis.com",
+    "fonts.gstatic.com",
+    "h.clarity.ms",
+    "ipapi.co",
+    "lopnbnfpjmgpbppclhclehhgafnifija",
+    "otlp-http-production.shopifysvc.com",
+    "randomuser.me",
+    "rapi.trustoo.io",
+    "scripts.clarity.ms",
+    "shop.app",
+    "www.clarity.ms",
+    "www.cloudflare.com",
+    "www.facebook.com",
+    "www.mercadolibre.com",
+    "www.mercadolivre.com",
+    "www.mercadopago.com"
+  ]
+}
