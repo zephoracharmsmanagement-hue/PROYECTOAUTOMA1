@@ -243,11 +243,11 @@ puede decir). El dominio por defecto, de refuerzo, sirve para las dos.*
 >
 > `[CORTE: te quedas quieto sobre el GIF]`
 >
-> Comprimido se ve igual. No hay que quitarlo.
+> Comprimida se ve igual. No hay que quitarla.
 >
 > `[CORTE: la ficha de sowicolombia, quieta]`
 >
-> La segunda no se ve y es la más caro: tus dos pixeles de navegador miden mal, y al revés. El de
+> La segunda no se ve y es la más cara: tus dos pixeles de navegador miden mal, y al revés. El de
 > Sowi Colombia, que termina en **cuatro siete siete nueve**, avisa que alguien entró pero **nunca
 > cuál producto miró**.
 >
