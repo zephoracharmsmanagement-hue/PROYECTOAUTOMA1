@@ -60,7 +60,8 @@ en su §4; aquí están las que más cuestan si se olvidan:
 - **No reabras decisiones de arquitectura.** Están cerradas y citadas textualmente en el
   §3 del traspaso: plantilla nativa en n8n con Haiku 5.5, modelo BYOK, setup 1.500.000
   COP, mantenimiento 300.000 COP/mes, sin prometer Prompt Caching.
-- **No toques el bot de Zephora** hasta que hablemos de las dos correcciones pendientes.
+- **No toques el bot de Zephora.** Está funcionando y lo dejamos en pausa; está todo documentado
+  por si lo retomamos.
 
 ## Dónde está todo
 
@@ -87,16 +88,11 @@ Grabar los cuatro videos de prospección. El camino crítico, en orden:
    tiendas del mismo dueño).
 3. Montamos con `ffmpeg`. Esto es lo que te toca a ti.
 
-## Dos cosas que decido yo y todavía no he decidido
+## Lo que ya decidí y lo que falta
 
-Tenlas presentes y recuérdamelas si se me pasan:
-
-- **Si firmo como «Martín»** en los videos. Los cuatro guiones lo dicen y nunca lo
-  confirmé.
-- **Si uso voz clonada o voz real** para estos primeros cuatro. La sesión anterior me
-  recomendó voz real para los primeros y guardar el clon para cuando pase de 4 prospectos
-  a 50; no he respondido.
-
-Y una pregunta abierta que importa más de lo que parece: **no he dicho si la pauta de
-Zephora está corriendo.** Si está apagada, la prioridad de optimizar el prompt del bot
-cambia, porque a dos conversaciones por día cuesta centavos.
+- **Firmo como «Martín»** y quiero añadir «de [empresa]». Falta el nombre, y antes de usarlo
+  necesito una página web mínima: un nombre de empresa que no aparece en Google resta
+  credibilidad. Mientras no exista, los videos dicen solo «Martín».
+- **No locuto los videos con mi voz real**: no me salen los tonos y la prefiero para cerrar
+  tratos. Lo recomendado es clonar mi voz y que ElevenLabs ponga la entonación, para que la
+  voz del video sea la misma que oyen cuando los llamo. Todavía no lo he confirmado.

@@ -248,30 +248,35 @@ se pase de 5 prospectos a 50.
 ## 6. Pendientes, en orden
 
 ### Camino crítico para grabar los videos
-1. **Confirmar la firma.** Los cinco guiones dicen «Soy Martín». **Nunca se confirmó.**
-2. **Clonar la voz** en la app de ElevenLabs (Instant Voice Clone). Las muestras se graban
-   leyendo el guion 1 con el mismo micrófono, cuarto y tono de los videos: el clon copia
-   el registro, no solo el timbre.
+1. **La firma (decidido el 20 nov):** «Martín» sí, y el dueño quiere añadir «de [empresa]».
+   **Falta el nombre de la empresa**, y una página mínima antes de usarlo: un nombre de
+   empresa que no aparece en Google resta credibilidad en vez de sumarla. Hasta que la
+   página exista, los videos firman solo «Martín».
+2. **La voz (decidido el 20 nov):** el dueño no quiere locutar los videos con su voz real
+   porque no siente que le salgan los tonos; quiere reservarla para cerrar tratos. Opción
+   recomendada: **clonar su voz** (Instant Voice Clone) y dejar que ElevenLabs ponga la
+   entonación, para que la voz del video y la de la llamada de cierre sean la misma. Una voz
+   de catálogo diciendo «Soy Martín» choca cuando el prospecto luego lo oye por teléfono.
+   Pendiente de confirmar.
 3. **Grabar las pantallas** de las cinco tiendas desde celular — en cuatro videos, porque el
    guion 2 cubre dos tiendas del mismo dueño.
 4. **Montar** con `ffmpeg` — esto es lo que desbloquea la sesión local.
 
-### Zephora
-5. **Segunda medición** del filtro (tarea `trig_01F863yHgNWYwGqsS5m7anGz`).
-6. **Aplicar las correcciones (a) y (b)** si la medición las confirma — con visto bueno.
-7. **§3.4: adelgazar el prompt de sistema** — 31%, es la palanca más grande de todas.
-   Diseñado, no empezado.
+### Zephora · en pausa por decisión del dueño (20 nov)
+El bot está funcionando y el dueño pidió dejar el tema ahí por ahora. **No se toca nada.**
+Queda documentado y disponible si se retoma: la segunda medición no se completó por falta de
+tráfico (§9 del otro traspaso), las correcciones (a) y (b) están diseñadas sin aplicar, y la
+§3.4 (adelgazar el prompt, la palanca del 31%) está diseñada sin empezar.
 
 ### Varios
 8. **`video_pauta.py`**: quitarle la banda de precio. Solo corre en Windows.
 9. **Escribir el guion 5** para `fantasiasnewyork.com` (datos arriba), y auditar más prospectos
    de los 546 si los cuatro primeros funcionan.
 
-### La pregunta que nunca se respondió
-10. **¿Está corriendo la pauta de Zephora?** Hubo ~2 conversaciones en 6,5 horas. Se
-    preguntó dos veces. Importa porque a ese volumen el bot cuesta centavos al día: la
-    optimización del costo vale para **los clientes**, no para Zephora. Si la pauta está
-    apagada, la prioridad del punto 7 cambia.
+### Dato para cuando se retome Zephora
+10. El volumen medido es de **2 a 4 conversaciones al día** (7,7 mensajes al modelo de media,
+    17–19 nov). A ese volumen el bot cuesta ~$31–49 al mes: la optimización del costo vale
+    para **los clientes de la agencia**, no para Zephora.
 
 ---
 
