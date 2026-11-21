@@ -33,6 +33,8 @@ const SITES = [
   { id: 'ref-wemakewebsites', urls: ['https://wemakewebsites.com/'] },
   { id: 'ref-swanky', urls: ['https://swankyagency.com/'] },
   { id: 'ref-fuelmade', urls: ['https://fuelmade.com/'] },
+  // Reemplazo: wemakewebsites.com respondió 403 al navegador automatizado
+  { id: 'ref-eastsideco', urls: ['https://eastsideco.com/'] },
 ];
 
 function log(...a) {
@@ -131,7 +133,7 @@ function extractInPage() {
     const key = t.toLowerCase() + '|' + href;
     if (seen.has(key)) continue;
     seen.add(key);
-    ctas.push({ texto: t, destino: href ? (el.href || href) : '(botón sin enlace / acción JS)', y: top(el) });
+    ctas.push({ texto: t, destino: href ? (typeof el.href === 'string' ? el.href : href) : '(botón sin enlace / acción JS)', y: top(el) });
   }
 
   const body = document.body ? document.body.innerText : '';
@@ -159,7 +161,7 @@ function extractInPage() {
   const logoAlts = [...new Set(logoImgs.map((i) => i.getAttribute('alt') || '').filter((a) => a && a.length < 60))].slice(0, 40);
 
   // Contacto
-  const hrefs = [...document.querySelectorAll('a[href]')].map((a) => a.href);
+  const hrefs = [...document.querySelectorAll('a[href]')].map((a) => { try { return new URL(a.getAttribute('href'), location.href).href; } catch { return String(a.getAttribute('href') || ''); } });
   const whatsapp = [...new Set(hrefs.filter((h) => /wa\.me|whatsapp\.com|api\.whatsapp/i.test(h)))].slice(0, 5);
   const agenda = [...new Set(hrefs.filter((h) => /calendly|cal\.com|meetings\.hubspot|tidycal|zcal|savvycal|booking|agendar|calendar\.app|leadconnector.*calendar|youcanbook/i.test(h)))].slice(0, 5);
   const iframes = [...document.querySelectorAll('iframe')].map((f) => f.src).filter(Boolean);
