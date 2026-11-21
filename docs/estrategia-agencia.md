@@ -212,6 +212,9 @@ lo pidan.
    la línea base con sus datos de Dropi, y esa medición es también el diagnóstico.
 
 ### Escalera de precios (propuesta)
+
+> **Reemplazada por `docs/precios.md`** (21 nov): el dueño decidió arrancar con precios
+> económicos. La tabla de abajo queda como referencia del primer planteamiento.
 | Escalón | Qué es | Precio de lista | Precio fundador | Ancla de mercado |
 |---|---|---|---|---|
 | 0 | Video diagnóstico | Gratis | — | Nadie lo hace aquí |
