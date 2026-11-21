@@ -1,0 +1,161 @@
+{
+  "sitio": "boteromedia",
+  "url": "https://www.shopify.com/partners/directory/partner/botero-media1",
+  "capturadoEn": "2026-11-21T00:53:58.489Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.shopify.com/partners/directory/partner/botero-media1"
+  },
+  "titulo": "BOTEROMEDIA",
+  "metaDescripcion": "How do we do it? We provide continuous support through dedicated teams to scale your e-commerce, focusing on strategy, development, and critical operations. Our expertise lies in e-commerce strategy and development, median buying, content creation and email marketing.",
+  "idioma": "en",
+  "h1": [
+    "BOTEROMEDIA"
+  ],
+  "subtituloHero": "How do we do it? We provide continuous support through dedicated teams to scale your e-commerce, focusing on strategy, development, and critical operations. Our expertise lies in e-commerce strategy and development, median buying, content creation and email marketing. Contact Visit website LinkedIn Facebook Instagram",
+  "ctas": [
+    {
+      "texto": "Skip to Content",
+      "destino": "https://www.shopify.com/partners/directory/partner/botero-media1#main",
+      "y": -80
+    },
+    {
+      "texto": "Start for free",
+      "destino": "https://www.shopify.com/free-trial",
+      "y": 18
+    },
+    {
+      "texto": "Plus",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 182
+    },
+    {
+      "texto": "Contact",
+      "destino": "mailto:carlosandres@botero.net.co",
+      "y": 278
+    },
+    {
+      "texto": "Facebook",
+      "destino": "https://www.facebook.com/people/Boteromedia/100063503456650/?ref=bookmarks",
+      "y": 278
+    },
+    {
+      "texto": "About experience data",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 666
+    },
+    {
+      "texto": "Platform migration (opens in a new tab)",
+      "destino": "https://www.shopify.com/partners/directory/services/migrations?source_page_view_token=3af789e7-cccf-4008-ba68-18960fcf2764&source_page_type=partner_profile",
+      "y": 1062
+    },
+    {
+      "texto": "Free Tools",
+      "destino": "https://www.shopify.com/tools",
+      "y": 1545
+    },
+    {
+      "texto": "USA | English",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1744
+    },
+    {
+      "texto": "External source: Facebook (Opens in a new window)",
+      "destino": "https://www.facebook.com/shopify",
+      "y": 1798
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "BOTEROMEDIA",
+      "y": 128
+    },
+    {
+      "nivel": "h2",
+      "texto": "About",
+      "y": 365
+    },
+    {
+      "nivel": "h2",
+      "texto": "Experience",
+      "y": 664
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify",
+      "y": 1371
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ecosystem",
+      "y": 1371
+    },
+    {
+      "nivel": "h3",
+      "texto": "Resources",
+      "y": 1371
+    },
+    {
+      "nivel": "h3",
+      "texto": "Support",
+      "y": 1371
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [
+      "Based on the last 4 years of Shopify data"
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 26,
+    "altLogos": [
+      "Shopify"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [
+      "mailto:carlosandres@botero.net.co"
+    ],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Start for free",
+    "Free Tools"
+  ],
+  "plataforma": [
+    "Shopify",
+    "Elementor",
+    "Webflow",
+    "Squarespace"
+  ],
+  "rastreadores": [
+    "Meta Pixel",
+    "GTM",
+    "Google Analytics",
+    "TikTok Pixel"
+  ],
+  "altoPaginaPx": 1910,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.shopify.com/partners/directory/partner/botero-media1"
+    },
+    "pesoTransferidoKB": 1601,
+    "pesoTransferidoMB": 1.56,
+    "solicitudes": 156,
+    "domContentLoadedMs": 349,
+    "loadMs": 1786,
+    "ttfbMs": 169,
+    "medidoTrasMs": 7296,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

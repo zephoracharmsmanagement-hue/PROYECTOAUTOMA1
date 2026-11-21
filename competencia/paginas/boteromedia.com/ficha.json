@@ -1,0 +1,306 @@
+{
+  "sitio": "boteromedia",
+  "url": "https://www.boteromedia.com/",
+  "capturadoEn": "2026-11-21T00:53:23.963Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://boteromedia.com/"
+  },
+  "titulo": "BOTEROMEDIA | Agencia de eCommerce en Shopify con SEO, CRO y Paid Medi",
+  "metaDescripcion": "Llevamos marcas en Shopify al siguiente nivel con SEO, CRO, pauta digital, email marketing y estrategia eCommerce para impulsar tráfico, conversión y ventas. +200M USD vendidos en Shopify · +200 tiendas escaladas · +50 reviews positivas en Shopify Partners",
+  "idioma": "es",
+  "h1": [
+    "📖 THE SCALING JOURNAL"
+  ],
+  "subtituloHero": "Quien no entrena el pensamiento, repite los errores. Este es nuestro blog:",
+  "ctas": [
+    {
+      "texto": "Español",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 9
+    },
+    {
+      "texto": "🧠 Aprende Gratis en YouTube",
+      "destino": "https://boteromedia.com/pages/shopify-tutorial-gratis",
+      "y": 0
+    },
+    {
+      "texto": "Cuenta",
+      "destino": "https://boteromedia.com/account",
+      "y": 12
+    },
+    {
+      "texto": "Work with us ➔",
+      "destino": "https://boteromedia.com/pages/contact",
+      "y": 12
+    },
+    {
+      "texto": "I’M READY TO SCALE ➔",
+      "destino": "https://boteromedia.com/pages/contact",
+      "y": 306
+    },
+    {
+      "texto": "ECOMMERCE",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1483
+    },
+    {
+      "texto": "CONTENIDO",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1483
+    },
+    {
+      "texto": "CRM",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1483
+    },
+    {
+      "texto": "ESTRATEGIA",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1483
+    },
+    {
+      "texto": "PAUTA DIGITAL",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1483
+    },
+    {
+      "texto": "Previous slide",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2837
+    },
+    {
+      "texto": "Next slide",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2837
+    },
+    {
+      "texto": "¿Dónde operan y a qué mercados atienden con sus servicios de Shopify?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8131
+    },
+    {
+      "texto": "¿Qué diferencia a Boteromedia de otras agencias de marketing digital?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8266
+    },
+    {
+      "texto": "Servicios prestados por BoteroMedia",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8334
+    },
+    {
+      "texto": "Servicios NO prestados por BoteroMedia",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8401
+    },
+    {
+      "texto": "¿Qué tipo de contenido pueden crear para mi marca?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8469
+    },
+    {
+      "texto": "¿En que plataformas hacen pauta digital?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8536
+    },
+    {
+      "texto": "¿Pueden ayudarme a automatizar mi proceso de ventas?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8671
+    },
+    {
+      "texto": "Q4 se gana en la conversión: el playbook CRO para Black Friday 2026",
+      "destino": "https://boteromedia.com/blogs/shopify-ecommerce-scaling-journal/q4-se-gana-en-la-conversion-el-playbook-cro-para-black-friday-2026",
+      "y": 9462
+    },
+    {
+      "texto": "Registrarme",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 9942
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h2",
+      "texto": "ESCALA TU TIENDA SHOPIFY CON SISTEMAS QUE CONVIERTEN",
+      "y": 92
+    },
+    {
+      "nivel": "h2",
+      "texto": "+ $200M USD",
+      "y": 1226
+    },
+    {
+      "nivel": "h2",
+      "texto": "+ $20M USD",
+      "y": 1226
+    },
+    {
+      "nivel": "h2",
+      "texto": "+ $16M USD",
+      "y": 1226
+    },
+    {
+      "nivel": "h2",
+      "texto": "CLIENTES FULL SERVICE",
+      "y": 2305
+    },
+    {
+      "nivel": "h2",
+      "texto": "CLIENTES PAID MEDIA",
+      "y": 2922
+    },
+    {
+      "nivel": "h2",
+      "texto": "CLIENTES DE CRO & EMAIL",
+      "y": 3538
+    },
+    {
+      "nivel": "h2",
+      "texto": "EXCELENTE",
+      "y": 4240
+    },
+    {
+      "nivel": "h2",
+      "texto": "EXCELENTE",
+      "y": 4662
+    },
+    {
+      "nivel": "h3",
+      "texto": "PAID VIDEO ADS",
+      "y": 5037
+    },
+    {
+      "nivel": "h2",
+      "texto": "¿ESTO ES PARA TI?",
+      "y": 5701
+    },
+    {
+      "nivel": "h2",
+      "texto": "PROCESO EN 5 PASOS",
+      "y": 6329
+    },
+    {
+      "nivel": "h2",
+      "texto": "SÚBETE A LA NAVE Y APRENDE ECOMMERCE. GRATIS.",
+      "y": 6991
+    },
+    {
+      "nivel": "h2",
+      "texto": "PREGUNTAS FRECUENTES",
+      "y": 7994
+    },
+    {
+      "nivel": "h2",
+      "texto": "¿EL PEOR ESCENARIO?",
+      "y": 8789
+    },
+    {
+      "nivel": "h1",
+      "texto": "📖 THE SCALING JOURNAL",
+      "y": 8990
+    }
+  ],
+  "preciosTexto": [
+    "💰 +$200M USD en ventas World Wide. Resultados en 90 días.",
+    "+ $200M USD",
+    "+ $20M USD",
+    "+ $16M USD",
+    "✅ Ya tienes una tienda en Shopify con ventas, pero estás estancado en los $20k mensuales."
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "💰 +$200M USD en ventas World Wide. Resultados en 90 días.",
+      "+200 tiendas en Shopify Worldwide confían en nosotros (Desde suplementos hasta tecnología)",
+      "EN 10 AÑOS",
+      "+ Escalamos ventas +150% en menos de 6 meses",
+      "+ Aumentamos ROAS en +8",
+      "+ Escalamos ventas +200% en menos de 6 meses",
+      "+ Aumentamos ROAS en +10",
+      "+ Escalamos ventas +480% en menos de 6 meses",
+      "+ Aumentamos ROAS en +6",
+      "+ Más de 150% (promedio) Crecimiento Ecomme YOT",
+      "+ Mejora en tasa de conversión 47%",
+      "+ Mejora AOV + 11%",
+      "+ Mejora Recompra 17%",
+      "+ Mejora AOV + 15%",
+      "+ Mejora Recompra 100%",
+      "+ Mejora en tasa de conversión 15%",
+      "Basado en 103 opiniones",
+      "Outstanding job, customer service always available and ready to help. I am very happy with the results and recommend the company 100%",
+      "✅ Ya tienes una tienda en Shopify con ventas, pero estás estancado en los $20k mensuales."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 10,
+    "logosDetectados": 139,
+    "altLogos": [
+      "BOTEROMEDIA",
+      "BELLS COOKIES logo",
+      "PARANICE logo",
+      "DECOFIGURA logo",
+      "BAOBAB logo",
+      "AMERICAN EAGLE logo",
+      "LAZO logo",
+      "TIGOGREEN logo",
+      "EXCELLENCE FERTILY logo",
+      "LUMMIA logo",
+      "Partner logo 1",
+      "Partner logo 2",
+      "Partner logo 3",
+      "Partner logo 4",
+      "Partner logo 5",
+      "Partner logo 6",
+      "Partner logo 7"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [
+      {
+        "accion": "/contact#newsletter-footer-block",
+        "visible": true,
+        "campos": [
+          "Correo electrónico"
+        ]
+      }
+    ],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "🧠 Aprende Gratis en YouTube",
+    "✅ Quieres escalar sin contratar 5 freelancers y 10 agencias distintas.",
+    "AUDITORÍA GRATUITA",
+    "Te entregamos una auditoría completa sin costo: ads, ecommerce y estrategia.",
+    "Reuniones semanales, nuevos tests, reporting real. No vendemos horas, vendemos resultados.",
+    "SÚBETE A LA NAVE Y APRENDE ECOMMERCE. GRATIS.",
+    "15 min GRATIS con un experto | Sin compromiso"
+  ],
+  "plataforma": [
+    "Shopify"
+  ],
+  "rastreadores": [
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 10150,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://boteromedia.com/"
+    },
+    "pesoTransferidoKB": 17601,
+    "pesoTransferidoMB": 17.19,
+    "solicitudes": 436,
+    "domContentLoadedMs": 4859,
+    "loadMs": 7206,
+    "ttfbMs": 856,
+    "medidoTrasMs": 12713,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}
