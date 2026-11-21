@@ -1,0 +1,245 @@
+{
+  "sitio": "ref-fuelmade",
+  "url": "https://fuelmade.com/",
+  "capturadoEn": "2026-11-21T00:59:17.139Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://fuelmade.com/"
+  },
+  "titulo": "We help ecommerce companies grow on Shopify and Klaviyo – Fuel Made",
+  "metaDescripcion": "We specialize in premium custom Shopify design and development and advanced email marketing using Klaviyo. We are one of a handful of Shopify Plus partners, as well as a Klaviyo Master Elite Partner.",
+  "idioma": "en",
+  "h1": [
+    "We improve conversion rate, average order value, and lifetime value for ecommerce brands."
+  ],
+  "subtituloHero": "2.5% 2.8% 2.2% 3.0% 3.2% 3.8% 4.1%",
+  "ctas": [
+    {
+      "texto": "SERVICES",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2
+    },
+    {
+      "texto": "CASE STUDIES",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2
+    },
+    {
+      "texto": "WORK WITH US",
+      "destino": "https://fuelmade.com/pages/contact",
+      "y": 19
+    },
+    {
+      "texto": "SEE HOW",
+      "destino": "https://fuelmade.com/pages/services",
+      "y": 405
+    },
+    {
+      "texto": "The Office Oasis SHOPIFY PLUS",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2048
+    },
+    {
+      "texto": "BK Beauty KLAVIYO",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2048
+    },
+    {
+      "texto": "Turbie Twist SHOPIFY PLUS",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2048
+    },
+    {
+      "texto": "Smidge KLAVIYO",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2048
+    },
+    {
+      "texto": "Tuft & Paw SHOPIFY PLUS",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2048
+    },
+    {
+      "texto": "Super7 KLAVIYO",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2048
+    },
+    {
+      "texto": "FULL CASE STUDY",
+      "destino": "https://fuelmade.com/pages/case-study/the-office-oasis",
+      "y": 2574
+    },
+    {
+      "texto": "LET'S GO",
+      "destino": "https://fuelmade.com/pages/contact",
+      "y": 3756
+    },
+    {
+      "texto": "SUBMIT",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4135
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "We improve conversion rate, average order value, and lifetime value for ecommerce brands.",
+      "y": 184
+    },
+    {
+      "nivel": "h2",
+      "texto": "OUR SERVICES",
+      "y": 738
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify Design and Development",
+      "y": 894
+    },
+    {
+      "nivel": "h3",
+      "texto": "Klaviyo Email and SMS Marketing",
+      "y": 894
+    },
+    {
+      "nivel": "h3",
+      "texto": "Conversion Rate Optimization",
+      "y": 894
+    },
+    {
+      "nivel": "h2",
+      "texto": "Brands that put their trust in us.",
+      "y": 1210
+    },
+    {
+      "nivel": "h2",
+      "texto": "Uncover and capture unrealized revenue",
+      "y": 1967
+    },
+    {
+      "nivel": "h3",
+      "texto": "The Office Oasis’ website redesign helped combat Amazon competitors",
+      "y": 2235
+    },
+    {
+      "nivel": "h2",
+      "texto": "Don’t just take our word for it.",
+      "y": 2991
+    },
+    {
+      "nivel": "h3",
+      "texto": "TOMS × Jonas Paul",
+      "y": 3501
+    },
+    {
+      "nivel": "h3",
+      "texto": "SASnola",
+      "y": 3501
+    },
+    {
+      "nivel": "h3",
+      "texto": "RV SnapPad",
+      "y": 3501
+    },
+    {
+      "nivel": "h2",
+      "texto": "Ready to work with us?",
+      "y": 3756
+    },
+    {
+      "nivel": "h2",
+      "texto": "SERVICES",
+      "y": 4038
+    },
+    {
+      "nivel": "h2",
+      "texto": "COMPANY",
+      "y": 4038
+    },
+    {
+      "nivel": "h2",
+      "texto": "FEATURED BY FM",
+      "y": 4038
+    },
+    {
+      "nivel": "h3",
+      "texto": "Get the goods.",
+      "y": 3978
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [
+      "2.5%",
+      "2.8%",
+      "2.2%",
+      "3.0%",
+      "3.2%",
+      "3.8%",
+      "4.1%",
+      "+ 59%",
+      "+ 57%",
+      "+ 62%",
+      "+ 47%",
+      "How SASnola achieved 135x email marketing ROI.",
+      "Modern UX, major growth: RV SnapPad’s 40% revenue increase."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 7,
+    "altLogos": [
+      "Shopify Plus partner logo",
+      "Klaviyo Master Elite logo"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [
+      {
+        "accion": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
+        "visible": false,
+        "campos": [
+          "Email Address"
+        ]
+      },
+      {
+        "accion": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
+        "visible": true,
+        "campos": [
+          "Email Address"
+        ]
+      }
+    ],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [],
+  "plataforma": [
+    "Shopify"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics",
+    "Microsoft Clarity"
+  ],
+  "altoPaginaPx": 4430,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://fuelmade.com/"
+    },
+    "pesoTransferidoKB": 2274,
+    "pesoTransferidoMB": 2.22,
+    "solicitudes": 170,
+    "domContentLoadedMs": 844,
+    "loadMs": 1599,
+    "ttfbMs": 204,
+    "medidoTrasMs": 7108,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}
