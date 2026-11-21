@@ -1,0 +1,485 @@
+{
+  "sitio": "zeroazul",
+  "url": "https://zeroazul.com/agencia-shopify",
+  "capturadoEn": "2026-11-21T00:50:56.833Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://zeroazul.com/agencia-shopify"
+  },
+  "titulo": "Agencia Shopify Colombia | Shopify Partner | Zero Azul",
+  "metaDescripcion": "Somos agencia Shopify Partner en Colombia. Creamos, migramos y optimizamos tiendas Shopify con pagos locales, ERP colombianos, Workers IA y logística integrada. Migración desde WooCommerce, Magento o tienda propia.",
+  "idioma": "es-CO",
+  "h1": [
+    "Agencia Shopify Partner en Colombia"
+  ],
+  "subtituloHero": "Somos Shopify Partner con presencia en Colombia. No solo montamos tu tienda — la conectamos con tu ERP, tu logística, tus medios de pago locales y agentes IA que trabajan 24/7. Migración, diseño, desarrollo, optimización y soporte continuo.",
+  "ctas": [
+    {
+      "texto": "Soluciones",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 58
+    },
+    {
+      "texto": "Herramientas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 58
+    },
+    {
+      "texto": "Contacto",
+      "destino": "https://zeroazul.com/contacto",
+      "y": 66
+    },
+    {
+      "texto": "Asesoría Gratuita",
+      "destino": "https://zeroazul.com/contacto",
+      "y": 55
+    },
+    {
+      "texto": "Agendemos un espacio virtual",
+      "destino": "https://calendly.com/cristian-parada",
+      "y": 751
+    },
+    {
+      "texto": "Hablar por WhatsApp",
+      "destino": "https://wa.me/573337368562?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2Fagencia-shopify%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 819
+    },
+    {
+      "texto": "Edge from actor to source",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 393
+    },
+    {
+      "texto": "Edge from source to engine",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 639
+    },
+    {
+      "texto": "Edge from engine to out1",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 712
+    },
+    {
+      "texto": "Edge from engine to out2",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 746
+    },
+    {
+      "texto": "Tus clientes Compran 24/7",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 356
+    },
+    {
+      "texto": "tutienda.com Shop",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 666
+    },
+    {
+      "texto": "Contáctanos",
+      "destino": "https://zeroazul.com/agencia-shopify#contacto",
+      "y": 1438
+    },
+    {
+      "texto": "Cotizar",
+      "destino": "https://zeroazul.com/contacto",
+      "y": 1436
+    },
+    {
+      "texto": "precios de migración y soporte",
+      "destino": "https://zeroazul.com/agencia-shopify/precios",
+      "y": 5168
+    },
+    {
+      "texto": "Solicitar cotización exacta →",
+      "destino": "https://zeroazul.com/contacto",
+      "y": 5351
+    },
+    {
+      "texto": "Cotizar proyecto",
+      "destino": "https://zeroazul.com/contacto",
+      "y": 6838
+    },
+    {
+      "texto": "Ver diagnósticos IA",
+      "destino": "https://zeroazul.com/herramientas/diagnostico-stack",
+      "y": 6836
+    },
+    {
+      "texto": "Contactar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 10238
+    },
+    {
+      "texto": "+57 319 594 7797",
+      "destino": "https://wa.me/573195947797?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2Fagencia-shopify%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 10582
+    },
+    {
+      "texto": "WhatsApp",
+      "destino": "https://wa.me/573195947797",
+      "y": 10674
+    },
+    {
+      "texto": "+57 313 714 6401",
+      "destino": "https://wa.me/573137146401?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2Fagencia-shopify%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 10582
+    },
+    {
+      "texto": "WhatsApp",
+      "destino": "https://wa.me/573137146401",
+      "y": 10674
+    },
+    {
+      "texto": "+57 333 736 8562",
+      "destino": "https://wa.me/573337368562?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2Fagencia-shopify%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 10582
+    },
+    {
+      "texto": "WhatsApp",
+      "destino": "https://wa.me/573337368562",
+      "y": 10674
+    },
+    {
+      "texto": "Herramientas y ebooks",
+      "destino": "https://zeroazul.com/tools",
+      "y": 11314
+    },
+    {
+      "texto": "Precios",
+      "destino": "https://zeroazul.com/precios",
+      "y": 11346
+    },
+    {
+      "texto": "Facebook",
+      "destino": "https://www.facebook.com/zeroazulagencia",
+      "y": 11346
+    },
+    {
+      "texto": "Chat por WhatsApp",
+      "destino": "https://wa.me/573337368562?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2Fagencia-shopify%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 804
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Agencia Shopify Partner en Colombia",
+      "y": 291
+    },
+    {
+      "nivel": "h2",
+      "texto": "Shopify es la plataforma. Nosotros somos quien la hace funcionar para tu negocio.",
+      "y": 1140
+    },
+    {
+      "nivel": "h3",
+      "texto": "Conocimiento local real",
+      "y": 1645
+    },
+    {
+      "nivel": "h3",
+      "texto": "Middleware propio, no apps",
+      "y": 1645
+    },
+    {
+      "nivel": "h3",
+      "texto": "IA integrada desde el día 1",
+      "y": 1645
+    },
+    {
+      "nivel": "h2",
+      "texto": "Todo lo que necesita tu tienda Shopify, en un solo lugar",
+      "y": 2177
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tiendas Shopify desde cero",
+      "y": 2370
+    },
+    {
+      "nivel": "h3",
+      "texto": "Migración desde otras plataformas",
+      "y": 2370
+    },
+    {
+      "nivel": "h3",
+      "texto": "Integración con ERP colombianos",
+      "y": 2370
+    },
+    {
+      "nivel": "h3",
+      "texto": "Agentes IA para tu tienda",
+      "y": 2721
+    },
+    {
+      "nivel": "h3",
+      "texto": "Pagos y medios locales",
+      "y": 2721
+    },
+    {
+      "nivel": "h3",
+      "texto": "SEO y crecimiento orgánico",
+      "y": 2721
+    },
+    {
+      "nivel": "h3",
+      "texto": "Logística colombiana integrada",
+      "y": 3118
+    },
+    {
+      "nivel": "h3",
+      "texto": "Soporte y retainer mensual",
+      "y": 3118
+    },
+    {
+      "nivel": "h3",
+      "texto": "Automatización n8n avanzada",
+      "y": 3118
+    },
+    {
+      "nivel": "h2",
+      "texto": "Casos de éxito en Shopify",
+      "y": 3649
+    },
+    {
+      "nivel": "h3",
+      "texto": "Joyería Inter",
+      "y": 3766
+    },
+    {
+      "nivel": "h3",
+      "texto": "ISS VIVA",
+      "y": 3766
+    },
+    {
+      "nivel": "h3",
+      "texto": "Motiv8",
+      "y": 3766
+    },
+    {
+      "nivel": "h3",
+      "texto": "Laura Ropa Interior",
+      "y": 3975
+    },
+    {
+      "nivel": "h3",
+      "texto": "Retén del Casco",
+      "y": 3975
+    },
+    {
+      "nivel": "h3",
+      "texto": "Skin Republic",
+      "y": 3975
+    },
+    {
+      "nivel": "h3",
+      "texto": "Trust Colombia",
+      "y": 4161
+    },
+    {
+      "nivel": "h2",
+      "texto": "¿Cuánto cuesta una agencia Shopify en Colombia?",
+      "y": 4533
+    },
+    {
+      "nivel": "h2",
+      "texto": "Zero Azul vs otras agencias Shopify",
+      "y": 5695
+    },
+    {
+      "nivel": "h2",
+      "texto": "Antes de elegir tu Shopify Partner",
+      "y": 7184
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify Partners: qué son y cómo serlo en Colombia",
+      "y": 7377
+    },
+    {
+      "nivel": "h3",
+      "texto": "Agencia Shopify vs. agencia tradicional",
+      "y": 7377
+    },
+    {
+      "nivel": "h3",
+      "texto": "Migración de WooCommerce a Shopify sin perder ventas",
+      "y": 7377
+    },
+    {
+      "nivel": "h3",
+      "texto": "Apps de Shopify para vender más en Colombia en 2026",
+      "y": 7752
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Qué diferencia a Zero Azul de otras agencias Shopify?",
+      "y": 8162
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Cuánto tiempo toma crear una tienda Shopify?",
+      "y": 8342
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Shopify es adecuado para empresas colombianas?",
+      "y": 8498
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Ofrecen soporte después del lanzamiento?",
+      "y": 8654
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Integran inteligencia artificial en las tiendas Shopify?",
+      "y": 8786
+    },
+    {
+      "nivel": "h2",
+      "texto": "Pásate a Shopify y conéctalo con Colombia",
+      "y": 9042
+    },
+    {
+      "nivel": "h3",
+      "texto": "Migración de WooCommerce a Shopify",
+      "y": 9234
+    },
+    {
+      "nivel": "h3",
+      "texto": "Migración de VTEX a Shopify",
+      "y": 9234
+    },
+    {
+      "nivel": "h3",
+      "texto": "Integraciones colombianas",
+      "y": 9234
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify para Venezuela",
+      "y": 9577
+    },
+    {
+      "nivel": "h2",
+      "texto": "¿Quieres que te contactemos?",
+      "y": 10212
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cristian Parada",
+      "y": 10498
+    },
+    {
+      "nivel": "h3",
+      "texto": "Camilo Torres",
+      "y": 10498
+    },
+    {
+      "nivel": "h3",
+      "texto": "Angy Castaño",
+      "y": 10498
+    },
+    {
+      "nivel": "h3",
+      "texto": "Presencia internacional",
+      "y": 10812
+    },
+    {
+      "nivel": "h3",
+      "texto": "Zero Azul SAS",
+      "y": 11074
+    },
+    {
+      "nivel": "h3",
+      "texto": "🇺🇸 USA · Zero Azul Company LLC",
+      "y": 11166
+    },
+    {
+      "nivel": "h2",
+      "texto": "Encuéntranos en:",
+      "y": 11314
+    }
+  ],
+  "preciosTexto": [
+    "Auditoría técnica Shopify $800K – $2.5M Análisis de velocidad, SEO, UX, conversión, integraciones. Reporte ejecutivo con plan de acción.",
+    "Tienda Shopify básica $3M – $8M Tema personalizado, 5-15 productos, Wompi/Mercado Pago, diseño responsive, capacitación básica.",
+    "Tienda completa $8M – $18M Catálogo completo, pagos locales, logística, facturación electrónica, SEO inicial, analítica.",
+    "Migración de plataforma Desde $2.5M ($1.5M con convenio CFA, Fenalco o SURA) Migración datos, 301 redirects, preservación SEO, pruebas de integración, capacitación del equipo.",
+    "Soporte mensual / retainer Desde $680K/mes Actualizaciones, monitoreo, soporte técnico, optimización continua, nuevas funcionalidades menores.",
+    "Sí. Tenemos planes de soporte mensual desde $680.000 COP que incluyen actualizaciones, monitoreo, soporte técnico y optimización continua. También ofrecemos soporte por horas para mejoras puntuales o emergencias."
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "15+ años en Shopify",
+      "Colombia es el tercer mercado de e-commerce con más crecimiento en Latinoamérica. Las empresas que integran su tienda con sistemas reales —no solo apps genéricas— crecen 3x más rápido.",
+      "Construimos integraciones a medida en Google Cloud Run. Sin depender de 15 apps que duplican el costo mensual y se rompen con cada actualización de Shopify.",
+      "Diseño y desarrollo completo de tiendas Shopify con Online Store 2.0. Temas personalizados, catálogo, pagos, logística — todo en un solo proyecto.",
+      "Joyería y relojería de lujo con 44 años de historia en Medellín. Tienda Shopify con marcas como Rolex, Cartier, Tudor y Chopard.",
+      "Catálogo, clientes, pedidos y redirecciones 301 sin perder SEO ni ventas.",
+      "Las ventas en línea en Colombia crecen cerca de 20 % en 2026, más del doble que el comercio minorista, con más compras y tickets más bajos.",
+      "Atendemos empresas en 14 países"
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 46,
+    "altLogos": []
+  },
+  "contacto": {
+    "whatsapp": [
+      "https://wa.me/573337368562?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2Fagencia-shopify%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "https://wa.me/573195947797?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2Fagencia-shopify%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "https://wa.me/573195947797",
+      "https://wa.me/573137146401?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2Fagencia-shopify%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "https://wa.me/573137146401"
+    ],
+    "agenda": [
+      "https://calendly.com/cristian-parada"
+    ],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [
+      "mailto:zero@zeroazul.com",
+      "mailto:camilo.torres@zeroazul.com",
+      "mailto:angy.castano@zeroazul.com"
+    ],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Asesoría Gratuita",
+    "Agendemos un espacio virtual",
+    "Con base en Medellín, atendemos empresas en toda Colombia. Lee más sobre por qué elegir un partner Shopify local en Medellín.",
+    "Migración de plataforma Desde $2.5M ($1.5M con convenio CFA, Fenalco o SURA) Migración datos, 301 redirects, preservación SEO, pruebas de integración, capacitación del equipo.",
+    "Cotiza tu proyecto sin compromiso o agenda una llamada con nuestro equipo para diagnosticar tu tienda actual.",
+    "Cuéntanos tu necesidad y te respondemos con una propuesta acorde.",
+    "Atendemos empresas en 14 países"
+  ],
+  "plataforma": [
+    "Next.js",
+    "HubSpot (scripts)"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics",
+    "Microsoft Clarity"
+  ],
+  "altoPaginaPx": 11654,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://zeroazul.com/agencia-shopify"
+    },
+    "pesoTransferidoKB": 1346,
+    "pesoTransferidoMB": 1.31,
+    "solicitudes": 62,
+    "domContentLoadedMs": 493,
+    "loadMs": 1776,
+    "ttfbMs": 249,
+    "medidoTrasMs": 7288,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

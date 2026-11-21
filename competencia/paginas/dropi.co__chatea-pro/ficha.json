@@ -1,0 +1,106 @@
+{
+  "sitio": "chateapro",
+  "url": "https://dropi.co/chatea-pro",
+  "capturadoEn": "2026-11-21T00:52:26.298Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://dropi.co/chatea-pro"
+  },
+  "titulo": "Chatea PRO | Dropi Colombia",
+  "metaDescripcion": "Chatea PRO en Dropi Colombia. Vende sin inventario con proveedores verificados, pago contra entrega y envíos de 24 a 72 horas.",
+  "idioma": "es-CO",
+  "h1": [
+    "Chatea PRO"
+  ],
+  "subtituloHero": "Optimiza tu flujo de trabajo y ve crecer tus ganancias con automatización inteligente para WhatsApp.",
+  "ctas": [
+    {
+      "texto": "Inicia sesión",
+      "destino": "https://dropi.co/inicio-de-sesion",
+      "y": 17
+    },
+    {
+      "texto": "Regístrate",
+      "destino": "https://dropi.co/registrate",
+      "y": 16
+    },
+    {
+      "texto": "Agregar a la lista de espera",
+      "destino": "https://dropi.co/contactanos",
+      "y": 337
+    },
+    {
+      "texto": "Unirme a la lista de espera",
+      "destino": "https://dropi.co/contactanos",
+      "y": 2115
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Chatea PRO",
+      "y": 213
+    },
+    {
+      "nivel": "h2",
+      "texto": "Multiplica tu capacidad de trabajo 4x",
+      "y": 1227
+    },
+    {
+      "nivel": "h2",
+      "texto": "Sé de los primeros en probar Chatea PRO",
+      "y": 1950
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [
+      "Multiplica tu capacidad de trabajo 4x"
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 4,
+    "altLogos": [
+      "Chatea PRO",
+      "Automatizacion con IA 1",
+      "Automatizacion con IA 2",
+      "Asistente inteligente Dropi"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [],
+  "plataforma": [
+    "Webflow"
+  ],
+  "rastreadores": [
+    "Meta Pixel",
+    "GTM",
+    "Google Analytics",
+    "Microsoft Clarity"
+  ],
+  "altoPaginaPx": 2583,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://dropi.co/chatea-pro"
+    },
+    "pesoTransferidoKB": 1118,
+    "pesoTransferidoMB": 1.09,
+    "solicitudes": 37,
+    "domContentLoadedMs": 555,
+    "loadMs": 1395,
+    "ttfbMs": 199,
+    "medidoTrasMs": 6906,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

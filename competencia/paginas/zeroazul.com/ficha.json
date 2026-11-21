@@ -1,0 +1,505 @@
+{
+  "sitio": "zeroazul",
+  "url": "https://zeroazul.com/",
+  "capturadoEn": "2026-11-21T00:50:34.395Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://zeroazul.com/"
+  },
+  "titulo": "Orquestación Empresarial con IA | Zero Azul",
+  "metaDescripcion": "Potencia tu transformación digital con orquestación empresarial con IA. Soluciones personalizadas, integración efectiva y optimización en Colombia y Latam.",
+  "idioma": "es-CO",
+  "h1": [
+    "Orquestación empresarial, el camino para convertir la IA en impacto organizacional"
+  ],
+  "subtituloHero": "¿Necesitas unificar personas, sistemas e IA en tu empresa? Zero Azul integra todo en una plataforma de orquestación empresarial.",
+  "ctas": [
+    {
+      "texto": "Soluciones",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 58
+    },
+    {
+      "texto": "Herramientas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 58
+    },
+    {
+      "texto": "Contacto",
+      "destino": "https://zeroazul.com/contacto",
+      "y": 66
+    },
+    {
+      "texto": "Asesoría Gratuita",
+      "destino": "https://zeroazul.com/contacto",
+      "y": 55
+    },
+    {
+      "texto": "Agendemos un espacio virtual",
+      "destino": "https://calendly.com/cristian-parada",
+      "y": 656
+    },
+    {
+      "texto": "Hablar por WhatsApp",
+      "destino": "https://wa.me/573337368562?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2F%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 656
+    },
+    {
+      "texto": "Contactar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 11107
+    },
+    {
+      "texto": "+57 319 594 7797",
+      "destino": "https://wa.me/573195947797?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2F%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 11451
+    },
+    {
+      "texto": "WhatsApp",
+      "destino": "https://wa.me/573195947797",
+      "y": 11543
+    },
+    {
+      "texto": "+57 313 714 6401",
+      "destino": "https://wa.me/573137146401?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2F%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 11451
+    },
+    {
+      "texto": "WhatsApp",
+      "destino": "https://wa.me/573137146401",
+      "y": 11543
+    },
+    {
+      "texto": "+57 333 736 8562",
+      "destino": "https://wa.me/573337368562?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2F%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 11451
+    },
+    {
+      "texto": "WhatsApp",
+      "destino": "https://wa.me/573337368562",
+      "y": 11543
+    },
+    {
+      "texto": "Herramientas y ebooks",
+      "destino": "https://zeroazul.com/tools",
+      "y": 12183
+    },
+    {
+      "texto": "Precios",
+      "destino": "https://zeroazul.com/precios",
+      "y": 12215
+    },
+    {
+      "texto": "Facebook",
+      "destino": "https://www.facebook.com/zeroazulagencia",
+      "y": 12215
+    },
+    {
+      "texto": "Chat por WhatsApp",
+      "destino": "https://wa.me/573337368562?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2F%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 804
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Orquestación empresarial, el camino para convertir la IA en impacto organizacional",
+      "y": 267
+    },
+    {
+      "nivel": "h2",
+      "texto": "Lo que tu empresa puede activar hoy",
+      "y": 992
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tiendas Shopify",
+      "y": 1250
+    },
+    {
+      "nivel": "h3",
+      "texto": "Conversso",
+      "y": 1250
+    },
+    {
+      "nivel": "h3",
+      "texto": "Primmer",
+      "y": 1250
+    },
+    {
+      "nivel": "h3",
+      "texto": "Workers",
+      "y": 1250
+    },
+    {
+      "nivel": "h3",
+      "texto": "Simpple",
+      "y": 1615
+    },
+    {
+      "nivel": "h3",
+      "texto": "Vigilantte",
+      "y": 1615
+    },
+    {
+      "nivel": "h3",
+      "texto": "Control ERP",
+      "y": 1615
+    },
+    {
+      "nivel": "h3",
+      "texto": "Consultoría y capacitación en IA",
+      "y": 1615
+    },
+    {
+      "nivel": "h2",
+      "texto": "Optimización de procesos con IA",
+      "y": 2415
+    },
+    {
+      "nivel": "h3",
+      "texto": "Identifica ineficiencias",
+      "y": 2598
+    },
+    {
+      "nivel": "h3",
+      "texto": "Optimiza flujos operativos",
+      "y": 2598
+    },
+    {
+      "nivel": "h3",
+      "texto": "Mide el impacto",
+      "y": 2598
+    },
+    {
+      "nivel": "h2",
+      "texto": "¿Te identificas con estos casos?",
+      "y": 2928
+    },
+    {
+      "nivel": "h3",
+      "texto": "El cronograma de producción nunca se cumple porque siempre sucede algo inesperado",
+      "y": 3137
+    },
+    {
+      "nivel": "h3",
+      "texto": "Crear órdenes de compra es un proceso manual que toma mucho tiempo",
+      "y": 3129
+    },
+    {
+      "nivel": "h3",
+      "texto": "El inventario no coincide con lo que muestra el sistema",
+      "y": 3420
+    },
+    {
+      "nivel": "h3",
+      "texto": "Las rutas de entrega se planifican manualmente sin considerar tráfico ni capacidad",
+      "y": 3428
+    },
+    {
+      "nivel": "h3",
+      "texto": "Los pacientes esperan horas por resultados que podrían automatizarse",
+      "y": 3702
+    },
+    {
+      "nivel": "h3",
+      "texto": "La conciliación bancaria consume días completos del equipo financiero",
+      "y": 3702
+    },
+    {
+      "nivel": "h3",
+      "texto": "Los clientes escriben por WhatsApp o redes y nunca reciben respuesta",
+      "y": 3702
+    },
+    {
+      "nivel": "h2",
+      "texto": "Resultados medibles con IA",
+      "y": 4102
+    },
+    {
+      "nivel": "h3",
+      "texto": "Digital Bulk",
+      "y": 4333
+    },
+    {
+      "nivel": "h3",
+      "texto": "Grupo Autolarte Repuestos",
+      "y": 4333
+    },
+    {
+      "nivel": "h3",
+      "texto": "Magneto 365",
+      "y": 4333
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cómo lo logramos: impacto en semanas",
+      "y": 4857
+    },
+    {
+      "nivel": "h2",
+      "texto": "Principios de una operación eficiente",
+      "y": 5812
+    },
+    {
+      "nivel": "h3",
+      "texto": "Comprender antes de optimizar",
+      "y": 6121
+    },
+    {
+      "nivel": "h3",
+      "texto": "Optimizar con IA, Software y automatización antes de escalar",
+      "y": 6121
+    },
+    {
+      "nivel": "h3",
+      "texto": "Integrar correctamente",
+      "y": 6121
+    },
+    {
+      "nivel": "h3",
+      "texto": "Medir constantemente",
+      "y": 6121
+    },
+    {
+      "nivel": "h2",
+      "texto": "Riesgo operativo",
+      "y": 6708
+    },
+    {
+      "nivel": "h3",
+      "texto": "Evite delegar procesos críticos sin control",
+      "y": 6758
+    },
+    {
+      "nivel": "h2",
+      "texto": "Low-code y Software",
+      "y": 7157
+    },
+    {
+      "nivel": "h3",
+      "texto": "Sitios web corporativos",
+      "y": 7433
+    },
+    {
+      "nivel": "h3",
+      "texto": "E-commerce y tiendas online",
+      "y": 7433
+    },
+    {
+      "nivel": "h3",
+      "texto": "Apps de optimización operativa",
+      "y": 7433
+    },
+    {
+      "nivel": "h3",
+      "texto": "Software operativo a medida",
+      "y": 7817
+    },
+    {
+      "nivel": "h3",
+      "texto": "Automatización de procesos",
+      "y": 7817
+    },
+    {
+      "nivel": "h3",
+      "texto": "Infraestructura cloud y hosting",
+      "y": 7817
+    },
+    {
+      "nivel": "h2",
+      "texto": "Lo que más consultan las empresas",
+      "y": 8116
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify Partners: qué son y cómo serlo en Colombia",
+      "y": 8324
+    },
+    {
+      "nivel": "h3",
+      "texto": "Agencia Shopify vs. agencia tradicional",
+      "y": 8324
+    },
+    {
+      "nivel": "h3",
+      "texto": "Migración de WooCommerce a Shopify sin perder ventas",
+      "y": 8324
+    },
+    {
+      "nivel": "h3",
+      "texto": "Consultor Claude AI en Colombia",
+      "y": 8643
+    },
+    {
+      "nivel": "h3",
+      "texto": "Prismic en Colombia con Next.js",
+      "y": 8643
+    },
+    {
+      "nivel": "h3",
+      "texto": "Apps de Shopify para vender más en Colombia en 2026",
+      "y": 8643
+    },
+    {
+      "nivel": "h2",
+      "texto": "Datos de Colombia, con fuente",
+      "y": 9033
+    },
+    {
+      "nivel": "h3",
+      "texto": "Comercio electrónico en Colombia 2026",
+      "y": 9298
+    },
+    {
+      "nivel": "h3",
+      "texto": "IA en las empresas de Colombia",
+      "y": 9298
+    },
+    {
+      "nivel": "h3",
+      "texto": "WhatsApp que vende y atiende en Colombia",
+      "y": 9585
+    },
+    {
+      "nivel": "h3",
+      "texto": "Pauta digital y búsqueda con IA en Colombia",
+      "y": 9585
+    },
+    {
+      "nivel": "h2",
+      "texto": "Lo que dicen de Zero Azul",
+      "y": 9959
+    },
+    {
+      "nivel": "h2",
+      "texto": "No se trata de usar IA. Se trata de estructurar cómo opera el negocio",
+      "y": 10425
+    },
+    {
+      "nivel": "h2",
+      "texto": "¿Quieres que te contactemos?",
+      "y": 11081
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cristian Parada",
+      "y": 11367
+    },
+    {
+      "nivel": "h3",
+      "texto": "Camilo Torres",
+      "y": 11367
+    },
+    {
+      "nivel": "h3",
+      "texto": "Angy Castaño",
+      "y": 11367
+    },
+    {
+      "nivel": "h3",
+      "texto": "Presencia internacional",
+      "y": 11681
+    },
+    {
+      "nivel": "h3",
+      "texto": "Zero Azul SAS",
+      "y": 11943
+    },
+    {
+      "nivel": "h3",
+      "texto": "🇺🇸 USA · Zero Azul Company LLC",
+      "y": 12035
+    },
+    {
+      "nivel": "h2",
+      "texto": "Encuéntranos en:",
+      "y": 12183
+    }
+  ],
+  "preciosTexto": [
+    "La pauta digital en Colombia supera los $3 billones, pero la búsqueda se está repartiendo entre Google y los asistentes de IA."
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "Black Friday · 30 %",
+      "Black Friday · 50 %",
+      "Un asistente de IA que atiende a tus clientes por WhatsApp y en tu web, 24/7 y con tu información.",
+      "Cristian Parada capacita a tu equipo en IA con los procesos reales de tu empresa. Más de 150 empresas ya lo hicieron.",
+      "80%",
+      "12%",
+      "85%",
+      "3x",
+      "99.9%",
+      "100%",
+      "Las ventas en línea en Colombia crecen cerca de 20 % en 2026, más del doble que el comercio minorista, con más compras y tickets más bajos.",
+      "Cuatro de cada diez empresas en Colombia usan IA, pero solo el 12 % de ellas pasó del uso básico a agentes conectados a sus procesos.",
+      "El 94 % de las empresas colombianas ya usa WhatsApp, y desde octubre de 2026 Meta cobra los mensajes de servicio por encima del cupo gratuito.",
+      "La pauta digital en Colombia supera los $3 billones, pero la búsqueda se está repartiendo entre Google y los asistentes de IA.",
+      "Atendemos empresas en 14 países"
+    ],
+    "garantias": [
+      "Trazabilidad garantizada"
+    ],
+    "elementosTestimonio": 4,
+    "logosDetectados": 148,
+    "altLogos": [
+      "Zero Azul - Impacto con IA en semanas"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [
+      "https://wa.me/573337368562?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2F%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "https://wa.me/573195947797?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2F%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "https://wa.me/573195947797",
+      "https://wa.me/573137146401?text=Hola%2C%20vi%20la%20p%C3%A1gina%20https%3A%2F%2Fzeroazul.com%2F%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.",
+      "https://wa.me/573137146401"
+    ],
+    "agenda": [
+      "https://calendly.com/cristian-parada"
+    ],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [
+      "mailto:zero@zeroazul.com",
+      "mailto:camilo.torres@zeroazul.com",
+      "mailto:angy.castano@zeroazul.com"
+    ],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Asesoría Gratuita",
+    "Agendemos un espacio virtual",
+    "El 94 % de las empresas colombianas ya usa WhatsApp, y desde octubre de 2026 Meta cobra los mensajes de servicio por encima del cupo gratuito.",
+    "Cuéntanos tu necesidad y te respondemos con una propuesta acorde.",
+    "Atendemos empresas en 14 países"
+  ],
+  "plataforma": [
+    "Next.js",
+    "HubSpot (scripts)",
+    "Vite (SPA)"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics",
+    "Microsoft Clarity"
+  ],
+  "altoPaginaPx": 12523,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://zeroazul.com/"
+    },
+    "pesoTransferidoKB": 1327,
+    "pesoTransferidoMB": 1.3,
+    "solicitudes": 56,
+    "domContentLoadedMs": 597,
+    "loadMs": 2192,
+    "ttfbMs": 413,
+    "medidoTrasMs": 7703,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}
