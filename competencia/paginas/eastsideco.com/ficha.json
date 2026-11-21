@@ -1,0 +1,248 @@
+{
+  "sitio": "ref-eastsideco",
+  "url": "https://eastsideco.com/",
+  "capturadoEn": "2026-11-21T01:00:35.124Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://eastsideco.com/"
+  },
+  "titulo": "Shopify Platinum Partner Agency | E-Commerce Website Design & Development",
+  "metaDescripcion": "Award-Winning Shopify Plus Agency with 15 Years' Experience and 50+ Experts, Delivering Superb Web Design, Development & Ecommerce Marketing to Grow Online",
+  "idioma": "en",
+  "h1": [
+    "Shopify Platinum Partner Agency"
+  ],
+  "subtituloHero": "Award winning agency specialising in Shopify Plus design, development and ecommerce marketing solutions for global brands",
+  "ctas": [
+    {
+      "texto": "CONTACT US",
+      "destino": "https://eastsideco.com/contact",
+      "y": -62
+    },
+    {
+      "texto": "GET IN TOUCH",
+      "destino": "https://eastsideco.com/contact",
+      "y": 498
+    },
+    {
+      "texto": "deep-dive business audits",
+      "destino": "https://eastsideco.com/ecommerce-discovery-audit",
+      "y": 6552
+    },
+    {
+      "texto": "Previous",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7781
+    },
+    {
+      "texto": "Next",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7781
+    },
+    {
+      "texto": "1",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7980
+    },
+    {
+      "texto": "2",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7983
+    },
+    {
+      "texto": "3",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7983
+    },
+    {
+      "texto": "4",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7983
+    },
+    {
+      "texto": "5",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7983
+    },
+    {
+      "texto": "6",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7983
+    },
+    {
+      "texto": "7",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7983
+    },
+    {
+      "texto": "8",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7983
+    },
+    {
+      "texto": "9",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7983
+    },
+    {
+      "texto": "GET IN TOUCH",
+      "destino": "https://eastsideco.com/contact",
+      "y": 9836
+    },
+    {
+      "texto": "SHOPIFY SEO AUDIT",
+      "destino": "https://eastsideco.com/shopify-seo-audit",
+      "y": 10076
+    },
+    {
+      "texto": "SHOPIFY MIGRATION GUIDE",
+      "destino": "https://eastsideco.com/shopify-migration-guide",
+      "y": 10122
+    },
+    {
+      "texto": "SHOPIFY MIGRATION SERVICES",
+      "destino": "https://eastsideco.com/shopify-migration",
+      "y": 10168
+    },
+    {
+      "texto": "Subscribe",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 10089
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Shopify Platinum Partner Agency",
+      "y": 348
+    },
+    {
+      "nivel": "h2",
+      "texto": "OUR WORK",
+      "y": 700
+    },
+    {
+      "nivel": "h2",
+      "texto": "Shopify Platinum Partner Agency",
+      "y": 3586
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify Web Design",
+      "y": 4195
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify Web Development",
+      "y": 4195
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify Marketing",
+      "y": 4831
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ongoing Shopify Support",
+      "y": 4831
+    },
+    {
+      "nivel": "h2",
+      "texto": "The Ultimate Guide to SEO on Shopify",
+      "y": 5168
+    },
+    {
+      "nivel": "h2",
+      "texto": "Dedicated to delivering excellence for our clients.",
+      "y": 7005
+    },
+    {
+      "nivel": "h2",
+      "texto": "Get In Touch",
+      "y": 7606
+    },
+    {
+      "nivel": "h2",
+      "texto": "What Our Clients Say...",
+      "y": 7507
+    },
+    {
+      "nivel": "h2",
+      "texto": "From The Shopify Experts",
+      "y": 8156
+    },
+    {
+      "nivel": "h2",
+      "texto": "Let's work together to build your store.",
+      "y": 9395
+    },
+    {
+      "nivel": "h2",
+      "texto": "Our Offices",
+      "y": 9770
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [
+      "We've built over 500 Shopify stores",
+      "Fashion is one of the toughest categories on Shopify. We profile 30 of the best fashion and clothing brands, from luxury heritage names to streetwear ..."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 58,
+    "logosDetectados": 6,
+    "altLogos": [
+      "Eastside Co - Shopify Platinum Partner Agency",
+      "Shopify Platinum Partner"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [
+      {
+        "accion": null,
+        "visible": true,
+        "campos": [
+          "NAME",
+          "EMAIL",
+          "Company",
+          "startedAt"
+        ]
+      }
+    ],
+    "chatWidgets": [
+      "HubSpotChat"
+    ],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [],
+  "plataforma": [
+    "HubSpot (scripts)"
+  ],
+  "rastreadores": [
+    "Meta Pixel",
+    "GTM",
+    "Google Analytics",
+    "Hotjar"
+  ],
+  "altoPaginaPx": 10328,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://eastsideco.com/"
+    },
+    "pesoTransferidoKB": 8220,
+    "pesoTransferidoMB": 8.03,
+    "solicitudes": 74,
+    "domContentLoadedMs": 2481,
+    "loadMs": 3718,
+    "ttfbMs": 433,
+    "medidoTrasMs": 9230,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}
