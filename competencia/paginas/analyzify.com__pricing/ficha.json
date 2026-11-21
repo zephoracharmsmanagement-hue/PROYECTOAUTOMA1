@@ -1,0 +1,378 @@
+{
+  "sitio": "analyzify",
+  "url": "https://analyzify.com/pricing",
+  "capturadoEn": "2026-11-21T00:57:09.267Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://analyzify.com/pricing"
+  },
+  "titulo": "Merchant Friendly Pricing - No Strings Attached | Analyzify",
+  "metaDescripcion": "Track Shopify conversions accurately with Analyzify. Connect GA4, Google Ads, Meta and more with expert setup and server-side tracking from $145/month.",
+  "idioma": "en",
+  "h1": [
+    "Fix Your Tracking, Trust Your Data"
+  ],
+  "subtituloHero": "Accurate server-side tracking, purchase attribution, and marketing analytics for Shopify. Professional setup included with yearly plans.",
+  "ctas": [
+    {
+      "texto": "Product",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 28
+    },
+    {
+      "texto": "Solution",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 28
+    },
+    {
+      "texto": "Pricing",
+      "destino": "https://analyzify.com/pricing",
+      "y": 28
+    },
+    {
+      "texto": "Resources",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 28
+    },
+    {
+      "texto": "Contact",
+      "destino": "https://analyzify.com/contact-us",
+      "y": 28
+    },
+    {
+      "texto": "Talk to Sales",
+      "destino": "https://analyzify.com/contact-us",
+      "y": 19
+    },
+    {
+      "texto": "Install Now",
+      "destino": "https://apps.shopify.com/analyzify",
+      "y": 20
+    },
+    {
+      "texto": "Monthly",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 482
+    },
+    {
+      "texto": "Yearly Save %25",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 482
+    },
+    {
+      "texto": "Up to 5K",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 811
+    },
+    {
+      "texto": "Up to 10K",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 811
+    },
+    {
+      "texto": "Up to 20K",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 811
+    },
+    {
+      "texto": "Get Started",
+      "destino": "https://apps.shopify.com/analyzify",
+      "y": 1396
+    },
+    {
+      "texto": "Up to 50K",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 812
+    },
+    {
+      "texto": "Up to 100K",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 812
+    },
+    {
+      "texto": "Up to 300K",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 812
+    },
+    {
+      "texto": "Contact us",
+      "destino": "https://analyzify.com/contact-us",
+      "y": 859
+    },
+    {
+      "texto": "Get Started with Plus",
+      "destino": "https://apps.shopify.com/analyzify",
+      "y": 1396
+    },
+    {
+      "texto": "Setup, Support & Success",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4191
+    },
+    {
+      "texto": "More information",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4269
+    },
+    {
+      "texto": "Tracking Infrastructure",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4518
+    },
+    {
+      "texto": "Tracking Capabilities",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4854
+    },
+    {
+      "texto": "Google Tag Manager & Server-Side Options",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5250
+    },
+    {
+      "texto": "Attribution",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5473
+    },
+    {
+      "texto": "Analytics & Intelligence",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5871
+    },
+    {
+      "texto": "Book a Demo Call",
+      "destino": "https://analyzify.com/book-a-demo",
+      "y": 7036
+    },
+    {
+      "texto": "What's included in the yearly subscription?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6672
+    },
+    {
+      "texto": "What's the difference between Standard and Plus?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6885
+    },
+    {
+      "texto": "How does the 2-year price warranty work?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6958
+    },
+    {
+      "texto": "Do I need Server-Side Google Tag Manager?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7031
+    },
+    {
+      "texto": "What happens if I exceed my order limit?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7104
+    },
+    {
+      "texto": "Can I set up Analyzify myself?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7177
+    },
+    {
+      "texto": "Is Analyzify GDPR compliant?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7250
+    },
+    {
+      "texto": "Can Analyzify improve my Google Ads performance?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7323
+    },
+    {
+      "texto": "Do you offer discounts for multiple Shopify stores?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7396
+    },
+    {
+      "texto": "What if I want to upgrade from Standard to Plus?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7469
+    },
+    {
+      "texto": "Do you offer a free trial?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7542
+    },
+    {
+      "texto": "How does Analyzify compare to Elevar, Littledata, or Triple Whale?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7615
+    },
+    {
+      "texto": "What's the typical ROI of using Analyzify?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7688
+    },
+    {
+      "texto": "Get Started Now",
+      "destino": "https://apps.shopify.com/analyzify",
+      "y": 7910
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Fix Your Tracking, Trust Your Data",
+      "y": 160
+    },
+    {
+      "nivel": "h3",
+      "texto": "Analyzify Standard",
+      "y": 643
+    },
+    {
+      "nivel": "h3",
+      "texto": "Analyzify Plus",
+      "y": 643
+    },
+    {
+      "nivel": "h2",
+      "texto": "Set Up with Confidence. Get Support When You Need It.",
+      "y": 1796
+    },
+    {
+      "nivel": "h3",
+      "texto": "We empower 3000+ brands with accurate data",
+      "y": 2554
+    },
+    {
+      "nivel": "h2",
+      "texto": "Add-ons",
+      "y": 2849
+    },
+    {
+      "nivel": "h3",
+      "texto": "Professional Implementation",
+      "y": 3012
+    },
+    {
+      "nivel": "h3",
+      "texto": "Premium Support (10 Hours)",
+      "y": 3012
+    },
+    {
+      "nivel": "h3",
+      "texto": "Stape Server-Side GTM",
+      "y": 3304
+    },
+    {
+      "nivel": "h3",
+      "texto": "Google Cloud Server-Side GTM",
+      "y": 3304
+    },
+    {
+      "nivel": "h2",
+      "texto": "Compare Our Plans",
+      "y": 3709
+    },
+    {
+      "nivel": "h3",
+      "texto": "Analyzify Standard",
+      "y": 4001
+    },
+    {
+      "nivel": "h3",
+      "texto": "Analyzify Plus",
+      "y": 4001
+    },
+    {
+      "nivel": "h2",
+      "texto": "Frequently asked questions",
+      "y": 6690
+    },
+    {
+      "nivel": "h3",
+      "texto": "Still have questions?",
+      "y": 6901
+    }
+  ],
+  "preciosTexto": [
+    "Professional Implementation: free with yearly plans, $295 one-time add-on for monthly plans.",
+    "$109",
+    "$145/mo",
+    "$1,305/year billed annually",
+    "$206",
+    "$275/mo",
+    "$2,475/year billed annually",
+    "$295",
+    "$945",
+    "$1,490",
+    "Ongoing Stape hosting starts at ~$20/mo (paid to Stape).",
+    "$2,790",
+    "$1,305/yr",
+    "$2,475/yr"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "Trusted by 3,000+ Shopify stores",
+      "99% purchase accuracy & 90%+ higher event match scores",
+      "We empower 3000+ brands with accurate data",
+      "300+ reviews on",
+      "Purchase data routes through Analyzify's servers to GA4, Meta, and TikTok. 99% purchase accuracy for GA4, 90%+ higher EMQ for Meta.",
+      "10+ Platforms (GTM, GA4, Google Ads, Meta, TikTok...)",
+      "Track to GA4, Google Ads, Meta, TikTok, Bing, Pinterest, Snapchat, and more from a single setup.",
+      "Sends refund events to GA4, Meta, and TikTok so reported revenue reflects actual collected revenue.",
+      "Integrates with Shopify's Customer Privacy API and Google Consent Mode v2. Events are only sent when proper consent is detected.",
+      "GA4, Google Ads, Meta, TikTok, and Search Console data in one dashboard inside Shopify.",
+      "Join 3,000+ merchants who trust their tracking with Analyzify."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 5,
+    "altLogos": [
+      "analyzify logo",
+      "Close menu",
+      "Analyzify"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Professional Implementation: free with yearly plans, $295 one-time add-on for monthly plans.",
+    "Book a Demo Call",
+    "Do you offer a free trial?",
+    "Book a Demo",
+    "Free Tracking Audit"
+  ],
+  "plataforma": [
+    "WordPress",
+    "HubSpot (scripts)",
+    "Astro"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics",
+    "TikTok Pixel",
+    "Microsoft Clarity"
+  ],
+  "altoPaginaPx": 8551,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://analyzify.com/pricing"
+    },
+    "pesoTransferidoKB": 1826,
+    "pesoTransferidoMB": 1.78,
+    "solicitudes": 149,
+    "domContentLoadedMs": 1206,
+    "loadMs": 4719,
+    "ttfbMs": 348,
+    "medidoTrasMs": 10229,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

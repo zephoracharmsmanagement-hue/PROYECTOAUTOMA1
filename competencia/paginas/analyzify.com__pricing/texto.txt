@@ -1,0 +1,316 @@
+Product
+Solution
+Pricing
+Resources
+About Us
+Contact
+Talk to Sales
+Install Now
+Fix Your Tracking, Trust Your Data
+Accurate server-side tracking, purchase attribution, and marketing analytics for Shopify. Professional setup included with yearly plans.
+Trusted by 3,000+ Shopify stores
+4.8
+on
+Monthly
+Yearly
+Save %25
+Professional Implementation: free with yearly plans, $295 one-time add-on for monthly plans.
+Analyzify Standard
+Most Popular
+$109
+USD /month
+$145/mo
+$1,305/year billed annually
+Monthly order volume:
+Up to 5K
+Up to 10K
+Up to 20K
+Unified Pixel
+10+ platforms through one pixel. Updates automatically.
++ More
+Server-Side Tracking
+99% purchase accuracy & 90%+ higher event match scores
+Google Tag Manager Ready
+Pre-built containers included. Managed server-side GTM available.
+Purchase Attribution
+See the full path to purchase for every order
+Advanced Tracking Controls
+Refunds, COGS, leads, and custom event tracking
+Get Started
+2-Year Price Warranty. Your rate is locked.
+Analyzify Plus
+$206
+USD /month
+$275/mo
+$2,475/year billed annually
+Monthly order volume:
+Up to 50K
+Up to 100K
+Up to 300K
+Higher volume? Contact us for custom pricing.
+Everything In Standard, Plus
+Campaign Intelligence
+Revenue attribution by campaign, not just clicks
+Marketing Analytics
+GA4, Ads, Meta, TikTok, Klaviyo, and Search Console, all inside Shopify
++ More
+Audience Segments
+Automatically build and sync high-value audiences to Google, Klaviyo, and Shopify
+Post-Purchase Surveys
+Ask customers how they found you, right after purchase
+Headless & Custom Storefronts
+Full tracking for Hydrogen, Oxygen & custom builds
+Get Started with Plus
+2-Year Price Warranty. Your rate is locked.
+Managing multiple stores? Contact us for multi-store pricing.
+Compare all features
+Set Up with Confidence.
+Get Support When You Need It.
+
+Everything below is included with every plan. No hidden fees.
+
+Guided Self-Setup
+Install and configure in 5-10 minutes with in-app video walkthroughs and step-by-step guides. No technical expertise needed.
+Onboarding & Strategy Calls
+Dedicated sessions to validate your setup, review your data, and plan your tracking strategy. Included with every plan.
+Expert Support
+Real tracking experts, not chatbots. Get answers to technical questions within 24-48 hours from the team that built the product.
+Tracking Health & Troubleshooting System
+Automated checks confirm your tracking works. When something breaks, we catch it before it costs you data.
+Install App
+Connected Platforms
+3
+Configure Settings
+4
+Validate & Launch
+5-10 minutes
+We empower 3000+ brands with accurate data
+4.8
+300+ reviews on
+Add-ons
+
+Add-ons are not required but optional for specific needs.
+Analyzify core version is a great choice for most Shopify merchants.
+
+Professional Implementation
+
+Already included with yearly plans. For monthly subscribers or merchants needing re-setup after a theme change, migration, or pixel cleanup. Includes audit, full setup, validation, and 30 days post-setup support.
+
+$295
+USD
+Included in yearly subscriptions at no extra cost.
+Learn More
+Premium Support (10 Hours)
+
+Dedicated expert time for complex GTM configurations, custom integrations, advanced troubleshooting, external platform assistance, and strategy consultations. Priority response with 2-month validity.
+
+$945
+USD
+Flexible usage across multiple issues.
+Learn More
+Stape Server-Side GTM
+
+Full server-side GTM hosted via Stape with Analyzify data layer integration. Includes hosting setup, GTM container configuration, event validation, and managed support. 3x more cost-effective than Google Cloud.
+
+$1,490
+USD
+Ongoing Stape hosting starts at ~$20/mo (paid to Stape).
+Learn More
+Google Cloud Server-Side GTM
+
+Server-side GTM on your own Google Cloud project. For merchants with specific compliance or infrastructure requirements mandating self-hosted solutions. Includes Cloud Run config, GTM setup, and managed support.
+
+$2,790
+USD
+Ongoing Google Cloud fees paid directly to Google.
+Learn More
+Compare Our Plans
+
+Both plans include Analyzify's full tracking infrastructure. Plus adds campaign analytics, customer intelligence, and advanced support.
+
+Monthly
+Yearly
+Save %25
+Analyzify Standard
+Most Popular
+$109
+USD /month
+$145/mo
+$1,305/yr
+Monthly order volume:
+Up to 5K
+Up to 10K
+Up to 20K
+Analyzify Plus
+Most Popular
+$206
+USD /month
+$275/mo
+$2,475/yr
+Monthly order volume:
+Up to 50K
+Up to 100K
+Up to 300K
+Setup, Support & Success
+Guided Self-Setup (5-10 minutes)
+In-app video walkthroughs and step-by-step guides.
+Professional Implementation
+Full setup by Analyzify's team: audit, configuration, platform connections, validation, and 30 days post-setup support.
+Included (yearly plans only)
+Included (yearly plans only)
+Expert Support (4h-48h Response)
+Direct access to Analyzify's support team for tracking questions, troubleshooting, and configuration help.
+Onboarding & Strategy Sessions
+Live 1:1 calls with Analyzify experts for setup guidance, validation, migration, or optimization discussions.
+1 per year
+4 per year (Quarterly)
+Tracking Health Monitoring
+Automated checks that verify your tracking is working correctly across all connected platforms. Catches silent failures early.
+Tracking Infrastructure
+Server-Side Tracking
+Purchase data routes through Analyzify's servers to GA4, Meta, and TikTok. 99% purchase accuracy for GA4, 90%+ higher EMQ for Meta.
+Unified Pixel (auto-updates, zero maintenance)
+One pixel handles all platform integrations. Updates deploy automatically - no code changes needed.
+Pre-built GTM Containers with Full Data Layer
+Ready-to-use GTM containers with 20+ events and 100+ parameters pre-configured. Import and publish directly.
+Unlimited Shopify Markets
+Track each Shopify Market separately and send regional data to the right platform accounts and pixels from one store.
+Headless & Custom Storefronts (SDK)
+Full tracking for Hydrogen, Oxygen, and custom builds via Analyzify SDK. Manage all integrations from one dashboard.
+-
+Tracking Capabilities
+10+ Platforms (GTM, GA4, Google Ads, Meta, TikTok...)
+Track to GA4, Google Ads, Meta, TikTok, Bing, Pinterest, Snapchat, and more from a single setup.
+Advanced Data Layer (20+ events, 100+ parameters)
+Covers page views, product interactions, cart actions, checkout steps, purchases, and detailed product/user parameters.
+Refund Tracking
+Sends refund events to GA4, Meta, and TikTok so reported revenue reflects actual collected revenue.
+Form Tracking
+Captures lead submissions from Shopify, HubSpot, and Klaviyo forms. Sends generate_lead events to GA4, Meta, and TikTok.
+COGS in Google Ads
+Sends cost-of-goods-sold data with purchase events so Google Ads can report profit and margin per item.
+Consent Mode v2 / GDPR / CCPA Compliance
+Integrates with Shopify's Customer Privacy API and Google Consent Mode v2. Events are only sent when proper consent is detected.
+Google Tag Manager & Server-Side Options
+Google Tag Manager Integration
+Use Analyzify's pre-built containers and data layer with your own GTM setup.
+Server-Side GTM (Self-Managed)
+Set up your own server-side GTM container using Analyzify's data layer and documentation. No managed support included.
+Server-Side GTM (Managed by Analyzify)
+Analyzify sets up and manages your server-side GTM via Stape or Google Cloud, including hosting, configuration, and validation.
+Add-on
+Add-on
+Attribution
+Order-Level Purchase Attribution
+See which channels and campaigns contributed to each individual order.
+Full Customer Journey (first, middle, last touch)
+View every marketing touchpoint before purchase, with timestamps and campaign details per session.
+Multiple Attribution Models
+Switch between First Click, Last Non-Direct Click, Last Click, and Any Click to evaluate channel performance differently.
+Compare with Shopify Attribution
+View Analyzify's attribution data side by side with Shopify's native attribution.
+Campaign-Level Attribution Reports
+Aggregated revenue and order counts per campaign across attribution models.
+-
+Channel-Level Attribution Reports
+Revenue and order performance grouped by marketing channel (Google Ads, Meta, Organic, Direct, etc.).
+-
+Analytics & Intelligence
+Marketing Analytics Dashboard (30+ reports, 5 platforms)
+GA4, Google Ads, Meta, TikTok, and Search Console data in one dashboard inside Shopify.
+-
+Profit Dashboard
+Net profit, COGS, MER, and campaign-level profitability.
+-
+Audience Segments & RFM Analysis
+Automatic customer segmentation by Recency, Frequency, and Monetary value. Includes cohorts like VIPs, at-risk, and first-time buyers.
+-
+Customer List Sync (Google, Klaviyo, Shopify)
+Sync your audience segments directly to Google Ads, Meta, Klaviyo, and Shopify for targeted campaigns.
+-
+Post-Purchase Surveys
+Ask customers "How did you hear about us?" on the order confirmation page. Captures channels that pixels can't track.
+-
+Analyzify Standard
+$109
+USD /month
+$145/mo
+$1,305/yr
+Get Started
+2-Year Price Warranty. Your rate is locked.
+Analyzify Plus
+$206
+USD /month
+$275/mo
+$2,475/yr
+Get Started with Plus
+2-Year Price Warranty. Your rate is locked.
+FAQs
+Frequently asked
+questions
+
+Everything you need to know about the product and billing.
+
+Still have questions?
+
+Unparalleled support, always at your side. Experience the Analyzify difference with every interaction.
+
+Book a Demo Call
+Contact Us
+What's included in the yearly subscription?
+With a yearly subscription, you get your full plan (Standard or Plus), Professional Implementation by our team at no extra cost, ongoing expert support, all platform updates and new features, and a 2-year price warranty that locks in your rate. Monthly subscribers handle self-setup or can add Professional Implementation for a one-time fee of $295.
+What's the difference between Standard and Plus?
+How does the 2-year price warranty work?
+Do I need Server-Side Google Tag Manager?
+What happens if I exceed my order limit?
+Can I set up Analyzify myself?
+Is Analyzify GDPR compliant?
+Can Analyzify improve my Google Ads performance?
+Do you offer discounts for multiple Shopify stores?
+What if I want to upgrade from Standard to Plus?
+Do you offer a free trial?
+How does Analyzify compare to Elevar, Littledata, or Triple Whale?
+What's the typical ROI of using Analyzify?
+Take the first step towards reliable tracking
+Join 3,000+ merchants who trust their tracking with Analyzify.
+Get Started Now
+Book a Demo
+
+Analyzify is an all-in-one Shopify data analytics app that takes care of all your data collection and tracking needs for your Shopify store.
+
+4.8
+300+ reviews on
+Product
+Use Cases
+Features
+Benefits
+Server-Side Tracking
+Shopify GA4 Integration
+Shopify GTM Integration
+All Integrations
+Company
+About Us
+Contact Us
+View on Shopify
+Reviews & Testimonials
+Partners Program
+Analyzify Partners
+Pricing
+FAQ
+Resources
+Blog & Hub
+Guidebooks
+Knowledge Base
+Best Shopify Agencies
+Free Tracking Audit
+Best Shopify Apps
+StatsUp
+Shopify Schema Checker
+Analyzify vs Elevar
+Best Elevar Alternatives
+Analyzify © 2021 - 2026. All Rights Reserved. Made with ♥ by Solverhood
+Privacy Policy
+Terms
+DPA
+You need technical support?
+How can we help?
