@@ -1,0 +1,480 @@
+{
+  "sitio": "analyzify",
+  "url": "https://analyzify.com/",
+  "capturadoEn": "2026-11-21T01:00:05.592Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://analyzify.com/"
+  },
+  "titulo": "Server-Side Tracking & Analytics App for Shopify | Analyzify",
+  "metaDescripcion": "Analyzify is a data analytics app that connects your Shopify store with 10+ marketing platforms, enhancing your data with server-side tracking.",
+  "idioma": "en",
+  "h1": [
+    "Fix Your Tracking, Trust Your Data"
+  ],
+  "subtituloHero": "Join 3,000+ Shopify merchants who send enriched data to 10+ marketing platforms - expert setup and data support included",
+  "ctas": [
+    {
+      "texto": "Product",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 28
+    },
+    {
+      "texto": "Solution",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 28
+    },
+    {
+      "texto": "Pricing",
+      "destino": "https://analyzify.com/pricing",
+      "y": 28
+    },
+    {
+      "texto": "Resources",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 28
+    },
+    {
+      "texto": "Contact",
+      "destino": "https://analyzify.com/contact-us",
+      "y": 28
+    },
+    {
+      "texto": "Talk to Sales",
+      "destino": "https://analyzify.com/contact-us",
+      "y": 19
+    },
+    {
+      "texto": "Install Now",
+      "destino": "https://apps.shopify.com/analyzify",
+      "y": 20
+    },
+    {
+      "texto": "Book a Demo",
+      "destino": "https://analyzify.com/book-a-demo",
+      "y": 566
+    },
+    {
+      "texto": "Facebook",
+      "destino": "/integrations/shopify-facebook-pixel",
+      "y": 266
+    },
+    {
+      "texto": "Google Analytics 4",
+      "destino": "/integrations/shopify-ga4",
+      "y": 306
+    },
+    {
+      "texto": "Google Ads",
+      "destino": "/integrations/shopify-google-ads",
+      "y": 347
+    },
+    {
+      "texto": "TikTok",
+      "destino": "/integrations/shopify-tiktok",
+      "y": 388
+    },
+    {
+      "texto": "Hotjar",
+      "destino": "/features/integrations",
+      "y": 429
+    },
+    {
+      "texto": "Google Tag Manager",
+      "destino": "/integrations/shopify-gtm",
+      "y": 469
+    },
+    {
+      "texto": "Microsoft Bing",
+      "destino": "/integrations/shopify-bing",
+      "y": 510
+    },
+    {
+      "texto": "Microsoft Clarity",
+      "destino": "/features/integrations",
+      "y": 551
+    },
+    {
+      "texto": "Criteo",
+      "destino": "/features/integrations",
+      "y": 592
+    },
+    {
+      "texto": "Show Facebook report",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3290
+    },
+    {
+      "texto": "Show TikTok report",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3342
+    },
+    {
+      "texto": "Show Google Ads report",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3397
+    },
+    {
+      "texto": "Show GA4 report",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3456
+    },
+    {
+      "texto": "Show Klaviyo report",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3516
+    },
+    {
+      "texto": "Show Shopify report",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3570
+    },
+    {
+      "texto": "Show Search Console report",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3618
+    },
+    {
+      "texto": "Facebook ↗",
+      "destino": "https://analyzify.com/integrations/shopify-facebook-pixel",
+      "y": 5686
+    },
+    {
+      "texto": "Explore all integrations",
+      "destino": "https://analyzify.com/features/integrations",
+      "y": 5817
+    },
+    {
+      "texto": "All",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6943
+    },
+    {
+      "texto": "GDPR",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6943
+    },
+    {
+      "texto": "Google Ads",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6943
+    },
+    {
+      "texto": "GTM & Data Layers",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6943
+    },
+    {
+      "texto": "Bing",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6943
+    },
+    {
+      "texto": "Facebook",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6943
+    },
+    {
+      "texto": "Technical",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6993
+    },
+    {
+      "texto": "Google Analytics",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6993
+    },
+    {
+      "texto": "Done-for-you setup & migration",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7745
+    },
+    {
+      "texto": "Ongoing expert support",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8067
+    },
+    {
+      "texto": "Future-proof tracking",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8177
+    },
+    {
+      "texto": "Executives & Owners",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8491
+    },
+    {
+      "texto": "Marketing Teams",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8491
+    },
+    {
+      "texto": "Developers",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8491
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Fix Your Tracking, Trust Your Data",
+      "y": 176
+    },
+    {
+      "nivel": "h2",
+      "texto": "We're the Data Integration Experts for Shopify Stores",
+      "y": 1098
+    },
+    {
+      "nivel": "h2",
+      "texto": "Your Path to Reliable Tracking Starts Here",
+      "y": 2596
+    },
+    {
+      "nivel": "h3",
+      "texto": "Secure 10+ integrations & server-side solutions",
+      "y": 2879
+    },
+    {
+      "nivel": "h3",
+      "texto": "Get a simple dashboard full of insightful reports to see what matters",
+      "y": 3360
+    },
+    {
+      "nivel": "h3",
+      "texto": "Choose your path to flawless ecommerce tracking",
+      "y": 3900
+    },
+    {
+      "nivel": "h3",
+      "texto": "Keep your tracking and integrations up to date effortlessly",
+      "y": 4359
+    },
+    {
+      "nivel": "h2",
+      "texto": "What Merchants Achieved with Analyzify",
+      "y": 4825
+    },
+    {
+      "nivel": "h2",
+      "texto": "Feed Your Analytics & Ads with Enhanced Data",
+      "y": 5545
+    },
+    {
+      "nivel": "h2",
+      "texto": "The End of Tracking Headaches",
+      "y": 6027
+    },
+    {
+      "nivel": "h2",
+      "texto": "Solve Any Tracking Challenge",
+      "y": 6795
+    },
+    {
+      "nivel": "h2",
+      "texto": "Switch to Analyzify, Risk-Free",
+      "y": 7608
+    },
+    {
+      "nivel": "h3",
+      "texto": "Done-for-you setup & migration",
+      "y": 7775
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ongoing expert support",
+      "y": 8097
+    },
+    {
+      "nivel": "h3",
+      "texto": "Future-proof tracking",
+      "y": 8207
+    },
+    {
+      "nivel": "h2",
+      "texto": "A Solution That Makes Sense for Everyone",
+      "y": 8395
+    },
+    {
+      "nivel": "h3",
+      "texto": "Executives & Owners",
+      "y": 8596
+    },
+    {
+      "nivel": "h3",
+      "texto": "Marketing Teams",
+      "y": 8596
+    },
+    {
+      "nivel": "h3",
+      "texto": "Developers",
+      "y": 8596
+    },
+    {
+      "nivel": "h3",
+      "texto": "Agencies",
+      "y": 8596
+    },
+    {
+      "nivel": "h3",
+      "texto": "Multi Stores",
+      "y": 8596
+    },
+    {
+      "nivel": "h3",
+      "texto": "Solopreneurs",
+      "y": 8596
+    },
+    {
+      "nivel": "h2",
+      "texto": "What Our Partners Say",
+      "y": 9491
+    },
+    {
+      "nivel": "h2",
+      "texto": "Frequently asked questions",
+      "y": 10293
+    },
+    {
+      "nivel": "h2",
+      "texto": "Resources to Empower Your Data Journey",
+      "y": 11034
+    },
+    {
+      "nivel": "h3",
+      "texto": "Server-Side Tracking for Shopify",
+      "y": 11342
+    },
+    {
+      "nivel": "h3",
+      "texto": "Google Ads Data Checkup [E-book]",
+      "y": 11342
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify - Google Analytics Guidebook",
+      "y": 11342
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify - Google Ads Guidebook",
+      "y": 11342
+    },
+    {
+      "nivel": "h3",
+      "texto": "Explore Latest Shopify Statistics",
+      "y": 11342
+    }
+  ],
+  "preciosTexto": [
+    "$1,503.28",
+    "$13.2k",
+    "$6,240",
+    "$59,218",
+    "$1.82",
+    "USD 1,018.40",
+    "USD 9,102.10",
+    "USD 979.60",
+    "USD 8,640.55",
+    "USD 1,062.15",
+    "USD 9,377.20",
+    "USD 913.10",
+    "USD 8,118.60"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "Join 3,000+ Shopify merchants who send enriched data to 10+ marketing platforms - expert setup and data support included",
+      "Achieve 98% accuracy with server-side tracking",
+      "300+ reviews on",
+      "across 3,000+ stores",
+      "4.8 Star Reviews",
+      "Ever-changing tracking requirements (such as Facebook Conversion API, Shopify Checkout Extensibility, Google Consent Mode , iOS 17) require constant adaptation",
+      "Connect to 10+ marketing platforms. Achieve 98% purchase tracking accuracy in GA4 and higher EMQ scores in Meta and TikTok with server-side tracking. Manage all from a powerful dashboard.",
+      "100K+ orders tracked with near-100% accuracy",
+      "Purchase data fixed: 20% to 98%",
+      "Tracking rebuilt across 3 regional stores",
+      "Google Analytics 4",
+      "20% discount on each additional store",
+      "It's an excellent application! In addition, they offer outstanding support. The plugin has allowed us to activate all Google Analytics 3 and 4 enhanced e-commerce reports."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 7,
+    "logosDetectados": 89,
+    "altLogos": [
+      "analyzify logo",
+      "Close menu",
+      "Panasonic",
+      "Popov Leather",
+      "Patagonia",
+      "Jens Hansen",
+      "New Balance",
+      "Customhoj",
+      "Warner Bros",
+      "Spitfire Audio",
+      "Joseph Joseph",
+      "Sapsan",
+      "Tchibo",
+      "Bad.no",
+      "Equestrian Stockholm",
+      "arrow",
+      "Hotjar integration",
+      "Microsoft Clarity integration",
+      "Pinterest integration",
+      "Google Tag Manager integration",
+      "Google Analytics 4 integration",
+      "Google Ads integration",
+      "TikTok integration",
+      "Facebook integration",
+      "Microsoft Bing integration",
+      "Criteo integration",
+      "GDPR integration",
+      "Klaviyo integration",
+      "Snapchat integration",
+      "X integration"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Book a Demo",
+    "Switch to Analyzify, Risk-Free",
+    "Run Your Free Audit",
+    "Free Tracking Audit"
+  ],
+  "plataforma": [
+    "WordPress",
+    "Astro"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics",
+    "TikTok Pixel",
+    "Microsoft Clarity",
+    "Hotjar"
+  ],
+  "altoPaginaPx": 12211,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://analyzify.com/"
+    },
+    "pesoTransferidoKB": 1854,
+    "pesoTransferidoMB": 1.81,
+    "solicitudes": 163,
+    "domContentLoadedMs": 1183,
+    "loadMs": 4149,
+    "ttfbMs": 338,
+    "medidoTrasMs": 9660,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}
