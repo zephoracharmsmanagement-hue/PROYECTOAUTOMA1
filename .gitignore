@@ -44,3 +44,6 @@ coverage/
 # Vercel / Netlify
 .vercel
 .netlify
+
+# Ajustes locales de Claude Code (no se suben)
+.claude/settings.local.json
