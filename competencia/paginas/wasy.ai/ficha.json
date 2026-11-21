@@ -1,0 +1,338 @@
+{
+  "sitio": "wasy",
+  "url": "https://wasy.ai/",
+  "capturadoEn": "2026-11-21T00:51:17.010Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://wasy.ai/"
+  },
+  "titulo": "WASY IA | Automatiza tus Ventas en WhatsApp para Ecommerce Colombia",
+  "metaDescripcion": "Automatiza ventas en WhatsApp con agentes IA hiperrealistas. Cierra pedidos 24/7, recupera carritos y empieza gratis con 50 chats. Prepago, sin mensualidad ni comisiones. Para ecommerce y dropshipping contraentrega en Colombia.",
+  "idioma": "es",
+  "h1": [
+    "Tu vendedor IA que nunca duerme"
+  ],
+  "subtituloHero": "Automatiza WhatsApp. Cierra ventas 24/7. Empieza gratis con 50 chats.",
+  "ctas": [
+    {
+      "texto": "Empieza gratis",
+      "destino": "https://wasy.ai/signup",
+      "y": 8
+    },
+    {
+      "texto": "Ver demo en vivo",
+      "destino": "https://wasy.ai/#demo",
+      "y": 425
+    },
+    {
+      "texto": "Leer artículo",
+      "destino": "https://www.larepublica.co/empresas/la-revolucion-de-las-ventas-por-whatsapp-como-esta-ia-promete-transformar-el-ecommerce-en-latinoamerica-4074060",
+      "y": 1620
+    },
+    {
+      "texto": "Metricas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2681
+    },
+    {
+      "texto": "Chats",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2681
+    },
+    {
+      "texto": "Alertas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2681
+    },
+    {
+      "texto": "Multimedia",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2681
+    },
+    {
+      "texto": "Escucharlo",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3620
+    },
+    {
+      "texto": "Escucharla",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3620
+    },
+    {
+      "texto": "Reproducir",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5019
+    },
+    {
+      "texto": "Cuéntame del producto 💪",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5263
+    },
+    {
+      "texto": "¿Cuánto vale? 💰",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5263
+    },
+    {
+      "texto": "Muéstrame el producto 📸",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5263
+    },
+    {
+      "texto": "¿Envío gratis? 🚚",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5263
+    },
+    {
+      "texto": "¿Cuánto cuesta?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7409
+    },
+    {
+      "texto": "¿Mis clientes sabrán que es IA?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7409
+    },
+    {
+      "texto": "¿Cuánto tarda?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7409
+    },
+    {
+      "texto": "¿Integra con Dropi?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7450
+    },
+    {
+      "texto": "¿Tengo equipo de ventas, me sirve?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7450
+    },
+    {
+      "texto": "Enviar pregunta",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7585
+    },
+    {
+      "texto": "Agenda tu demo",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8112
+    },
+    {
+      "texto": "Cerrar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 354
+    },
+    {
+      "texto": "Quiero agendar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 569
+    },
+    {
+      "texto": "Precios",
+      "destino": "https://wasy.ai/#precios",
+      "y": 8299
+    },
+    {
+      "texto": "Agendar",
+      "destino": "https://wasy.ai/#agenda",
+      "y": 8299
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Tu vendedor IA que nunca duerme",
+      "y": 163
+    },
+    {
+      "nivel": "h2",
+      "texto": "De cero a vender en cuatro pasos",
+      "y": 1804
+    },
+    {
+      "nivel": "h3",
+      "texto": "Conecta tu WhatsApp",
+      "y": 1922
+    },
+    {
+      "nivel": "h3",
+      "texto": "Entrena tu IA",
+      "y": 2068
+    },
+    {
+      "nivel": "h3",
+      "texto": "Elige tu agente",
+      "y": 2215
+    },
+    {
+      "nivel": "h3",
+      "texto": "Empieza a vender",
+      "y": 2361
+    },
+    {
+      "nivel": "h2",
+      "texto": "Todo en un solo panel",
+      "y": 2589
+    },
+    {
+      "nivel": "h3",
+      "texto": "Dashboard de rendimiento",
+      "y": 2737
+    },
+    {
+      "nivel": "h3",
+      "texto": "Centro de conversaciones IA",
+      "y": 2737
+    },
+    {
+      "nivel": "h3",
+      "texto": "Alertas inteligentes",
+      "y": 2737
+    },
+    {
+      "nivel": "h3",
+      "texto": "Multimedia inteligente",
+      "y": 2737
+    },
+    {
+      "nivel": "h2",
+      "texto": "Asistentes con una personalidad propia",
+      "y": 3243
+    },
+    {
+      "nivel": "h3",
+      "texto": "Dos voces listas para vender por ti",
+      "y": 3364
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tu mejor vendedor en WhatsApp",
+      "y": 3790
+    },
+    {
+      "nivel": "h3",
+      "texto": "Retargeting auto",
+      "y": 3977
+    },
+    {
+      "nivel": "h3",
+      "texto": "Upsells auto",
+      "y": 3977
+    },
+    {
+      "nivel": "h3",
+      "texto": "Multimedia IA",
+      "y": 4157
+    },
+    {
+      "nivel": "h3",
+      "texto": "Analytics en vivo",
+      "y": 4157
+    },
+    {
+      "nivel": "h2",
+      "texto": "Así cierra WASY en WhatsApp",
+      "y": 4629
+    },
+    {
+      "nivel": "h2",
+      "texto": "0% actuado*",
+      "y": 5615
+    },
+    {
+      "nivel": "h2",
+      "texto": "Empieza gratis, luego prepago",
+      "y": 5959
+    },
+    {
+      "nivel": "h2",
+      "texto": "Conectado a las plataformas que usas",
+      "y": 6517
+    },
+    {
+      "nivel": "h2",
+      "texto": "Pregúntame lo que sea.",
+      "y": 7142
+    },
+    {
+      "nivel": "h2",
+      "texto": "Mira WASY cerrar ventas con tu producto.",
+      "y": 7788
+    },
+    {
+      "nivel": "h3",
+      "texto": "Mira WASY cerrar ventas con tu producto.",
+      "y": 370
+    }
+  ],
+  "preciosTexto": [
+    "gratis para probar. Luego recargas prepago desde $65.000, sin mensualidad"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "Automatiza WhatsApp. Cierra ventas 24/7.",
+      "0% actuado*"
+    ],
+    "garantias": [
+      "Sin permanencia ni contratos"
+    ],
+    "elementosTestimonio": 2,
+    "logosDetectados": 6,
+    "altLogos": [
+      "WASY IA",
+      "La República",
+      "Dropi — integración automática de pedidos con WASY IA",
+      "Wompi — pasarela de pagos integrada con WASY IA",
+      "Sitepaste — landing pages instantáneas para productos"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [
+      "https://calendly.com/andres-arguello-fluxon/wasy_ai?embed_domain=wasy.ai&embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1"
+    ],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Empieza gratis",
+    "Empieza gratis con 50 chats.",
+    "Ver demo en vivo",
+    "Empieza gratis • Prepago, sin mensualidad ni comisiones",
+    "Chats gratis para empezar",
+    "Demo interactiva",
+    "¿Envío gratis? 🚚",
+    "Empieza gratis,",
+    "gratis para probar. Luego recargas prepago desde $65.000, sin mensualidad",
+    "Demo en vivo",
+    "Agenda tu demo",
+    "50 chats gratis • Prepago sin mensualidad"
+  ],
+  "plataforma": [],
+  "rastreadores": [
+    "Meta Pixel",
+    "Microsoft Clarity"
+  ],
+  "altoPaginaPx": 8381,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://wasy.ai/"
+    },
+    "pesoTransferidoKB": 4930,
+    "pesoTransferidoMB": 4.81,
+    "solicitudes": 60,
+    "domContentLoadedMs": 483,
+    "loadMs": 2178,
+    "ttfbMs": 134,
+    "medidoTrasMs": 7689,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

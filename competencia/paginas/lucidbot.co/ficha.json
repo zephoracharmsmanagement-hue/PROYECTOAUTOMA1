@@ -1,0 +1,371 @@
+{
+  "sitio": "lucidbot",
+  "url": "https://lucidbot.co/",
+  "capturadoEn": "2026-11-21T00:57:36.671Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://lucidbot.co/"
+  },
+  "titulo": "LucidBot | Automatiza tus ventas y tu atención al cliente 24/7 con IA",
+  "metaDescripcion": "LucidBot es la plataforma de automatización conversacional más potente para ventas, soporte y marketing 24/7 con IA avanzada. Mensajes y miembros del equipo ilimitados desde $44 USD al mes.",
+  "idioma": "es",
+  "h1": [
+    "La plataforma para construir bots que venden 24/7"
+  ],
+  "subtituloHero": "Empieza gratis arrow_forward Agenda una demo",
+  "ctas": [
+    {
+      "texto": "Nuestras Apps expand_more",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 14
+    },
+    {
+      "texto": "Precios expand_more",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 14
+    },
+    {
+      "texto": "Documentación expand_more",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 14
+    },
+    {
+      "texto": "Iniciar sesión",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 14
+    },
+    {
+      "texto": "Agenda una demo",
+      "destino": "https://lucidbot.co/agendar-demo/",
+      "y": 13
+    },
+    {
+      "texto": "Empieza gratis",
+      "destino": "https://afiliados.lucidbot.co/auth/register?st=cwqurwg9em",
+      "y": 12
+    },
+    {
+      "texto": "Humano",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 573
+    },
+    {
+      "texto": "Bot",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 573
+    },
+    {
+      "texto": "person Camila Ruiz Sí 😊 te muestro cómo queda check_circle 11:40",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 778
+    },
+    {
+      "texto": "send",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1066
+    },
+    {
+      "texto": "chevron_left",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 793
+    },
+    {
+      "texto": "chevron_right",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 793
+    },
+    {
+      "texto": "Inbox",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1145
+    },
+    {
+      "texto": "Constructor de flujos",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1145
+    },
+    {
+      "texto": "Entrenamiento de la IA",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1145
+    },
+    {
+      "texto": "Catálogo y pedidos",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1145
+    },
+    {
+      "texto": "Métricas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1145
+    },
+    {
+      "texto": "Empieza gratis arrow_forward",
+      "destino": "https://afiliados.lucidbot.co/auth/register?st=cwqurwg9em",
+      "y": 387
+    },
+    {
+      "texto": "Ecommerce arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3047
+    },
+    {
+      "texto": "Dropshipping arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3091
+    },
+    {
+      "texto": "Hotelería arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3134
+    },
+    {
+      "texto": "Restaurantes arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3177
+    },
+    {
+      "texto": "Soporte arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3220
+    },
+    {
+      "texto": "Consultoría arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3263
+    },
+    {
+      "texto": "Asistentes arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3306
+    },
+    {
+      "texto": "Inmobiliaria arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3350
+    },
+    {
+      "texto": "Salud y estética arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3393
+    },
+    {
+      "texto": "Educación arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3436
+    },
+    {
+      "texto": "Agencias arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3479
+    },
+    {
+      "texto": "Retail arrow_forward",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3522
+    },
+    {
+      "texto": "Ver planes",
+      "destino": "https://lucidbot.co/precios/",
+      "y": 4109
+    },
+    {
+      "texto": "Pedidos y reservas para restaurantes. Conocer LucidLunch arrow_outward",
+      "destino": "https://api.leadconnectorhq.com/widget/form/OysPtbJdcgeLbJUSBY3G",
+      "y": 4600
+    },
+    {
+      "texto": "Facebook de LucidBot",
+      "destino": "https://www.facebook.com/people/Lucid-Bot/61557265343360/",
+      "y": 6452
+    },
+    {
+      "texto": "Precios",
+      "destino": "https://lucidbot.co/precios/",
+      "y": 6372
+    },
+    {
+      "texto": "Aula gratuita",
+      "destino": "https://www.skool.com/lucidbot/about",
+      "y": 6372
+    },
+    {
+      "texto": "Contacto",
+      "destino": "https://lucidbot.co/contacto/",
+      "y": 6372
+    },
+    {
+      "texto": "Hablar con ventas Planes, precios y demos",
+      "destino": "https://wa.me/573138334626",
+      "y": 709
+    },
+    {
+      "texto": "Soporte para clientes Si ya usas LucidBot",
+      "destino": "https://wa.me/573169400163",
+      "y": 785
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "La plataforma para construir bots que venden 24/7",
+      "y": 220
+    },
+    {
+      "nivel": "h2",
+      "texto": "CONECTADO CON LAS HERRAMIENTAS QUE YA USAS",
+      "y": 1651
+    },
+    {
+      "nivel": "h2",
+      "texto": "Una sola plataforma para vender y atender",
+      "y": 1961
+    },
+    {
+      "nivel": "h3",
+      "texto": "Todos tus canales en un solo Inbox",
+      "y": 1943
+    },
+    {
+      "nivel": "h3",
+      "texto": "Flujos sin escribir código",
+      "y": 2084
+    },
+    {
+      "nivel": "h3",
+      "texto": "IA entrenada con tu negocio",
+      "y": 2225
+    },
+    {
+      "nivel": "h3",
+      "texto": "Bot y equipo, coordinados",
+      "y": 2366
+    },
+    {
+      "nivel": "h3",
+      "texto": "CRM de leads",
+      "y": 2507
+    },
+    {
+      "nivel": "h3",
+      "texto": "Reportes de cada conversación",
+      "y": 2648
+    },
+    {
+      "nivel": "h2",
+      "texto": "¡Empecemos! ¿A qué industria perteneces?",
+      "y": 3097
+    },
+    {
+      "nivel": "h3",
+      "texto": "Reservas incluso de madrugada",
+      "y": 3392
+    },
+    {
+      "nivel": "h2",
+      "texto": "Crea tu primer bot gratis",
+      "y": 3901
+    },
+    {
+      "nivel": "h2",
+      "texto": "Un ecosistema para vender por chat",
+      "y": 4401
+    },
+    {
+      "nivel": "h3",
+      "texto": "Marca blanca",
+      "y": 4942
+    },
+    {
+      "nivel": "h3",
+      "texto": "Meta Business Partner",
+      "y": 4942
+    },
+    {
+      "nivel": "h3",
+      "texto": "API",
+      "y": 4942
+    },
+    {
+      "nivel": "h2",
+      "texto": "Lo que suelen preguntarnos",
+      "y": 5329
+    }
+  ],
+  "preciosTexto": [
+    "📷 Conjunto lino · tallas S a XL · $89.900",
+    "📷 Runner Pro · tallas 38 a 44 · $189.900"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "LucidBot es la plataforma de automatización conversacional más potente para ventas, soporte y marketing 24/7 con IA avanzada."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 49,
+    "altLogos": [
+      "LucidBot",
+      "Ecommerce",
+      "Dropshipping",
+      "Atención al Cliente",
+      "Soporte",
+      "Ventas",
+      "Consultas",
+      "LucidCalls",
+      "LucidVoice",
+      "LucidSales",
+      "LucidLunch"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [
+      "https://wa.me/573138334626",
+      "https://wa.me/573169400163"
+    ],
+    "agenda": [
+      "https://lucidbot.co/agendar-demo/"
+    ],
+    "formularios": [],
+    "chatWidgets": [
+      "LeadConnector"
+    ],
+    "email": [
+      "mailto:info@lucidbot.co"
+    ],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Agenda una demo",
+    "Empieza gratis",
+    "Crea tu primer bot gratis",
+    "En tres pasos tienes tu bot respondiendo, y lo pruebas antes de decidir nada.",
+    "Crea tu cuenta gratis",
+    "7 días de prueba en cualquier plan.",
+    "Aula gratuita"
+  ],
+  "plataforma": [
+    "GoHighLevel/LeadConnector"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 6664,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://lucidbot.co/"
+    },
+    "pesoTransferidoKB": 2165,
+    "pesoTransferidoMB": 2.11,
+    "solicitudes": 45,
+    "domContentLoadedMs": 418,
+    "loadMs": 3061,
+    "ttfbMs": 98,
+    "medidoTrasMs": 8851,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

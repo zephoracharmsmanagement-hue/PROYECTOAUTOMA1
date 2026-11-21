@@ -1,0 +1,479 @@
+{
+  "sitio": "ref-swanky",
+  "url": "https://swankyagency.com/",
+  "capturadoEn": "2026-11-21T00:58:45.072Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://swankyagency.com/"
+  },
+  "titulo": "Swanky | Shopify Plus Agency | UK, Australia & France",
+  "metaDescripcion": "Leading Shopify Plus agency with offices in the UK, Australia & France. We build & grow exceptional Shopify stores. Shopify Platinum Partner.",
+  "idioma": "en-US",
+  "h1": [
+    "Compelling digital experiences for international brands on Shopify Plus.",
+    "Compelling digital experiences for international brands on Shopify Plus."
+  ],
+  "subtituloHero": "Swanky is a full-service Shopify Plus agency in the UK, Australia and France. We help our clients replatform to best-in-class ecommerce technology, then grow their business through strategic long-term support.",
+  "ctas": [
+    {
+      "texto": "Customise",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 795
+    },
+    {
+      "texto": "Reject All",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 795
+    },
+    {
+      "texto": "Accept All",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 795
+    },
+    {
+      "texto": "Contact Us",
+      "destino": "https://swankyagency.com/contact-us/",
+      "y": 43
+    },
+    {
+      "texto": "DISCOVER MORE",
+      "destino": "https://swankyagency.com/web-design/",
+      "y": 677
+    },
+    {
+      "texto": "LAUNCH ON SHOPIFY",
+      "destino": "https://swankyagency.com/web-design/",
+      "y": 2185
+    },
+    {
+      "texto": "VIEW ALL RESULTS",
+      "destino": "https://swankyagency.com/portfolio/",
+      "y": 2691
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/migration-to-shopify-recharge-case-study-futureyou-cambridge/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/redefining-luxury-fragrance-ecommerce-high-performance-shopify-upgrade-case-study-initio-parfums-prives/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/shopify-custom-design-fashion-swimwear-brand-case-study-bond-eye-swim/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/b2b-migration-magento-enterprise-to-shopify-plus-case-study-natural-instinct/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/portfolio/fishpools",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/woocommerce-to-shopify-migration-case-study-valhalla-tactical/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/scalable-ecommerce-store-case-study-eden-project/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/multiple-international-stores-woocommerce-to-shopify-plus-migration-case-study-catit/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/full-service-ecommerce-agency-case-study-wilkinson-sword/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/selling-online-in-japan-case-study-hellofresh/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/upgrading-ecommerce-ux-to-reflect-in-store-customer-experience-case-study-naturalmat/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/ecommerce-digital-transformation-case-study-daysoft/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/international-shopify-furniture-retailer-custom-development-case-study-aeris/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/multiple-international-shopify-stores-case-study-one-retail-group/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/ecommerce-website-design-development-case-study-boucleme/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/case-study-the-ecommerce-growth-strategy-that-helped-shackleton-increase-yoy-revenue-by-74/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/new-brand-identity-australian-petcare-retailer-case-study-farrells/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/bespoke-product-builder-case-study-veneta-blinds/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/dtc-growth-petcare-case-study-yumove/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/portfolio/dockatot/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/b2b-shopify-plus-case-study-saddleback/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/international-ecommerce-growth-case-study-symprove/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/ecommerce-tech-stack-shopify-plus-case-study-silk-oil-of-morocco/",
+      "y": 3524
+    },
+    {
+      "texto": "VIEW PROJECT",
+      "destino": "https://swankyagency.com/ecommerce-cro-strategy-1m-growth-opportunity-case-study-loop-earplugs/",
+      "y": 3524
+    },
+    {
+      "texto": "FIND OUT MORE",
+      "destino": "https://swankyagency.com/migration/",
+      "y": 4659
+    },
+    {
+      "texto": "FIND OUT MORE",
+      "destino": "https://swankyagency.com/services/shopify-plus-design/",
+      "y": 4659
+    },
+    {
+      "texto": "FIND OUT MORE",
+      "destino": "https://swankyagency.com/services/subscription-ecommerce-websites/",
+      "y": 4627
+    },
+    {
+      "texto": "FIND OUT MORE",
+      "destino": "https://swankyagency.com/services/conversion-rate-optimisation-services/",
+      "y": 4689
+    },
+    {
+      "texto": "FIND OUT MORE",
+      "destino": "https://swankyagency.com/services/ecommerce-digital-marketing/",
+      "y": 5023
+    },
+    {
+      "texto": "FIND OUT MORE",
+      "destino": "https://swankyagency.com/services/ecommerce-internationalisation/",
+      "y": 5056
+    },
+    {
+      "texto": "FIND OUT MORE",
+      "destino": "https://swankyagency.com/services/creative-web-design-branding/",
+      "y": 5053
+    },
+    {
+      "texto": "FIND OUT MORE",
+      "destino": "https://swankyagency.com/services/shopify-integrations/",
+      "y": 5053
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Compelling digital experiences for international brands on Shopify Plus.",
+      "y": 295
+    },
+    {
+      "nivel": "h3",
+      "texto": "Swanky is a full-service Shopify Plus agency in the UK, Australia and France. We help our clients replatform to best-in-class ecommerce technology, then grow th",
+      "y": 1074
+    },
+    {
+      "nivel": "h2",
+      "texto": "Crafting Shopify Success Stories",
+      "y": 1811
+    },
+    {
+      "nivel": "h2",
+      "texto": "Shopify Plus Case Studies",
+      "y": 2698
+    },
+    {
+      "nivel": "h3",
+      "texto": "FutureYou Cambridge",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Initio Parfums Privés",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "bond-eye swim",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Natural Instinct",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Fishpools",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Valhalla Tactical",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Eden Project",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Catit",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Wilkinson Sword",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "HelloFresh",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Naturalmat",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "daysoft®",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Aeris",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "One Retail Group",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Bouclème",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shackleton",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Union Hand-Roasted Coffee",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Farrell’s",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Veneta Blinds",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "YuMOVE",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "DockATot",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Saddleback",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Symprove",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Silk Oil of Morocco",
+      "y": 3403
+    },
+    {
+      "nivel": "h3",
+      "texto": "Loop Earplugs",
+      "y": 3403
+    },
+    {
+      "nivel": "h2",
+      "texto": "Launch & Grow",
+      "y": 4089
+    },
+    {
+      "nivel": "h3",
+      "texto": "Replatforming to Shopify Plus",
+      "y": 4405
+    },
+    {
+      "nivel": "h3",
+      "texto": "Web Design & Development",
+      "y": 4405
+    },
+    {
+      "nivel": "h3",
+      "texto": "Subscription Websites",
+      "y": 4405
+    },
+    {
+      "nivel": "h3",
+      "texto": "Conversion Rate Optimisation",
+      "y": 4405
+    },
+    {
+      "nivel": "h3",
+      "texto": "Digital Marketing",
+      "y": 4830
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ecommerce Internationalisation",
+      "y": 4830
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ecommerce Branding",
+      "y": 4830
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify Integrations",
+      "y": 4830
+    },
+    {
+      "nivel": "h2",
+      "texto": "Technology that makes ecommerce happen",
+      "y": 5708
+    },
+    {
+      "nivel": "h2",
+      "texto": "Ecommerce Resources",
+      "y": 7131
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [
+      "Swanky will become a Shopify Diamond Partner in January 2027, as the new Global Partner Program classifications are launched, recognised as one of Shopify's top-tier agencies worldwide. …READ MORE"
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 44,
+    "altLogos": []
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [
+      {
+        "accion": "https://swankyagency.com",
+        "visible": false,
+        "campos": [
+          "What are you looking for?"
+        ]
+      }
+    ],
+    "chatWidgets": [
+      "Gorgias"
+    ],
+    "email": [],
+    "telefono": [
+      "tel:+441392927070"
+    ]
+  },
+  "gratisTexto": [],
+  "plataforma": [
+    "generator: WPML ver:4.9.2 stt:1,4;",
+    "WordPress",
+    "HubSpot (scripts)"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 9150,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://swankyagency.com/"
+    },
+    "pesoTransferidoKB": 11142,
+    "pesoTransferidoMB": 10.88,
+    "solicitudes": 156,
+    "domContentLoadedMs": 3367,
+    "loadMs": 5618,
+    "ttfbMs": 249,
+    "medidoTrasMs": 11130,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

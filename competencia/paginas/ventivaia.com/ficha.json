@@ -1,0 +1,324 @@
+{
+  "sitio": "ventivaia",
+  "url": "https://ventivaia.com/",
+  "capturadoEn": "2026-11-21T00:54:53.003Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://ventivaia.com/"
+  },
+  "titulo": "Agencia de IA conversacional en Colombia | Ventiva.ia",
+  "metaDescripcion": "Automatizamos WhatsApp e Instagram con agentes de IA que responden 24/7, califican leads y agendan citas. Tu negocio siempre respondiendo.",
+  "idioma": "es-CO",
+  "h1": [
+    "Conversaciones que venden solas."
+  ],
+  "subtituloHero": "Instalamos agentes de IA que atienden tu WhatsApp, Instagram y Messenger. Responden en segundos, califican al cliente y cierran la venta, incluso a las 3 de la mañana.",
+  "ctas": [
+    {
+      "texto": "Planes",
+      "destino": "https://ventivaia.com/planes/",
+      "y": 18
+    },
+    {
+      "texto": "WhatsApp",
+      "destino": "https://wa.me/573170956293",
+      "y": 15
+    },
+    {
+      "texto": "Agendar llamada →",
+      "destino": "https://calendar.app.google/yn5WcxkvBCALGw7P6",
+      "y": 15
+    },
+    {
+      "texto": "Agenda una demo →",
+      "destino": "https://calendar.app.google/yn5WcxkvBCALGw7P6",
+      "y": 503
+    },
+    {
+      "texto": "Ver cómo funciona",
+      "destino": "https://ventivaia.com/servicios/",
+      "y": 503
+    },
+    {
+      "texto": "agentes de IA conversacional en WhatsApp",
+      "destino": "https://ventivaia.com/agente-ia-whatsapp-colombia/",
+      "y": 1548
+    },
+    {
+      "texto": "HubSpot Research",
+      "destino": "https://blog.hubspot.com/sales/live-chat-go-to-market-flaw",
+      "y": 2083
+    },
+    {
+      "texto": "HubSpot Research",
+      "destino": "https://blog.hubspot.com/service/customer-service-tiers",
+      "y": 2083
+    },
+    {
+      "texto": "Quiero responder siempre →",
+      "destino": "https://calendar.app.google/yn5WcxkvBCALGw7P6",
+      "y": 4231
+    },
+    {
+      "texto": "Mensual",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4685
+    },
+    {
+      "texto": "Trimestral",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4685
+    },
+    {
+      "texto": "Semestral",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4685
+    },
+    {
+      "texto": "Anual",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4685
+    },
+    {
+      "texto": "Empezar con el plan Esencial",
+      "destino": "https://ventivaia.com/planes/",
+      "y": 5246
+    },
+    {
+      "texto": "Agenda una demo",
+      "destino": "https://calendar.app.google/yn5WcxkvBCALGw7P6",
+      "y": 5246
+    },
+    {
+      "texto": "Hablar con ventas",
+      "destino": "https://wa.me/573170956293",
+      "y": 5246
+    },
+    {
+      "texto": "Escríbenos por WhatsApp",
+      "destino": "https://wa.me/573170956293",
+      "y": 6552
+    },
+    {
+      "texto": "Ver preguntas frecuentes →",
+      "destino": "https://ventivaia.com/faqs/",
+      "y": 6835
+    },
+    {
+      "texto": "Agendar llamada",
+      "destino": "https://calendar.app.google/yn5WcxkvBCALGw7P6",
+      "y": 7152
+    },
+    {
+      "texto": "+57 317 095 6293",
+      "destino": "https://wa.me/573170956293",
+      "y": 7317
+    },
+    {
+      "texto": "Habla con nosotros",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 816
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Conversaciones que venden solas.",
+      "y": 196
+    },
+    {
+      "nivel": "h2",
+      "texto": "Un solo agente hace el trabajo de todo un equipo.",
+      "y": 2216
+    },
+    {
+      "nivel": "h3",
+      "texto": "Atiende 24/7",
+      "y": 2465
+    },
+    {
+      "nivel": "h3",
+      "texto": "Califica leads",
+      "y": 2465
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cierra la venta",
+      "y": 2465
+    },
+    {
+      "nivel": "h3",
+      "texto": "Agenda citas",
+      "y": 2639
+    },
+    {
+      "nivel": "h3",
+      "texto": "Habla como tú",
+      "y": 2639
+    },
+    {
+      "nivel": "h3",
+      "texto": "Pasa a humano",
+      "y": 2639
+    },
+    {
+      "nivel": "h2",
+      "texto": "De un mensaje a una venta cerrada.",
+      "y": 2952
+    },
+    {
+      "nivel": "h3",
+      "texto": "Llega el mensaje",
+      "y": 3232
+    },
+    {
+      "nivel": "h3",
+      "texto": "El agente responde",
+      "y": 3232
+    },
+    {
+      "nivel": "h3",
+      "texto": "Califica y agenda",
+      "y": 3232
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tú cierras",
+      "y": 3232
+    },
+    {
+      "nivel": "h2",
+      "texto": "No pierdes clientes por precio. Los pierdes por no responder a tiempo.",
+      "y": 3862
+    },
+    {
+      "nivel": "h3",
+      "texto": "Respuesta en segundos",
+      "y": 3880
+    },
+    {
+      "nivel": "h3",
+      "texto": "Disponible 24/7",
+      "y": 4016
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cero clientes perdidos",
+      "y": 4151
+    },
+    {
+      "nivel": "h2",
+      "texto": "Un plan para cada etapa de tu negocio.",
+      "y": 4489
+    },
+    {
+      "nivel": "h2",
+      "texto": "Trabajamos con la cara y los compromisos claros.",
+      "y": 5589
+    },
+    {
+      "nivel": "h3",
+      "texto": "Listo en 7 días",
+      "y": 5869
+    },
+    {
+      "nivel": "h3",
+      "texto": "Te acompaña el CTO",
+      "y": 5869
+    },
+    {
+      "nivel": "h3",
+      "texto": "Mejora mes a mes",
+      "y": 5869
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tus datos, protegidos",
+      "y": 6032
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tecnología de primer nivel",
+      "y": 6032
+    },
+    {
+      "nivel": "h3",
+      "texto": "Soporte que sí responde",
+      "y": 6032
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tu próximo cliente ya está escribiendo.",
+      "y": 6336
+    }
+  ],
+  "preciosTexto": [
+    "$390.000",
+    "+ $420.000 instalación",
+    "$690.000",
+    "+ $700.000 instalación",
+    "$1.350.000",
+    "+ $1.400.000 instalación"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "Instalamos agentes de IA que atienden tu WhatsApp, Instagram y Messenger. Responden en segundos, califican al cliente y cierran la venta, incluso a las 3 de la mañana.",
+      "Fuente: Harvard Business Review, 2011",
+      "Es lo máximo que 6 de cada 10 clientes consideran una respuesta “inmediata”. Después, la venta se enfría.",
+      "Para negocios locales que arrancan con la automatización y necesitan respuestas 24/7."
+    ],
+    "garantias": [
+      "Somos una agencia nueva, y por eso cuidamos cada implementación como si fuera la única. Esto es lo que te garantizamos."
+    ],
+    "elementosTestimonio": 0,
+    "logosDetectados": 7,
+    "altLogos": [
+      "Ventiva.ia"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [
+      "https://wa.me/573170956293"
+    ],
+    "agenda": [
+      "https://calendar.app.google/yn5WcxkvBCALGw7P6"
+    ],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Agenda una demo",
+    "Elige cómo pagar. Con los planes Semestral y Anual, la instalación es gratis.",
+    "La pregunta es quién le responde primero. Agenda una demo y te mostramos tu agente conversando con tu propio negocio.",
+    "Respuesta el mismo día. Sin compromiso."
+  ],
+  "plataforma": [
+    "generator: WordPress 7.1.4",
+    "WordPress",
+    "Elementor",
+    "HubSpot (scripts)"
+  ],
+  "rastreadores": [
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 7520,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://ventivaia.com/"
+    },
+    "pesoTransferidoKB": 1053,
+    "pesoTransferidoMB": 1.03,
+    "solicitudes": 67,
+    "domContentLoadedMs": 1694,
+    "loadMs": 3738,
+    "ttfbMs": 375,
+    "medidoTrasMs": 9248,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

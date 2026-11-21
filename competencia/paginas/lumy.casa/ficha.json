@@ -1,0 +1,298 @@
+{
+  "sitio": "lumy",
+  "url": "https://www.lumy.casa/",
+  "capturadoEn": "2026-11-21T00:55:47.259Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.lumy.casa/"
+  },
+  "titulo": "Lumy: tienda online, pedidos, WhatsApp y logística",
+  "metaDescripcion": "Crea landings y tiendas, recibe y confirma pedidos por WhatsApp, conecta Dropi, Mastershop, 99 Envíos, Meta y TikTok, y mide tu ganancia real.",
+  "idioma": "es",
+  "h1": [
+    "Vende,confirmaydespachaen un solo lugar."
+  ],
+  "subtituloHero": "Creas tu página de ventas en Lumy, un agente de IA atiende y confirma a tus clientes por WhatsApp, los pedidos salen a tu transportadora y ves lo que de verdad te queda.",
+  "ctas": [
+    {
+      "texto": "Planes",
+      "destino": "https://www.lumy.casa/#planes",
+      "y": 12
+    },
+    {
+      "texto": "Entrar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 11
+    },
+    {
+      "texto": "Empieza hoy",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 12
+    },
+    {
+      "texto": "Ya tengo cuenta",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 573
+    },
+    {
+      "texto": "Venta por WhatsApp Ver en vivo",
+      "destino": "https://www.lumy.casa/l/casco?demo=1",
+      "y": 2011
+    },
+    {
+      "texto": "Mensual",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6539
+    },
+    {
+      "texto": "3 meses -15%",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6539
+    },
+    {
+      "texto": "ver más",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6866
+    },
+    {
+      "texto": "Empezar con Starter",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7728
+    },
+    {
+      "texto": "Empezar con Pro",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7724
+    },
+    {
+      "texto": "Empezar con MAX",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7728
+    },
+    {
+      "texto": "Empezar con Negocios",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8067
+    },
+    {
+      "texto": "10 min",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8556
+    },
+    {
+      "texto": "Crear mi cuenta",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 10596
+    },
+    {
+      "texto": "Facebook",
+      "destino": "https://www.facebook.com/ecomdroptv",
+      "y": 10990
+    },
+    {
+      "texto": "Escríbenos por WhatsApp",
+      "destino": "https://wa.me/573003610045?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20Lumy%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+      "y": 10990
+    },
+    {
+      "texto": "Precios",
+      "destino": "https://www.lumy.casa/precios",
+      "y": 10889
+    },
+    {
+      "texto": "WhatsApp para e-commerce",
+      "destino": "https://www.lumy.casa/whatsapp-ecommerce",
+      "y": 10999
+    },
+    {
+      "texto": "Agente de ventas con IA",
+      "destino": "https://www.lumy.casa/agente-ia-whatsapp",
+      "y": 11026
+    },
+    {
+      "texto": "Iniciar sesión",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 11211
+    },
+    {
+      "texto": "Crear cuenta",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 11235
+    },
+    {
+      "texto": "Contacto",
+      "destino": "https://www.lumy.casa/contacto",
+      "y": 10971
+    },
+    {
+      "texto": "Contacto",
+      "destino": "https://www.lumy.casa/contacto",
+      "y": 11312
+    },
+    {
+      "texto": "¿Hablamos por WhatsApp?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 816
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Vende,confirmaydespachaen un solo lugar.",
+      "y": 241
+    },
+    {
+      "nivel": "h2",
+      "texto": "Elige el plan que acompaña tu operación.",
+      "y": 776
+    },
+    {
+      "nivel": "h3",
+      "texto": "Academia incluida",
+      "y": 920
+    },
+    {
+      "nivel": "h3",
+      "texto": "Landings ilimitadas",
+      "y": 920
+    },
+    {
+      "nivel": "h3",
+      "texto": "Formularios sin límite",
+      "y": 920
+    },
+    {
+      "nivel": "h3",
+      "texto": "Sin saber programar",
+      "y": 1043
+    },
+    {
+      "nivel": "h3",
+      "texto": "Confirmas por WhatsApp",
+      "y": 1043
+    },
+    {
+      "nivel": "h3",
+      "texto": "Te acompañamos",
+      "y": 1043
+    },
+    {
+      "nivel": "h2",
+      "texto": "Así viaja un pedido dentro de Lumy.",
+      "y": 1331
+    },
+    {
+      "nivel": "h2",
+      "texto": "Páginas reales, listas para vender.",
+      "y": 1836
+    },
+    {
+      "nivel": "h2",
+      "texto": "Cada pedido avanza sin que lo persigas.",
+      "y": 2602
+    },
+    {
+      "nivel": "h2",
+      "texto": "Todo lo que mueve tu venta, conectado.",
+      "y": 3098
+    },
+    {
+      "nivel": "h2",
+      "texto": "Más formas de vender, desde el mismo lugar.",
+      "y": 4186
+    },
+    {
+      "nivel": "h2",
+      "texto": "Así le va a quien ya usa Lumy. Sin maquillar.",
+      "y": 5088
+    },
+    {
+      "nivel": "h2",
+      "texto": "Sin sorpresas sobre el precio de Lumy",
+      "y": 6264
+    },
+    {
+      "nivel": "h2",
+      "texto": "Un recorrido por Lumy.",
+      "y": 8432
+    },
+    {
+      "nivel": "h2",
+      "texto": "Preguntas frecuentes",
+      "y": 9197
+    },
+    {
+      "nivel": "h2",
+      "texto": "Empieza hoy a vender con todo en orden.",
+      "y": 10403
+    }
+  ],
+  "preciosTexto": [
+    "$ 412.000 después de pauta y envíos",
+    "$15",
+    "$29",
+    "$50",
+    "Desde el segundo mes, $15 USD/mes"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "-15%",
+      "Atiende a tus clientes con la IA de Lumy: hasta 500 chats al mes"
+    ],
+    "garantias": [
+      "Capturas y mensajes compartidos por personas de la comunidad, publicados con su permiso. No son resultados típicos ni garantizados: dependen de tu producto, tu inversión y tu operación.",
+      "Elige Starter, Pro o MAX. Puedes pagar mes a mes o por 3 meses. Sin permanencia.",
+      "Sin permanencia · cancelas cuando quieras · pago en USD con tarjeta, PSE, Nequi o Botón Bancolombia.",
+      "Reembolsos"
+    ],
+    "elementosTestimonio": 0,
+    "logosDetectados": 12,
+    "altLogos": [
+      "Dropi",
+      "Mastershop",
+      "99 Envíos",
+      "Lumy"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [
+      "https://wa.me/573003610045?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20Lumy%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n."
+    ],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [
+      "mailto:gerencia@ecomdroptv.com"
+    ],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "7 días gratis en tu primer mes"
+  ],
+  "plataforma": [
+    "Vite (SPA)"
+  ],
+  "rastreadores": [
+    "Meta Pixel",
+    "Google Analytics",
+    "TikTok Pixel"
+  ],
+  "altoPaginaPx": 11351,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.lumy.casa/"
+    },
+    "pesoTransferidoKB": 1338,
+    "pesoTransferidoMB": 1.31,
+    "solicitudes": 43,
+    "domContentLoadedMs": 832,
+    "loadMs": 1212,
+    "ttfbMs": 251,
+    "medidoTrasMs": 6724,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

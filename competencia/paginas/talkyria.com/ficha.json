@@ -1,0 +1,551 @@
+{
+  "sitio": "talkyria",
+  "url": "https://talkyria.com/",
+  "capturadoEn": "2026-11-21T00:52:43.725Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://talkyria.com/"
+  },
+  "completaRecortada": "página de 20033px recortada a 16000px",
+  "titulo": "Talkyria: llamadas de IA que confirman pedidos contraentrega",
+  "metaDescripcion": "IA conversacional de llamadas para e-commerce contraentrega: confirma pedidos, recupera carritos y gestiona novedades en segundos. Habla con nuestra IA desde el navegador. Más de 100.000 pedidos confirmados por llamada de IA.",
+  "idioma": "es",
+  "h1": [
+    "Mientras lees esto, ya estoy llamando a tus clientes."
+  ],
+  "subtituloHero": "Soy Talkyria. Llamo en el segundo cero, confirmo, vendo y resuelvo, por teléfono o por WhatsApp, en el idioma de cada cliente. Tú no haces nada.",
+  "ctas": [
+    {
+      "texto": "Talkyria, inicio",
+      "destino": "https://talkyria.com/",
+      "y": 102
+    },
+    {
+      "texto": "Precios",
+      "destino": "https://talkyria.com/precios",
+      "y": 102
+    },
+    {
+      "texto": "Habla con Talkyria",
+      "destino": "https://talkyria.com/#demo",
+      "y": 102
+    },
+    {
+      "texto": "Habla con Talkyria",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 524
+    },
+    {
+      "texto": "English",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 688
+    },
+    {
+      "texto": "Español",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 688
+    },
+    {
+      "texto": "Français",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 688
+    },
+    {
+      "texto": "Deutsch",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 688
+    },
+    {
+      "texto": "Português",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 688
+    },
+    {
+      "texto": "Italiano",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 688
+    },
+    {
+      "texto": "Nederlands",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 688
+    },
+    {
+      "texto": "Русский",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 688
+    },
+    {
+      "texto": "日本語",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 730
+    },
+    {
+      "texto": "हिन्दी",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 730
+    },
+    {
+      "texto": "Crear cuenta gratis",
+      "destino": "https://app.talkyria.com/register?utm_source=talkyria_web&utm_medium=rediseno",
+      "y": 858
+    },
+    {
+      "texto": "Reproducir «Talkyria en acción»",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1686
+    },
+    {
+      "texto": "Todas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2918
+    },
+    {
+      "texto": "Vender",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2918
+    },
+    {
+      "texto": "Confirmar y cobrar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2918
+    },
+    {
+      "texto": "Entregar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2918
+    },
+    {
+      "texto": "Fidelizar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2918
+    },
+    {
+      "texto": "Más allá del ecommerce",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2918
+    },
+    {
+      "texto": "Escuchar la llamada: Confirmar el pedido",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2980
+    },
+    {
+      "texto": "Escuchar la llamada: Rescatar el carrito",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2980
+    },
+    {
+      "texto": "Escuchar la llamada: Recordar citas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2980
+    },
+    {
+      "texto": "Escuchar la llamada: Cobrar un anticipo",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2980
+    },
+    {
+      "texto": "Escuchar la llamada: Resolver la novedad",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3218
+    },
+    {
+      "texto": "Escuchar la llamada: Encuestas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3218
+    },
+    {
+      "texto": "Talkyria frente a WhatsApp",
+      "destino": "https://talkyria.com/comparativas/talkyria-vs-whatsapp",
+      "y": 3394
+    },
+    {
+      "texto": "Escuchar la llamada: Ventas que llegan por WhatsApp",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3218
+    },
+    {
+      "texto": "Escuchar la llamada: Inmobiliarias",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3218
+    },
+    {
+      "texto": "Escuchar la llamada: Cobranza",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3456
+    },
+    {
+      "texto": "Escuchar la llamada: Frenar una devolución",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3456
+    },
+    {
+      "texto": "Escuchar la llamada: Clínicas y consultorios",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3456
+    },
+    {
+      "texto": "Ventas que llegan por WhatsApp",
+      "destino": "https://talkyria.com/comparativas/talkyria-vs-whatsapp",
+      "y": 4054
+    },
+    {
+      "texto": "Llamar por WhatsApp",
+      "destino": "https://talkyria.com/comparativas/talkyria-vs-whatsapp",
+      "y": 4123
+    },
+    {
+      "texto": "Carga masiva CSV",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4272
+    },
+    {
+      "texto": "Exportar CSV",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4272
+    },
+    {
+      "texto": "Fecha de pedido",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4349
+    },
+    {
+      "texto": "Fecha de cambio de estado",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 4349
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Mientras lees esto, ya estoy llamando a tus clientes.",
+      "y": 145
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tu negocio no quiebra por el producto. Quiebra por la devolución.",
+      "y": 1931
+    },
+    {
+      "nivel": "h2",
+      "texto": "Si tu negocio necesita una llamada, yo confirmo el pedido.",
+      "y": 2717
+    },
+    {
+      "nivel": "h3",
+      "texto": "Confirmar el pedido",
+      "y": 3021
+    },
+    {
+      "nivel": "h3",
+      "texto": "Rescatar el carrito",
+      "y": 3021
+    },
+    {
+      "nivel": "h3",
+      "texto": "Recordar citas",
+      "y": 3021
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cobrar un anticipo",
+      "y": 3021
+    },
+    {
+      "nivel": "h3",
+      "texto": "Resolver la novedad",
+      "y": 3259
+    },
+    {
+      "nivel": "h3",
+      "texto": "Encuestas",
+      "y": 3259
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ventas que llegan por WhatsApp",
+      "y": 3259
+    },
+    {
+      "nivel": "h3",
+      "texto": "Inmobiliarias",
+      "y": 3259
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cobranza",
+      "y": 3497
+    },
+    {
+      "nivel": "h3",
+      "texto": "Frenar una devolución",
+      "y": 3497
+    },
+    {
+      "nivel": "h3",
+      "texto": "Clínicas y consultorios",
+      "y": 3497
+    },
+    {
+      "nivel": "h3",
+      "texto": "Vender",
+      "y": 3919
+    },
+    {
+      "nivel": "h3",
+      "texto": "Confirmar y proteger",
+      "y": 3919
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cobrar y subir el ticket",
+      "y": 3919
+    },
+    {
+      "nivel": "h3",
+      "texto": "Despacho y entrega",
+      "y": 3919
+    },
+    {
+      "nivel": "h3",
+      "texto": "Recuperar",
+      "y": 4329
+    },
+    {
+      "nivel": "h3",
+      "texto": "Posventa y recompra",
+      "y": 4329
+    },
+    {
+      "nivel": "h3",
+      "texto": "Recordar y encuestar",
+      "y": 4329
+    },
+    {
+      "nivel": "h3",
+      "texto": "Fuera del ecommerce",
+      "y": 4329
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tú decides",
+      "y": 5096
+    },
+    {
+      "nivel": "h2",
+      "texto": "No tienes que hacer nada. Trabajo sola, 24/7, y me acuerdo de cada pedido.",
+      "y": 4046
+    },
+    {
+      "nivel": "h2",
+      "texto": "Pedidos",
+      "y": 4272
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tu agente, a la medida de tu negocio.",
+      "y": 5286
+    },
+    {
+      "nivel": "h2",
+      "texto": "andrea",
+      "y": 5485
+    },
+    {
+      "nivel": "h3",
+      "texto": "HUELLA DIGITAL DEL COMPRADOR · LOGÍSTICA DROPI",
+      "y": 6334
+    },
+    {
+      "nivel": "h3",
+      "texto": "HUELLA DIGITAL DEL COMPRADOR · LOGÍSTICA DROPI",
+      "y": 6334
+    },
+    {
+      "nivel": "h2",
+      "texto": "Al bot que escribe lo dejan en visto. A mí me contestan.",
+      "y": 6751
+    },
+    {
+      "nivel": "h2",
+      "texto": "Llamo a cada lead apenas deja su teléfono y dejo el pedido creado.",
+      "y": 7437
+    },
+    {
+      "nivel": "h2",
+      "texto": "Sí. Súbeme tu lista y llamo a cada contacto.",
+      "y": 8254
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tu equipo también llama desde aquí, y los asesores no cuestan por puesto.",
+      "y": 9522
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tu tienda avisa. Yo llamo. Y si construyes tu propia IA, le presto mi voz.",
+      "y": 10275
+    },
+    {
+      "nivel": "h2",
+      "texto": "Integraciones",
+      "y": 10521
+    },
+    {
+      "nivel": "h2",
+      "texto": "Una voz, todas las misiones.",
+      "y": 11831
+    },
+    {
+      "nivel": "h2",
+      "texto": "Agentes",
+      "y": 12243
+    },
+    {
+      "nivel": "h2",
+      "texto": "Vende en 28 países sin montar un call center en ninguno.",
+      "y": 13318
+    },
+    {
+      "nivel": "h2",
+      "texto": "Pregúntame lo que quieras.",
+      "y": 14079
+    },
+    {
+      "nivel": "h2",
+      "texto": "No me creas: pruébame.",
+      "y": 16424
+    },
+    {
+      "nivel": "h3",
+      "texto": "Pedido #1042 en Shopify",
+      "y": 16755
+    },
+    {
+      "nivel": "h3",
+      "texto": "Dirección sin barrio",
+      "y": 16755
+    },
+    {
+      "nivel": "h3",
+      "texto": "Smart Offer activa",
+      "y": 16755
+    },
+    {
+      "nivel": "h3",
+      "texto": "Novedad en Dropi",
+      "y": 16755
+    },
+    {
+      "nivel": "h3",
+      "texto": "Carrito abandonado",
+      "y": 16755
+    },
+    {
+      "nivel": "h2",
+      "texto": "Bienvenido al comercio atendido por voz.",
+      "y": 18415
+    }
+  ],
+  "preciosTexto": [
+    "$ 89.900",
+    "$ 119.900",
+    "$ 109.800",
+    "$ 159.900",
+    "$649",
+    "$ 99.900",
+    "$529",
+    "$ 124.900",
+    "$ 94.900",
+    "$ 84.900",
+    "$899",
+    "$ 64.900",
+    "$398",
+    "$ 139.900",
+    "$ 59.700",
+    "$ 79.800",
+    "$ 69.900",
+    "$ 149.900",
+    "Lámpara LED de escritorio x2 · $ 109.800 · pago al recibir"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "18 pedidos",
+      "recibe 92%",
+      "recibe 67%",
+      "recibe 40%",
+      "recibe 88%",
+      "recibe 63%",
+      "recibe 71%",
+      "recibe 47%",
+      "recibe 95%",
+      "recibe 38%",
+      "recibe 84%",
+      "Mostrando 1–18 de 18 pedidos",
+      "CAMBIA 50 % POR 40 %",
+      "Recibe el 84 % de lo que pide",
+      "Recibe el 38 % de lo que pide",
+      "Ventas2",
+      "Antes de despacharlo: si llevas dos, el segundo tiene 30 % de descuento.",
+      "75,7 %",
+      "de los compradores que contestan confirman su pedido; en México, hasta el 78,4 %",
+      "87,0 %",
+      "de los pedidos confirmados por llamada de IA se entregaron, frente al 77,4 % de los no confirmados",
+      "77,4 %",
+      "20,8 %",
+      "Datos de producción de Talkyria al 30 de octubre de 2026, sobre todo de tiendas de Colombia y México."
+    ],
+    "garantias": [
+      "Sin permanencia."
+    ],
+    "elementosTestimonio": 0,
+    "logosDetectados": 2,
+    "altLogos": [
+      "Talkyria"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [
+      "mailto:soporte@talkyria.com"
+    ],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Prueba a interrumpirla, cambiar la dirección o decir que ya no lo quieres.",
+    "ESTA DEMO HABLA 10 IDIOMAS · CAMBIA CUANDO QUIERAS",
+    "Gratis · sin registro · máximo 3 min · Al hablar aceptas que la llamada se grabe 30 días · Privacidad",
+    "Crear cuenta gratis",
+    "Tus asesores llaman desde aquí sin costo por puesto: solo pagas la ruta telefónica",
+    "PRUEBA"
+  ],
+  "plataforma": [
+    "Next.js"
+  ],
+  "rastreadores": [
+    "Google Analytics",
+    "TikTok Pixel"
+  ],
+  "altoPaginaPx": 20033,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://talkyria.com/"
+    },
+    "pesoTransferidoKB": 1247,
+    "pesoTransferidoMB": 1.22,
+    "solicitudes": 45,
+    "domContentLoadedMs": 583,
+    "loadMs": 962,
+    "ttfbMs": 136,
+    "medidoTrasMs": 6501,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

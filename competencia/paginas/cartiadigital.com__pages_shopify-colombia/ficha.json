@@ -1,0 +1,274 @@
+{
+  "sitio": "cartiadigital",
+  "url": "https://cartiadigital.com/pages/shopify-colombia",
+  "capturadoEn": "2026-11-21T00:55:21.301Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://cartiadigital.com/pages/shopify-colombia"
+  },
+  "titulo": "Agencia Shopify Colombia — Diseño y desarrollo | Cartia Digital",
+  "metaDescripcion": "Agencia Shopify para marcas colombianas: diseño, desarrollo y migración con PayU, ePayco, IVA 19% y facturación DIAN. Cotización gratis.",
+  "idioma": "es",
+  "h1": [
+    "Agencia Shopify técnica para marcas colombianas."
+  ],
+  "subtituloHero": "Desarrollo Shopify y Shopify Plus para marcas que venden en Colombia. Tienda hecha a medida, optimizada para el comprador colombiano, soporte en horario Bogotá (GMT-5). Conexión con apps locales cuando aplica: PayU Colombia, ePayco, Mercado Pago Colombia, sistemas DIAN.",
+  "ctas": [
+    {
+      "texto": "Saltar al contenido",
+      "destino": "https://cartiadigital.com/pages/shopify-colombia#MainContent",
+      "y": -1
+    },
+    {
+      "texto": "Solicitar cotización",
+      "destino": "https://cartiadigital.com/pages/contacto#cotizar",
+      "y": 0
+    },
+    {
+      "texto": "Cotizar Tienda Shopify lista en Colombia",
+      "destino": "https://cartiadigital.com/pages/contacto#cotizar",
+      "y": 1933
+    },
+    {
+      "texto": "Cotizar Velocidad extrema para Colombia",
+      "destino": "https://cartiadigital.com/pages/contacto#cotizar",
+      "y": 2337
+    },
+    {
+      "texto": "Cotizar Apps & medición Colombia",
+      "destino": "https://cartiadigital.com/pages/contacto#cotizar",
+      "y": 2742
+    },
+    {
+      "texto": "Cotizar Soporte continuo en Colombia",
+      "destino": "https://cartiadigital.com/pages/contacto#cotizar",
+      "y": 3279
+    },
+    {
+      "texto": "Cotizar Visibilidad AI (GEO Colombia)",
+      "destino": "https://cartiadigital.com/pages/contacto#cotizar",
+      "y": 3722
+    },
+    {
+      "texto": "Suscribirse",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 11637
+    },
+    {
+      "texto": "contact@cartiadigital.com",
+      "destino": "mailto:contact@cartiadigital.com",
+      "y": 11865
+    },
+    {
+      "texto": "Cerrar formulario de cotización",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 16
+    },
+    {
+      "texto": "Siguiente",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 731
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Agencia Shopify técnica para marcas colombianas.",
+      "y": 268
+    },
+    {
+      "nivel": "h2",
+      "texto": "Shopify en Colombia: datos verificables.",
+      "y": 973
+    },
+    {
+      "nivel": "h2",
+      "texto": "Cinco frentes. Cero relleno.",
+      "y": 1771
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tienda Shopify lista en Colombia",
+      "y": 2000
+    },
+    {
+      "nivel": "h3",
+      "texto": "Velocidad extrema para Colombia",
+      "y": 2404
+    },
+    {
+      "nivel": "h3",
+      "texto": "Apps & medición Colombia",
+      "y": 2809
+    },
+    {
+      "nivel": "h3",
+      "texto": "Soporte continuo en Colombia",
+      "y": 3346
+    },
+    {
+      "nivel": "h3",
+      "texto": "Visibilidad AI (GEO Colombia)",
+      "y": 3789
+    },
+    {
+      "nivel": "h2",
+      "texto": "Marcas colombianas que escalaron con Shopify.",
+      "y": 4334
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tienda Shopify Shop Tokio (ropa de cama)",
+      "y": 5346
+    },
+    {
+      "nivel": "h2",
+      "texto": "Cómo lanzar tu tienda Shopify en Colombia",
+      "y": 5587
+    },
+    {
+      "nivel": "h3",
+      "texto": "Elección del plan Shopify para Colombia",
+      "y": 5837
+    },
+    {
+      "nivel": "h3",
+      "texto": "Setup en español y pesos colombianos (COP)",
+      "y": 6024
+    },
+    {
+      "nivel": "h3",
+      "texto": "Activación de la pasarela elegida",
+      "y": 6212
+    },
+    {
+      "nivel": "h3",
+      "texto": "Conexión con facturación electrónica DIAN",
+      "y": 6424
+    },
+    {
+      "nivel": "h3",
+      "texto": "Configuración de envíos en Colombia",
+      "y": 6611
+    },
+    {
+      "nivel": "h3",
+      "texto": "Diseño Shopify enfocado en conversión Colombia",
+      "y": 6799
+    },
+    {
+      "nivel": "h3",
+      "texto": "Lanzamiento + monitoreo en horario Bogotá",
+      "y": 6986
+    },
+    {
+      "nivel": "h2",
+      "texto": "Shopify vs WooCommerce vs VTEX en Colombia",
+      "y": 7367
+    },
+    {
+      "nivel": "h2",
+      "texto": "Términos clave para vender en Shopify desde Colombia.",
+      "y": 8181
+    },
+    {
+      "nivel": "h2",
+      "texto": "Preguntas frecuentes sobre Shopify en Colombia.",
+      "y": 9881
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tu Shopify colombiano, listo para vender.",
+      "y": 11051
+    },
+    {
+      "nivel": "h2",
+      "texto": "¡Empecemos!",
+      "y": 95
+    }
+  ],
+  "preciosTexto": [
+    "Costo mensual base $39+ USD Hosting + plugins Enterprise"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "Calificación Google PageSpeed mayor a 90 en celular, garantizado",
+      "Medición: Google Analytics 4 + Meta Pixel (Facebook/Instagram) + Google Tag Manager",
+      "Proceso de 7 pasos para marcas colombianas. IVA, pasarelas locales, facturación DIAN y envíos a nivel nacional.",
+      "Ideal para Marcas DTC en crecimiento Negocios con programador propio Enterprise B2B y omnicanal"
+    ],
+    "garantias": [
+      "Calificación Google PageSpeed mayor a 90 en celular, garantizado",
+      "Mantenimiento mensual con tiempos de respuesta garantizados en horario Bogotá (GMT-5). Tu tienda no queda abandonada después del lanzamiento: cada mes recibe correcciones, nuevas funcionalidades y monitoreo de velocidad.",
+      "Velocidad aprobada por Google Sí (garantizado) Depende del hosting Requiere optimización"
+    ],
+    "elementosTestimonio": 0,
+    "logosDetectados": 3,
+    "altLogos": [
+      "CARTIA DIGITAL"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [
+      {
+        "accion": "/contact#contact_form",
+        "visible": true,
+        "campos": [
+          "Email"
+        ]
+      },
+      {
+        "accion": "/contact#contact_form",
+        "visible": true,
+        "campos": [
+          "¿Cómo te podemos ayudar? *",
+          "Enlace de tu tienda actual (opcional)",
+          "Servicio que necesitas *",
+          "Nombre completo *",
+          "Email de contacto *",
+          "Buscar país…",
+          "WhatsApp (opcional)",
+          "Presupuesto estimado (opcional)"
+        ]
+      }
+    ],
+    "chatWidgets": [],
+    "email": [
+      "mailto:contact@cartiadigital.com"
+    ],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Cotización gratis en menos de 48 horas · Sin compromiso",
+    "Tienda Shopify colombiana lista para vender. Diseño orientado al comprador colombiano, soporte en horario Bogotá. Cotización gratis en menos de 48 horas.",
+    "Envía los detalles de tu proyecto Shopify y recibí una cotización gratis en menos de 48 horas. Sin compromiso.",
+    "¿Cómo te podemos ayudar? *"
+  ],
+  "plataforma": [
+    "Shopify",
+    "Vite (SPA)"
+  ],
+  "rastreadores": [
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 12179,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://cartiadigital.com/pages/shopify-colombia"
+    },
+    "pesoTransferidoKB": 2060,
+    "pesoTransferidoMB": 2.01,
+    "solicitudes": 139,
+    "domContentLoadedMs": 1031,
+    "loadMs": 1625,
+    "ttfbMs": 287,
+    "medidoTrasMs": 7135,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

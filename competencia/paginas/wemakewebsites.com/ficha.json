@@ -1,0 +1,61 @@
+{
+  "sitio": "ref-wemakewebsites",
+  "url": "https://wemakewebsites.com/",
+  "capturadoEn": "2026-11-21T00:58:32.184Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 403,
+    "finalUrl": "https://wemakewebsites.com/"
+  },
+  "titulo": "403 Forbidden",
+  "metaDescripcion": null,
+  "idioma": null,
+  "h1": [
+    "403 Forbidden"
+  ],
+  "subtituloHero": null,
+  "ctas": [],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "403 Forbidden",
+      "y": 8
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 0,
+    "altLogos": []
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [],
+  "plataforma": [],
+  "rastreadores": [],
+  "altoPaginaPx": 900,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 403,
+      "finalUrl": "https://wemakewebsites.com/"
+    },
+    "pesoTransferidoKB": 0,
+    "pesoTransferidoMB": 0,
+    "solicitudes": 1,
+    "domContentLoadedMs": 134,
+    "loadMs": 134,
+    "ttfbMs": 124,
+    "medidoTrasMs": 5644,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

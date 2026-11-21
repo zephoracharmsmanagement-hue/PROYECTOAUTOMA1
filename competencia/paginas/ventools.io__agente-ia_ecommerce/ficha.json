@@ -1,0 +1,72 @@
+{
+  "sitio": "ventools",
+  "url": "https://ventools.io/agente-ia/ecommerce",
+  "capturadoEn": "2026-11-21T00:54:36.296Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 404,
+    "finalUrl": "https://ventools.io/agente-ia/ecommerce"
+  },
+  "titulo": "404: This page could not be found.",
+  "metaDescripcion": "Le escribimos por WhatsApp a tus clientes, los que ya te compraron y no han vuelto. Implementación sin costo y solo nos pagas por cada uno que regresa.",
+  "idioma": "es-CO",
+  "h1": [
+    "404"
+  ],
+  "subtituloHero": "This page could not be found.",
+  "ctas": [],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "404",
+      "y": 426
+    },
+    {
+      "nivel": "h2",
+      "texto": "This page could not be found.",
+      "y": 426
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 0,
+    "altLogos": []
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [],
+  "plataforma": [
+    "Next.js"
+  ],
+  "rastreadores": [
+    "Meta Pixel",
+    "GTM",
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 900,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 404,
+      "finalUrl": "https://ventools.io/agente-ia/ecommerce"
+    },
+    "pesoTransferidoKB": 827,
+    "pesoTransferidoMB": 0.81,
+    "solicitudes": 28,
+    "domContentLoadedMs": 490,
+    "loadMs": 1346,
+    "ttfbMs": 171,
+    "medidoTrasMs": 6859,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

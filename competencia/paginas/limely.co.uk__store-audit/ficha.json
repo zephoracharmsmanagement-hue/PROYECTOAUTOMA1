@@ -1,0 +1,333 @@
+{
+  "sitio": "limely",
+  "url": "https://www.limely.co.uk/store-audit",
+  "capturadoEn": "2026-11-21T00:56:26.293Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.limely.co.uk/store-audit"
+  },
+  "titulo": "Free Store Audit + First Fix | Limely",
+  "metaDescripcion": "Free Shopify or Magento store audit, walkthrough call, and one fix shipped live. For UK stores doing £10k+/month. Don't find improvements? Don't pay.",
+  "idioma": "en-GB",
+  "h1": [
+    "Free Store Audit + First Fix"
+  ],
+  "subtituloHero": "We audit your store, walk you through the conversion leaks, and ship the biggest fix live. Free. Don't find improvements? You don't pay. Claim Your Free Audit",
+  "ctas": [
+    {
+      "texto": "Schedule A Call",
+      "destino": "https://www.limely.co.uk/store-audit#book-a-call",
+      "y": 21
+    },
+    {
+      "texto": "Claim Your Free Audit",
+      "destino": "https://www.limely.co.uk/store-audit#audit-form",
+      "y": 357
+    },
+    {
+      "texto": "Download A Sample Audit",
+      "destino": "https://www.limely.co.uk/resources/limely-sample-audit.pdf",
+      "y": 1148
+    },
+    {
+      "texto": "Claim Your Free Audit",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1098
+    },
+    {
+      "texto": "Book A Call",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2174
+    },
+    {
+      "texto": "What counts as the \"first fix\"?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2479
+    },
+    {
+      "texto": "Is this genuinely free? What's the catch?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2540
+    },
+    {
+      "texto": "What if my store does less than £10k/month?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2601
+    },
+    {
+      "texto": "Which platforms do you cover?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2662
+    },
+    {
+      "texto": "How long does the whole thing take?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2723
+    },
+    {
+      "texto": "Will you sign an NDA?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2784
+    },
+    {
+      "texto": "Why are you doing this for free?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2845
+    },
+    {
+      "texto": "Scroll left",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3220
+    },
+    {
+      "texto": "Scroll right",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 3220
+    },
+    {
+      "texto": "View All Work",
+      "destino": "https://www.limely.co.uk/work",
+      "y": 3903
+    },
+    {
+      "texto": "Decline",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 832
+    },
+    {
+      "texto": "Accept",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 824
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Free Store Audit + First Fix",
+      "y": 188
+    },
+    {
+      "nivel": "h2",
+      "texto": "Audit, walkthrough, one fix live, all free",
+      "y": 668
+    },
+    {
+      "nivel": "h3",
+      "texto": "30-minute audit call",
+      "y": 804
+    },
+    {
+      "nivel": "h3",
+      "texto": "Loom walkthrough you can share",
+      "y": 886
+    },
+    {
+      "nivel": "h3",
+      "texto": "One fix shipped live, free",
+      "y": 968
+    },
+    {
+      "nivel": "h3",
+      "texto": "Prioritised growth roadmap",
+      "y": 1050
+    },
+    {
+      "nivel": "h3",
+      "texto": "Claim your free audit",
+      "y": 666
+    },
+    {
+      "nivel": "h2",
+      "texto": "Real results we've delivered for UK ecommerce stores",
+      "y": 1334
+    },
+    {
+      "nivel": "h2",
+      "texto": "Don't find improvements? You don't pay, simple as that",
+      "y": 2078
+    },
+    {
+      "nivel": "h2",
+      "texto": "Questions before you submit?",
+      "y": 2512
+    },
+    {
+      "nivel": "h3",
+      "texto": "What counts as the \"first fix\"?",
+      "y": 2495
+    },
+    {
+      "nivel": "h3",
+      "texto": "Is this genuinely free? What's the catch?",
+      "y": 2556
+    },
+    {
+      "nivel": "h3",
+      "texto": "What if my store does less than £10k/month?",
+      "y": 2617
+    },
+    {
+      "nivel": "h3",
+      "texto": "Which platforms do you cover?",
+      "y": 2678
+    },
+    {
+      "nivel": "h3",
+      "texto": "How long does the whole thing take?",
+      "y": 2739
+    },
+    {
+      "nivel": "h3",
+      "texto": "Will you sign an NDA?",
+      "y": 2800
+    },
+    {
+      "nivel": "h3",
+      "texto": "Why are you doing this for free?",
+      "y": 2861
+    },
+    {
+      "nivel": "h2",
+      "texto": "Results we've delivered for stores like yours",
+      "y": 3164
+    },
+    {
+      "nivel": "h3",
+      "texto": "Industville",
+      "y": 3803
+    },
+    {
+      "nivel": "h3",
+      "texto": "Factory Direct Flooring",
+      "y": 3803
+    },
+    {
+      "nivel": "h3",
+      "texto": "Sewing Machines Direct",
+      "y": 3803
+    }
+  ],
+  "preciosTexto": [
+    "For UK Stores Doing £10k+/Month",
+    "Under £5k",
+    "£5k to £10k",
+    "£10k to £25k",
+    "£25k to £100k",
+    "£100k to £500k",
+    "£500k+",
+    "Free for UK stores doing £10k+/month on Shopify or Magento. No obligation, no pitch.",
+    "What if my store does less than £10k/month?",
+    "We focus this offer on UK Shopify and Magento stores doing £10k+ per month because that is where our work creates the biggest impact."
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "For UK Stores Doing £10k+/Month",
+      "Free for UK stores doing £10k+/month on Shopify or Magento. No obligation, no pitch.",
+      "We grew The Handle Studio’s organic revenue by 255%",
+      "We grew Wet Wednesdays’ organic revenue by 183%",
+      "We grew Zone3’s organic sessions by 130.7%",
+      "We delivered 90%+ Core Web Vitals for Dreams",
+      "We boosted Wildwood’s mobile reservations by 78.4%",
+      "We grew More Handles’ organic revenue by 64.7%",
+      "We increased Beat It’s conversions by 62.5%",
+      "We increased Towbar Express’ conversions by 60%",
+      "We boosted Tile Merchant’s mobile order value by 57%",
+      "+43.9% traffic",
+      "90%+ Core Web Vitals",
+      "+34% revenue",
+      "+32.1% revenue",
+      "+52.1% revenue",
+      "+130.7% sessions",
+      "+78.4% mobile",
+      "+64.7% revenue",
+      "We focus this offer on UK Shopify and Magento stores doing £10k+ per month because that is where our work creates the biggest impact."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 40,
+    "altLogos": [
+      "The Handle Studio ecommerce website by Limely",
+      "The Handle Studio logo",
+      "Wet Wednesdays ecommerce website by Limely",
+      "Wet Wednesdays logo",
+      "Zone3 ecommerce website by Limely",
+      "Zone3 logo",
+      "Dreams ecommerce website by Limely",
+      "Dreams logo",
+      "Wildwood ecommerce website by Limely",
+      "Wildwood logo",
+      "More Handles ecommerce website by Limely",
+      "More Handles logo",
+      "Beat It ecommerce website by Limely",
+      "Beat It logo",
+      "Towbar Express ecommerce website by Limely",
+      "Towbar Express logo",
+      "Tile Merchant ecommerce website by Limely",
+      "Tile Merchant logo",
+      "HSL Chairs ecommerce website by Limely",
+      "HSL Chairs logo"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [
+      {
+        "accion": null,
+        "visible": true,
+        "campos": [
+          "Your name",
+          "Work email",
+          "Company name",
+          "Monthly revenue",
+          "Your store URL",
+          "Phone (optional)"
+        ]
+      }
+    ],
+    "chatWidgets": [],
+    "email": [
+      "mailto:hello@limely.co.uk"
+    ],
+    "telefono": [
+      "tel:01244911366"
+    ]
+  },
+  "gratisTexto": [
+    "Free Store Audit + First Fix",
+    "We audit your store, walk you through the conversion leaks, and ship the biggest fix live. Free. Don't find improvements? You don't pay.",
+    "Claim Your Free Audit",
+    "FREE STORE AUDIT + FIRST FIX",
+    "Audit, walkthrough, one fix live, all free",
+    "One fix shipped live, free",
+    "Claim your free audit",
+    "Free for UK stores doing £10k+/month on Shopify or Magento. No obligation, no pitch.",
+    "Is this genuinely free? What's the catch?",
+    "Why are you doing this for free?"
+  ],
+  "plataforma": [
+    "Next.js"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 4151,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.limely.co.uk/store-audit"
+    },
+    "pesoTransferidoKB": 1482,
+    "pesoTransferidoMB": 1.45,
+    "solicitudes": 74,
+    "domContentLoadedMs": 307,
+    "loadMs": 709,
+    "ttfbMs": 140,
+    "medidoTrasMs": 6218,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

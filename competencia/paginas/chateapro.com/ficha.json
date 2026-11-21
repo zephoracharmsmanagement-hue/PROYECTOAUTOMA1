@@ -1,0 +1,512 @@
+{
+  "sitio": "chateapro",
+  "url": "https://chateapro.com/",
+  "capturadoEn": "2026-11-21T00:51:38.676Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://chateapro.com/"
+  },
+  "completaRecortada": "página de 22780px recortada a 16000px",
+  "titulo": "Chatea Pro - Inicio - Chatea PRO",
+  "metaDescripcion": null,
+  "idioma": "es-CO",
+  "h1": [
+    "Dropi + Chatea PRO: El mismo ADN del Dropshipping Real."
+  ],
+  "subtituloHero": "Tu operación conectada en un solo ecosistema. Proveedores, productos, chats y logística sincronizados para vender sin fricción. Si ya vendes con Dropi, Chatea PRO es tu paso natural.",
+  "ctas": [
+    {
+      "texto": "Casos de Uso",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 969
+    },
+    {
+      "texto": "Precios",
+      "destino": "https://chateapro.com/precios/",
+      "y": 969
+    },
+    {
+      "texto": "Recursos",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 969
+    },
+    {
+      "texto": "Agendar Demo",
+      "destino": "https://wa.link/e9onwn",
+      "y": 969
+    },
+    {
+      "texto": "Cambiar a modo oscuro",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 961
+    },
+    {
+      "texto": "Empieza Gratis",
+      "destino": "https://chateapro.app/register?utm_source=web&utm_medium=chateapro-web&utm_campaign=organic&utm_content=menu-header",
+      "y": 957
+    },
+    {
+      "texto": "Saltar intro",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1770
+    },
+    {
+      "texto": "Desliza para continuar",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1560
+    },
+    {
+      "texto": "Activar Chatea PRO",
+      "destino": "https://chateapro.app/register?utm_source=web&utm_medium=chateapro-web&utm_campaign=organic&utm_content=hero-shaders",
+      "y": 1485
+    },
+    {
+      "texto": "Ver la intro otra vez",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1551
+    },
+    {
+      "texto": "Sofía Ventas por WhatsApp",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5294
+    },
+    {
+      "texto": "Martín Envíos y Logística",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5296
+    },
+    {
+      "texto": "Karen Gestión de Comentarios",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5296
+    },
+    {
+      "texto": "Enzo Recuperar Ventas",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5296
+    },
+    {
+      "texto": "Enviar mensaje",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5876
+    },
+    {
+      "texto": "Probar Chatea Pro Gratis",
+      "destino": "https://chateapro.app/register?utm_source=web&utm_medium=chateapro-web&utm_campaign=organic&utm_content=homepage",
+      "y": 5799
+    },
+    {
+      "texto": "Reiniciar prueba",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5854
+    },
+    {
+      "texto": "✕",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5837
+    },
+    {
+      "texto": "Mensajes sugeridos",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5499
+    },
+    {
+      "texto": "Hablar con un Asesor",
+      "destino": "https://wa.link/e9onwn",
+      "y": 6446
+    },
+    {
+      "texto": "Vendo por WhatsApp",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7621
+    },
+    {
+      "texto": "Vendo por Landing Page",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 7621
+    },
+    {
+      "texto": "01 — Conecta",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 17399
+    },
+    {
+      "texto": "02 — Activa",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 17490
+    },
+    {
+      "texto": "03 — Enciende",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 17580
+    },
+    {
+      "texto": "Ir al Centro de Ayuda →",
+      "destino": "https://chateapro.com/centro-de-ayuda/",
+      "y": 18151
+    },
+    {
+      "texto": "Probar Chatea Pro Gratis",
+      "destino": "https://chateapro.app/register?utm_source=web&utm_medium=chateapro-web&utm_campaign=organic&utm_content=pricing_trial",
+      "y": 20464
+    },
+    {
+      "texto": "Obtener START",
+      "destino": "https://chateapro.app/register?utm_source=web&utm_medium=chateapro-web&utm_campaign=organic&utm_content=pricing_plan_start&plan=start",
+      "y": 21053
+    },
+    {
+      "texto": "Obtener ADVANCED",
+      "destino": "https://chateapro.app/register?utm_source=web&utm_medium=chateapro-web&utm_campaign=organic&utm_content=pricing_plan_advanced&plan=advanced",
+      "y": 21037
+    },
+    {
+      "texto": "Obtener PLUS",
+      "destino": "https://chateapro.app/register?utm_source=web&utm_medium=chateapro-web&utm_campaign=organic&utm_content=pricing_plan_plus&plan=plus",
+      "y": 21053
+    },
+    {
+      "texto": "Obtener MASTER",
+      "destino": "https://chateapro.app/register?utm_source=web&utm_medium=chateapro-web&utm_campaign=organic&utm_content=pricing_plan_master&plan=master",
+      "y": 21053
+    },
+    {
+      "texto": "¿Cómo funciona la prueba gratuita de 14 días?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 21382
+    },
+    {
+      "texto": "¿Tengo que pagar aparte por la API oficial de WhatsApp?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 21468
+    },
+    {
+      "texto": "¿Cómo ayuda ChateaPro con el modelo COD (Pago Contra Entrega)?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 21554
+    },
+    {
+      "texto": "¿Es posible integrar mi inventario de Shopify?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 21640
+    },
+    {
+      "texto": "Centro de Ayuda y Soporte",
+      "destino": "https://chateapro.com/centro-de-ayuda/",
+      "y": 22118
+    },
+    {
+      "texto": "Grupo de WhatsApp",
+      "destino": "https://chat.whatsapp.com/LmipIxihxJbHRklcCcCOsG",
+      "y": 22515
+    },
+    {
+      "texto": "Canal de comunidad en WhatsApp",
+      "destino": "https://www.whatsapp.com/channel/0029Vb8Aaf0HgZWlu1q7Cv3D",
+      "y": 22515
+    },
+    {
+      "texto": "Precios y Planes",
+      "destino": "https://chateapro.com/precios/",
+      "y": 22480
+    },
+    {
+      "texto": "Plantillas para WhatsApp",
+      "destino": "https://chateapro.com/recursos/plantillas-whatsapp/",
+      "y": 22480
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Dropi + Chatea PRO: El mismo ADN del Dropshipping Real.",
+      "y": 1294
+    },
+    {
+      "nivel": "h2",
+      "texto": "Vende con tranquilidad. Que tu operación hable por Chatea.",
+      "y": 1347
+    },
+    {
+      "nivel": "h2",
+      "texto": "Un multiverso de oportunidades para tu Dropshipping.",
+      "y": 1256
+    },
+    {
+      "nivel": "h2",
+      "texto": "Chatea PRO lo hace fácil. Tu próximo paso es automatizar.",
+      "y": 1291
+    },
+    {
+      "nivel": "h2",
+      "texto": "Así atiende Chatea PRO a tus clientes",
+      "y": 4996
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Con quién quieres conversar?",
+      "y": 5251
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Te gustó la experiencia?",
+      "y": 5530
+    },
+    {
+      "nivel": "h2",
+      "texto": "Deja que Chatea PRO se encargue de las conversaciones. Tú encárgate de hacer crecer el negocio.",
+      "y": 6239
+    },
+    {
+      "nivel": "h2",
+      "texto": "Todo lo que necesitas para llevar tu negocio de 0 a crecimiento",
+      "y": 6740
+    },
+    {
+      "nivel": "h3",
+      "texto": "Encuentra",
+      "y": 7168
+    },
+    {
+      "nivel": "h3",
+      "texto": "Selecciona",
+      "y": 7168
+    },
+    {
+      "nivel": "h3",
+      "texto": "Testea",
+      "y": 7168
+    },
+    {
+      "nivel": "h3",
+      "texto": "Automatiza",
+      "y": 7168
+    },
+    {
+      "nivel": "h3",
+      "texto": "Escala",
+      "y": 7168
+    },
+    {
+      "nivel": "h3",
+      "texto": "Selecciona tu modelo de negocio y descubre el flujo optimizado que automatiza tu operación comercial y logística en tiempo real.",
+      "y": 7516
+    },
+    {
+      "nivel": "h3",
+      "texto": "Selecciona tu producto ganador en el Marketplace",
+      "y": 7929
+    },
+    {
+      "nivel": "h3",
+      "texto": "Responde comentarios y mensajes en redes sociales",
+      "y": 7941
+    },
+    {
+      "nivel": "h3",
+      "texto": "La IA contacta, asesora y cierra la venta",
+      "y": 7929
+    },
+    {
+      "nivel": "h3",
+      "texto": "Validación de seguridad antes del envío (Dropshipping)",
+      "y": 7918
+    },
+    {
+      "nivel": "h3",
+      "texto": "Una operación más rápida, automatizada y preparada para crecer.",
+      "y": 7927
+    },
+    {
+      "nivel": "h2",
+      "texto": "Agentes de IA que trabajan como parte de tu equipo",
+      "y": 12725
+    },
+    {
+      "nivel": "h3",
+      "texto": "Todo lo que necesitas para pasar de: “quiero probar este producto” a “ya lo estoy testeando”",
+      "y": 13487
+    },
+    {
+      "nivel": "h2",
+      "texto": "Chatea PRO es una marca Dropi",
+      "y": 14057
+    },
+    {
+      "nivel": "h2",
+      "texto": "De la conversación a la venta en 3 pasos",
+      "y": 17154
+    },
+    {
+      "nivel": "h3",
+      "texto": "Conecta tu ecosistema",
+      "y": 17414
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tecnología para automatizar. Personas para ayudarte.",
+      "y": 17991
+    },
+    {
+      "nivel": "h2",
+      "texto": "El impacto directo en los números de nuestros clientes",
+      "y": 18452
+    },
+    {
+      "nivel": "h3",
+      "texto": "Recuperación de Carritos",
+      "y": 18489
+    },
+    {
+      "nivel": "h3",
+      "texto": "Pedidos Entregados",
+      "y": 18666
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tiempo de Respuesta",
+      "y": 18842
+    },
+    {
+      "nivel": "h3",
+      "texto": "En Ventas Mensuales por IA",
+      "y": 19019
+    },
+    {
+      "nivel": "h2",
+      "texto": "Menos tareas dispersas. Más decisiones que sí mueven tu negocio",
+      "y": 19375
+    },
+    {
+      "nivel": "h2",
+      "texto": "Empieza gratis, escala cuando tu operación crezca",
+      "y": 20314
+    },
+    {
+      "nivel": "h3",
+      "texto": "Prueba Chatea Pro SIN RIESGO por 14 días",
+      "y": 20450
+    },
+    {
+      "nivel": "h3",
+      "texto": "Elige el plan que mejor se adapte a tus conversaciones y volumen de ventas",
+      "y": 20635
+    },
+    {
+      "nivel": "h2",
+      "texto": "Preguntas Frecuentes",
+      "y": 21280
+    },
+    {
+      "nivel": "h2",
+      "texto": "Prueba un producto. Activa tus agentes. Mide qué funciona.",
+      "y": 21869
+    }
+  ],
+  "preciosTexto": [
+    "+$2M",
+    "$49",
+    "$109",
+    "$189",
+    "$399"
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "Ventas continuas 24/7 sin tareas operativas manuales y con la menor tasa de paquetes devueltos en pago contra entrega.",
+      "+30%",
+      "+85%"
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 34,
+    "altLogos": [
+      "Chatea PRO - ",
+      "ROAX",
+      "Talkyria",
+      "Fénix Ventures",
+      "Atom",
+      "Chatea PRO"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [
+      "https://chat.whatsapp.com/LmipIxihxJbHRklcCcCOsG",
+      "https://www.whatsapp.com/channel/0029Vb8Aaf0HgZWlu1q7Cv3D"
+    ],
+    "agenda": [],
+    "formularios": [
+      {
+        "accion": null,
+        "visible": true,
+        "campos": [
+          "Escribe un mensaje..."
+        ]
+      },
+      {
+        "accion": null,
+        "visible": false,
+        "campos": [
+          "Escribe un comentario..."
+        ]
+      },
+      {
+        "accion": null,
+        "visible": false,
+        "campos": [
+          "Pregunta sobre tu envío..."
+        ]
+      },
+      {
+        "accion": null,
+        "visible": false,
+        "campos": [
+          "Escribe un mensaje..."
+        ]
+      }
+    ],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Agendar Demo",
+    "Empieza Gratis",
+    "Envío gratis · Pago contra entrega",
+    "Probar Chatea Pro Gratis",
+    "Reiniciar prueba",
+    "Tiempo de prueba:",
+    "Prueba el sistema antes de decidir",
+    "Lleva el producto al mercado y prueba su rentabilidad",
+    "Prueba de productos a ciegas",
+    "Empieza gratis, escala cuando tu operación crezca",
+    "Prueba Chatea Pro SIN RIESGO por 14 días",
+    "¿Cómo funciona la prueba gratuita de 14 días?",
+    "Prueba un producto. Activa tus agentes. Mide qué funciona."
+  ],
+  "plataforma": [
+    "generator: Site Kit by Google 1.191.0",
+    "WordPress"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Microsoft Clarity"
+  ],
+  "altoPaginaPx": 22780,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://chateapro.com/"
+    },
+    "pesoTransferidoKB": 2961,
+    "pesoTransferidoMB": 2.89,
+    "solicitudes": 44,
+    "domContentLoadedMs": 1076,
+    "loadMs": 4101,
+    "ttfbMs": 401,
+    "medidoTrasMs": 9731,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

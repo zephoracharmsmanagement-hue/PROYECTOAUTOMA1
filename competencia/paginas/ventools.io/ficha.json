@@ -1,0 +1,265 @@
+{
+  "sitio": "ventools",
+  "url": "https://ventools.io/",
+  "capturadoEn": "2026-11-21T00:54:17.362Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://ventools.io/"
+  },
+  "titulo": "Ventools | Tus clientes, los que ya te compraron, vuelven",
+  "metaDescripcion": "Le escribimos por WhatsApp a tus clientes, los que ya te compraron y no han vuelto. Implementación sin costo y solo nos pagas por cada uno que regresa.",
+  "idioma": "es-CO",
+  "h1": [
+    "No se fueron. Nadie les volvió a escribir."
+  ],
+  "subtituloHero": "Le escribimos por WhatsApp a tus clientes, los que ya te compraron y no han vuelto, los agendamos y confirmamos que volvieron. Tú solo recibes las ventas y nos pagas por cada uno que regresa.",
+  "ctas": [
+    {
+      "texto": "Ver si mi base aplica",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 23
+    },
+    {
+      "texto": "¿Me van a traer clientes nuevos?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5088
+    },
+    {
+      "texto": "¿Cuánto cuesta?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5222
+    },
+    {
+      "texto": "¿Y si me bloquean el número?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5308
+    },
+    {
+      "texto": "¿Qué necesito para empezar?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5394
+    },
+    {
+      "texto": "¿Cómo sé que el cliente volvió gracias a ustedes?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5480
+    },
+    {
+      "texto": "¿Quién les escribe?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5566
+    },
+    {
+      "texto": "¿Qué pasa con los datos de mis clientes?",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 5652
+    },
+    {
+      "texto": "contacto@ventools.io",
+      "destino": "mailto:contacto@ventools.io",
+      "y": 6387
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "No se fueron. Nadie les volvió a escribir.",
+      "y": 210
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tus clientes no se quejaron. Simplemente dejaron de venir.",
+      "y": 829
+    },
+    {
+      "nivel": "h3",
+      "texto": "Nadie les escribió.",
+      "y": 1078
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tú no tienes tiempo de escribirles.",
+      "y": 1078
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ya pagaste por traerlos una vez.",
+      "y": 1078
+    },
+    {
+      "nivel": "h2",
+      "texto": "No te traemos gente de otra parte.",
+      "y": 1606
+    },
+    {
+      "nivel": "h2",
+      "texto": "De punta a punta, lo hacemos nosotros",
+      "y": 1996
+    },
+    {
+      "nivel": "h3",
+      "texto": "Limpiamos tu base.",
+      "y": 2169
+    },
+    {
+      "nivel": "h3",
+      "texto": "La analizamos.",
+      "y": 2169
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tú apruebas la lista.",
+      "y": 2169
+    },
+    {
+      "nivel": "h3",
+      "texto": "Le escribimos a cada grupo, a tu nombre.",
+      "y": 2439
+    },
+    {
+      "nivel": "h3",
+      "texto": "Resolvemos y agendamos.",
+      "y": 2439
+    },
+    {
+      "nivel": "h3",
+      "texto": "Confirmamos que volvió.",
+      "y": 2439
+    },
+    {
+      "nivel": "h2",
+      "texto": "¿Por qué no le mandas una promo a toda tu lista?",
+      "y": 2902
+    },
+    {
+      "nivel": "h2",
+      "texto": "Solo nos pagas por cada cliente que regresa",
+      "y": 3274
+    },
+    {
+      "nivel": "h3",
+      "texto": "Implementación sin costo.",
+      "y": 3515
+    },
+    {
+      "nivel": "h3",
+      "texto": "Prueba 15 días sin mensualidad.",
+      "y": 3515
+    },
+    {
+      "nivel": "h3",
+      "texto": "Si no vuelve, no cuenta.",
+      "y": 3515
+    },
+    {
+      "nivel": "h2",
+      "texto": "Funciona si tu negocio cumple esto",
+      "y": 3880
+    },
+    {
+      "nivel": "h2",
+      "texto": "Preguntas frecuentes",
+      "y": 4999
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Me van a traer clientes nuevos?",
+      "y": 5088
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Cuánto cuesta?",
+      "y": 5222
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Y si me bloquean el número?",
+      "y": 5308
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Qué necesito para empezar?",
+      "y": 5394
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Cómo sé que el cliente volvió gracias a ustedes?",
+      "y": 5480
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Quién les escribe?",
+      "y": 5566
+    },
+    {
+      "nivel": "h3",
+      "texto": "¿Qué pasa con los datos de mis clientes?",
+      "y": 5652
+    },
+    {
+      "nivel": "h2",
+      "texto": "¿Cuántos de los que te compraron este año volvieron?",
+      "y": 5885
+    },
+    {
+      "nivel": "h3",
+      "texto": "Contacto",
+      "y": 6307
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [
+      "57 % de los adultos en Latinoamérica ya le escribe a marcas por WhatsApp. Tus clientes ya están ahí."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 0,
+    "altLogos": []
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [
+      "mailto:contacto@ventools.io"
+    ],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Implementación sin costo · Prueba 15 días sin mensualidad",
+    "Tú apruebas la lista.",
+    "Respondemos dudas, precios y disponibilidad, y dejamos la cita agendada en la conversación.",
+    "Implementación sin costo.",
+    "Prueba 15 días sin mensualidad.",
+    "Un agente IA que escribe a tu nombre, con el tono de tu negocio, y que responde dudas, precios y disponibilidad. Tú apruebas los mensajes antes del primer envío.",
+    "Revisemos tu base. Si aplica, empezamos con implementación sin costo y 15 días de prueba."
+  ],
+  "plataforma": [
+    "Next.js"
+  ],
+  "rastreadores": [
+    "Meta Pixel",
+    "GTM",
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 6660,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://ventools.io/"
+    },
+    "pesoTransferidoKB": 922,
+    "pesoTransferidoMB": 0.9,
+    "solicitudes": 30,
+    "domContentLoadedMs": 664,
+    "loadMs": 1602,
+    "ttfbMs": 237,
+    "medidoTrasMs": 7112,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

@@ -1,0 +1,445 @@
+{
+  "sitio": "limely",
+  "url": "https://www.limely.co.uk/",
+  "capturadoEn": "2026-11-21T00:56:08.627Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.limely.co.uk/"
+  },
+  "titulo": "Ecommerce Agency Chester - Magento, Hyvä & Shopify | Limely",
+  "metaDescripcion": "Limely is a leading ecommerce agency specialising in Magento, Hyvä and Shopify Plus. We create conversion-driven stores for ambitious brands across the UK.",
+  "idioma": "en-GB",
+  "h1": [
+    "An ecommerce agency transforming brands with conversion-driven stores"
+  ],
+  "subtituloHero": "4.9 Google 5.0 Trustpilot",
+  "ctas": [
+    {
+      "texto": "Contact",
+      "destino": "https://www.limely.co.uk/contact",
+      "y": 31
+    },
+    {
+      "texto": "Start Your Project",
+      "destino": "https://www.limely.co.uk/quote",
+      "y": 21
+    },
+    {
+      "texto": "Migrate to Shopify",
+      "destino": "https://www.limely.co.uk/shopify/migration",
+      "y": 425
+    },
+    {
+      "texto": "Audit",
+      "destino": "https://www.limely.co.uk/magento/audit",
+      "y": 343
+    },
+    {
+      "texto": "Migrate to Hyvä",
+      "destino": "https://www.limely.co.uk/hyva/migration",
+      "y": 371
+    },
+    {
+      "texto": "Migrations",
+      "destino": "https://www.limely.co.uk/magento/migration",
+      "y": 425
+    },
+    {
+      "texto": "Integrations",
+      "destino": "https://www.limely.co.uk/magento/integrations",
+      "y": 425
+    },
+    {
+      "texto": "Hyvä Demo",
+      "destino": "https://www.limely.co.uk/hyva-demo",
+      "y": 425
+    },
+    {
+      "texto": "Migrations",
+      "destino": "https://www.limely.co.uk/migrations",
+      "y": 277
+    },
+    {
+      "texto": "Free Audit",
+      "destino": "https://www.limely.co.uk/audit",
+      "y": 425
+    },
+    {
+      "texto": "Pause video",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1061
+    },
+    {
+      "texto": "Unmute video",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1061
+    },
+    {
+      "texto": "PLAY SHOWREEL • PLAY SHOWREEL •",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 1340
+    },
+    {
+      "texto": "See Our Work",
+      "destino": "https://www.limely.co.uk/work",
+      "y": 1668
+    },
+    {
+      "texto": "More About Us",
+      "destino": "https://www.limely.co.uk/about",
+      "y": 1668
+    },
+    {
+      "texto": "Scroll left",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2022
+    },
+    {
+      "texto": "Scroll right",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 2022
+    },
+    {
+      "texto": "View All Work",
+      "destino": "https://www.limely.co.uk/work",
+      "y": 2705
+    },
+    {
+      "texto": "Explore Shopify",
+      "destino": "https://www.limely.co.uk/shopify",
+      "y": 4559
+    },
+    {
+      "texto": "Explore Magento",
+      "destino": "https://www.limely.co.uk/magento",
+      "y": 5444
+    },
+    {
+      "texto": "Our Partners",
+      "destino": "https://www.limely.co.uk/partners",
+      "y": 6152
+    },
+    {
+      "texto": "Previous testimonial",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6528
+    },
+    {
+      "texto": "Next testimonial",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6528
+    },
+    {
+      "texto": "Play video testimonial from Mark Jones",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 6625
+    },
+    {
+      "texto": "View More Testimonials",
+      "destino": "https://www.limely.co.uk/testimonials",
+      "y": 7186
+    },
+    {
+      "texto": "View All Insights",
+      "destino": "https://www.limely.co.uk/blog",
+      "y": 7564
+    },
+    {
+      "texto": "The Ecommerce Pages That Most Brands Forget To Optimise",
+      "destino": "https://www.limely.co.uk/blog/the-ecommerce-pages-that-most-brands-forget-to-optimise",
+      "y": 8016
+    },
+    {
+      "texto": "Get Started",
+      "destino": "https://www.limely.co.uk/contact",
+      "y": 8788
+    },
+    {
+      "texto": "Facebook",
+      "destino": "https://www.facebook.com/LimelyLtd",
+      "y": 9292
+    },
+    {
+      "texto": "SERVICES",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 9036
+    },
+    {
+      "texto": "PLATFORMS",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 9036
+    },
+    {
+      "texto": "EXPLORE",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 9036
+    },
+    {
+      "texto": "COMPANY",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 9036
+    },
+    {
+      "texto": "Decline",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 832
+    },
+    {
+      "texto": "Accept",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 824
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h3",
+      "texto": "Industville",
+      "y": 397
+    },
+    {
+      "nivel": "h3",
+      "texto": "HSL Chairs",
+      "y": 397
+    },
+    {
+      "nivel": "h3",
+      "texto": "JTX Fitness",
+      "y": 397
+    },
+    {
+      "nivel": "h1",
+      "texto": "An ecommerce agency transforming brands with conversion-driven stores",
+      "y": 188
+    },
+    {
+      "nivel": "h2",
+      "texto": "Hi, we're a web design & ecommerce agency based in Chester.",
+      "y": 1372
+    },
+    {
+      "nivel": "h2",
+      "texto": "Trusted by household names to deliver real results",
+      "y": 1966
+    },
+    {
+      "nivel": "h3",
+      "texto": "HSL Chairs",
+      "y": 2605
+    },
+    {
+      "nivel": "h3",
+      "texto": "Industville",
+      "y": 2605
+    },
+    {
+      "nivel": "h3",
+      "texto": "Dreams",
+      "y": 2605
+    },
+    {
+      "nivel": "h3",
+      "texto": "Factory Direct Flooring",
+      "y": 2605
+    },
+    {
+      "nivel": "h3",
+      "texto": "The Entertainer",
+      "y": 2605
+    },
+    {
+      "nivel": "h3",
+      "texto": "JTX Fitness",
+      "y": 2605
+    },
+    {
+      "nivel": "h3",
+      "texto": "Insect Lore",
+      "y": 2605
+    },
+    {
+      "nivel": "h3",
+      "texto": "Sewing Machines Direct",
+      "y": 2605
+    },
+    {
+      "nivel": "h2",
+      "texto": "Results-driven website design and digital marketing solutions",
+      "y": 3004
+    },
+    {
+      "nivel": "h3",
+      "texto": "Shopify",
+      "y": 3221
+    },
+    {
+      "nivel": "h3",
+      "texto": "Magento 2",
+      "y": 3318
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ecommerce Strategy",
+      "y": 3415
+    },
+    {
+      "nivel": "h3",
+      "texto": "Web Design & Development",
+      "y": 3544
+    },
+    {
+      "nivel": "h3",
+      "texto": "SEO & Growth",
+      "y": 3673
+    },
+    {
+      "nivel": "h3",
+      "texto": "Content & Social",
+      "y": 3770
+    },
+    {
+      "nivel": "h2",
+      "texto": "Fast, beautiful Shopify stores that scale with you",
+      "y": 4203
+    },
+    {
+      "nivel": "h2",
+      "texto": "Open-source ecommerce, built without compromise",
+      "y": 5032
+    },
+    {
+      "nivel": "h2",
+      "texto": "We specialise in Shopify and Magento, with the very best supporting partners.",
+      "y": 5816
+    },
+    {
+      "nivel": "h2",
+      "texto": "We strive to build beautiful relationships with our clients",
+      "y": 6472
+    },
+    {
+      "nivel": "h2",
+      "texto": "Insights & trends",
+      "y": 7484
+    },
+    {
+      "nivel": "h3",
+      "texto": "The Ecommerce Pages That Most Brands Forget To Optimise",
+      "y": 8016
+    },
+    {
+      "nivel": "h3",
+      "texto": "The Ecommerce Metrics That Matter After Conversion",
+      "y": 8080
+    },
+    {
+      "nivel": "h3",
+      "texto": "Top 10 Ecommerce Sites That Handle Out-Of-Stock Products Brilliantly",
+      "y": 7936
+    },
+    {
+      "nivel": "h2",
+      "texto": "What our customers are saying",
+      "y": 8392
+    },
+    {
+      "nivel": "h2",
+      "texto": "Ready to start your success journey?",
+      "y": 8392
+    }
+  ],
+  "preciosTexto": [],
+  "confianza": {
+    "lineasConCifras": [
+      "+43.9% traffic",
+      "We've been crafting beautiful websites with UX at the forefront since 2015, driving digital growth for startups and established brands alike.",
+      "90%+ Core Web Vitals",
+      "+32.1% revenue",
+      "+29% new users",
+      "+52.1% revenue",
+      "Replatforming, B2B, internationalisation and conversion strategy for brands ready to scale."
+    ],
+    "garantias": [],
+    "elementosTestimonio": 0,
+    "logosDetectados": 58,
+    "altLogos": [
+      "HSL Chairs",
+      "Factory Direct Flooring",
+      "Industville",
+      "Dreams",
+      "The Entertainer",
+      "Rhino Products",
+      "Legat Owen",
+      "Wet Wednesdays",
+      "Carman Friend",
+      "Jaunty Goat",
+      "86 Group",
+      "JPL",
+      "Roundtower",
+      "Towbar Express",
+      "Pingyo",
+      "SMD",
+      "Wildwood",
+      "Beat It",
+      "Zone3",
+      "Gorgeous Shop",
+      "Westminster Stone",
+      "Lingerie Outlet Store",
+      "More Handles",
+      "The Handle Studio logo",
+      "Factory Direct Flooring logo",
+      "Carman Friend logo",
+      "Wet Wednesdays logo",
+      "Gorgeous Shop logo",
+      "More Handles logo",
+      "Wildwood logo",
+      "Tile Merchant logo",
+      "Westminster Stone logo",
+      "The Entertainer logo",
+      "Legat Owen logo",
+      "Quant Accountants logo"
+    ]
+  },
+  "contacto": {
+    "whatsapp": [],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [
+      "Gorgias"
+    ],
+    "email": [
+      "mailto:hello@limely.co.uk"
+    ],
+    "telefono": [
+      "tel:01244911366"
+    ]
+  },
+  "gratisTexto": [
+    "Hyvä Demo",
+    "Free Audit"
+  ],
+  "plataforma": [
+    "Next.js"
+  ],
+  "rastreadores": [
+    "GTM",
+    "Google Analytics"
+  ],
+  "altoPaginaPx": 9481,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.limely.co.uk/"
+    },
+    "pesoTransferidoKB": 1602,
+    "pesoTransferidoMB": 1.56,
+    "solicitudes": 112,
+    "domContentLoadedMs": 290,
+    "loadMs": 761,
+    "ttfbMs": 118,
+    "medidoTrasMs": 6270,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}

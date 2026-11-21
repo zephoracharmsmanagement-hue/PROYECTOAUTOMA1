@@ -1,0 +1,263 @@
+{
+  "sitio": "fluxi",
+  "url": "https://fluxi.co/",
+  "capturadoEn": "2026-11-21T00:58:09.935Z",
+  "cargaEscritorio": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://fluxi.co/"
+  },
+  "titulo": "Fluxi | Todo tu marketing en un solo lugar, con IA",
+  "metaDescripcion": "Fluxi es la plataforma de marketing con IA: crea tus páginas de venta, anuncios y un chatbot que vende por WhatsApp, Instagram y Messenger.",
+  "idioma": "es",
+  "h1": [
+    "Todo tu marketing en un solo lugar, con IA"
+  ],
+  "subtituloHero": "Comenzar ahora Pregunta acá",
+  "ctas": [
+    {
+      "texto": "Cerrar anuncio",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 12
+    },
+    {
+      "texto": "Soluciones",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 73
+    },
+    {
+      "texto": "Pregunta acá",
+      "destino": "https://wa.me/573118211883?text=Hola%2C%20vengo%20de%20fluxi.co%20y%20quiero%20ver%20c%C3%B3mo%20funciona%20Fluxi%20para%20mi%20negocio",
+      "y": 518
+    },
+    {
+      "texto": "Setter con IA para agendar citas",
+      "destino": "https://fluxi.co/agendamientos/",
+      "y": 1325
+    },
+    {
+      "texto": "Agendamientos",
+      "destino": "https://fluxi.co/agendamientos/",
+      "y": 7768
+    },
+    {
+      "texto": "Descargar para Mac",
+      "destino": "https://fluxi.co/prod/assets/desktop/Fluxi.dmg",
+      "y": 7876
+    },
+    {
+      "texto": "Descargar para Windows",
+      "destino": "https://fluxi.co/prod/assets/desktop/Fluxi-Setup.exe",
+      "y": 7912
+    },
+    {
+      "texto": "Preferencias de analítica",
+      "destino": "(botón sin enlace / acción JS)",
+      "y": 8039
+    },
+    {
+      "texto": "Pregunta acá",
+      "destino": "https://wa.me/573118211883?text=Hola%2C%20vengo%20de%20fluxi.co%20y%20tengo%20una%20pregunta",
+      "y": 834
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": "h1",
+      "texto": "Todo tu marketing en un solo lugar, con IA",
+      "y": 287
+    },
+    {
+      "nivel": "h2",
+      "texto": "Fluxi para tu forma de vender",
+      "y": 988
+    },
+    {
+      "nivel": "h3",
+      "texto": "Setter con IA para agendar citas",
+      "y": 1325
+    },
+    {
+      "nivel": "h3",
+      "texto": "Chatbot para lanzamientos digitales",
+      "y": 1325
+    },
+    {
+      "nivel": "h3",
+      "texto": "Chatbot para dropshipping contraentrega",
+      "y": 1325
+    },
+    {
+      "nivel": "h2",
+      "texto": "Tu embudo completo, conectado de punta a punta",
+      "y": 1645
+    },
+    {
+      "nivel": "h2",
+      "texto": "Un sistema que investiga, crea y mejora tu embudo",
+      "y": 2327
+    },
+    {
+      "nivel": "h3",
+      "texto": "Encontramos los mejores ángulos de venta para ti",
+      "y": 2798
+    },
+    {
+      "nivel": "h3",
+      "texto": "Cambia todo el estilo con un clic",
+      "y": 2798
+    },
+    {
+      "nivel": "h3",
+      "texto": "Publica páginas más rápidas que nadie",
+      "y": 2798
+    },
+    {
+      "nivel": "h3",
+      "texto": "Ve exactamente dónde se caen",
+      "y": 4166
+    },
+    {
+      "nivel": "h3",
+      "texto": "Prueba precios con órdenes reales",
+      "y": 4166
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tu pauta aprende mejor",
+      "y": 4166
+    },
+    {
+      "nivel": "h2",
+      "texto": "Fluxi dream team ❤️",
+      "y": 5871
+    },
+    {
+      "nivel": "h3",
+      "texto": "Simón Borrero",
+      "y": 6240
+    },
+    {
+      "nivel": "h3",
+      "texto": "Julián Otálora",
+      "y": 6240
+    },
+    {
+      "nivel": "h3",
+      "texto": "Pablo Otálora",
+      "y": 6240
+    },
+    {
+      "nivel": "h3",
+      "texto": "Iván Caicedo",
+      "y": 6240
+    },
+    {
+      "nivel": "h3",
+      "texto": "Andrés Bilbao",
+      "y": 6240
+    },
+    {
+      "nivel": "h3",
+      "texto": "Páginas de venta",
+      "y": 6680
+    },
+    {
+      "nivel": "h3",
+      "texto": "Chatbot omnicanal",
+      "y": 6753
+    },
+    {
+      "nivel": "h3",
+      "texto": "Anuncios",
+      "y": 6826
+    },
+    {
+      "nivel": "h3",
+      "texto": "Copiloto",
+      "y": 6899
+    },
+    {
+      "nivel": "h3",
+      "texto": "Métricas",
+      "y": 6972
+    },
+    {
+      "nivel": "h3",
+      "texto": "Tiendas",
+      "y": 7045
+    }
+  ],
+  "preciosTexto": [
+    "USD 9,8 M",
+    "$1.240.000COP",
+    "$89.900",
+    "$79.900",
+    "Después de meses intentando vender, creamos la landing en cinco u ocho minutos con Fluxi. Salimos a campaña y, con un solo producto, en un mes facturamos cerca de USD 14.000.",
+    "Pasamos de probar tres productos al mes a unos veinte. Cada landing queda lista en cinco minutos con Fluxi, y esa velocidad nos ayudó a duplicar las ventas y superar los USD 61.000.",
+    "Fluxi me permite crear páginas que convierten usando solo una foto y una descripción. En aproximadamente seis meses facturé cerca de USD 84.000 y hoy también resuelvo creativos y guiones desde el mismo ecosistema.",
+    "Dejé de pasar horas construyendo páginas. Ahora encuentro productos ganadores más rápido, creo imágenes y anuncios con Fluxi y, en cuatro meses, facturé cerca de USD 399.000.",
+    "Antes necesitábamos cinco días entre boceto, desarrollo y correcciones para lanzar una página. Con Fluxi pasamos a minutos y, con un solo producto, facturamos alrededor de USD 40.000 a USD 43.000.",
+    "Equivalencias aproximadas en USD calculadas con la TRM del 22 de julio de 2026: COP 3.238,19 por USD."
+  ],
+  "confianza": {
+    "lineasConCifras": [
+      "+1.000 empresas ya venden con Fluxi",
+      "Google Analytics 4",
+      "100%",
+      "47%",
+      "▼ aquí se cae el 53%",
+      "22%",
+      "3.1% conv.",
+      "4.8% conv.",
+      "Pasé de invertir tres o cuatro horas en una página de Shopify a crearla en cinco minutos con Fluxi. La primera venta llegó en 30 minutos y el ROAS subió de 2 a 4.",
+      "Pasamos de probar tres productos al mes a unos veinte. Cada landing queda lista en cinco minutos con Fluxi, y esa velocidad nos ayudó a duplicar las ventas y superar los USD 61.000."
+    ],
+    "garantias": [
+      "Garantía extendida"
+    ],
+    "elementosTestimonio": 0,
+    "logosDetectados": 8,
+    "altLogos": []
+  },
+  "contacto": {
+    "whatsapp": [
+      "https://wa.me/573118211883?text=Hola%2C%20vengo%20de%20fluxi.co%20y%20quiero%20ver%20c%C3%B3mo%20funciona%20Fluxi%20para%20mi%20negocio",
+      "https://wa.me/573118211883?text=Hola%2C%20vengo%20de%20fluxi.co%20y%20tengo%20una%20pregunta"
+    ],
+    "agenda": [],
+    "formularios": [],
+    "chatWidgets": [],
+    "email": [],
+    "telefono": []
+  },
+  "gratisTexto": [
+    "Prueba precios con órdenes reales",
+    "Pruebas A/B de precios y variantes, medidas con ventas de verdad y no con clics."
+  ],
+  "plataforma": [
+    "GoHighLevel/LeadConnector",
+    "Astro"
+  ],
+  "rastreadores": [
+    "Google Analytics",
+    "TikTok Pixel"
+  ],
+  "altoPaginaPx": 8114,
+  "rendimientoMovil": {
+    "carga": {
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://fluxi.co/"
+    },
+    "pesoTransferidoKB": 1205,
+    "pesoTransferidoMB": 1.18,
+    "solicitudes": 35,
+    "domContentLoadedMs": 553,
+    "loadMs": 1081,
+    "ttfbMs": 148,
+    "medidoTrasMs": 6633,
+    "nota": "Medido con caché desactivada, red del contenedor (sin throttling), hasta load + ~5,5 s. Peso = encodedDataLength (bytes por la red)."
+  },
+  "cargo": true
+}
